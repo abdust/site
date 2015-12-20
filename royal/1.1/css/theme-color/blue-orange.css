@@ -1,0 +1,65 @@
+/* blue*/
+
+.inlineMenu {
+    background-color: #05b197;
+    border-top: 1px solid #05b197;
+}
+a{
+   color: #05b197; 
+}
+.header .navbar-default .navbar-nav li.active a, .header .navbar-default .navbar-nav li.active a:hover, .header .navbar-default .navbar-nav li.active a:focus, .header .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li.active > a, .header .dropdown-menu > li > a:hover {
+    color: #05b197 !important;
+}
+.captionLink, .captionLink:hover, .flex-control-paging li a.flex-active, .flex-control-paging li a:hover, .carousel-indicators li.active, .courses_right_inner th {
+    background-color: #05b197;
+}
+.learnBtn, .related_post_sec a.more_post {
+    border: 1px solid #05b197;
+}
+
+.fc-center h2, ul.contact_info li .fa, ul.contact_info li a:hover, .courses_left_inner ul li a:focus, .courses_left_inner ul li a:hover, .courses_left_inner ul li.active a, .courses_right_inner td ul li.active a, .sidebar_item.admission .item_inner.program ul li a  {
+    color: #05b197;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus  {
+    border-color: #05b197;
+    background: #05b197;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border: 1px solid #05b197;
+}
+
+/* orange*/
+.header .navbar-default .navbar-nav li.apply_now a, .banner .banner_caption .caption_inner a, .post_bottom ul li a span {
+    background: #f57137;
+}
+.commonBtn, .commonBtn:hover{
+    background-color: #f57137;
+    border-color: #f57137;
+}
+.commonBtn:hover {
+    background-color: rgba(245, 113, 55, 0.95);
+}
+.formArea, .getArea, .list_block, .event_calendar, .sidebar_item {
+    border-top: 3px solid #f57137;
+}
+.content_top .content_left ul li:before, .author_designation a, .rel_right span.date a, .meta > span a {
+    color: #f57137;
+}
+.sbOptions a:hover {
+    color: #f57137 !important;
+}
+.block_quate {
+    border-left: 4px solid #f57137;
+}
+
+@media only screen and (max-width: 767px){
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: #f57137;
+}
+.navbar-default .navbar-toggle {
+    border: 1px solid #f57137;
+}
+
+}

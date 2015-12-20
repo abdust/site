@@ -1,0 +1,74 @@
+body{
+background:#f0f0f0;
+}
+.main_wrapper{
+	width:1170px;
+	background:#fff;
+	margin:0 auto;
+}
+.courses_section,.post_section,.single_banner,.single_content{
+	background:#fff;
+}
+.tab_menu > ul li a{
+	padding:0 16px;
+}
+.meta > span{
+	margin-right:10px;
+}
+.banner_caption{
+	padding-left:40px;
+}
+
+
+
+@media only screen and (max-width: 767px){
+.main_wrapper{
+	width:100%;
+	padding:0 15px;
+	max-width:767px;
+	
+}
+.header .navbar-brand img{
+	width:200px;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.main_wrapper{
+	width:100%;
+	padding:0 15px;
+	max-width:969px;
+}
+.header .navbar-default .navbar-nav > li > a{
+	padding:8px 6px!important;
+}
+ 
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.main_wrapper{
+	width:970px;
+}
+.tab_menu > ul li a{
+	padding:0 8px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1200px){
+.container.large{
+	width:1170px;
+}
+.custom_right{
+	width:795px;
+}
+.resultPart.admission .list-inline li{
+	width:235px;
+}
+
+
+}
