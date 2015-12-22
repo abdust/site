@@ -153,16 +153,16 @@ i.option-switcher-btn-option:hover {
 }
 
 .option-switcher li.theme-default {
-   background: url(../img/color1.png) no-repeat center;
+   background: url(./color1.png) no-repeat center;
 }
 .option-switcher li.theme-grayGreen {
-   background: url(../img/color2.png) no-repeat center;
+   background: url(./color2.png) no-repeat center;
 }
 .option-switcher li.theme-blueOrange {
-   background: url(../img/color3.png) no-repeat center;
+   background: url(./color3.png) no-repeat center;
 }
 .option-switcher li.theme-grayBlue {
-   background: url(../img/color4.png) no-repeat center;
+   background: url(./color4.png) no-repeat center;
 }
 
 .layoutStyle{

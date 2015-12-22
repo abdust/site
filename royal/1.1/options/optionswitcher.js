@@ -23,7 +23,7 @@ var OptionSwitcher = function () {
 			});
 
 			var setColor = function (color, data_logo) {
-				jQuery('#option_color').attr("href", "css/theme-color/" + color + ".css");
+				jQuery('#option_color').attr("href", "css/colors/" + color + ".css");
 				if(data_logo == 'grayGreen'){
 					jQuery('.logo img').attr("src", "img/logo2" + ".png");
 				}

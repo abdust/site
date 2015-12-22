@@ -178,7 +178,9 @@ iframe{
 .navbar-default .navbar-nav > .apply_now.active > a, .navbar-default .navbar-nav > .apply_now.active > a:hover, .navbar-default .navbar-nav > .apply_now.active > a:focus{
 	color:#fff!important;
 }
-
+.header .navbar-default .navbar-nav li.active li a{
+	color: #000000;
+}
 .header .navbar-nav > li > .dropdown-menu:before {
     content: "";
     display: block;
@@ -192,7 +194,7 @@ iframe{
 }
 
 .dropdown-menu > li > a{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:15px;
 	color:#545454;
 	text-transform:capitalize;
@@ -915,7 +917,7 @@ iframe{
 	width:100%;
 	float:left;
 	height:auto;
-	padding:0 0 6px 15px;
+	padding:0 0 6px 0;
 	border-bottom:1px solid #dce4ea;
 	margin:0 0 25px;
 }
@@ -1499,6 +1501,11 @@ iframe{
 	display:inline-block;
 	float:left;
 	position:relative;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
 }
 .tab_menu > ul li:first-child a{
 	border-left:1px solid #dce4ea;
@@ -1509,17 +1516,20 @@ iframe{
 .tab_menu > ul li a{
 	font-family: 'Open Sans', sans-serif;
 	font-weight:700;
-	font-size:14px;
+	font-size:10px;
 	color:#000;
 	text-transform:uppercase;
 	text-decoration:none;
 	display:inline-block;
-	line-height:45px;
+	line-height:16px;
 	border-bottom:1px solid #dce4ea;
 	border-top:1px solid #dce4ea;
 	background:#f6f9fa;
-	padding:0 20px;
+	padding:5px;
 	text-align:center;
+	width: 100%;
+	height: 60px;
+	
 }
 .tab_menu > ul li.active a,.tab_menu > ul li a:hover{
 	background:#0060b1;
@@ -1722,10 +1732,7 @@ iframe{
 	height:8px;
 	background:url(../img/courses/dropdown_arrow.png) no-repeat bottom center;
 }
-.list-inline .open > .dropdown-menu{
-	margin:8px 0 0;
-	border:none;
-}
+
 .list-inline .dropdown-menu h3{
 	font-family:Arial, Helvetica, sans-serif;
 	font-weight:bold;
@@ -2980,13 +2987,11 @@ h1{
 	font-size:12px;
 	margin:0 0 10px;
 }
-.tab_menu > ul li{
-	width:100%;
-	margin:0 0 10px;
-}
+
 .tab_menu > ul li a{
 	display:block;
 	border:1px solid #dce4ea;
+	word-break: break-all;
 }
 .tab_menu > ul li.active a::after, .tab_menu > ul li a:hover::after{
 	border:none;
@@ -3219,13 +3224,10 @@ h1{
 .single_tab_content h1{
 	font-size:20px;
 }
-.tab_menu > ul li{
-	width:100%;
-	margin:0 0 10px;
-}
 .tab_menu > ul li a{
 	display:block;
 	border:1px solid #dce4ea;
+	font-size: 12px;
 }
 .tab_menu > ul li.active a::after, .tab_menu > ul li a:hover::after{
 	border:none;
@@ -3382,12 +3384,11 @@ ul.list li .thumb{
 .single_caption h2{
 	font-size:16px;
 }
-.tab_menu > ul li{
-	margin:0 10px 10px 0;
-}
 .tab_menu > ul li a{
 	display:block;
 	border:1px solid #dce4ea;
+	font-size: 12px;
+	height: 45px;
 }
 .tab_menu > ul li.active a::after, .tab_menu > ul li a:hover::after{
 	border:none;
@@ -3742,6 +3743,9 @@ h3{
 h4{
 	font-size:14px;
 }
+.tab_menu > ul li a{
+	font-size:12px;
+}
 .resultPart > .list-inline > li{
 	width:32%;
 	margin:0 2% 0 0;
@@ -3840,12 +3844,12 @@ h1{
 .single_caption h2{
 	font-size:16px;
 }
-.tab_menu > ul li{
-	margin:0 10px 10px 0;
-}
 .tab_menu > ul li a{
 	display:block;
 	border:1px solid #dce4ea;
+	font-size: 12px;
+	padding: 5px 10px;
+	height: 45px;
 }
 .tab_menu > ul li.active a::after, .tab_menu > ul li a:hover::after{
 	border:none;
@@ -3998,11 +4002,6 @@ h1{
 .single_caption h1{
 	font-size:40px;
 }
-.tab_menu > ul li a{
-	font-size:12px;
-	line-height:38px;
-	padding:0 7px;
-}
 .admission_video iframe{
 	height:400px;
 }
@@ -4061,6 +4060,11 @@ ul.list li{
 	font-size:10px;
 	line-height:normal;
 }
+.tab_menu > ul li a{
+	font-size: 12px;
+	padding: 5px 10px;
+	height: 45px;
+}
 
 
 }
@@ -4117,6 +4121,12 @@ body.bodyColor .header{
 }
 .facebook_section img{
 	width:100%;
+}
+.tab_menu > ul li a{
+	font-size: 12px;
+	padding: 5px;
+	height: 45px;
+	line-height: 35px;
 }
 
 }

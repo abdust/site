@@ -4,11 +4,11 @@
     background-color: #05b197;
     border-top: 1px solid #05b197;
 }
-a{
+a, .item_inner a.fees, .item_inner.question a{
    color: #05b197; 
 }
-.header .navbar-default .navbar-nav li.active a, .header .navbar-default .navbar-nav li.active a:hover, .header .navbar-default .navbar-nav li.active a:focus, .header .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li.active > a, .header .dropdown-menu > li > a:hover {
-    color: #05b197 !important;
+.header .navbar-default .navbar-nav li.active a, .header .navbar-default .navbar-nav li.active a:hover, .header .navbar-default .navbar-nav li.active a:focus, .header .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .header .navbar-default .navbar-nav li.active li.active > a, .header .navbar-default .navbar-nav li > li > a:hover, .navbar-default .navbar-nav > .open .dropdown-menu > li > a:hover{
+    color: #05b197 ;
 }
 .captionLink, .captionLink:hover, .flex-control-paging li a.flex-active, .flex-control-paging li a:hover, .carousel-indicators li.active, .courses_right_inner th {
     background-color: #05b197;
@@ -28,6 +28,19 @@ a{
 
 .pagination > li > a, .pagination > li > span {
     border: 1px solid #05b197;
+}
+.tab_menu > ul li.active a, .tab_menu > ul li a:hover {
+    background: #05b197;
+    border-color: #05b197!important;
+}
+.tab_menu > ul li.active a::after, .tab_menu > ul li a:hover::after {
+    border-top: 10px solid #05b197;
+}
+#single_banner .flex-control-paging li a.flex-active {
+    background: #05b197;
+}
+.inlineMenu .list-inline .dropdown-menu a{
+    color:#05b197!important;
 }
 
 /* orange*/
@@ -52,6 +65,9 @@ a{
 }
 .block_quate {
     border-left: 4px solid #f57137;
+}
+.form-control:focus{
+    border-color: #f57137;
 }
 
 @media only screen and (max-width: 767px){

@@ -3,11 +3,11 @@
     background-color: #0060b1;
     border-top: 1px solid #00549b;
 }
-a{
+a, .item_inner a.fees, .item_inner.question a{
    color: #0060b1; 
 }
-.header .navbar-default .navbar-nav li.active a, .header .navbar-default .navbar-nav li.active a:hover, .header .navbar-default .navbar-nav li.active a:focus, .header .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li.active > a, .header .dropdown-menu > li > a:hover{
-    color: #0060b1 !important;
+.header .navbar-default .navbar-nav li.active a, .header .navbar-default .navbar-nav li.active a:hover, .header .navbar-default .navbar-nav li.active a:focus, .header .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .header .navbar-default .navbar-nav li.active li.active > a, .header .navbar-default .navbar-nav li > li > a:hover, .navbar-default .navbar-nav > .open .dropdown-menu > li > a:hover{
+    color: #0060b1 ;
 }
 .captionLink, .captionLink:hover, .flex-control-paging li a.flex-active, .flex-control-paging li a:hover, .carousel-indicators li.active, .courses_right_inner th {
     background-color: #0060b1;
@@ -28,6 +28,20 @@ a{
 .pagination > li > a, .pagination > li > span {
     border: 1px solid #0060b1;
 }
+.tab_menu > ul li.active a, .tab_menu > ul li a:hover {
+    background: #0060b1;
+    border-color: #0060b1!important;
+}
+.tab_menu > ul li.active a::after, .tab_menu > ul li a:hover::after {
+    border-top: 10px solid #0060b1;
+}
+#single_banner .flex-control-paging li a.flex-active {
+    background: #0060b1;
+}
+.inlineMenu .list-inline .dropdown-menu a{
+    color:#0060b1!important;
+}
+
 
 /* Green*/
 
@@ -52,6 +66,9 @@ a{
 }
 .block_quate {
     border-left: 4px solid #49c32c;
+}
+.form-control:focus{
+    border-color: #49c32c;
 }
 @media only screen and (max-width: 767px){
 .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
