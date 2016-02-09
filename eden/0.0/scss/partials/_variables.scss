@@ -1,0 +1,7 @@
+/*=== VARIABLES ===*/
+$primary-color:#00b6f4;
+$secondary-color:#ffbd1e;
+
+@function tint($primary-color, $percentage) {
+  @return mix(white, $primary-color, $percentage);
+}
