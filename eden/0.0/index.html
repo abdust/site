@@ -15,8 +15,9 @@
   <link rel="stylesheet" type="text/css" href="plugins/revolution-slider/rs-plugin/css/settings.css" media="screen">
   <link href="plugins/select-box/select.css" type="text/css" rel="stylesheet" />
   <link href="plugins/bootstrap-datepicker-master/dist/css/bootstrap-datepicker3.min.css" type="text/css" rel="stylesheet" />
-  <link href="plugins/icons/_weather/_ICONFONT/styles.css" rel="stylesheet">
-  <link href="plugins/hover/Hover-master/css/hover-min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="plugins/magnific/Magnific-Popup-master/dist/magnific-popup.css">
+  <link href="plugins/icomoon/style.css" rel="stylesheet">
+  <link href="plugins/flexslider/woothemes-FlexSlider-9a419a0/flexslider.css" rel="stylesheet">
 
   <!-- GOOGLE FONT -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
@@ -91,7 +92,7 @@
               </li>
               <li class="book-online">
                 <a class="btn primary-btn" href="#">
-                  <i class="fa fa-credit-card"></i>Book Online
+                  <span class="icomoon-booking"></span>Book Online
                 </a>
               </li>
             </ul>
@@ -102,45 +103,10 @@
 
     <!-- BANNER -->
     <div class="bannercontainer">
-      <!--<div class="fullscreenbanner">
-        <ul>
-          <li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de">
-            <img src="images/home/slider-img1.jpg">
-            <div class="container">
-              <div class="slider-caption">
-                <div class="caption sft slider-title rs-parallaxlevel-1" data-y="200" data-speed="700" data-start="1700" data-easing="easeOutBack">The Most <span>Amazing</span> Hotel Template</div>
-                <div class="caption sfl slider-text" data-y="350" data-speed="500" data-start="1900" data-easing="easeOutBack">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh</div>
-                <div class="caption sfb purchase-btn" data-y="450" data-speed="500" data-start="2000"><a href="#" class="btn primary-btn">Purchase Now</a></div>
-              </div>
-            </div>
-          </li>
-          <li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de">
-            <img src="images/home/slider-img2.jpg">
-            <div class="container">
-              <div class="slider-caption">
-                <div class="caption sft slider-title rs-parallaxlevel-1" data-y="200" data-speed="700" data-start="1700" data-easing="easeOutBack">The Most <span>Amazing</span> Hotel Template</div>
-                <div class="caption sfl slider-text" data-y="350" data-speed="500" data-start="1900" data-easing="easeOutBack">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh</div>
-                <div class="caption sfb purchase-btn" data-y="450" data-speed="500" data-start="2000"><a href="#" class="btn primary-btn">Purchase Now</a></div>
-              </div>
-            </div>
-          </li>
-          <li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de">
-            <img src="images/home/slider-img3.jpg">
-            <div class="container">
-              <div class="slider-caption">
-                <div class="caption sft slider-title rs-parallaxlevel-1" data-y="200" data-speed="700" data-start="1700" data-easing="easeOutBack">The Most <span>Amazing</span> Hotel Template</div>
-                <div class="caption sfl slider-text" data-y="350" data-speed="500" data-start="1900" data-easing="easeOutBack">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh</div>
-                <div class="caption sfb purchase-btn" data-y="450" data-speed="500" data-start="2000"><a href="#" class="btn primary-btn">Purchase Now</a></div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>-->
-
       <div class="fullscreenbanner-container">
         <div class="fullscreenbanner">
           <ul>
-            <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
+            <li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
               <img src="images/home/slider-img1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
                 <div class="tp-caption rs-caption-1 sft start"
@@ -179,9 +145,8 @@
                   <span class="page-scroll"><a href="#" class="btn primary-btn">Purchase Now</a></span>
                 </div>
               </div>
-
             </li>
-            <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
+            <li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
               <img src="images/home/slider-img2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
                 <div class="tp-caption rs-caption-1 sft start"
@@ -220,9 +185,8 @@
                   <span class="page-scroll"><a href="#" class="btn primary-btn">Purchase Now</a></span>
                 </div>
               </div>
-
             </li>
-            <li data-transition="slideup" data-slotamount="5" data-masterspeed="700"  data-title="Slide 3">
+            <li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700"  data-title="Slide 3">
               <img src="images/home/slider-img3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
                 <div class="tp-caption rs-caption-1 sft start"
@@ -261,7 +225,6 @@
                   <span class="page-scroll"><a href="#" class="btn primary-btn">Purchase Now</a></span>
                 </div>
               </div>
-
             </li>
           </ul>
         </div>
@@ -272,15 +235,16 @@
     <section class="check-area clearfix">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="col-md-2 col-sm-4">
             <div class="input-group date ed-datepicker" data-provide="datepicker">
               <input type="text" class="form-control" placeholder="Arival">
               <div class="input-group-addon">
-                  <i class="fa fa-calendar"></i>
+                  <span class="icomoon-calendar"></span>
               </div>
             </div>
           </div>
-          <div class="col-md-2 col-sm-4 col-xs-6">
+
+          <div class="col-md-2 col-sm-4">
             <div class="cs-select ed-select" tabindex="0">
               <div class="cs-options">
                 <ul>
@@ -291,7 +255,7 @@
                   <li data-option="" data-value="5"><span>5</span></li>
                   <li data-option="" data-value="6"><span>6</span></li>
                   <li data-option="" data-value="7"><span>7</span></li>
-                  <li data-option="" data-value="8"><span>8</span></li>
+                  <li data-option="" data-value="7+"><span>7+</span></li>
                 </ul>
               </div>
               <select class="cs-select">
@@ -303,11 +267,12 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
-                <option value="8">8</option>
+                <option value="7+">7+</option>
               </select>
             </div>
           </div>
-          <div class="col-md-2 col-sm-4 col-xs-6">
+
+          <div class="col-md-2 col-sm-4">
             <div class="cs-select ed-select" tabindex="0">
               <div class="cs-options">
                 <ul>
@@ -326,7 +291,8 @@
               </select>
             </div>
           </div>
-          <div class="col-md-2 col-sm-4 col-xs-6">
+
+          <div class="col-md-2 col-sm-4">
             <div class="cs-select ed-select" tabindex="0">
               <div class="cs-options">
                 <ul>
@@ -347,7 +313,8 @@
               </select>
             </div>
           </div>
-          <div class="col-md-2 col-sm-4 col-xs-6">
+
+          <div class="col-md-2 col-sm-4">
             <div class="cs-select ed-select" tabindex="0">
               <div class="cs-options">
                 <ul>
@@ -366,7 +333,8 @@
               </select>
             </div>
           </div>
-          <div class="col-md-2 col-sm-4 col-xs-6">
+
+          <div class="col-md-2 col-sm-4">
             <button type="submit" class="btn primary-btn ckech-btn">Check availability</button>
           </div>
         </div>
@@ -374,69 +342,72 @@
     </section>
 
     <!-- WHITE SECTION -->
-    <section class="white-section featured common-padding clearfix">
+    <section class="white-section common-padding clearfix">
       <div class="container">
         <h2 class="top-headline">Featured Rooms</h2>
         <div class="underLine">
           <img src="images/home/underline.png" class="img-responsive"/>
         </div>
-        <div class="row">
+        <div class="row featured">
           <div class="col-sm-4 col-xs-12">
-            <figure class="ed-room ed-room-highlight">
-              <img src="images/home/sample-rm3.jpg" alt="image" class="img-responsive">
+            <figure class="ed-room ed-room-highlight featured-room">
+              <img src="images/home/sample-rm3.jpg" alt="Image" class="img-responsive">
               <div class="corner-ribbon"><span>50% OFF</span></div>
               <figcaption class=" ">
-                <h3 class="headline">Luxury Couple Suit</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. Lorem Ips</p>
-                <div class="room-price">$149<span>Per Night</span></div>
-                <div class="ed-member">2<span>Adults</span></div>
-              </figcaption>     
-            </figure>
-            <div class="row">
-              <div class="col-xs-6 align-left">
-                <a href="#" class="btn bordered-btn">View Details</a>
-              </div>
-              <div class="col-xs-6 align-right">
-                <a href="#" class="btn primary-btn">Book Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12">
-            <figure class="ed-room">
-              <img src="images/home/sample-rm4.jpg" alt="image" class="img-responsive">
-              <figcaption>
-                <h3 class="headline">Luxury Couple Suit</h3>
+                <h3 class="headline"><a href="">Luxury Couple Suit</a></h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. Lorem Ips</p>
                 <div class="room-price">$149<span>Per Night</span></div>
                 <div class="ed-member">2<span>Adults</span></div>
               </figcaption>
             </figure>
             <div class="row">
-              <div class="col-xs-6 align-left">
+              <div class="col-xs-6 align-left left-btn">
                 <a href="#" class="btn bordered-btn">View Details</a>
               </div>
-              <div class="col-xs-6 align-right">
+              <div class="col-xs-6 align-right right-btn">
                 <a href="#" class="btn primary-btn">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-sm-4 col-xs-12">
-            <figure class="ed-room">
+            <figure class="ed-room ed-room-highlight featured-room">
+              <img src="images/home/sample-rm4.jpg" alt="Image" class="img-responsive">
+              <figcaption>
+                <h3 class="headline"><a href="">Luxury Couple Suit</a></h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. Lorem Ips</p>
+                <div class="room-price">$149<span>Per Night</span></div>
+                <div class="ed-member">2<span>Adults</span></div>
+              </figcaption>
+            </figure>
+            <div class="row">
+              <div class="col-xs-6 align-left left-btn">
+                <a href="#" class="btn bordered-btn popup-modal">View Details</a>
+              </div>
+              <div class="col-xs-6 align-right right-btn">
+                <a href="#" class="btn primary-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-sm-4 col-xs-12">
+            <figure class="ed-room featured-room">
               <img src="images/home/sample-rm5.jpg" alt="image" class="img-responsive">
               <figcaption>
-                <h3 class="headline">Luxury Couple Suit</h3>
+                <h3 class="headline"><a href="">Luxury Couple Suit</a></h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. Lorem Ips</p>
                 <div class="room-price">$149<span>Per Night</span></div>
                 <div class="ed-member">2<span>Adults</span></div>
               </figcaption>
             </figure>
             <div class="row">
-              <div class="col-xs-6 align-left">
+              <div class="col-xs-6 align-left left-btn">
                 <a href="#" class="btn bordered-btn">View Details</a>
               </div>
-              <div class="col-xs-6 align-right">
+              <div class="col-xs-6 align-right right-btn">
                 <a href="#" class="btn primary-btn">Book Now</a>
-              </div>
             </div>
           </div>
         </div>
@@ -471,6 +442,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-sm-6 col-xs-12">
                   <div class="ed-recentPost ed-recentPost-highlight">
                     <img src="images/home/event-img1.jpg" alt="image" class="img-responsive">
@@ -492,6 +464,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col-sm-4 col-xs-12 testimonial">
               <h2 class="top-headline">Testimonials</h2>
               <div class="underLine"><img src="images/home/underline.png" class="img-responsive"/></div>
@@ -510,6 +483,7 @@
                     </div>                    
                   </div>
                 </li>
+
                 <li>
                   <div class="carousal_content">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum is simply dummy text .</p>
@@ -524,6 +498,7 @@
                     </div>                    
                   </div>
                 </li>
+
                 <li>
                   <div class="carousal_content">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. Lorem Ipsum is simply dummy text .</p>
@@ -557,10 +532,13 @@
                 <div class="clearfix">
                   <span class="ed-temp">23&#176;</span>
                   <span class="ed-temp-type">cloudy</span>
-                  <div class="icon icon-weather-variable-sun"></div>
+                  <div class="icon-weather">
+                    <span class="icomoon-cloudy"></span>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-sm-8 col-xs-12">
               <div class="newsletter">
                 <h2 class="top-headline">Join Our Newsletter</h2>
@@ -583,8 +561,15 @@
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12">
             <h3 class="headline">About</h3>
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. </p>
-          </div>    
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor 
+            aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+             ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
+              sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
+               a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat
+                 justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. </p>
+          </div>
+
           <div class="col-md-3 col-sm-6 col-xs-12 address">
             <h3 class="headline">Address</h3>
             <h4>Monsieur Dupont</h4>                         
@@ -596,6 +581,7 @@
             <span>E-mail:<a href="mailto:email@domain.com">email@domain.com</a></span>
             <a class="footer-map" href=""><img src="images/map.png" alt="map"/></a>
           </div>
+
           <div class="col-md-2 col-sm-4 col-xs-12 photos">
             <h3 class="headline">Photos</h3>
             <ul class="bxslider" id="footerSlider">
@@ -606,6 +592,7 @@
               <li><a href=""><img src="images/footer/sliderImg3.jpg" /></a></li>
             </ul>
           </div> 
+
           <div class="col-md-4 col-sm-8 col-xs-12 offers">
             <h3 class="headline">Special Offers</h3>
             <figure class="ed-room">
@@ -618,6 +605,7 @@
               </figcaption>
               <div class="corner-ribbon"><span>50% OFF</span></div>     
             </figure>
+
             <figure class="ed-room ed-room-highlight">
               <img src="images/footer/sample-rm2.jpg" alt="image" class="img-responsive">
               <figcaption>
@@ -663,10 +651,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
   <script src="plugins/bx-slider/jquery.bxslider.min.js"></script><!-- bx-slider js -->
-  <script type="text/javascript" src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-  <script type="text/javascript" src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-  <script type="text/javascript" src="plugins/select-box/select.js"></script>
-  <script type="text/javascript" src="plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script src="plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="plugins/select-box/select.js"></script>
+  <script src="plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="plugins/sorting/mixitup-master/build/jquery.mixitup.min.js"></script>
+  <script src="plugins/magnific/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+  <script src="plugins/flexslider/woothemes-FlexSlider-9a419a0/jquery.flexslider.js"></script>
   <script src="js/custom.js"></script><!-- custom js -->
 
 </body>

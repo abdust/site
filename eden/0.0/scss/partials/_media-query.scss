@@ -1,11 +1,6 @@
 /*=== MEDIA QUERY ===*/
-@mixin only-mobile{
-  @media(max-width:479px){
-    @content;
-  }
-}
-@mixin phone{
-  @media(max-width:767px){
+@mixin mobile{
+  @media(min-width:480px){
     @content;
   }
 }

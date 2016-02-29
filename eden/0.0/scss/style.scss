@@ -5,91 +5,95 @@
 
 ===================== */
 
-@import 'partials/reset';
-@import 'partials/mixins';
-@import 'partials/variables';
-@import 'partials/media-query';
+@import 'reset';
 
 /*=== COMMON ===*/
 .container{
-	@include only-mobile {
-    	width: 100% !important;
-    }
-	@include phone {
+    width: 100%;
+	@include mobile {
     	width: 450px;
+    }
+    @include tablet {
+    	width: 750px;
+    }
+    @include desktops {
+    	width: 970px;
+    }
+    @include large-desktops {
+    	width: 1170px;
     }
 }
 .btn{
 	display: inline-block;
 	@include border-radius(4px);
-	font-size: 15px;
 	text-transform: uppercase;
     text-align: center;
-    padding: 13px 25px;
-    @include only-mobile {
-    	font-size: 14px;
-    	padding: 12px 20px;
+    font-size: 14px;
+    padding: 9px 0;
+    @include mobile {
+    	font-size: 15px;
+    	padding: 13px 0;
     }
     @include tablet {
     	font-size: 12px;
-    	padding: 8px 6px;
+    	padding: 8px 0;
     }
     @include desktops {
     	font-size: 14px;
-    	padding: 12px 15px;
+    	padding: 12px 0;
     }
     @include large-desktops {
     	font-size: 15px;
-    	padding: 13px 25px;
+    	padding: 13px 0;
     }
 }
 .primary-btn{
     background-color: $primary-color;
-    color: #ffffff;
-    @include transition(background-color 0.5s);
+    color: $text-light;
+    @include transition(background-color 0.3s);
     &:hover,&:focus{
     	background-color: tint($primary-color, 20%);
-    	color: #ffffff;
-    	@include transition(background-color 0.5s);
+    	color: $text-light;
+    	@include transition(background-color 0.3s);
     }
 }
 .secondary-btn{
 	background-color: $secondary-color;
-	@include transition(background-color 0.5s);
-	color: #ffffff;
+	@include transition(background-color 0.3s);
+	color: $text-light;
 	&:hover,&:focus{
     	background-color: $secondary-color;
-    	@include transition(background-color 0.5s);
-    	color: #ffffff;
+    	@include transition(background-color 0.3s);
+    	color: $text-light;
     }
 }
 .bordered-btn{
     background-color: transparent;
-    border: 2px solid #94d1f3;
-    color: #979797;
+    border: 1px solid $primary-color;
+    color: $text-color;
     &:hover,&:focus{
     	color: $primary-color;
-    	@include transition(color 0.5s);
+    	@include transition(color 0.3s);
     }
 }
 .btn-block{
 	display: block;
 }
 .common-padding{
-	padding: 40px 0;
+	padding: 45px 0;
     @include large-desktops {
-    	padding: 60px 0;
+    	padding: 70px 0;
     }
 }
 .top-headline{
-    font-size: 30px;
-    color: #979797;
+    font-size: 27px;
+    color: $text-color;
     font-weight: 300;
     margin: 0 auto 10px;
     text-align: center;
     display: block;
-    @include only-mobile {
-    	font-size: 27px;
+    @include mobile {
+    	font-size: 30px;
     }
     @include tablet {
     	font-size: 27px;
@@ -121,15 +125,18 @@
     	margin-bottom: 15px;
     }
 }
+.main-wrapper{
+	position: relative;
+}
 
 /*=== HEADER ===*/
 .header{
 	background-color: #ffffff;
 	@include box-shadow(0,1px, 2px, rgba(0, 0, 0, 0.10));
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 99;
+	z-index: 999;
 }
 
 /*=== TOPBAR ===*/
@@ -150,10 +157,10 @@
 				color: #97a0a5;
 				font-size: 12px;
 				text-decoration: none;
-				@include transition(color 0.5s);
+				@include transition(color 0.3s);
 				&:hover{
 					color: $primary-color;
-					@include transition(color 0.5s);
+					@include transition(color 0.3s);
 				}
 			}
 			i{
@@ -161,6 +168,13 @@
 				position:absolute;
 				top:2px;
 				left:0;
+			}
+			i.fa-phone{
+				font-size: 12px;
+				padding: 2px 4px;
+				border: 1px solid #97a0a5;
+				@include border-radius(50%);
+				margin-right: 5px;
 			}
 			i.fa-caret-down{
 				font-size: 17px;
@@ -183,8 +197,7 @@ li.language.dropdown{
 	    padding: 5px 0;
 	    margin: 2px 0 0;
 	    font-size: 14px;
-	    border: #000;
-	    border: 1px solid rgba(0,0,0,.05);
+	    border: 1px solid $border-color;
 	    @include border-radius;
 	    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.05);
 	    box-shadow: 0 2px 2px rgba(0,0,0,.05);
@@ -208,7 +221,7 @@ li.language.dropdown{
 			a{
 				background: transparent;
 				color:$primary-color;
-				@include transition(color 0.5s);
+				@include transition(color 0.3s);
 			}
 		}
 	}
@@ -236,34 +249,37 @@ li.language.dropdown.open > a{
 .navbar-default {
     background-color: transparent;
     border: none;
-    margin-bottom: 10px;
-    @include phone {
-    	margin-bottom: 0;
+    margin-bottom: 0;
+    @include tablet {
+    	margin-bottom: 10px;
     }
 }
 a.logo{
 	display: inline-block;
-	margin-top: -35px;
+	width: 170px;
+	margin-top: -5px;
+	margin-bottom: 10px;
 	float: left;
-	width: 200px;
 	height: auto;
-	@include phone {
-		width: 170px;
-		margin-top: -5px;
-		margin-bottom: 10px;
+	@include tablet {
+		margin-top: -35px;
+		width: 200px;
+		margin-bottom: 0;
 	}
 	img{
 		max-width: 100%;
 	}
 }
 .navbar-collapse{
-	float: right;
-	padding: 0;
-	@include phone {
-		float: none;
-		width: 100%;
-		margin: 0 !important;
-		text-align: center;
+	float: none;
+	width: 100%;
+	margin: 0 !important;
+	text-align: center;
+	@include tablet {
+		float: right;
+		padding: 0;
+		width: auto;
+		text-align: none;
 	}
 	ul.navbar-nav{
 		li{
@@ -273,7 +289,7 @@ a.logo{
 				font-size: 15px;
 				font-weight: 400;
 				color: #46555e;
-				@include transition(color 0.5s);
+				@include transition(color 0.3s);
 				text-transform: uppercase;
 				@include tablet {
 					font-size:12px;
@@ -286,7 +302,7 @@ a.logo{
 				&:hover,&:focus{
 					background-color: transparent;
 					color: $primary-color;
-					@include transition(color 0.5s);
+					@include transition(color 0.3s);
 				}
 			}
 		}
@@ -294,22 +310,20 @@ a.logo{
 			a{
 				background-color: transparent;
 				color: $primary-color;
-				@include transition(color 0.5s);
+				@include transition(color 0.3s);
 				&:hover,&:focus{
 					background-color: transparent;
 					color: $primary-color;
-					@include transition(color 0.5s);
+					@include transition(color 0.3s);
 				}
 			}
 		}
 		li.book-online{
-			margin-left: 0;
-			@include phone {
-				width: 160px;
-				margin: 0 auto;
-			}
+			width: 160px;
+			margin: 0 auto;
 			@include tablet {
-				margin-left: 8px;	
+				margin-left: 8px;
+				width: auto;
 			}
 			@include desktops {
 				margin-left: 20px;	
@@ -317,19 +331,25 @@ a.logo{
 			a{
 				padding: 8px 22px 8px 35px;
 				background-color: $primary-color;
-				@include transition(background-color 0.5s);
-				color: #ffffff;
+				@include transition(background-color 0.3s);
+				color: $text-light;
 				position: relative;
 				@include border-radius(5px);
 				&:hover,&:focus{
 					background-color: tint($primary-color, 20%);
-					color: #ffffff;
+					color: $text-light;
 				}
-				.fa-credit-card{
+				span{
 					position: absolute;
 					left: 10px;
 					padding-right: 15px;
 					top: 10px;
+					@include tablet {
+						top: 12px;
+					}
+					@include desktops {
+						top: 10px;
+					}
 				}
 			}
 		}
@@ -339,8 +359,9 @@ a.logo{
 	margin:0px;
 }
 .nav.navbar-nav.navbar-right{
-	@include phone {
-		padding:10px 0;
+	padding:10px 0;
+	@include tablet {
+		padding:0;
 	}
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
@@ -349,41 +370,41 @@ a.logo{
 }
 .header .navbar-nav  li.dropdown  {
 	.dropdown-menu{
-		width:180px;
+		border-radius: 0;
+	    box-shadow: none;
+	    border: none;
+	    width: 100%;
+	    text-align: center;
 		padding:0 10px;
-		border: #000;
-	    border: 1px solid rgba(0,0,0,.05);
-	    @include border-radius;
-		@include box-shadow(0, 4px, 10px, rgba(0,0,0,0.33));
 		right:0;
 		left: auto;
 		top:58px;
-		@include phone {
-		    border-radius: 0;
-		    box-shadow: none;
-		    border: none;
-		    width: 100%;
-		    text-align: center;
+		@include tablet {
+		    width:180px;
+		    border: 1px solid $border-color;
+		    @include border-radius;
+			@include box-shadow(0, 4px, 10px, rgba(0,0,0,0.33));
 		}
 		li  {
-			@include phone {
-			    padding-left: 30px;
+			padding-left: 30px;
+			@include tablet {
+			    padding-left: 0;
 			}
 			a{
+				color: #46555e;
+				border-bottom:none;
 				font-size:15px;
 				font-weight: 300;
-				color: #46555e;
 				text-transform:capitalize;
 				padding:9px 0 !important;
 				display:block;
-				border-bottom:1px solid #e2e3e4;
 				background:none;
 				&:hover, &:focus{
 					color:$primary-color;
 				}
-				@include phone {
+				@include tablet {
 					color: #46555e;
-					border-bottom:none;
+					border-bottom:1px solid $border-color;
 					&:hover, &:focus{
 						color:$primary-color;
 						background:none;
@@ -429,9 +450,7 @@ a.logo{
 	.tp-bullets.preview4 .bullet {
 	    background: rgba(255, 255, 255, 0.5) !important;
 	    @include border-radius (50%);
-	    -webkit-box-shadow: none;
-	    -moz-box-shadow: none;
-	    box-shadow: none;
+	    box-shadow: none!important;
 	    width: 6px !important;
 	    height: 6px !important;
 	    border: 2px solid rgba(255, 255, 255, 0.0) !important;
@@ -441,14 +460,9 @@ a.logo{
 	    margin-bottom: 0px !important;
 	    @include transition (background-color 0.2s, border-color 0.2s);
 	    float: none !important;
-	    box-sizing: content-box;
-	    -moz-box-sizing: content-box;
-	    -webkit-box-sizing: content-box;
 	}
 	.tp-bullets.preview4 .bullet:hover, .tp-bullets.preview4 .bullet.selected {
-	    -webkit-box-shadow: none;
-	    -moz-box-shadow: none;
-	    box-shadow: none;
+	    box-shadow: none!important;
 	    background: rgba(255, 255, 255, 0.0) !important;
 	    width: 14px !important;
 	    height: 14px !important;
@@ -457,9 +471,22 @@ a.logo{
 	    margin-left: -4px!important;
 	    margin-bottom: -3px!important;
 	}
+	.tparrows.preview4 .tp-arr-iwrapper {
+		display: none !important;
+	}
+}
+@include tablet {
+	.tparrows.preview4:hover:after{	
+		-webkit-transform: rotateY(0);
+	 	transform:rotateY(0);
+	 }
+	.tp-leftarrow.preview4:hover:after{	
+		-webkit-transform: rotateY(0); 
+		transform:rotateY(0)
+	}
 }
 .fullscreenbanner{
-	color: #ffffff;
+	color: $text-light;
 	width:100%;
 	position:relative;
 }
@@ -499,10 +526,9 @@ a.logo{
 }
 .tp-caption.rs-caption-2{
 	font-weight: 400;
-	@include phone {
-		display: none;
-	}
+	display: none;
 	@include tablet {
+		display: block;
 		font-size: 14px !important;
 		line-height: 18px !important;
 	}
@@ -514,7 +540,7 @@ a.logo{
 .rs-caption-3{
 	.btn{
 		padding: 7px 11px !important;
-		color: #ffffff!important;
+		color: $text-light !important;
 		font-weight: 500;
 		@include tablet {
 			padding: 15px 25px !important;
@@ -532,20 +558,18 @@ a.logo{
 
 /*=== CHECK AREA ===*/
 .check-area{
-	background: #272c32;
-	padding: 20px 0;
+	background:$dark-bg;
+	padding: 25px 0 10px;
 	margin-top: -1px;
 	position: relative;
 	z-index: 999;
 	@include desktops {
-		margin-top: -84px;
+		margin-top: -94px;
 		background: rgba(0, 0, 0, 0.60);
+		padding: 25px 0;
 	}
 	.col-md-2{
 		margin-bottom: 15px;
-		@include only-mobile {
-			width: 100%;
-		}
 	}
 	@include desktops {
 		.row{
@@ -564,9 +588,15 @@ a.logo{
 		}
 	}
 }
+.ed-select{
+	width: 100%;
+	@include tablet {
+		width: auto;
+	}
+}
 .ed-datepicker{
 	height: 44px;
-	border: 2px solid rgba(255, 255, 255, 0.5);
+	border: 1px solid $border-light;
 	padding: 0;
 	@include border-radius;
 }
@@ -576,81 +606,108 @@ a.logo{
 	border: none;
 	font-size: 16px;
 	font-weight: 500;
-	color: #ffffff;
+	color: $text-light;
 	padding: 4px 12px;
+	box-shadow: none !important;
 }
 .ed-datepicker .form-control::-webkit-input-placeholder{ 
 	font-size: 16px;
 	font-weight: 500;
-	color: #ffffff;
+	color: $text-light;
 }
 .ed-datepicker .form-control::-moz-placeholder{ 
 	font-size: 16px;
 	font-weight: 500;
-	color: #ffffff;
+	color: $text-light;
 }
 .ed-datepicker .form-control:-ms-input-placeholder{ 
 	font-size: 16px;
 	font-weight: 500;
-	color: #ffffff;
+	color: $text-light;
 }
 .ed-datepicker .form-control:-moz-placeholder { 
 	font-size: 16px;
 	font-weight: 500;
-	color: #ffffff;
+	color: $text-light;
 }
 .ed-datepicker .input-group-addon{
 	height: 40px;
 	background: transparent;
 	border: none;
-	.fa-calendar{
+	.icomoon-calendar{
 		font-size: 24px;
 		color: rgba(255, 255, 255, 0.5);
 	}
 }
 .datepicker-dropdown{
-	width: 260px;
-	padding: 12px;
+	width: 280px;
+	padding: 15px 20px;
 }
 .datepicker-dropdown thead{
-	color: rgba(0, 0, 0, 0.50);
-	font-size: 16px;
+	color: $text-color;
+	font-size: 15px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
-.datepicker table tr td, .datepicker table tr th {
-    width: 35px;
-}
 .datepicker table tr td.day{
-    color: rgba(0, 0, 0, 0.80);
-    font-weight: 300;
+    color: $text-color;
+    font-weight: 500;
+    @include border-radius(50%);
+    border-radius: 50% !important;
+    background: transparent;
+    margin: 0 3px 10px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
 }
-.datepicker table tr td.day.new, .datepicker table tr td.day.old {
-    color: rgba(0, 0, 0, 0.50);
+.datepicker table tr td.day.new, 
+.datepicker table tr td.day.old {
+    color: #cccfd3;
+    background: transparent;
 }
-.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+.datepicker table tr td.day:hover, 
+.datepicker table tr td.focused {
     background: $secondary-color;
-    @include transition (background 0.5s);
+    @include transition (background 0.3s);
     cursor: pointer;
-    color: #ffffff;
+    color: $text-light;
 }
-.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active {
+.datepicker table tr td.active.active, 
+.datepicker table tr td.active.highlighted.active, 
+.datepicker table tr td.active.highlighted:active, 
+.datepicker table tr td.active:active {
     border-color: $secondary-color;
     background: $secondary-color;
-    @include transition (background 0.5s, border-color 0.5s);
-    color: #ffffff;
+    @include transition (background 0.3s, border-color 0.3s);
+    color: $text-light;
 }
-.datepicker table tr td.active.active.focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active.focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active:active.focus, .datepicker table tr td.active:active:focus, .datepicker table tr td.active:active:hover {
+.datepicker table tr td.active.active.focus,
+ .datepicker table tr td.active.active:focus, 
+ .datepicker table tr td.active.active:hover, 
+ .datepicker table tr td.active.highlighted.active.focus, 
+ .datepicker table tr td.active.highlighted.active:focus, 
+ .datepicker table tr td.active.highlighted.active:hover, 
+ .datepicker table tr td.active.highlighted:active.focus, 
+ .datepicker table tr td.active.highlighted:active:focus, 
+ .datepicker table tr td.active.highlighted:active:hover, 
+ .datepicker table tr td.active:active.focus, 
+ .datepicker table tr td.active:active:focus, 
+ .datepicker table tr td.active:active:hover {
     border-color: $secondary-color;
     background: $secondary-color;
-    @include transition (background 0.5s, border-color 0.5s);
-    color: #ffffff;
+    @include transition (background 0.3s, border-color 0.3s);
+    color: $text-light;
 }
-.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover {
-    background: $secondary-color;
-    @include transition (background 0.5s, border-color 0.5s);
+.datepicker .datepicker-switch:hover, 
+.datepicker .next:hover, 
+.datepicker .prev:hover, 
+.datepicker tfoot tr th:hover {
+    background:transparent;
+    border: none;
+    @include transition (color 0.3s);
     cursor: pointer;
-    color: #ffffff;
+    color: $secondary-color;
 }
 div.cs-select{
 	height: 44px;
@@ -658,13 +715,13 @@ div.cs-select{
 	@include border-radius;
 	font-size: 16px;
 	font-weight: 500;
-	color: #ffffff;
+	color: $text-light;
 	background: transparent;
 	z-index: 1;
 	position: initial;
 }
 .cs-select.ed-select{
-	border: 2px solid rgba(255, 255, 255, 0.5);
+	border: 1px solid $border-light;
 }
 .cs-select.ed-select > span{
 	background: transparent;
@@ -692,6 +749,7 @@ div.cs-select{
 }
 .cs-select li.cs-selected > span::after {
     content: "\f00c";
+    color: $secondary-color;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -700,7 +758,6 @@ div.cs-select{
     -moz-osx-font-smoothing: grayscale;
 }
 .cs-select.ed-select .cs-options {
-	border: #000;
     border: 1px solid rgba(0, 0, 0, 0.05);
     @include border-radius;
     @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.33));
@@ -708,9 +765,18 @@ div.cs-select{
     color: #46555e;
     top: 100%;
     z-index: 9999;
-    width: 95%;
-    @include phone {
-    	width: 88%;
+    width: 88%;
+    @include mobile {
+    	width: 93%;
+    }
+    @include tablet {
+    	width: 87%;
+    }
+    @include desktops {
+    	width: 93%;
+    }
+    @include large-desktops {
+    	width: 95%;
     }
 }
 .cs-select ul li.cs-focus span {
@@ -727,7 +793,7 @@ div.cs-select{
 .cs-select ul li:hover, .cs-select li.cs-selected{
 	background-color: rgba(0, 0, 0, 0.07);
 	color: $secondary-color;
-	@include transition (background-color 0.5s, color 0.5s);
+	@include transition (background-color 0.3s, color 0.3s);
 }
 .ckech-btn{
 	height: 44px;
@@ -743,8 +809,9 @@ div.cs-select{
 		font-weight: 500;
 	}
 	.col-sm-4{
-		@include phone {
-			margin-bottom: 25px;
+		margin-bottom: 25px;
+		@include tablet {
+			margin-bottom: 0;
 		}
 	}
 }
@@ -759,7 +826,7 @@ div.cs-select{
 	width: 100%; 
 	height: auto;
 	position: relative;
-	color: #feffff;
+	color: $text-light;
 	@include border-radius;
 	margin-bottom: 22px;
 	margin-top: 0 !important;
@@ -771,27 +838,30 @@ div.cs-select{
 		top: 0;
 		left: 0;
 		bottom: 0;
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: $dark-bg;
 		padding: 20px;
 		width: 100%;
 		display: none;
 		z-index: 9;
 		p{
-			color: #ffffff;
+			color: $text-light;
 		}
 	}
 }
-.featured .ed-room figcaption{
-	@include phone {
-		background-color:rgba(0, 0, 0, 0.7);
-		padding: 20px 10px 45px 10px;
-		display: block;
-		position: relative;
-		border-bottom-left-radius:4px;
-		border-bottom-right-radius:4px; 
-	}
+.ed-room.featured-room figcaption{
+	padding: 20px 10px 45px 10px;
+	display: block;
+	position: relative;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px; 
 	@include tablet {
 		padding: 10px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		display: none;
+		@include border-radius;
 	}
 	@include desktops {
 		padding: 15px;
@@ -800,23 +870,25 @@ div.cs-select{
 		padding: 25px;
 	}
 }
-.featured .ed-room	figcaption .headline{
-	color: $secondary-color;
+.ed-room.featured-room	figcaption .headline{
+	margin-bottom: 30px;
 	@include tablet {
 		margin-bottom: 7px;
 	}
 	@include desktops {
 		margin-bottom: 10px;
 	}
-}
-
-.featured .ed-room	figcaption p{
-	@include phone {
-		display: none;
+	a{
+		color: $secondary-color;
+		text-decoration: none;
 	}
+}
+.ed-room.featured-room	figcaption p{
+	display: none;
 	@include tablet {
 		font-size: 12px;
 		line-height: 16px;
+		display: block;
 	}
 	@include desktops {
 		font-size: 14px;
@@ -828,13 +900,13 @@ div.cs-select{
 	}
 }
 .room-price{
-	font-size: 30px;
+	font-size: 20px;
     font-weight: 500;
     position: absolute;
     bottom: 20px;
     display: inline-block;
-    @include only-mobile {
-		font-size: 20px;
+    @include mobile {
+		font-size: 30px;
 	}
     @include tablet {
 		font-size: 20px;
@@ -852,7 +924,7 @@ div.cs-select{
 		}
     }
 }
-.featured .room-price{
+.ed-room.featured-room .room-price{
 	bottom: 20px;
 	@include tablet {
 		bottom: 10px;
@@ -865,10 +937,10 @@ div.cs-select{
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 500;
-	@include only-mobile {
-		font-size: 20px;
+	@include mobile {
+		font-size: 30px;
 	}
 	@include tablet {
 		right: 10px;
@@ -898,10 +970,10 @@ div.cs-select{
 	height: 58%;
 	text-align: right;
 }
-.featured .corner-ribbon{
-	width: 30%;
-	@include only-mobile {
-		width: 36%;
+.ed-room.featured-room .corner-ribbon{
+	width: 36%;
+	@include mobile {
+		width: 30%;
 	}
 	@include tablet {
 		width: 57%;
@@ -943,10 +1015,10 @@ div.cs-select{
 	left: 0px; 
 	top: 100%;
 	z-index: -1;
-	border-left: 3px solid #23658f;
+	border-left: 3px solid $primary-ribbon-shade;
 	border-right: 3px solid transparent;
 	border-bottom: 3px solid transparent;
-	border-top: 3px solid #23658f;
+	border-top: 3px solid $primary-ribbon-shade;
 }
 .corner-ribbon span::after {
 	content: "";
@@ -955,30 +1027,30 @@ div.cs-select{
 	top: 100%;
 	z-index: -1;
 	border-left: 3px solid transparent;
-	border-right: 3px solid #23658f;
+	border-right: 3px solid $primary-ribbon-shade;
 	border-bottom: 3px solid transparent;
-	border-top: 3px solid #23658f;
+	border-top: 3px solid $primary-ribbon-shade;
 }
 .ed-room-highlight .corner-ribbon span::before{
-	border-left: 3px solid #a33a3a;
-	border-top: 3px solid #a33a3a;
+	border-left: 3px solid $secondary-ribbon-shade;
+	border-top: 3px solid $secondary-ribbon-shade;
 } 
 .ed-room-highlight .corner-ribbon span::after{
-	border-right: 3px solid #a33a3a;
-	border-top: 3px solid #a33a3a;
+	border-right: 3px solid $secondary-ribbon-shade;
+	border-top: 3px solid $secondary-ribbon-shade;
 }
 @include tablet {
-	.featured .ed-room figcaption{
+	.ed-room.featured-room figcaption{
 		@include border-radius;
 		display: block;
 		background-color: rgba(0, 0, 0, 0.0);
 	    -webkit-transition: background-color 0.5s; 
 	     transition: background-color 0.5s; 
 	}
-	.featured .ed-room:hover figcaption{
+	.ed-room.featured-room:hover figcaption{
 		background-color: rgba(0, 0, 0, 0.7);
 	}
-	.featured .ed-room	figcaption .headline{
+	.ed-room.featured-room	figcaption .headline{
 		opacity: 0;
 		-webkit-transform: translate(0, 100px);
 	    -ms-transform: translate(0, 100px);
@@ -988,16 +1060,15 @@ div.cs-select{
 	    -webkit-transition-delay: 0.35s;
 	    transition-delay: 0.35s;
 	}
-	.featured .ed-room:hover figcaption .headline{
+	.ed-room.featured-room:hover figcaption .headline{
 		opacity: 1;
-	-webkit-transition-delay: 0.1s;
+		-webkit-transition-delay: 0.1s;
 	    transition-delay: 0.1s;
 	    -webkit-transform: translate(0, 0);
 	    -ms-transform: translate(0, 0);
 	    transform: translate(0, 0);	
 	}
-
-	.featured .ed-room	figcaption p{
+	.ed-room.featured-room	figcaption p{
 		opacity: 0;
 	    -webkit-transform: translate(0, 10px);
 	    -ms-transform: translate(0, 10px);
@@ -1007,7 +1078,7 @@ div.cs-select{
 	    -webkit-transition-delay: 0.2s;
 	    transition-delay: 0.2s;
 	}
-	.featured .ed-room:hover figcaption p{
+	.ed-room.featured-room:hover figcaption p{
 		-webkit-transition-delay: 0.3s;
 	    transition-delay: 0.3s;
 	    opacity: 1;
@@ -1015,7 +1086,7 @@ div.cs-select{
 	    -ms-transform: translate(0, 0);
 	    transform: translate(0, 0);
 	}
-	.featured .ed-room	figcaption .room-price, .featured .ed-room	figcaption .ed-member{
+	.ed-room.featured-room	figcaption .room-price, .ed-room.featured-room	figcaption .ed-member{
 		opacity: 0;
 	    -webkit-transform: translate(0, 10px);
 	    -ms-transform: translate(0, 10px);
@@ -1025,7 +1096,7 @@ div.cs-select{
 	    -webkit-transition-delay: 0.2s;
 	    transition-delay: 0.2s;
 	}
-	.featured .ed-room:hover figcaption .room-price, .featured .ed-room:hover figcaption .ed-member{
+	.ed-room.featured-room:hover figcaption .room-price, .ed-room.featured-room:hover figcaption .ed-member{
 		-webkit-transition-delay: 0.4s;
 	    transition-delay: 0.4s;
 	    opacity: 1;
@@ -1033,16 +1104,16 @@ div.cs-select{
 	    -ms-transform: translate(0, 0);
 	    transform: translate(0, 0);
 	}
-	.featured .ed-room .corner-ribbon{
+	.ed-room.featured-room .corner-ribbon{
 		opacity: 1;
-	    -webkit-transition: opacity 0.4s;
-	    transition: opacity 0.45s;
-	    -webkit-transition-delay: 0.4s;
-	    transition-delay: 0.4s;
+	    -webkit-transition: opacity 0.3s;
+	    transition: opacity 0.3s;
+	    -webkit-transition-delay: 0.15s;
+	    transition-delay: 0.15s;
 	}
-	.featured .ed-room:hover .corner-ribbon{
-		-webkit-transition-delay: 0.4s;
-	    transition-delay: 0.4s;
+	.ed-room.featured-room:hover .corner-ribbon{
+		-webkit-transition-delay: 0.1s;
+	    transition-delay: 0.1s;
 	    opacity: 0;
 	}
 }
@@ -1060,11 +1131,12 @@ div.cs-select{
 	width: 100%; 
 	height: auto;
 	position: relative;
-	color: #ffffff;
+	color: $text-light;
 	font-weight: 500;
 	@include border-radius;
-	@include phone {
-		margin-bottom: 25px;
+	margin-bottom: 25px;
+	@include tablet {
+		margin-bottom: 0;
 	}
 	img{
 		@include border-radius;
@@ -1078,11 +1150,11 @@ div.cs-select{
 	left: 0;
 	bottom: 0;
 	background-color: rgba($secondary-color, 0.85);
-	padding: 60px 30px 0;
+	padding: 30px 30px 0;
 	width: 100%;
 	display: block;
-	@include only-mobile {
-		padding: 30px 30px 0;
+	@include mobile {
+		padding: 60px 30px 0;
 	}
 	@include tablet {
 		padding: 30px 10px 0 ;
@@ -1108,27 +1180,27 @@ div.cs-select{
 }
 .ed-recentPost-highlight .overlay{
 	background-color: rgba($primary-color, 0.85);
+}
+.event-date{
+	font-size: 50px;
+	line-height: 38px;
+	display: block;
+	@include desktops {
+		font-size: 55px;
+		line-height: 50px;
+	}
+	@include large-desktops {
+		font-size: 70px;
+		line-height: 60px;
+	}
+}
+.event-month{
+	font-size: 12px;
+	@include large-desktops {
+		font-size: 15px;
+	}
 } 
 .ed-recentPost{
-	.event-date{
-		font-size: 50px;
-		line-height: 38px;
-		display: block;
-		@include desktops {
-			font-size: 55px;
-			line-height: 50px;
-		}
-		@include large-desktops {
-			font-size: 70px;
-			line-height: 60px;
-		}
-	}
-	.event-month{
-    	font-size: 12px;
-    	@include large-desktops {
-			font-size: 15px;
-		}
-    }
 	h4{
 		font-size: 15px;
 		margin-bottom: 10px;
@@ -1141,12 +1213,12 @@ div.cs-select{
 			margin-bottom: 10px;
 		}
 		a{
-			color: #ffffff;
+			color: $text-light;
 			text-decoration: none;
 		}
 	}
 	p{
-		color: #ffffff;
+		color: $text-light;
 		font-size: 15px;
 		margin-bottom: 5px;
 		line-height: 20px;;
@@ -1169,13 +1241,13 @@ div.cs-select{
 }
 .overlay .btn{
 	margin-top: 30px;
-	border: 2px solid rgba(255, 255, 255, 0.5);
-    color: #ffffff;
-	padding: 13px 15px;
-	font-size: 15px;
-	@include only-mobile {
-		padding: 11px 15px;
-		font-size: 12px;
+	border-color:$border-light;
+    color: $text-light;
+    padding: 11px 15px;
+	font-size: 12px;
+	@include mobile {
+		padding: 13px 15px;
+		font-size: 15px;
 	}
 	@include tablet {
 		padding: 8px 15px;
@@ -1185,10 +1257,10 @@ div.cs-select{
 	    -webkit-transform: translate(0, 10px);
 	    -ms-transform: translate(0, 10px);
 	    transform: translate(0, 10px);
-	    -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
-	    transition: opacity 0.45s, transform 0.45s;
-	    -webkit-transition-delay: 0.2s;
-	    transition-delay: 0.2s;
+	    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	    transition: opacity 0.3s, transform 0.3s;
+	    -webkit-transition-delay: 0.15s;
+	    transition-delay: 0.15s;
 	}
 	@include large-desktops {
     	padding: 11px 15px;
@@ -1202,8 +1274,8 @@ div.cs-select{
 	} 
 }
 .ed-recentPost:hover .overlay .btn{
-	-webkit-transition-delay: 0.4s;
-    transition-delay: 0.4s;
+	-webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
     opacity: 1;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -1211,14 +1283,14 @@ div.cs-select{
 }
 @include tablet {
 	.ed-recentPost .overlay{
-	    -webkit-transition: padding 0.3s, background-color 0.4s;
-	    transition: padding 0.3s, background-color 0.4s;
-	    -webkit-transition-delay: 0.2s;
-	    transition-delay: 0.2s;
+	    -webkit-transition: padding 0.3s, background-color 0.3s;
+	    transition: padding 0.3s, background-color 0.3s;
+	    -webkit-transition-delay: 0.15s;
+	    transition-delay: 0.15s;
 	}
 	.ed-recentPost:hover .overlay{
-		-webkit-transition-delay: 0.3s;
-	    transition-delay: 0.3s;
+		-webkit-transition-delay: 0.2s;
+	    transition-delay: 0.2s;
 	}
 }
 .carousal_content{
@@ -1324,17 +1396,19 @@ div.cs-select{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	color: #ffffff;
+	color: $text-light;
+}
+.room-page .dark-section{
+	background-image: url('../images/room/full-img1.jpg');
 }
 .weather{
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
 	@include border-radius;
 	padding: 30px 35px;
-	@include phone {
-		margin-bottom: 25px;
-	}
+	margin-bottom: 25px;
 	@include tablet {
 		padding: 30px 25px;
+		margin-bottom: 0
 	}
 	@include desktops {
 		padding: 30px 35px;
@@ -1368,25 +1442,30 @@ div.cs-select{
 			font-size: 15px;
 		}
 	}
-	.icon-weather-variable-sun{
+	.icon-weather{
 		display: inline-block;
 	    float: right;
-	    font-size: 77px;
+	    font-size: 80px;
+	    margin-top: -20px;
 	    color: rgba(255, 255, 255, 0.5);
 		@include tablet {
-			font-size: 50px;
+			font-size: 48px;
+			margin-top: 0;
 		}
 		@include desktops {
-			font-size: 77px;
+			font-size: 70px;
+			margin-top: -8px;
+		}
+		@include large-desktops {
+			font-size: 89px;
+			margin-top: -29px;
 		}
 	}
 }
 .newsletter{
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
 	@include border-radius;
-	@include phone {
-		padding: 30px 35px;
-	}
+	padding: 30px 35px;
 	@include tablet {
 		padding: 34px 45px;
 	}
@@ -1394,12 +1473,13 @@ div.cs-select{
 		padding: 41px 55px;
 	}
 	.top-headline{
-		margin: 0 0 25px 0;
-		color: #ffffff;
+		margin: 0 0 20px 0;
+		color: $text-light;
 		text-align: left;
-		@include phone {
-			font-size: 25px;
-			margin: 0 0 20px 0;
+		font-size: 25px;
+		@include tablet {
+			font-size: 30px;
+			margin: 0 0 25px 0;
 		}
 	}
 }
@@ -1411,13 +1491,13 @@ div.cs-select{
 		margin: 0;
 		padding: 0;
 		float: left;
-		@include phone {
-			width: 100%;
-			display: block;
-			margin-bottom: 15px;
-		}
+		width: 100%;
+		display: block;
+		margin-bottom: 15px;
 		@include tablet {
 			width: 220px;
+			margin-bottom: 0;
+			display: inline-block;
 		}
 		@include desktops {
 			width: 351px;
@@ -1426,35 +1506,32 @@ div.cs-select{
 			width: 479px;
 		}
 		.form-control{
-			height: 45px;
+			height: 37px;
 		    width: 100%;
 		    padding: 6px 12px;
-		    color: #ffffff;
+		    color: $text-light;
 		    background: transparent;
-		    border: 2px solid rgba(255, 255, 255, 0.50);
+		    border: 1px solid rgba(255, 255, 255, 0.50);
 		    border-radius: 4px;		    
 		    box-shadow: none;
-		    @include phone {
-				height: 37px;
+		    @include tablet {
+				height: 45px;
 			}
 			&:focus{
-				border: 2px solid $primary-color;
+				border: 1px solid $primary-color;
 			}
 		}
 	}
 	.btn{
-		display: table-cell;
-		padding: 13px 35px;
-		margin-left: 10px;
-		height: 45px;
-		@include phone {
-			display: block;
-			margin: 0;
-			height: 37px;
-			padding: 8px 30px;
-		}
+		display: block;
+		margin: 0;
+		height: 37px;
+		padding: 8px 30px;
 		@include tablet {
-			padding: 13px 32px;
+			display: table-cell;
+			padding: 13px 35px;
+			margin-left: 10px;
+			height: 45px;
 		}
 		@include desktops {
 			padding: 13px 35px;
@@ -1464,11 +1541,12 @@ div.cs-select{
 
 /*=== PRE FOOTER ===*/
 .pre-footer{
-	background-color: #272c32;
-	color: #ffffff;
+	background-color: $dark-bg;
+	color: $text-light;
 	p{
 		color: #d6d6d6;
 		margin-bottom: 0;
+		line-height: 25px;
 	}
 	.col-xs-12{
 		margin-bottom: 25px;
@@ -1480,11 +1558,9 @@ div.cs-select{
 		margin-bottom: 0;
 	}
 	.col-xs-12:nth-child(3){
-		@include phone {
-			margin-bottom: 25px !important;
-		}
+		margin-bottom: 25px !important;
 		@include tablet {
-			margin-bottom: 0;
+			margin-bottom: 0 !important;
 		}
 	}
 	.headline{
@@ -1521,7 +1597,7 @@ div.cs-select{
 		}
 		a{
 			font-weight: 300;
-			color: #ffffff;
+			color: $text-light;
 		}
 	}
 	a.footer-map{
@@ -1538,8 +1614,6 @@ div.cs-select{
 	.bx-wrapper{
 		margin: 0 auto;
 		.bx-viewport {
-		    -moz-box-shadow: none;
-		    -webkit-box-shadow: none;
 		    box-shadow:none;
 		    border: none;
 		    left: 0;
@@ -1558,6 +1632,7 @@ div.cs-select{
 		padding: 35px 20px 0 45px;
 		display: block;
 		z-index: 1;
+		background: rgba(0, 0, 0, 0.7);
 		@include tablet {
 			padding: 60px 45px 0 60px;
 		}
@@ -1565,11 +1640,12 @@ div.cs-select{
 			padding: 35px 20px 0 45px;
 		}
 		p{
-			@include only-mobile {
-		    	font-size: 12px;
+			font-size: 12px;
+			@include mobile {
+		    	font-size: 15px;
 			}
 			@include desktops {
-			font-size: 12px;
+				font-size: 12px;
 			}
 			@include large-desktops {
 				font-size: 15px;
@@ -1586,22 +1662,22 @@ div.cs-select{
 	}
 }
 .offers .room-price{
-	font-size: 30px;
-    @include only-mobile {
-    	font-size: 20px;
+	font-size: 20px;
+    @include mobile {
+    	font-size: 30px;
 	}
-    @include desktops {
+    @include tablet {
 		font-size: 20px;
 	}
 	@include large-desktops {
 		font-size: 30px;
 	}
     span{
-    	font-size: 15px;
-    	@include only-mobile {
-	    	font-size: 12px;
+    	font-size: 12px;
+    	@include mobile {
+	    	font-size: 15px;
 		}
-    	@include desktops {
+    	@include tablet {
 			font-size: 12px;
 		}
 		@include large-desktops {
@@ -1610,18 +1686,17 @@ div.cs-select{
     }
 }
 .offers .ed-room a.primary-btn{
-    font-size: 15px;
     font-weight: 500;
     border: none;
     position: absolute;
     right: 20px;
-    bottom: 20px;
-    padding: 13px 20px;
-    @include only-mobile {
-    	right: 20px;
-    	bottom: 15px;
-		padding: 8px 14px;
-		font-size: 12px;
+	bottom: 15px;
+	padding: 8px 14px;
+	font-size: 12px;
+    @include mobile {
+    	font-size: 15px;
+    	bottom: 20px;
+    	padding: 13px 20px;
 	}
     @include desktops {
     	right: 20px;
@@ -1634,7 +1709,7 @@ div.cs-select{
 		font-size: 15px;
 	}
     &:hover, &:focus{
-    	color: #ffffff;
+    	color: $text-light;
     }
 }
 .offers .ed-room-highlight{
@@ -1642,10 +1717,10 @@ div.cs-select{
 	margin-bottom: 0;
 }
 .offers .corner-ribbon{
-	width: 30%;
-	@include only-mobile {
-		height: 69%;
-		width:37%;
+	height: 69%;
+	width:37%;
+	@include mobile {
+		width: 30%;
 	}
 	@include tablet {
 		width: 57%;
@@ -1698,8 +1773,9 @@ footer{
 		a{
 			color: #8d9499;
 			text-decoration: none;
+			@include transition(.3s);
 			&:hover{
-				color:$primary-color;
+				color:$secondary-color;
 				text-decoration: none;
 			}
 		}
@@ -1722,10 +1798,10 @@ footer{
 		margin: 0;
 		li{
 			display: inline-block;
-			margin: 0 5px;
+			margin: 0 5px 7px 5px;
 			text-align: center;
-			@include phone {
-				margin-bottom: 7px;
+			@include tablet {
+				margin: 0 5px;
 			}
 			a{
 				width: 38px;
@@ -1780,5 +1856,1105 @@ footer{
 			}
 		}
 	}
+}
+
+/*================= ROOM GRID3 ==================*/
+
+/*=== PAGE BANNER ===*/
+.header + .page-banner{
+	padding-top: 134px;
+	@include tablet {
+		padding-top: 115px;
+	}
+}
+.page-banner{
+	font-weight: 300;
+	color: #ffffff;
+	position:relative;
+	img{
+		height: 189px;
+	}
+	.overlay{
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+	.banner-inner{
+		position: absolute;
+		bottom: 40px;
+		z-index: 9;
+		.top-headline{
+			text-align: left;
+			color: #ffffff;
+		}
+		p{
+			margin: 0;
+			font-size: 15px;
+			color: #ffffff;
+			@include tablet {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+/*=== MAIN CONTENT ===*/
+.grid-list{
+	display: none;
+	float: right;
+	@include tablet {
+		display: inline-block;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			display: inline-block;
+			margin-left:10px;
+			a{
+				text-decoration: none;
+				color: #d7d9da;
+				font-size: 20px;
+			} 
+		}
+	}
+}
+.filter-container .col-xs-12{
+	margin-bottom: 40px;
+	@include desktops {
+		margin-bottom: 60px;
+	}
+}
+.controls{
+	border-bottom: 2px solid #f0f0f0;
+	margin: 0 0 25px 45px;
+	display: inline-block;
+	position: relative;
+	@include tablet {
+		margin: 0 0 45px 45px;
+	}
+	span{
+		font-size: 27px;
+		position: absolute;
+		left: -45px;
+		top: 5px;
+		color: #d3d5d7;
+		@include tablet {
+			left: -45px;
+			bottom: 0;
+			top: auto;
+			font-size: 27px;
+		}
+	}
+	 ul{
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		margin-bottom: -2px;
+		li{
+			display: inline-block;
+			margin: 0;
+			cursor: pointer;
+			border-bottom: 2px solid transparent;
+			font-weight: 500;
+			padding: 0 5px 5px;
+			font-size: 12px;
+			@include tablet {
+				margin: 0 9px;
+				font-size: 15px;
+			}
+			@include desktops {
+				margin: 0 15px;
+			}
+		}
+		li.active{
+			border-bottom: 2px solid $primary-color;
+		}
+		li:first-child{
+			margin-left: 0;
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.mix{
+	display: none;
+}
+.feature-icon span{
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 5px;
+}
+.ed-room.featured-room .feature-icon{
+	margin-bottom: 20px;
+	@include tablet {
+		margin-top: 18px;
+		opacity: 0;
+		-webkit-transform: translate(0, 50px);
+	    -ms-transform: translate(0, 50px);
+	    transform: translate(0, 50px);
+	    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	    transition: opacity 0.3s, transform 0.3s;
+	    -webkit-transition-delay: 0.35s;
+	    transition-delay: 0.35s;
+	}
+	@include desktops {
+		margin-top: 30px;
+	}
+	span{
+		display: inline-block;
+		font-size: 20px;
+		margin: 0 5px;
+		@include tablet {
+			font-size: 15px;
+			margin: 0 4px;
+		}
+		@include desktops {
+			font-size: 20px;
+			margin: 0 5px;
+		}
+	}
+}
+@include tablet {
+	.ed-room.featured-room:hover .feature-icon{
+		opacity: 1;
+		-webkit-transition-delay: 0.1s;
+	    transition-delay: 0.1s;
+	    -webkit-transform: translate(0, 0);
+	    -ms-transform: translate(0, 0);
+	    transform: translate(0, 0);	
+	}
+}
+
+/*=== PAGINATION ===*/
+.pagination-nav{
+	text-align: center;
+}
+.content-inner .pagination-nav{
+	text-align: right;
+}
+.pagination{
+	margin: 0 auto;
+	font-weight: 500;
+}
+.pagination>li>a, 
+.pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 12px 20px;
+    line-height: 1.42857143;
+    color: $text-color;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    margin: 0 3px 10px;
+    @include tablet {
+		margin: 0 3px;
+	}
+}
+.pagination>li>a{
+	display: inline-block;
+	@include border-radius;
+} 
+.pagination>li>a:focus, 
+.pagination>li>a:hover, 
+.pagination>li>span:focus, 
+.pagination>li>span:hover {
+    z-index: 2;
+    color: $primary-color;
+    background-color: transparent;
+    border-color: $primary-color;
+    @include transition(all 0.3s);
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: $text-light;
+    cursor: default;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    @include transition(all 0.3s);
+}
+
+/*================= ROOM GRID4 ==================*/
+.grid-four{
+	.ed-room.featured-room figcaption {
+		@include large-desktops {
+		    padding: 15px;
+		}
+	}
+	@include tablet {
+		.left-btn{
+			padding-right: 8px;
+		}
+		.right-btn{
+			padding-left: 8px;
+		}
+	}
+	.ed-room.featured-room .corner-ribbon {
+		@include desktops {
+		    width: 59%;
+		    height: 62%;
+		}
+		@include large-desktops {
+		    width: 48%;
+    		height: 52%;
+		}
+	}
+}
+
+/*================= ROOM LIST SIDEBAR ==================*/
+.content-inner{
+	.room-fullwidth .room-text-inner{
+		@include tablet {
+		    padding: 5px 0 ;
+		}
+		@include desktops {
+		    padding: 15px 15px 11px 0;
+		}
+		@include large-desktops {
+		    padding: 18px 15px 15px 0;
+		}
+
+	}
+	.room-fullwidth .btn{
+		@include desktops {
+		    width: 110px;
+		}
+		@include large-desktops {
+		    width: 150px;
+		}
+	}
+	.room-fullwidth .room-img{
+		@include desktops {
+		    padding-left: 30px;
+		}
+	}
+	.room-fullwidth .room-text{
+		@include desktops {
+		    padding-left: 30px;
+		}
+	}
+	.room-fullwidth .feature-icon span {
+		@include tablet {
+		    font-size: 15px;
+	    	margin: 0 3px;
+		}
+	    @include desktops {
+		    font-size: 20px;
+	    	margin: 0 5px;
+		}
+	}
+	.room-fullwidth .btn{
+		@include tablet {
+		    width: 90px;
+			margin-right: 10px;
+		}
+		@include desktops {
+		    width: 150px;
+			margin-right: 20px;
+		}
+	}
+	.room-fullwidth p {
+		@include tablet {
+		    font-size: 12px;
+		    line-height: 16px;
+		}
+		@include desktops {
+		    font-size: 14px;
+		    line-height: 20px;
+		}
+	}
+}
+
+/*================= ROOM LIST FULLWIDTH ==================*/
+.room-fullwidth{
+	.col-xs-12 {
+	    margin-bottom: 0;
+	}
+	.room-img{
+		margin-bottom: 25px;
+		@include border-radius;
+		@include tablet {
+		    padding-right: 0;
+		    margin-bottom: 0;
+		    border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.room-text{
+		@include tablet {
+			border-top: 1px solid $border-color;
+			border-bottom: 1px solid $border-color;
+			border-right: 1px solid $border-color;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		    padding-left: 30px;
+		}
+		@include large-desktops {
+		    padding-left: 50px;
+		}
+	}
+	.room-text-inner{
+		@include tablet {
+		    padding: 5px 15px 5px 0;
+		}
+		@include desktops {
+		    padding: 10px 25px 10px 0;
+		}
+		@include large-desktops {
+		    padding: 20px 35px 15px 0;
+		}
+
+	}
+}
+.room-fullwidth-inner{
+	margin-bottom: 40px;
+	@include large-desktops {
+	    margin-bottom: 60px;
+	}
+}
+.room-fullwidth{
+	width: 100%;
+	img{
+		max-width: 100%;
+		display: block;
+	}
+	.headline{
+		font-size: 26px;
+		margin-bottom: 25px;
+		@include tablet {
+			font-size: 20px;
+		    margin-bottom: 5px;
+		}
+		@include desktops {
+		    margin-bottom: 15px;
+		}
+		@include large-desktops {
+			font-size: 26px;
+		    margin-bottom: 25px;
+		}
+		a{
+			color: $secondary-color;
+			text-decoration: none;
+		}
+	}
+	p{
+		font-size: 14px;
+	}
+	.feature-icon{
+		margin: 22px 0 21px;
+		@include tablet {
+		    margin: 0 0 5px;
+		}
+		@include desktops {
+		    margin: 10px 0 7px;
+		}
+		@include large-desktops {
+		    margin: 22px 0 21px;
+		}
+	}
+	.room-price{
+		position: relative;
+		bottom: auto;
+	}
+	.ed-member{
+		position: relative;
+		right: auto;
+		bottom: auto;
+		float: right;
+	}
+	.room-btn{
+		margin-top: 20px;
+		@include tablet {
+			margin-top: 4px;
+		}
+		@include desktops {
+			margin-top: 10px;
+		}
+		@include large-desktops {
+			margin-top: 20px;
+		}
+	}
+	.btn{
+		width: 120px;
+		margin-right: 10px;
+		@include mobile {
+		    width: 150px;
+			margin-right: 20px;
+		}
+		@include tablet {
+		    width: 120px;
+			margin-right: 15px;
+		}
+		@include desktops {
+		    width: 150px;
+			margin-right: 20px;
+		}
+	}
+	.btn:last-child{
+		margin-right: 0;
+	}
+}
+
+/*================= SINGLE ROOM ==================*/
+.single-page .main-content{
+	padding-top: 134px;
+	@include tablet {
+	    padding-top: 115px;
+	}
+}
+.single-page .single-content{
+	border-top: 6px solid #f2f2f2;
+	padding: 45px 0;
+	@include large-desktops {
+	    padding: 70px 0;
+	}
+}
+
+/*=== SINGLE SLIDER ===*/
+.flexslider {
+    margin: 0 0 40px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    img{
+    	@include border-radius;
+    }
+}
+.flex-direction-nav a {
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+.flex-direction-nav a:before {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 30px;
+    display: inline-block;
+    content: "\eac4";
+    color: #ffffff;
+    text-shadow: none;
+}
+.flex-direction-nav .flex-prev {
+  left: 0;
+}
+.flex-direction-nav .flex-next {
+  right: 0;
+}
+.flex-direction-nav a.flex-next:before {
+    content: "\eac3";
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 1;
+}
+
+/*=== ROOM DETAILS ===*/
+.single-content .room-headline.headline{
+	color: $secondary-color;
+	margin-bottom: 20px;
+	margin-top: 0;
+	border: none;
+	display: block;
+	@include tablet {
+	    display: inline-block;
+	    margin-bottom: 30px;
+	    margin-top: 15px;
+	}
+}
+.single-book{
+	margin-bottom: 40px;
+	@include tablet {
+	    float: right;
+	    margin-bottom: 0;
+	}
+	.btn{
+		float: right;
+		@include tablet {
+		    float: none;
+		}
+	}
+}
+.single-description ul{
+	@include tablet {
+		margin: 0 -10px;
+	}
+	li{
+		margin: 20px 0 0;
+		p.single-icon{
+			width:100%;
+			padding: 10px 0;
+			display: inline-block;
+			border: 1px solid $border-color;
+			@include border-radius;
+			font-size: 14px;
+			font-weight: 400;
+			margin: 0;
+			span{
+				font-size: 18px;
+				padding: 0 15px;
+				color: $primary-color;
+				vertical-align: middle;
+				@include mobile {
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}
+.single-content .headline{
+	color: $text-color;
+	display: block;
+	margin: 60px 0 5px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $border-color;
+}
+.single-description p{
+	margin-bottom: 0;
+	margin-top: 30px;
+	font-size: 15px;
+	line-height: 24px;
+} 
+.ed-photo{
+	img{
+		display: block;
+		margin-top: 30px;
+		@include border-radius;
+		width: 100%;
+	}
+}
+.single-content .check-area{
+	margin: 60px 0;
+	padding: 25px 30px 10px;
+	background: $dark-bg;
+	@include border-radius;
+	@include desktops {
+		padding: 25px 30px;
+	}
+}
+
+/*=== COMMENT AREA ===*/
+.comments{
+	color: $text-color;
+	margin-top: 30px;
+	img{
+		@include border-radius;
+	}
+	h4{
+		font-size: 16px;
+		font-weight: 700;
+		color: $text-color;
+		margin-bottom: 10px;
+	}
+	.comment-date{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	p{
+		margin: 10px 0 0;
+		font-size: 15px;
+		line-height: 24px;
+	}
+}
+.media{
+	margin-bottom: 40px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.media-left, .media>.pull-left {
+    padding-right: 15px;
+}
+.ed-rating{
+	color: $secondary-color;
+}
+.comment-form{
+	margin-top: 30px;
+	.form-control{
+		padding: 15px;
+		height: 50px;
+		border: 1px solid $border-color;
+		width: 100%;
+		margin-bottom: 20px;
+		color: $text-color;
+		font-size: 15px;
+		font-weight: 400;
+		box-shadow: none;
+		&:focus{
+			border: 1px solid $secondary-color;
+		}
+	}
+	textarea.form-control{
+		height: auto;
+	}
+	.ed-rating{
+		font-size: 16px;
+		font-weight: 700;
+		margin: 10px 0 30px;
+		color: $text-color;
+		i{
+			color: #e6eaf0;
+		}
+	}
+	.primary-btn{
+		padding-right: 25px;
+		padding-left: 25px;
+		float: right;
+	}
+}
+.comment-form .form-control::-webkit-input-placeholder{ 
+	color: #c3c3c3;
+	font-size: 15px;
+	font-weight: 400;
+}
+.comment-form .form-control::-moz-placeholder{ 
+	color: #c3c3c3;
+	font-size: 15px;
+	font-weight: 400;
+}
+.comment-form .form-control:-ms-input-placeholder{ 
+	color: #c3c3c3;
+	font-size: 15px;
+	font-weight: 400;
+}
+.comment-form .form-control:-moz-placeholder { 
+	color: #c3c3c3;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/*================= POPUP ==================*/
+.white-popup-block {
+    background: #f4f6f9;
+    padding: 0;
+    text-align: left;
+    max-width: 770px;
+    margin: 40px auto;
+    position: relative;
+    @include border-radius;
+}
+.popup-modal-dismiss{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 35px;
+	height: 35px;
+	color: #ffffff;
+	background:rgba(0, 0, 0, 0.75); 
+	text-align: center;
+	text-decoration: none;
+	@include border-radius(50%);
+	&:hover{
+		color: #ffffff;
+		text-decoration: none;
+	}
+	span{
+		font-size: 20px;
+		line-height: 35px;
+	}
+}
+.mfp-bg {
+    background: rgba(0, 0, 0, 0.85);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#popup img{
+	display: block;
+}
+.popup-inner{
+	position: relative;
+	padding: 30px 15px 15px 25px;
+	@include mobile {
+		padding: 40px 25px 25px 35px;
+	}
+	.headline{
+		color: $secondary-color;
+	}
+	.primary-btn{
+		margin-top: 15px;
+		@include tablet {
+			position: absolute;
+			top: 40px;
+			right: 25px;
+			margin-top: 0;
+		}
+	}
+}
+.ed-tab{
+	margin-top: 45px;
+	margin-right: 0;
+	@include tablet {
+		margin-top: 65px;
+		margin-right: 105px;
+	}
+	.nav-tabs{
+		border: none;
+		li a{
+			font-weight: 500;
+			font-size: 13px;
+			color: $text-color;
+			border:none;
+			padding: 5px 5px;
+			margin-right: 5px;
+			@include mobile {
+				font-size: 15px;
+			}
+			@include tablet {
+				padding: 8px 15px;
+				margin-right: 10px;
+			}
+			&:hover{
+				background-color: transparent;
+			}
+		}
+	}
+	.tab-control{
+		border-bottom: 2px solid #ffffff;
+		margin-top: -2px;
+	}
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+    color: $text-color;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $primary-color;
+}
+.ed-tab{
+	.tab-content{
+		font-weight: 400;
+		font-size: 13px;
+		color: $text-color;
+		@include mobile {
+			font-size: 15px;
+		}
+		.tab-pane{
+			margin-top: 30px;
+		}
+		ul li{
+			display: inline-block;
+			width: 49%;
+			margin-bottom: 25px;
+			@include tablet {
+				width: 32%;
+			}
+			span{
+				font-size: 18px;
+				margin-right: 10px;
+				color: $primary-color;
+				@include mobile {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+
+/*================= SIDEBAR ==================*/
+.sidebar{
+	margin-top: 45px;
+	@include tablet {
+		margin: 0;
+	}
+}
+.block{
+	border:1px solid $border-color;
+	color: $text-color;
+	.headline{
+		color: #979797;
+		margin: 20px 0  0;
+		padding: 0 0 15px 15px;
+		border-bottom:1px solid $border-color;
+		@include border-radius;
+	}
+	.block-inner{
+		padding: 15px;
+	}
+}
+.block:nth-child(n+2){
+	margin-top: 30px;
+}
+
+/*=== CHECK IN ===*/
+.check-in .ed-datepicker {
+    height: 48px;
+    border: 1px solid $border-color;
+    margin-bottom: 5px;
+    .form-control {
+	    height: 46px;
+	    color:$text-color;
+	}
+	.input-group-addon .icomoon-calendar {
+	    color: #b8bebf;
+	}
+	.form-control::-webkit-input-placeholder{ 
+		color:$text-color;
+	}
+	.form-control::-moz-placeholder{ 
+		color:$text-color;
+	}
+	.form-control:-ms-input-placeholder{ 
+		color:$text-color;
+	}
+	.form-control:-moz-placeholder { 
+		color:$text-color;
+	}
+}
+.room-page .datepicker .datepicker-switch:hover, 
+.room-page .datepicker .next:hover, 
+.room-page .datepicker .prev:hover, 
+.room-page .datepicker tfoot tr th:hover {
+    color: $primary-color;
+}
+.room-page .datepicker table tr td.active.active.focus,
+.room-page .datepicker table tr td.active.active:focus, 
+.room-page .datepicker table tr td.active.active:hover, 
+.room-page .datepicker table tr td.active.highlighted.active.focus, 
+.room-page .datepicker table tr td.active.highlighted.active:focus, 
+.room-page .datepicker table tr td.active.highlighted.active:hover, 
+.room-page .datepicker table tr td.active.highlighted:active.focus, 
+.room-page .datepicker table tr td.active.highlighted:active:focus, 
+.room-page .datepicker table tr td.active.highlighted:active:hover, 
+.room-page .datepicker table tr td.active:active.focus, 
+.room-page .datepicker table tr td.active:active:focus, 
+.room-page .datepicker table tr td.active:active:hover {
+    border-color: $primary-color;
+    background:$primary-color;
+}
+.room-page .datepicker table tr td.active.active, 
+.room-page .datepicker table tr td.active.highlighted.active, 
+.room-page .datepicker table tr td.active.highlighted:active, 
+.room-page .datepicker table tr td.active:active {
+    border-color: $primary-color;
+    background: $primary-color;
+}
+.room-page .datepicker table tr td.day:hover, 
+.room-page .datepicker table tr td.focused {
+    background: $primary-color;
+}
+.check-in{
+	.cs-select.ed-select {
+	    border: 1px solid $border-color;
+	    margin: 5px 0;
+	}
+	div.cs-select {
+	    height: 48px;
+	    color:$text-color;
+	}
+	.cs-select > span::after {
+		color: rgba(0, 0, 0, 0.3);
+	}
+	.cs-select .cs-selected > span::after {
+	    color: $primary-color;
+	}
+	.cs-select ul li:hover, .cs-select li.cs-selected{
+		background-color: rgba(0, 0, 0, 0.07);
+		color: $primary-color;
+	}
+	.ckech-btn{
+		height: 48px;
+		margin-top: 5px;
+	}
+	.col-xs-6:nth-child(2n-1){
+		padding-left:5px; 
+	}
+	.col-xs-6:nth-child(2n){
+		padding-right:5px; 
+	}
+}
+
+/*=== RECENT POST ===*/
+
+.Post-left{
+	width: 75px;
+	height: 75px;
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	font-weight: 500;
+	text-align: center;
+	clear: left;
+	.overlay{
+		padding: 10px 5px 0;
+		color: $text-light;
+		border-radius: 0;
+		.event-date{
+			font-size: 41px;
+			line-height: 37px;
+		}
+		.event-month{
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+}
+.Post-right{
+	h4 {
+		a{
+			color: $text-color;
+			font-weight: 700;
+			text-decoration: none;
+			&:hover{
+				color: $primary-color;
+				@include transition(color 0.3s)
+			}
+		}
+	}
+	p{
+		margin: 0;
+		font-size: 12px;
+		@include mobile {
+			font-size: 15px;
+		}
+		@include tablet {
+			font-size: 12px;
+		}
+		@include desktops {
+			font-size: 15px;
+		}
+	}
+	p.event-time{
+		font-weight: 500;
+		margin-bottom: 5px;
+		@include tablet {
+			margin-bottom: 0;
+		}
+		@include desktops {
+			margin-bottom: 5px;
+		}
+	}
+}
+.ed-Post {
+	li{
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom:1px solid $border-color;
+	}
+	li:last-child{
+		border-bottom:none;
+		margin: 0;
+		padding: 0;
+	}
+	li:nth-child(2n-1) .overlay{
+		background-color: rgba($primary-color, 0.85);
+	}
+	li:nth-child(2n) .overlay{
+		background-color: rgba($secondary-color, 0.85);
+	}
+}
+
+/*================= ABOUT PAGE ==================*/
+.about-page img{
+	@include border-radius;
+}
+.about-page .white-section img{
+	margin-bottom: 30px;
+	@include tablet {
+		margin-bottom: 0;
+	}
+}
+.about-page .light-section img{
+	margin-top: 30px;
+	@include tablet {
+		margin-top: 0;
+	}
+}
+.about-page .top-headline{
+	margin-bottom: 20px;
+	text-align: left;
+	@include desktops {
+		margin-bottom: 30px;
+		margin-top: 5px;
+	}
+}
+.about-page p{
+	line-height: 24px;
+}
+.video-section{
+	text-align: center;
+	@include tablet {
+		padding: 0 70px;
+	}
+	@include desktops {
+		padding: 0 100px;
+	}
+	.top-headline{
+		text-align: center;
+	}
+}
+.video-wrapper{
+	position: relative;
+	padding-bottom: 47.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	width: 94%;
+	margin: 40px auto 0;
+	@include tablet {
+		padding-bottom: 41.25%;
+		width: 81%;
+	}
+	@include desktops {
+		margin: 60px auto 0;
+		width: 78%;
+	}
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.testimonial .top-headline{
+	text-align: center;
+}
+.testimonial .col-xs-12{
+	margin-bottom: 30px;
+	@include tablet {
+		margin-bottom: 0;
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+	img{
+		margin-top: 0;
+	}
+}
+.about-text p{
+	margin: 0;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #525252;
+	@include tablet {
+		padding: 0 70px;
+	}
+	@include desktops {
+		padding: 0 100px;
+		font-size: 25px;
+		line-height: 35px;
+	} 
 }
 

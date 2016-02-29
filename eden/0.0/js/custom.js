@@ -14,23 +14,30 @@ jQuery(document).ready(function(){
   	  autoControls: true,
 	});
 
-	
-
 	//============================== Date-picker =========================
 	$('.datepicker').datepicker({
 	    startDate: "dateToday"
 	});
 
+	//============================== Filter =========================
+	$('.filter-container').mixItUp();
+
+	//============================== Flexslider =========================
+	$('.flexslider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    prevText: "",           
+    	nextText: ""
+	  });
 
 });
 
 //============================== Rs-Slider =========================
 jQuery(document).ready(function() {
       jQuery('.fullscreenbanner').revolution({
-	    delay: 15000,
+	    delay: 5000,
 	    startwidth: 1170,
 	    startheight: 500,
-	    hideThumbs: 1,
 	    fullWidth: "on",
 	    fullScreen: "on",
 	    hideCaptionAtLimit: "",
@@ -39,6 +46,20 @@ jQuery(document).ready(function() {
 	    fullScreenOffsetContainer: "",
 	    hideTimerBar:"on"
 	});
+});
+
+//============================== Magnific popup =========================
+jQuery(document).ready(function() {
+  $('.popup-modal').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#username',
+    modal: true
+  });
+  $(document).on('click', '.popup-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
 });
 
 
