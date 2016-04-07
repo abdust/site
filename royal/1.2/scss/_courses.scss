@@ -286,6 +286,28 @@
     	color: rgba(0, 0, 0, 1);
     }
 }
+.course-grid.course-3col .aboutImage .overlay{
+	@include tablet-up {
+		padding: 20px;
+	}
+	@include desktops {
+		padding:30px 20px;
+	}
+	p{
+		@include tablet-up {
+			font-size: 12px
+		}
+		@include desktops {
+			font-size: 14px;
+		}
+	}
+}
+.course-grid .col-xs-6{
+	margin-bottom: 40px;
+}
+.pagination{
+	margin: 0;
+}
 
 /*==================================== 6. single_course ==============================*/
 .item_inner.slider{

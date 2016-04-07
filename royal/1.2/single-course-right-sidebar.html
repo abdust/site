@@ -10,6 +10,7 @@
   <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/plugins/select_option1.css">
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/plugins/flexslider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/plugins/fullcalendar.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
@@ -136,8 +137,8 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses Grid View</a>
                         <ul class="dropdown-menu">
-                          <li><a href="course-grid-4col.html">4 Columns</a></li>
                           <li><a href="course-grid-3col.html">3 Columns</a></li>
+                          <li><a href="course-grid-4col.html">4 Columns</a></li>
                           <li><a href="course-grid-sidebar-right.html">Sidebar Right</a></li>
                           <li><a href="course-grid-sidebar-left.html">Sidebar Left</a></li>
                         </ul>
@@ -145,23 +146,23 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses List View</a>
                         <ul  class="dropdown-menu">
-                          <li><a href="course-fullwidth.html">Fullwidth</a></li>
                           <li><a href="course-right-sidebar.html">Sidebar Right</a></li>
                           <li><a href="course-left-sidebar.html">Sidebar Left</a></li>
+                          <li><a href="course-fullwidth.html">Fullwidth</a></li>
                         </ul>
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Course</a>
                         <ul class="dropdown-menu">
-                          <li><a href="single-course-fullwidth.html">Fullwidth</a></li>
                           <li class="active"><a href="single-course-right-sidebar.html">Sidebar Right</a></li>
                           <li><a href="single-course-left-sidebar.html">Sidebar Left</a></li>
+                          <li><a href="single-course-fullwidth.html">Fullwidth</a></li>
                         </ul>
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy Course</a>
                         <ul class="dropdown-menu">
-                          <li><a href="buying-steps.html">Steps</a></li>
+                          <li><a href="buying-steps.html">Client Details</a></li>
                           <li><a href="buying-confirmation.html">Confirmation </a></li>
                         </ul>
                       </li>
@@ -181,7 +182,7 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apply Now</a>
                         <ul class="dropdown-menu">
-                          <li><a href="buying-steps.html">Steps</a></li>
+                          <li><a href="buying-steps.html">Apply For Addmission</a></li>
                           <li><a href="buying-confirmation.html">Confirmation</a></li>
                         </ul>
                       </li>
@@ -194,10 +195,10 @@
                       </li>
                       <li><a href="campus.html">Our Campus</a></li>
                       <li><a href="stuff.html">Stuff</a></li>
-                      <li><a href="privacy-policy.html">Privacy Policy</a></li>
                       <li><a href="international_students.html">International Students</a></li>
-                      <li><a href="404-error.html">404 Not Found</a></li>
                       <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                      <li><a href="404-error.html">404 Not Found</a></li>
                       <li><a href="coming-soon-dark.html">Coming Soon</a></li>
                     </ul>
                   </li>
@@ -213,11 +214,11 @@
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
                     <ul class="dropdown-menu">
-                      <li><a href="events-calendar.html">Events Callender</a></li>
                       <li><a href="events-3col.html">Events 3 Columns</a></li>
                       <li><a href="events-right-sidebar.html">Events Sidebar Right</a></li>
                       <li><a href="events-left-sidebar.html">Events Sidebar Left</a></li>
-                      <li><a href="single-events.html">Events Fullwidth</a></li>
+                      <li><a href="single-events.html">Single Events</a></li>
+                      <li><a href="events-calendar.html">Events Callender</a></li>
                     </ul>
                   </li>
                   <li class="apply_now"><a href="buying-steps.html">Apply Now</a></li>
@@ -230,205 +231,214 @@
       </nav><!-- navbar -->
     </div>
 		
-			<div class="single_banner">
-				<div class="container">
-					<div class="single_banner_inner">
-						<img src="img/courses/banner_01.jpg" alt="" />
-						<div class="single_caption">
-							<h1>Applied Chemistry and Biotechnology</h1>
-							<h2>Diploma in Applied Chemistry and Biotechnology</h2>
-						</div><!--end single caption-->
-					</div><!--end single_banner_inner-->
-				</div><!--end container-->
-			</div><!--end single banner-->
-		
-			<div class="single_content">
-				<div class="container">
-					<div class="row">
+		<div class="single_banner">
+			<div class="container">
+				<div class="single_banner_inner">
+					<img src="img/courses/banner_01.jpg" alt="" />
+					<div class="single_caption">
+						<h1>Applied Chemistry and Biotechnology</h1>
+						<h2>Diploma in Applied Chemistry and Biotechnology</h2>
+					</div><!--end single caption-->
+				</div><!--end single_banner_inner-->
+			</div><!--end container-->
+		</div><!--end single banner-->
+	
+		<div class="single_content">
+			<div class="container">
+				<div class="row">
 
-						<div class="col-xs-12 col-sm-8 col-md-8 custom_right">
-							<div class="single_content_left padding-border-right-twenty">
-								<div class="tab_menu">
-									<ul>
-										<li class="active"><a href="#explore_program" data-toggle="tab">Explore This Program</a></li>
-										<li><a href="#what_learn" data-toggle="tab">What you’llearn</a></li>
-										<li><a href="#cost" data-toggle="tab">What it costs</a></li>
-										<li><a href="#admission_requirements" data-toggle="tab">Admission Requirements</a></li>
-									</ul>
-								</div><!--end tab_menu-->
-								<div class="tab-content single_tab_content">
-									<div role="tabpanel" class="tab-pane active" id="explore_program">
-										<h1>Welcome To Royal College</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-										<div class="admission_video">
-											<img src="img/courses/video.jpg" data-video="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
+					<div class="col-xs-12 col-sm-8 col-md-8 custom_right">
+						<div class="single_content_left padding-border-right-twenty">
+							<div class="tab_menu">
+								<ul>
+									<li class="active"><a href="#explore_program" data-toggle="tab">Explore This Program</a></li>
+									<li><a href="#what_learn" data-toggle="tab">What you’llearn</a></li>
+									<li><a href="#cost" data-toggle="tab">What it costs</a></li>
+									<li><a href="#admission_requirements" data-toggle="tab">Admission Requirements</a></li>
+								</ul>
+							</div><!--end tab_menu-->
+							<div class="tab-content single_tab_content">
+								<div role="tabpanel" class="tab-pane active" id="explore_program">
+									<h1>Welcome To Royal College</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
+									<div class="admission_video">
+										<img src="img/courses/video.jpg" data-video="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
+									</div>
+									<h1>Welcome To COLÉGIO PRELÚDIO</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
+									<h1>Welcome To COLÉGIO PRELÚDIO</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+									<div class="row">
+										<div class="col-xs-12 col-sm-6">
+											<div class="left_half">
+												<h1>Welcome To COLÉGIO RELÚDIO</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
+											</div>
 										</div>
-										<h1>Welcome To COLÉGIO PRELÚDIO</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-										<h1>Welcome To COLÉGIO PRELÚDIO</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
-										<div class="row">
-											<div class="col-xs-12 col-sm-6">
-												<div class="left_half">
-													<h1>Welcome To COLÉGIO RELÚDIO</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
-												</div>
+										<div class="col-xs-12 col-sm-6 pull-right">
+											<div class="right_half">
+												<h1>Welcome To COLÉGIO RELÚDIO</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
 											</div>
-											<div class="col-xs-12 col-sm-6 pull-right">
-												<div class="right_half">
-													<h1>Welcome To COLÉGIO RELÚDIO</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </p>
+										</div>
+									</div><!--end row-->
+									<h1>Welcome To COLÉGIO PRELÚDIO</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+								</div><!--end tab-pane-->
+								<div role="tabpanel" class="tab-pane" id="what_learn">
+									<h1>Title goes here</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
+								</div><!--end tab-pane-->
+								<div role="tabpanel" class="tab-pane" id="cost">
+									<h1>Title goes here</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
+								</div><!--end tab-pane-->
+								<div role="tabpanel" class="tab-pane" id="admission_requirements">
+									<h1>Title goes here</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div><!--end tab-pane-->
+							</div><!--end tab-content-->
+						</div><!--end single content left-->
+					</div><!--end custom_right-->
+					
+					<div class="col-xs-12 col-sm-4 col-md-4 custom_left">
+						<div class="sidebar">
+							<div class="sidebar_item">
+								<div class="item_inner program">
+									<h4>Program At a Glance</h4>
+									<ul>
+										<li><span>Program Code:</span>010117</li>
+										<li><span>Accerediation:</span>Ontario College Of Diploma</li>
+										<li><span>Length of Study:</span>2 Years</li>
+										<li><span>Study Options:</span>Full Time</li>
+										<li><span>Campus Location:</span>College Drive</li>
+									</ul>
+								</div>
+							</div><!--end sidebar item-->
+							<div class="sidebar_item">
+								<div class="item_inner">
+									<h4>Tution Fees</h4>
+									<a href="#" class="fees">View 2015-2016 Tution Fees</a>
+								</div>
+							</div><!--end sidebar item-->
+							<div class="sidebar_item">
+								<div class="item_inner slider">
+									<h4>What Students Say</h4>
+									<div id="single_banner">
+										<ul class="slides">
+											<li>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p> 
+												<div class="carousal_bottom">
+													<div class="thumb">
+														<img src="img/courses/testi_thumb.png" draggable="false" alt="" />
+													</div>
+													<div class="thumb_title">
+														<span class="author_name">Jeremy Asigner</span>
+														<span class="author_designation">Web Developer<a href="#"> Here</a></span>
+													</div>
 												</div>
-											</div>
-										</div><!--end row-->
-										<h1>Welcome To COLÉGIO PRELÚDIO</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
-									</div><!--end tab-pane-->
-									<div role="tabpanel" class="tab-pane" id="what_learn">
-										<h1>Title goes here</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-									</div><!--end tab-pane-->
-									<div role="tabpanel" class="tab-pane" id="cost">
-										<h1>Title goes here</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-									</div><!--end tab-pane-->
-									<div role="tabpanel" class="tab-pane" id="admission_requirements">
-										<h1>Title goes here</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									</div><!--end tab-pane-->
-								</div><!--end tab-content-->
-							</div><!--end single content left-->
-						</div><!--end custom_right-->
-						
-						<div class="col-xs-12 col-sm-4 col-md-4 custom_left">
-							<div class="sidebar">
-								<div class="sidebar_item">
-									<div class="item_inner program">
-										<h4>Program At a Glance</h4>
-										<ul>
-											<li><span>Program Code:</span>010117</li>
-											<li><span>Accerediation:</span>Ontario College Of Diploma</li>
-											<li><span>Length of Study:</span>2 Years</li>
-											<li><span>Study Options:</span>Full Time</li>
-											<li><span>Campus Location:</span>College Drive</li>
+											</li>
+											<li style="display:none;">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p> 
+												<div class="carousal_bottom">
+													<div class="thumb">
+														<img src="img/courses/testi_thumb.png" draggable="false" alt="" />
+													</div>
+													<div class="thumb_title">
+														<span class="author_name">Jeremy Asigner</span>
+														<span class="author_designation">Web Developer<a href="#">Here</a></span>
+													</div>
+												</div>
+											</li>
+											<li style="display:none;">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p> 
+												<div class="carousal_bottom">
+													<div class="thumb">
+														<img src="img/courses/testi_thumb.png" draggable="false" alt="" />
+													</div>
+													<div class="thumb_title">
+														<span class="author_name">Jeremy Asigner</span>
+														<span class="author_designation">Web Developer<a href="#">Here</a></span>
+													</div>
+												</div>
+											</li>
 										</ul>
-									</div>
-								</div><!--end sidebar item-->
-								<div class="sidebar_item">
-									<div class="item_inner">
-										<h4>Tution Fees</h4>
-										<a href="#" class="fees">View 2015-2016 Tution Fees</a>
-									</div>
-								</div><!--end sidebar item-->
-								<div class="sidebar_item">
-									<div class="item_inner slider">
-										<h4>What Students Say</h4>
-										<div id="single_banner">
-											<ul class="slides">
-												<li>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p> 
-													<div class="carousal_bottom">
-														<div class="thumb">
-															<img src="img/courses/testi_thumb.png" draggable="false" alt="" />
-														</div>
-														<div class="thumb_title">
-															<span class="author_name">Jeremy Asigner</span>
-															<span class="author_designation">Web Developer<a href="#"> Here</a></span>
-														</div>
-													</div>
-												</li>
-												<li style="display:none;">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p> 
-													<div class="carousal_bottom">
-														<div class="thumb">
-															<img src="img/courses/testi_thumb.png" draggable="false" alt="" />
-														</div>
-														<div class="thumb_title">
-															<span class="author_name">Jeremy Asigner</span>
-															<span class="author_designation">Web Developer<a href="#">Here</a></span>
-														</div>
-													</div>
-												</li>
-												<li style="display:none;">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p> 
-													<div class="carousal_bottom">
-														<div class="thumb">
-															<img src="img/courses/testi_thumb.png" draggable="false" alt="" />
-														</div>
-														<div class="thumb_title">
-															<span class="author_name">Jeremy Asigner</span>
-															<span class="author_designation">Web Developer<a href="#">Here</a></span>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div><!--end banner-->
-									</div><!--slider-->
-								</div><!--end sidebar item-->
-								
-								<div class="sidebar_item">
-									<div class="item_inner question">
-										<h4>Got Questions?</h4>
-										<h5>For Further Information Contact:</h5>
-										<h6>Jennifer Rouse</h6>
-										<p>Professor<br/>705.454.236.554 ext 55<br/><a href="mailto:jenifer@example.com">jenifer@example.com</a></p>
-									</div>
-								</div><!--end sidebar item-->
-								
-								
-							</div><!--end sidebar-->
-						</div>
-						
-					</div><!--end row-->
-				</div><!--end container-->
-			</div><!--end single content-->
+									</div><!--end banner-->
+								</div><!--slider-->
+							</div><!--end sidebar item-->
+							
+							<div class="sidebar_item">
+								<div class="item_inner question">
+									<h4>Got Questions?</h4>
+									<h5>For Further Information Contact:</h5>
+									<h6>Jennifer Rouse</h6>
+									<p>Professor<br/>705.454.236.554 ext 55<br/><a href="mailto:jenifer@example.com">jenifer@example.com</a></p>
+								</div>
+							</div><!--end sidebar item-->
+							
+							
+						</div><!--end sidebar-->
+					</div>
+					
+				</div><!--end row-->
+			</div><!--end container-->
+		</div><!--end single content-->
 		
-		  <div class="menuFooter clearfix">
+		<div class="menuFooter clearfix">
       <div class="container">
         <div class="row clearfix">
+
           <div class="col-sm-3 col-xs-6">
-          <ul class="menuLink clearfix">
-            <li><a href="about.html">About Royal College</a></li>
-            <li><a href="campus.html">About Campus</a></li>
-            <li><a href="stuff.html">Staff Members</a></li>
-            <li><a href="contact-us.html">Accommodation</a></li>
-            <li><a href="about.html">Why Choose Us?</a></li>
-          </ul>
-          </div><!-- col-sm-3 col-xs-6 -->
-          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
-          <ul class="menuLink clearfix">
-            <li><a href="course-fullwidth.html">All Courses</a></li>
-            <li><a href="buying-steps.html">Admission</a></li>
-            <li><a href="photo-gallery3col.html">Photo Gallery</a></li>
-            <li><a href="international_students.html">International Students</a></li>
-          </ul>
-          </div><!-- col-sm-3 col-xs-6 -->
-          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
-          <ul class="menuLink clearfix">
-            <li><a href="blog-right-sidebar.html">Latest News</a></li>
-            <li><a href="events_calendar.html">Upcoming Events</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
-          </div><!-- col-sm-3 col-xs-6 -->
-          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
-          <div class="socialArea clearfix">
-            <h5>Find us on:</h5>
-            <ul class="list-inline ">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            <ul class="menuLink clearfix">
+              <li><a href="about.html">About Royal College</a></li>
+              <li><a href="campus.html">About Campus</a></li>
+              <li><a href="stuff.html">Staff Members</a></li>
+              <li><a href="contact-us.html">Accommodation</a></li>
+              <li><a href="about.html">Why Choose Us?</a></li>
             </ul>
-          </div><!-- social -->
-          <div class="contactNo clearfix">
-            <h5>Call us on:</h5>
-            <h3>012-3434-456768</h3>
-          </div><!-- social -->
           </div><!-- col-sm-3 col-xs-6 -->
+
+          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
+            <ul class="menuLink clearfix">
+              <li><a href="course-fullwidth.html">All Courses</a></li>
+              <li><a href="buying-steps.html">Admission</a></li>
+              <li><a href="photo-gallery3col.html">Photo Gallery</a></li>
+              <li><a href="international_students.html">International Students</a></li>
+            </ul>
+          </div><!-- col-sm-3 col-xs-6 -->
+
+          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
+            <div class="footer-address">
+              <h5>Location:</h5>
+              <address>
+                Royal College<br>
+                1727 Lombard St.<br>
+                San Francisco
+              </address>
+              <a href="contact-us.html"><span class="place"><i class="fa fa-map-marker"></i>Main Campus</span></a>
+            </div>
+          </div><!-- col-sm-3 col-xs-6 -->
+
+          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
+            <div class="socialArea clearfix">
+              <h5>Find us on:</h5>
+              <ul class="list-inline ">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+              </ul>
+            </div><!-- social -->
+            <div class="contactNo clearfix">
+              <h5>Call us on:</h5>
+              <h3>012-3434-456768</h3>
+            </div><!-- contactNo -->
+          </div><!-- col-sm-3 col-xs-6 -->
+
         </div><!-- row clearfix -->
       </div><!-- container -->
     </div><!-- menuFooter -->
@@ -437,10 +447,12 @@
       <div class="container">
         <div class="row clearfix">
           <div class="col-sm-6 col-xs-12 copyRight">
-          <p>&copy; 2015 Copyright Colegio Preludio</p>
+            <p>© 2016 Copyright Royal College Bootstrap Template by <a href="www.iamabdus.com">Abdus</a></p>
           </div><!-- col-sm-6 col-xs-12 -->
           <div class="col-sm-6 col-xs-12 privacy_policy">
-          <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact-us.html">Site Map</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="#">Trademarks and Copyright</a>
           </div><!-- col-sm-6 col-xs-12 -->
         </div><!-- row clearfix -->
       </div><!-- container -->

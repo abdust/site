@@ -10,6 +10,7 @@
   <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/plugins/select_option1.css">
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/plugins/flexslider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/plugins/fullcalendar.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
@@ -136,8 +137,8 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses Grid View</a>
                         <ul class="dropdown-menu">
-                          <li><a href="course-grid-4col.html">4 Columns</a></li>
                           <li><a href="course-grid-3col.html">3 Columns</a></li>
+                          <li><a href="course-grid-4col.html">4 Columns</a></li>
                           <li><a href="course-grid-sidebar-right.html">Sidebar Right</a></li>
                           <li><a href="course-grid-sidebar-left.html">Sidebar Left</a></li>
                         </ul>
@@ -145,23 +146,23 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses List View</a>
                         <ul  class="dropdown-menu">
-                          <li><a href="course-fullwidth.html">Fullwidth</a></li>
                           <li><a href="course-right-sidebar.html">Sidebar Right</a></li>
                           <li><a href="course-left-sidebar.html">Sidebar Left</a></li>
+                          <li><a href="course-fullwidth.html">Fullwidth</a></li>
                         </ul>
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Course</a>
                         <ul class="dropdown-menu">
-                          <li><a href="single-course-fullwidth.html">Fullwidth</a></li>
                           <li><a href="single-course-right-sidebar.html">Sidebar Right</a></li>
                           <li><a href="single-course-left-sidebar.html">Sidebar Left</a></li>
+                          <li><a href="single-course-fullwidth.html">Fullwidth</a></li>
                         </ul>
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy Course</a>
                         <ul class="dropdown-menu">
-                          <li><a href="buying-steps.html">Steps</a></li>
+                          <li><a href="buying-steps.html">Client Details</a></li>
                           <li><a href="buying-confirmation.html">Confirmation </a></li>
                         </ul>
                       </li>
@@ -181,7 +182,7 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apply Now</a>
                         <ul class="dropdown-menu">
-                          <li><a href="buying-steps.html">Steps</a></li>
+                          <li><a href="buying-steps.html">Apply For Addmission</a></li>
                           <li><a href="buying-confirmation.html">Confirmation</a></li>
                         </ul>
                       </li>
@@ -194,10 +195,10 @@
                       </li>
                       <li><a href="campus.html">Our Campus</a></li>
                       <li><a href="stuff.html">Stuff</a></li>
-                      <li><a href="privacy-policy.html">Privacy Policy</a></li>
                       <li><a href="international_students.html">International Students</a></li>
-                      <li><a href="404-error.html">404 Not Found</a></li>
                       <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                      <li><a href="404-error.html">404 Not Found</a></li>
                       <li><a href="coming-soon-dark.html">Coming Soon</a></li>
                     </ul>
                   </li>
@@ -213,11 +214,11 @@
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
                     <ul class="dropdown-menu">
-                      <li><a href="events-calendar.html">Events Callender</a></li>
                       <li><a href="events-3col.html">Events 3 Columns</a></li>
                       <li><a href="events-right-sidebar.html">Events Sidebar Right</a></li>
                       <li><a href="events-left-sidebar.html">Events Sidebar Left</a></li>
-                      <li><a href="single-events.html">Events Fullwidth</a></li>
+                      <li><a href="single-events.html">Single Events</a></li>
+                      <li><a href="events-calendar.html">Events Callender</a></li>
                     </ul>
                   </li>
                   <li class="apply_now"><a href="buying-steps.html">Apply Now</a></li>
@@ -310,38 +311,63 @@
         <div class="row clearfix">
           <div class="col-xs-12">
             <div class="aboutTitle">
-              <h2>Learn About Royal College</h2>
+              <h2>Our Popular Courses</h2>
             </div><!-- aboutTitle -->
           </div><!-- col-sm-3 col-xs-12 -->
         </div><!-- row clearfix -->
+
         <div class="about_inner clearfix">
           <div class="row">
             <div class="col-xs-6 col-sm-3">
               <div class="aboutImage">
-                <img src="img/home/learn/learn_1.jpg" alt="" class="img-responsive" />
-                <a href="international_students.html" class="captionLink">International Students <span></span></a>
+                <a href="single-course-right-sidebar.html"> 
+                  <img src="img/home/learn/learn_1.jpg" alt="" class="img-responsive" />
+                  <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
+                  </div>
+                  <span class="captionLink">English Literature<span></span></span>
+                </a>
               </div><!-- aboutImage -->
             </div>
+
             <div class="col-xs-6 col-sm-3">
               <div class="aboutImage">
-                <img src="img/home/learn/learn_2.jpg" alt="" class="img-responsive" />
-                <a href="stuff.html" class="captionLink">The Stuffs <span></span></a>
+                <a href="single-course-right-sidebar.html"> 
+                  <img src="img/home/learn/learn_2.jpg" alt="" class="img-responsive" />
+                  <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
+                  </div>
+                  <span class="captionLink">Business Administration<span></span></span>
+                </a>
               </div><!-- aboutImage -->
             </div>
+
             <div class="col-xs-6 col-sm-3">
               <div class="aboutImage">
-                <img src="img/home/learn/learn_3.jpg" alt="" class="img-responsive" />
-                <a href="photo-gallery4col.html" class="captionLink">Photo Gallery <span></span></a>
+                <a href="single-course-right-sidebar.html"> 
+                  <img src="img/home/learn/learn_3.jpg" alt="" class="img-responsive" />
+                  <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
+                  </div>
+                  <span class="captionLink">Computer Science<span></span></span>
+                </a>
               </div><!-- aboutImage -->
             </div>
+
             <div class="col-xs-6 col-sm-3">
               <div class="aboutImage">
-                <img src="img/home/learn/learn_4.jpg" alt="" class="img-responsive" />
-                <a href="buying-steps.html" class="captionLink">Apply Now <span></span></a>
-              </div>
+                <a href="single-course-right-sidebar.html"> 
+                  <img src="img/home/learn/learn_4.jpg" alt="" class="img-responsive" />
+                  <div class="overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis.</p>
+                  </div>
+                  <span class="captionLink">Mathematics<span></span></span>
+                </a>
+              </div><!-- aboutImage -->
             </div>
           </div><!-- row -->
         </div><!-- about_inner -->
+
       </div><!-- container -->
     </div><!-- aboutArea -->
 
@@ -351,51 +377,52 @@
 
           <div class="col-sm-8 col-xs-12">
             <div class="videoNine clearfix">
-            <div class="videoArea clearfix">
-              <h3>Welcome To Royal College</h3>
-              <div class="row">
-                <div class="col-lg-8 col-md-7 col-xs-12 videoLeft">
-                <img src="img/home/video_image.jpg" data-video="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
-                </div><!-- videoLeft -->
-                <div class="col-lg-4 col-md-5 col-xs-12 videoRight">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
-                <a href="about.html" class="btn btn-block learnBtn">Learn More</a>
-                </div><!-- videoRight -->
-              </div><!-- row -->
-            </div><!-- videoArea -->
-            <div class="related_post_sec single_post">
-              <h3>Recent News</h3>
-              <ul>
-                <li>
-                  <span class="rel_thumb">
-                    <a href="single-post-right-sidebar.html"><img src="img/news/related_thumb_01.png" alt=""></a>
-                  </span><!--end rel_thumb-->
-                  <div class="rel_right">
-                    <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                    <div class="meta">
-                      <span class="author">By: <a href="#">Alexandra Jenmi</a></span>
-                      <span class="category"> <a href="#">Indesign</a></span>
-                      <span class="date">Posted: <a href="#">January 24, 2015</a></span>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  </div><!--end rel right-->
-                </li>
-                <li>
-                  <span class="rel_thumb">
-                    <a href="single-post-right-sidebar.html"><img src="img/news/related_thumb_01.png" alt=""></a>
-                  </span><!--end rel_thumb-->
-                  <div class="rel_right">
-                    <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
-                    <div class="meta">
-                      <span class="author">By: <a href="#">Alexandra Jenmi</a></span>
-                      <span class="category"> <a href="#">Indesign</a></span>
-                      <span class="date">Posted: <a href="#">January 24, 2015</a></span>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                  </div><!--end rel right-->
-                </li>
-              </ul>
-            </div><!--related_post_sec-->
+
+              <div class="videoArea clearfix">
+                <h3>Welcome To Royal College</h3>
+                <div class="row">
+                  <div class="col-lg-8 col-md-7 col-xs-12 videoLeft">
+                  <img src="img/home/video_image.jpg" data-video="https://www.youtube.com/embed/oOMcZoeEK0A?autoplay=1">
+                  </div><!-- videoLeft -->
+                  <div class="col-lg-4 col-md-5 col-xs-12 videoRight">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
+                  <a href="about.html" class="btn btn-block learnBtn">Learn More</a>
+                  </div><!-- videoRight -->
+                </div><!-- row -->
+              </div><!-- videoArea -->
+
+              <div class="related_post_sec single_post">
+                <h3>Recent News</h3>
+                <ul>
+                  <li>
+                    <span class="rel_thumb">
+                      <a href="single-post-right-sidebar.html"><img src="img/news/related_thumb_01.png" alt=""></a>
+                    </span><!--end rel_thumb-->
+                    <div class="rel_right">
+                      <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
+                      <div class="meta">
+                        <span class="author">Posted in: <a href="#">Update</a></span>
+                        <span class="date">on: <a href="#">January 24, 2015</a></span>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                    </div><!--end rel right-->
+                  </li>
+                  <li>
+                    <span class="rel_thumb">
+                      <a href="single-post-right-sidebar.html"><img src="img/news/related_thumb_02.jpg" alt=""></a>
+                    </span><!--end rel_thumb-->
+                    <div class="rel_right">
+                      <h4><a href="single-post-right-sidebar.html">Lorem Ipsum dolar simt Amet simply dummy Text Lorem Ipsum dolar</a></h4>
+                      <div class="meta">
+                        <span class="author">Posted in: <a href="#">Exam</a></span>
+                        <span class="date">on: <a href="#">January 24, 2015</a></span>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                    </div><!--end rel right-->
+                  </li>
+                </ul>
+              </div><!--related_post_sec-->
+
           </div><!--videoNine-->
           </div><!-- col-sm-8 col-xs-12 -->
 
@@ -525,7 +552,7 @@
           <div class="col-xs-12 col-sm-6">
             <div class="testimonial">
               <div class="carousal_content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
               </div>
               <div class="carousal_bottom">
                 <div class="thumb">
@@ -533,7 +560,7 @@
                 </div>                    
                 <div class="thumb_title">
                   <span class="author_name">Sara Lisbon</span>
-                  <span class="author_designation">Art Student<a href="#"> Apple Inc</a></span>
+                  <span class="author_designation">Student<a href="#"> English Literature</a></span>
                 </div>
               </div>
             </div><!-- testimonial -->
@@ -554,50 +581,98 @@
       </div><!-- container -->
     </div><!-- testimonial-section -->
 
+    <div class="brand-section clearfix">
+      <div class="container">
+        <div class="brand-slider flexslider">
+          <ul class="slides">
+            <li>
+              <a href="#"><img src="img/home/brand1.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand2.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand3.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand4.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand5.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand1.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand2.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand3.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand4.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/home/brand5.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- brand-section -->
+
     <div class="menuFooter clearfix">
       <div class="container">
         <div class="row clearfix">
+
           <div class="col-sm-3 col-xs-6">
-          <ul class="menuLink clearfix">
-            <li><a href="about.html">About Royal College</a></li>
-            <li><a href="campus.html">About Campus</a></li>
-            <li><a href="stuff.html">Staff Members</a></li>
-            <li><a href="contact-us.html">Accommodation</a></li>
-            <li><a href="about.html">Why Choose Us?</a></li>
-          </ul>
-          </div><!-- col-sm-3 col-xs-6 -->
-          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
-          <ul class="menuLink clearfix">
-            <li><a href="course-fullwidth.html">All Courses</a></li>
-            <li><a href="buying-steps.html">Admission</a></li>
-            <li><a href="photo-gallery3col.html">Photo Gallery</a></li>
-            <li><a href="international_students.html">International Students</a></li>
-          </ul>
-          </div><!-- col-sm-3 col-xs-6 -->
-          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
-          <ul class="menuLink clearfix">
-            <li><a href="blog-right-sidebar.html">Latest News</a></li>
-            <li><a href="events_calendar.html">Upcoming Events</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
-          </div><!-- col-sm-3 col-xs-6 -->
-          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
-          <div class="socialArea clearfix">
-            <h5>Find us on:</h5>
-            <ul class="list-inline ">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            <ul class="menuLink clearfix">
+              <li><a href="about.html">About Royal College</a></li>
+              <li><a href="campus.html">About Campus</a></li>
+              <li><a href="stuff.html">Staff Members</a></li>
+              <li><a href="contact-us.html">Accommodation</a></li>
+              <li><a href="about.html">Why Choose Us?</a></li>
             </ul>
-          </div><!-- social -->
-          <div class="contactNo clearfix">
-            <h5>Call us on:</h5>
-            <h3>012-3434-456768</h3>
-          </div><!-- social -->
           </div><!-- col-sm-3 col-xs-6 -->
+
+          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
+            <ul class="menuLink clearfix">
+              <li><a href="course-fullwidth.html">All Courses</a></li>
+              <li><a href="buying-steps.html">Admission</a></li>
+              <li><a href="photo-gallery3col.html">Photo Gallery</a></li>
+              <li><a href="international_students.html">International Students</a></li>
+            </ul>
+          </div><!-- col-sm-3 col-xs-6 -->
+
+          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
+            <div class="footer-address">
+              <h5>Location:</h5>
+              <address>
+                Royal College<br>
+                1727 Lombard St.<br>
+                San Francisco
+              </address>
+              <a href="contact-us.html"><span class="place"><i class="fa fa-map-marker"></i>Main Campus</span></a>
+            </div>
+          </div><!-- col-sm-3 col-xs-6 -->
+
+          <div class="col-sm-3 col-xs-6 borderLeft clearfix">
+            <div class="socialArea clearfix">
+              <h5>Find us on:</h5>
+              <ul class="list-inline ">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+              </ul>
+            </div><!-- social -->
+            <div class="contactNo clearfix">
+              <h5>Call us on:</h5>
+              <h3>012-3434-456768</h3>
+            </div><!-- contactNo -->
+          </div><!-- col-sm-3 col-xs-6 -->
+
         </div><!-- row clearfix -->
       </div><!-- container -->
     </div><!-- menuFooter -->
@@ -606,10 +681,12 @@
       <div class="container">
         <div class="row clearfix">
           <div class="col-sm-6 col-xs-12 copyRight">
-          <p>&copy; 2015 Copyright Colegio Preludio</p>
+            <p>© 2016 Copyright Royal College Bootstrap Template by <a href="www.iamabdus.com">Abdus</a></p>
           </div><!-- col-sm-6 col-xs-12 -->
           <div class="col-sm-6 col-xs-12 privacy_policy">
-          <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="contact-us.html">Site Map</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="#">Trademarks and Copyright</a>
           </div><!-- col-sm-6 col-xs-12 -->
         </div><!-- row clearfix -->
       </div><!-- container -->

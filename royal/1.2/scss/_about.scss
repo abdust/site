@@ -254,22 +254,22 @@
 	content:" ";
 	background:url(../img/about/bottom_arrow.png) no-repeat center center;
 	bottom:-27px;
-	left:95px;
+	left:30px;
 }
 .carousal_bottom{
-	padding-left:30px;
 	.thumb{
-		width:91px;
+		width:70px;
 		float:left;
 		height:auto;
-		margin-right:22px;
+		margin-right:18px;
 		img{
 		  @include border-radius(50%);
 		}
 	}
 }
 .thumb_title{
-	margin:20px 0 0;
+	margin:12px 0 0;
+	float: left;
 	span{
 		display: block;
 		font-weight:600;
@@ -277,6 +277,7 @@
 	.author_name{
 		font-size:16px;
 		color:#000;
+		text-transform: uppercase;
 	}
 	.author_designation{
 		font-style:italic;
