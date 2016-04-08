@@ -6,16 +6,18 @@
 }
 .price-table-inner{
 	text-align: center;
-	padding:0 30px;
+	padding:30px;
 	margin-bottom: 70px;
+	border: 1px solid #dce4ea;
 	@include only-mobile {
 		padding:0;
+		border: none;
 	}
 	@include tablet-up {
-		padding:0 15px;
+		padding:15px;
 	}
 	@include desktops {
-		padding:0 30px;
+		padding:30px;
 	}
 	.btn{
 		padding-left: 30px;

@@ -1076,7 +1076,7 @@ body.bodyColor.container {
 }
 
 .aboutImage:hover .overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.45);
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
@@ -1548,6 +1548,14 @@ body.bodyColor.container {
   border: none;
   border-radius: 0;
   box-shadow: none;
+}
+.brand-section .flexslider li {
+  text-align: center;
+}
+.brand-section .flexslider li img {
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 .brand-section .flex-control-paging {
   display: none;
@@ -4740,22 +4748,24 @@ ul.contact_info li a:hover {
 
 .price-table-inner {
   text-align: center;
-  padding: 0 30px;
+  padding: 30px;
   margin-bottom: 70px;
+  border: 1px solid #dce4ea;
 }
 @media (max-width: 479px) {
   .price-table-inner {
     padding: 0;
+    border: none;
   }
 }
 @media (min-width: 768px) {
   .price-table-inner {
-    padding: 0 15px;
+    padding: 15px;
   }
 }
 @media (min-width: 992px) {
   .price-table-inner {
-    padding: 0 30px;
+    padding: 30px;
   }
 }
 .price-table-inner .btn {

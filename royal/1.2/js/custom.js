@@ -118,16 +118,12 @@ jQuery(document).ready(function(){
 		      (window.innerWidth < 900) ? 4 : 5;
 	  }
 	 
-	  $(function() {
-	    SyntaxHighlighter.all();
-	  });
-	 
 	  $window.load(function() {
 	    $('.flexslider').flexslider({
 	      animation: "slide",
 	      animationLoop: false,
-	      itemWidth: 215,
-	      itemMargin: 5,
+	      itemWidth: 228,
+	      itemMargin: 0,
 	      prevText: "",          
 		  nextText: "",
 	      minItems: getGridSize(), // use function to pull in initial value

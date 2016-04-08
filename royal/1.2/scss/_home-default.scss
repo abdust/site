@@ -763,7 +763,7 @@ body.bodyColor.container {
 	}
 }
 .aboutImage:hover .overlay{
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.45);
 	-webkit-transition: background 0.3s;
 	transition: background 0.3s;
 	p{
@@ -1141,6 +1141,14 @@ body.bodyColor.container {
 	    border:none;
 	    border-radius: 0;
 	    box-shadow: none;
+	    li{
+	    	text-align: center;
+	    	img{
+	    		max-width: 100%;
+	    		width: auto;
+	    		margin: 0 auto;
+	    	}
+	    }
 	}
 	.flex-control-paging{
 		display: none;
