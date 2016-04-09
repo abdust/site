@@ -256,6 +256,7 @@ jQuery(document).ready(function(){
 				}
 			]
 	    })
+	    $("a.fc-event").attr("href", "single-events.html")
 	});
 
 });

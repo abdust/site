@@ -46,9 +46,10 @@
 		    transition: opacity 0.3s, transform 0.3s;
 		    position: absolute;
 		    bottom: 32%;
+		    left: 50%;
 		    z-index: 99;
 		    text-align: center;
-		    margin-left: -30px;
+		    margin-left: -25px;
 		}
 		i{
 		   padding-top: 15px; 
@@ -95,16 +96,16 @@
 			}
 		}
 	}
-	li:nth-child(3n){
-		@include tablet-up {
-			margin-right:0;
-			clear: right;
-		}
-	}
 	li:nth-child(4n){
 		@include tablet-up {
 			clear: none;
 			margin:0 3% 30px 0;
+		}
+	}
+	li:nth-child(3n){
+		@include tablet-up {
+			margin-right:0 !important;
+			clear: right !important;
 		}
 	}
 }

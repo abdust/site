@@ -57,7 +57,7 @@
 .list_block .upcoming_events .meta{
 	padding:0;
 	border-bottom:none;
-	margin: 0;
+	margin: 0 !important;
 }
 .post h1{
 	font-weight:normal;
@@ -161,8 +161,8 @@
 }
 .related_post_sec ul{
 	li{
-		padding:0 0 15px;
-		margin:0 0 15px;
+		padding:0 0 18px;
+		margin:0 0 18px;
 		border-bottom:1px solid #dce4ea;
 		display:block;
 		clear: both;
@@ -569,6 +569,7 @@
 .upcoming_events ul li{
 	display: table;
 	float: none;
+	position: relative;
 }
 .upcoming_events {
 	span.date{
@@ -578,10 +579,9 @@
 		@include transition (color 0.3s);
 		padding: 5px 0;
 		border: 3px solid #dce4ea;
-		display: table-cell;
+		display: inline-block;
 		width: 70px;
 		text-align: center;
-		float: left;
 		margin-right: 10px;
 		span{
 			font-weight:700;
@@ -593,28 +593,33 @@
 }
 .upcoming_events {
 	.related_post_sec.single_post{
-		display: -webkit-box;      
-	  	display: -moz-box;        
-	  	display: -ms-flexbox;     
-	  	display: -webkit-flex;    
-	  	display: flex;
 	  	margin-bottom: 70px;
-		.date-wrapper{
-			-webkit-box-flex: 1;      
-			-moz-box-flex: 1;         
-			-webkit-flex: 1;          
-			-ms-flex: 1;              
-			flex: 1;
-		} 
+	  	position: relative;
+	  	float: left;
+	  	.date-wrapper{
+	  		position: absolute;
+			top: 0;
+			left: 0;
+	  	}
 		span.date{
 			display: block;
 			margin-right: 20px;
+		}
+		.rel_right{
+			padding-left: 90px;
+			float: left;
 		}
 	}
 	.btn{
 		padding-left: 20px;
 		padding-right: 20px;
 		margin-top: 15px;
+	}
+}
+.upcoming_events {
+	li.related_post_sec.single_post{
+	  	float: none;
+	  	margin-bottom: 18px;
 	}
 }
 .upcoming_events, .single-event{

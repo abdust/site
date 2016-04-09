@@ -3,8 +3,8 @@ a, a:hover {
   color: #0060b1; }
 
 .topbar {
-  border-top: 1px solid #0060b1 !important;
-  background-color: #0060b1 !important; }
+  border-top: 1px solid #0060b1;
+  background-color: #0060b1; }
 
 .header .navbar-default .navbar-nav li a:hover {
   color: #0060b1; }

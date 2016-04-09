@@ -23,6 +23,9 @@
 .event_calendar{
 	border-top:3px solid $second-bg-color;
 }
+.fc-icon-left-single-arrow::after {
+    left: -4px;
+}
 .fc-toolbar {
 	border-left:2px solid #dce4ea;
 	margin:0;
