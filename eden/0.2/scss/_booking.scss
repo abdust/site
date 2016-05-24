@@ -1,0 +1,555 @@
+/*================= 12. BOOKING STEP ==================*/
+.booking-page .filter-container .col-xs-12 {
+    margin-bottom: 8px;
+}
+.ed-booking-tab .nav-tabs{
+	padding: 0 35px;
+	margin-bottom: 40px;
+	border: none;
+	li{
+		width: 33.3333%;
+		a{
+			color: $text-color;
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-decoration: none;
+			margin: 0;
+			padding: 0;
+			border: none;
+			position: relative;
+			@include mobile {
+				font-size: 15px;
+			}
+			&:hover, &:focus{
+				background: transparent;
+			}
+			span.ed-step{
+				border: 2px solid transparent;
+				background: transparent;
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				@include border-radius(50%);
+				@include mobile {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			span.ed-step-fill{
+				background: #e6eaf0;
+				width: 17px;
+				height: 17px;
+				display: inline-block;
+				@include border-radius(50%);
+				@include mobile {
+					width: 22px;
+					height: 22px;
+				}
+			}
+			span.ed-step-bar{
+				display: block;
+			    width: 94%;
+			    height: 2px;
+			    background-color: #e6eaf0;
+			    position: absolute;
+			    top: 17%;
+			    @include mobile {
+					width: 97%;
+					top: 19%;
+				}
+			    @include tablet {
+					width: 122%;
+				}
+				@include desktops {
+					width: 128%;
+				}
+				@include large-desktops {
+					width: 132%;
+				}  
+			}
+			span.ed-step-text{
+				display: block;
+				margin-left: -35px;
+				margin-top: 20px;
+			}
+		}
+	}
+	li:first-child{
+		span.ed-step-text{
+			margin-left: -35px;
+		}
+		span.ed-step-bar{
+			left: 25px;
+			@include mobile {
+				left: 40px;
+			}
+		}
+	}
+	li:last-child {
+		text-align: right;
+		span.ed-step-text{
+			margin-right: -35px;
+		}
+		span.ed-step-bar{
+			right: 25px;
+			@include mobile {
+				right: 40px;
+			}
+		}
+	}
+	li:nth-child(2){
+		text-align: center;
+		a span.ed-step-text{
+			margin-left: 0;
+		}
+	}
+	li.active{
+		a, a:hover, a:focus{
+			border: none;
+			span.ed-step-fill{
+				background: $primary-color;
+			}
+		} 
+	}
+	li.ed-done{
+		a{
+			span.ed-step{
+				border: 2px solid $primary-color;
+			}
+			span.ed-step-fill{
+				background: transparent;
+			}
+		}
+	}
+}
+.con-btn{
+	padding-left:25px;
+	padding-right:25px;
+	float:right;
+}
+/*=== 12.1 BOOKING STEP1 ===*/
+.ed-room-select{
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border: 2px solid #ffffff;
+	display: inline-block;
+	@include border-radius(50%);
+	position: absolute !important;
+	top: 15px;
+	right: 10px;
+	z-index: 9999;
+	text-align: center;
+	span.ed-room-select-fill{
+		width: 15px;
+		height: 14px;
+		background: $primary-color;
+		display: inline-block;
+		@include border-radius(50%);
+		vertical-align: middle;
+	}
+}
+.booking-page .headline{
+	color: $text-color;
+	margin-bottom: 30px;
+}
+
+/*=== 12.2 BOOKING STEP2 ===*/
+.ed-reservation{
+	background: #e6eaf0;
+	padding: 15px;
+	@include mobile {
+		padding: 30px;
+	}
+	@include border-radius;
+	width: 100%;
+	float: left;
+	h4{
+		font-size: 16px;
+		margin-bottom: 15px;
+		font-weight: 400;
+		color: $text-color;
+	}
+}
+ul.ed-reservation-detail {
+	background: #ffffff;
+	@include border-radius;
+	margin-bottom: 35px;
+	li{
+		display: table;
+		border-bottom: 1px solid $border-color;
+		width: 100%;
+		span{
+			display: table-cell;
+			font-weight: 400;
+			vertical-align: top;
+		}
+		span:first-child{
+			width: 40%;
+			padding:10px;
+			border-right: 1px solid $border-color;
+		}
+		span:last-child{
+			padding: 10px 20px;
+		}
+		img{
+			@include border-radius;
+			margin-bottom: 5px;
+		}
+	}
+	li:last-child{
+		border-bottom: none;
+	}
+	li:first-child{
+		span:last-child{
+			color: $primary-color;
+		}
+	}
+}
+.ed-total{
+	background: #ffffff;
+	@include border-radius;
+	text-align: center;
+	width: 100%;
+	float: left;
+	margin-bottom: 35px;
+}
+.ed-total > span{
+	font-size: 20px;
+	font-weight: 500;
+	width: 30%;
+	border-right: 1px solid $border-color;
+	display: inline-block;
+	float: left;
+	padding: 30px 0;
+	span{
+		font-size: 30px;
+		display: block;
+	}
+}
+.ed-total-price{
+	width: 40%;
+	display: inline-block;
+	span{
+		font-size: 25px;
+		display: block;
+		@include desktops {
+			font-size: 22px;
+		}
+		@include large-desktops {
+			font-size: 25px;
+		}
+	}
+	span.offer-price{
+		font-weight: 400;
+		text-decoration: line-through;
+		border-bottom: 1px solid $border-color;
+		padding: 15px 0;
+	}
+	span.total-price{
+		font-weight: 500;
+		color: $secondary-color;
+		padding: 15px 0;
+	}
+}
+.ed-pay-card{
+	margin: 0 -5px;
+	text-align: center;
+	ul li{
+		display: inline-block;
+		padding: 0 5px;
+		width: 19%;
+		@include desktops {
+			width: 18%;
+		}
+		@include large-desktops {
+			width: 19%;
+		}
+		img{
+			@include border-radius;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			width: 100%;
+		}
+	}
+}
+.tab-content .comment-form {
+    margin-top: 30px;
+    @include tablet {
+		margin-top: 0;
+	}
+}
+.tab-content .comment-form .primary-btn {
+	margin-top: 20px;
+	@include desktops {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	i{
+		font-size: 20px;
+		padding-left: 13px;
+	}
+}
+span.policy{
+	color: $text-color;
+	font-weight: 400;
+	@include desktops {
+		margin: 15px 0;
+		display: inline-block;
+	}
+	a{
+		color: $primary-color;
+		text-decoration: none;
+	}
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0 10px 0 0;
+    line-height: normal;
+}
+@include tablet {
+	#client-details > .row, #ed-payment > .row{
+		display: flex;
+	}
+	#client-details > .row > .col-md-4, 
+	#ed-payment > .row > .col-md-4{
+		padding-right: 0;
+		display: flex;
+	}
+	#client-details > .row > .col-md-8, 
+	#ed-payment > .row > .col-md-8{
+		padding-left: 0;
+		display: flex;
+	}
+	#client-details > .row > .col-md-8 .comment-form {
+		padding: 30px;
+	}
+	#client-details > .row > .col-md-8 .comment-form, 
+	#ed-payment > .row > .col-md-8 .comment-form{
+		border: 1px solid $border-color;
+		border-left: none;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+}
+
+/*=== 12.3 BOOKING STEP3 ===*/
+#ed-payment .comment-form{
+	width: 100%;
+	padding: 30px;
+	@include desktops {
+		padding: 30px 0 0 30px;
+	}
+}
+.comment-form .form-top{
+	margin: 0;
+	text-align: left;
+	@include desktops {
+		text-align: right;
+		margin: 0 40px;
+	}
+	@include large-desktops {
+		margin: 0 110px;
+	}
+	.form-group{
+		display: block;
+		margin-bottom: 20px;
+		clear: both;
+		@include desktops {
+			display: inline-block;
+		}
+	}
+	label{
+		display: block;
+		margin:0 0 10px 0;
+		font-size: 15px;
+		font-weight: 400;
+		@include desktops {
+			display: inline-block;
+			margin:15px 35px 0 0;
+			float: left;
+		}
+	}
+	input.form-control{
+		width: 100%;
+		margin-bottom: 20px;
+		@include desktops {
+			width: 350px;
+			margin-bottom: 0;
+		}
+	}
+	.ed-pay-card{
+		width: 100%;
+		margin-bottom: 20px;
+		@include desktops {
+			width: 350px;
+			float: right;
+			text-align: left;
+		}
+	}
+	select.form-control{
+		width: 40%;
+		display: inline-block;
+		position: relative;
+		margin-right: 20px;
+		@include desktops {
+			width: 165px;
+			margin-right: 0;
+			margin-left: 20px;
+		}
+	}
+	.ed-security {
+		input.form-control{
+			width: 100%;
+			margin-bottom: 0;
+			@include desktops {
+				width: 195px;
+				margin-right: 25px;
+				float: left;
+			}
+		}
+		span{
+			font-size: 15px;
+			font-weight: 400;
+			margin-top: 15px;
+			display: inline-block;
+			position: relative;
+			@include desktops {
+				margin-right: 30px;
+			}
+			span{
+				margin-right: 10px;
+				margin-top: 0;
+				font-size: 20px;
+				position: relative;
+				top: 3px;
+			}
+		}
+	}
+}
+.comment-form .form-middle{
+	padding: 20px 0 ;
+	margin-bottom: 10px;
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	@include desktops {
+		text-align: right;
+		padding: 20px 134px 20px 0;
+	}
+	@include large-desktops {
+		padding: 20px 204px 20px 0;
+	}
+	label{
+		display:block;
+		margin:0 0 10px 0;
+		font-size: 15px;
+		font-weight: 400;
+		text-transform: uppercase;
+		@include desktops {
+			margin:0 35px 0 0;
+			display: inline-block;
+		}
+	}
+	img{
+		display: inline-block;
+	}
+}
+
+/*================= 13. BOOKING CONFIRMATION ==================*/
+.ed-alert.alert-success {
+	font-size: 20px;
+	font-weight: 300;
+    color: #5ca05e;
+    background-color: #edfaee;
+    border-color: #d0edce;
+    padding: 15px 35px;
+    margin-bottom: 30px;
+    .close{
+    		filter: alpha(opacity=100);
+		    opacity: 1;
+	    &:focus, &:hover {
+		    color: #5ca05e;
+		    filter: alpha(opacity=100);
+		    opacity: 1;
+		}
+	}
+	.icomoon-checkmark3{
+		font-size: 30px;
+		width: 45px;
+		height: 45px;
+		text-align: center;
+		background: #60a662;
+		color: #ffffff;
+		display: inline-block;
+		@include border-radius(50%);
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	.icomoon-checkmark3:before {
+		vertical-align: middle;
+	}
+}
+.ed-alert.alert-dismissable .close, .ed-alert.alert-dismissible .close {
+    position: relative;
+    top: -14px;
+    right: -28px;
+}
+.ed-cinfirm{
+	padding: 15px;
+	border: 1px solid $border-color;
+	width: 100%;
+	float: left;
+	@include border-radius;
+	@include tablet {
+		padding: 30px;
+	}
+}
+.ed-cinfirm .top-headline{
+	margin-top: 30px;
+	@include tablet {
+		margin-top: 0;
+	}
+}
+.ed-cinfirm-detail{
+	.headline{
+		color: $text-color;
+		margin-top: 40px;
+	}
+	li{
+		width: 43%;
+		display: inline-block;
+		float: left;
+		margin: 0 10px;
+		margin-bottom: 30px;
+		@include desktops {
+			width: 25%;
+			margin: 0;
+			margin-bottom: 30px;
+		}
+		span{
+			font-size: 16px;
+			font-weight: 300;
+			color: $text-color;
+		}
+		span:first-child{
+			font-weight: 500 !important;
+		}
+	}
+	li:last-child{
+		float: right;
+		span{
+			font-size: 26px;
+			font-weight: 300;
+			color: $text-color;
+		}
+		span:first-child{
+			font-weight: 500 !important;
+			color: $secondary-color;
+		}
+	}
+}
+.ed-cinfirm-detail ul{
+	margin: 0 -10px;
+	@include desktops {
+		margin: 0 ;
+	}
+}

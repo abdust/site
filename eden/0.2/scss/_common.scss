@@ -1,0 +1,121 @@
+/*=== 1.COMMON ===*/
+.container{
+    width: 100%;
+	@include mobile {
+    	width: 450px;
+    }
+    @include tablet {
+    	width: 750px;
+    }
+    @include desktops {
+    	width: 970px;
+    }
+    @include large-desktops {
+    	width: 1170px;
+    }
+}
+.btn{
+	display: inline-block;
+	@include border-radius(4px);
+	text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    padding: 9px 0;
+    @include mobile {
+    	font-size: 15px;
+    	padding: 13px 0;
+    }
+    @include tablet {
+    	font-size: 12px;
+    	padding: 8px 0;
+    }
+    @include desktops {
+    	font-size: 14px;
+    	padding: 12px 0;
+    }
+    @include large-desktops {
+    	font-size: 15px;
+    	padding: 13px 0;
+    }
+}
+a:focus{
+    outline: none;
+}
+.primary-btn{
+    background-color: $primary-color;
+    color: $text-light;
+    @include transition(background-color 0.3s);
+    &:hover,&:focus{
+    	background-color: tint($primary-color, 20%);
+    	color: $text-light;
+    	@include transition(background-color 0.3s);
+    }
+}
+.secondary-btn{
+	background-color: $secondary-color;
+	@include transition(background-color 0.3s);
+	color: $text-light;
+	&:hover,&:focus{
+    	background-color: $secondary-color;
+    	@include transition(background-color 0.3s);
+    	color: $text-light;
+    }
+}
+.bordered-btn{
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $text-color;
+    &:hover,&:focus{
+    	color: $primary-color;
+    	@include transition(color 0.3s);
+    }
+}
+.btn-block{
+	display: block;
+}
+.common-padding{
+	padding: 45px 0;
+    @include large-desktops {
+    	padding: 70px 0;
+    }
+}
+.top-headline{
+    font-size: 25px;
+    color: $text-color;
+    font-weight: 300;
+    margin: 0 auto 10px;
+    text-align: center;
+    display: block;
+    @include tablet {
+    	font-size: 27px;
+    }
+    @include desktops {
+    	font-size: 30px;
+    }
+}
+.headline{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    @include tablet {
+    	font-size: 16px;
+    }
+    @include desktops {
+    	font-size: 18px;
+    }
+    @include large-desktops {
+    	font-size: 20px;
+    }
+}
+.third-headline{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    @include large-desktops {
+    	font-size: 15px;
+    	margin-bottom: 15px;
+    }
+}
+.main-wrapper{
+	position: relative;
+}

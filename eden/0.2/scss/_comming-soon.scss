@@ -1,0 +1,205 @@
+/*================= 16. COOMING SOON PAGE ==================*/
+/*=== 16.1 COOMING SOON LIGHT ===*/
+.cooming-page{
+	text-align: center;
+}
+.cooming-page .page-banner {
+	height: 239px;
+	img{
+		height: 239px;
+	}
+    p{
+    	font-size: 20px;
+    	margin-bottom: 0;
+    	font-weight: 100;
+    	@include tablet {
+			font-size: 30px;
+		}
+    }
+    .banner-inner{
+	    bottom: 80px;
+	    width: 100%;
+	    left: 0;
+	    .top-headline{
+	    	font-size: 28px;
+	    	line-height: 28px;
+	    	font-weight: 400;
+	    	display: inline-block;
+	    	margin: 0 auto 10px;
+	    	@include mobile {
+				font-size: 40px;
+	    		line-height: 40px;
+			}
+			@include tablet {
+				font-size: 45px;
+	    		line-height: 45px;
+			}
+			@include desktops {
+				font-size: 57px;
+	    		line-height: 57px;
+			}
+	    } 
+    }
+}
+.cooming-page .common-padding{
+	padding: 40px 0;
+	@include desktops  {
+		padding: 60px 0;
+	}
+}
+.cooming-page h3{
+	color: #747474;
+	margin-bottom: 35px;
+	font-weight: 300;
+	font-size: 20px;
+}
+#simple_timer{
+	width: 100%;
+	margin: 0 auto;
+	color: #747474;
+	@include tablet {
+		width: 80%;
+	}
+	@include desktops {
+		width: 70%;
+	}
+	.table-cell{
+		display: inline-block;
+		margin: 0 15px;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+		@include mobile {
+			margin: 0 20px;
+		}
+		@include tablet {
+			margin: 0 40px;
+		}
+		@include desktops {
+			margin: 0 50px;
+		}
+		.tab-val{
+			font-weight: 100;
+			font-size: 33px;
+			line-height: 35px;
+			display: block;
+			border-bottom: 2px solid $border-color;
+			padding-bottom: 8px;
+			margin-bottom: 8px;
+			@include mobile {
+				font-size: 40px;
+				line-height: 40px;
+			}
+			@include tablet {
+				font-size: 50px;
+				line-height: 50px;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+			}
+			@include desktops {
+				font-size: 70px;
+				line-height: 70px;
+			}
+		}
+		.tab-metr{
+			color: #a9a9a9;
+			font-size: 12px;
+			font-weight: 300;
+			text-transform: uppercase;
+			@include tablet {
+				font-size: 15px;
+			}
+		}
+	}
+}
+.cooming-page .light-section{
+	background: #f4f6f9;
+	position:relative;
+	bottom:0;
+	.newsletter{
+		background: transparent;
+		padding: 0;
+		display: inline-block;
+		margin: 0 auto;
+		clear: both;
+	}
+}
+.cooming-page .ed-form .form-group .form-control {
+	color: #747474;
+	border: 1px solid #bdbdbd;
+	&:focus{
+		border: 1px solid $primary-color;
+	}
+}
+.cooming-page .ed-form .btn {
+	margin: 0 auto;
+	@include tablet {
+		margin: 0 0 0 10px;
+	}
+}
+.cooming-page .social-icon{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	h3{
+		margin: 45px auto 25px;
+		@include tablet {
+			margin: 75px auto 35px;
+		}
+	}
+}
+.cooming-page .social-icon ul li a {
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    font-size: 20px;
+    background-color: #dbdbdb;
+    color: #ffffff;
+}
+.cooming-page .social-icon ul li a:hover {
+  background-color: #4968aa;
+  text-decoration: none;
+}
+
+/*=== 16.1 COOMING SOON DARK ===*/
+.cooming-dark-page{
+	background: url("../images/cooming-soon/cooming-Soon-Dark.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  
+}
+.cooming-dark-page .page-banner .overlay {
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.cooming-page.cooming-dark-page .light-section{
+	background: transparent;
+}
+.cooming-page.cooming-dark-page h3{
+	color: #ffffff;
+}
+.cooming-page.cooming-dark-page #simple_timer{
+	color: #ffffff;
+	.table-cell{
+		.tab-val{
+			border-bottom: 2px solid $border-light;
+		}
+		.tab-metr{
+			color: #ffffff;
+		}
+	}
+}
+.cooming-page.cooming-dark-page .ed-form .form-group .form-control {
+	color: #ffffff;
+	border: 1px solid $border-light;
+	&:focus{
+		border: 1px solid $primary-color;
+	}
+}
+.cooming-page.cooming-dark-page .social-icon ul li a {
+    color: rgba(0, 0, 0, 0.5);
+}
