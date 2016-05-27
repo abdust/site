@@ -1,0 +1,202 @@
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/media-query';
+
+$primary-color:#00b6f4;
+$secondary-color:#ffbd1e;
+$primary-ribbon-shade:#23658f;
+$secondary-ribbon-shade:#a33a3a;
+
+/*=== Blue ===*/
+.primary-btn,
+.navbar-default .navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus,
+.navbar-collapse ul.navbar-nav li.book-online a.btn,
+.corner-ribbon span,
+.ed-blog-post .ed-post-date,
+.ed-booking-tab .nav-tabs li.active a span.ed-step-fill,
+.ed-booking-tab .nav-tabs li.active a:hover span.ed-step-fill,
+.ed-booking-tab .nav-tabs li.active a:focus span.ed-step-fill,
+.ed-room-select span.ed-room-select-fill,
+.price-table-light .price-title{
+  background-color: $primary-color;
+}
+.primary-btn:hover, .primary-btn:focus,
+.navbar-collapse ul.navbar-nav li.book-online a.btn:hover,
+.navbar-collapse ul.navbar-nav li.book-online a.btn:focus{
+  background-color: tint($primary-color, 20%);
+} 
+.bordered-btn,
+.navbar-default .navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus,
+.ed-form .form-group .form-control:focus,
+.pagination>li>a, 
+.pagination>li>span,
+.comment-form .form-control:focus,
+.cooming-page .ed-form .form-group .form-control:focus,
+.cooming-page.cooming-dark-page .ed-form .form-group .form-control:focus{
+  border: 1px solid $primary-color;
+}
+.pagination>li>a:focus, 
+.pagination>li>a:hover, 
+.pagination>li>span:focus, 
+.pagination>li>span:hover {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover,
+.controls ul li.active {
+  border-bottom: 2px solid $primary-color;
+}
+.ed-booking-tab .nav-tabs li.ed-done a span.ed-step{
+  border: 2px solid $primary-color;
+}
+.bordered-btn:hover, .bordered-btn:focus,
+.topbar ul li a:hover,
+li.language.dropdown ul.dropdown-menu li.active a,
+li.language.dropdown.open > a,
+.navbar-collapse  ul.navbar-nav ul li a:hover,
+.navbar-collapse  ul.navbar-nav ul li a:focus,
+.ed-tab .tab-content ul li span,
+.check-in .cs-select .cs-selected > span::after,
+.check-in .cs-select ul li:hover, .cs-select li.cs-selected,
+.Post-right h4 a:hover,
+.single-description ul li p.single-icon span,
+ul.ed-reservation-detail li:first-child span:last-child,
+.error-content a,
+.event-text .ed-post-meta span span,
+.event-text a span{
+  color: $primary-color;
+}
+
+.corner-ribbon span::before {
+  border-left: 3px solid $primary-ribbon-shade;
+  border-top: 3px solid $primary-ribbon-shade;
+}
+.corner-ribbon span::after {
+  border-right: 3px solid $primary-ribbon-shade;
+  border-top: 3px solid $primary-ribbon-shade;
+}
+.ed-recentPost-highlight .overlay,
+.ed-Post li:nth-child(2n-1) .overlay{
+  background-color: rgba($primary-color, 0.85);
+}
+.page .datepicker .datepicker-switch:hover, 
+.page .datepicker .next:hover, 
+.page .datepicker .prev:hover, 
+.page .datepicker tfoot tr th:hover {
+  color: $primary-color;
+}
+.page .datepicker table tr td.active.active.focus,
+.page .datepicker table tr td.active.active:focus, 
+.page .datepicker table tr td.active.active:hover, 
+.page .datepicker table tr td.active.highlighted.active.focus, 
+.page .datepicker table tr td.active.highlighted.active:focus, 
+.page .datepicker table tr td.active.highlighted.active:hover, 
+.page .datepicker table tr td.active.highlighted:active.focus, 
+.page .datepicker table tr td.active.highlighted:active:focus, 
+.page .datepicker table tr td.active.highlighted:active:hover, 
+.page .datepicker table tr td.active:active.focus, 
+.page .datepicker table tr td.active:active:focus, 
+.page .datepicker table tr td.active:active:hover {
+  border-color: $primary-color;
+  background:$primary-color;
+}
+.page .datepicker table tr td.active.active, 
+.page .datepicker table tr td.active.highlighted.active, 
+.page .datepicker table tr td.active.highlighted:active, 
+.page .datepicker table tr td.active:active {
+  border-color: $primary-color;
+  background: $primary-color;
+}
+.page .datepicker table tr td.day:hover, 
+.page .datepicker table tr td.focused {
+  background: $primary-color;
+}
+    
+
+@media (min-width: 768px){
+
+.navbar-collapse ul.navbar-nav li a:hover,
+.navbar-collapse ul.navbar-nav li a:focus,
+.navbar-collapse ul.navbar-nav li.active > a,
+.navbar-collapse ul.navbar-nav li.active > a:hover,
+.navbar-collapse ul.navbar-nav li.active > a:focus,
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover{
+  color: $primary-color;
+}
+
+}
+
+
+/*=== Green ===*/
+.secondary-btn,.secondary-btn:hover, .secondary-btn:focus,
+.datepicker table tr td.day:hover, 
+.datepicker table tr td.focused,
+.ed-room-highlight .corner-ribbon span{
+  background-color: $secondary-color;
+}
+.tp-caption.rs-caption-1 span,
+.popup-inner .headline,
+.ed-blog-post .headline,
+.ed-total-price span.total-price,
+span.policy a,
+.ed-cinfirm-detail li:last-child span:first-child{
+  color: $secondary-color;
+}
+.datepicker table tr td.active.active, 
+.datepicker table tr td.active.highlighted.active, 
+.datepicker table tr td.active.highlighted:active, 
+.datepicker table tr td.active:active,
+.datepicker table tr td.active.active.focus,
+.datepicker table tr td.active.active:focus, 
+.datepicker table tr td.active.active:hover, 
+.datepicker table tr td.active.highlighted.active.focus, 
+.datepicker table tr td.active.highlighted.active:focus, 
+.datepicker table tr td.active.highlighted.active:hover, 
+.datepicker table tr td.active.highlighted:active.focus, 
+.datepicker table tr td.active.highlighted:active:focus, 
+.datepicker table tr td.active.highlighted:active:hover, 
+.datepicker table tr td.active:active.focus, 
+.datepicker table tr td.active:active:focus, 
+.datepicker table tr td.active:active:hover {
+  border-color: $secondary-color;
+  background: $secondary-color;
+}
+.datepicker .datepicker-switch:hover, 
+.datepicker .next:hover, 
+.datepicker .prev:hover, 
+.datepicker tfoot tr th:hover,
+.cs-select li.cs-selected > span::after,
+.cs-select ul li:hover, .cs-select li.cs-selected,
+.room-fullwidth .headline a,
+.single-content .room-headline.headline {
+  color: $secondary-color;
+}
+.ed-room-highlight .corner-ribbon span::before{
+  border-left: 3px solid $secondary-ribbon-shade;
+  border-top: 3px solid $secondary-ribbon-shade;
+} 
+.ed-room-highlight .corner-ribbon span::after{
+  border-right: 3px solid $secondary-ribbon-shade;
+  border-top: 3px solid $secondary-ribbon-shade;
+}
+.overlay,
+.ed-Post li:nth-child(2n) .overlay{
+  background-color: rgba($secondary-color, 0.85);
+}
+.rs-caption-rating .ed-rating{
+  color:$secondary-color;
+}
+

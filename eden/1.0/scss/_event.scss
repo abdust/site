@@ -1,0 +1,118 @@
+/*================= 19. EVENT ==================*/
+.event-content .ed-recentPost{
+	margin-bottom: 40px;
+	@include desktops {
+		margin-bottom: 60px;
+	}
+	img{
+		width: 100%;
+	}
+}
+.event-content-fullwidth{
+	padding-bottom: 35px;
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 35px;
+}
+.event-page-fullwidth .pagination-nav{
+	margin-top: 40px;
+	@include desktops {
+		margin-top: 70px;
+	}
+}
+.ed-eventPost{
+	position: relative;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 30px;
+	@include tablet  {
+		margin-bottom: 0;
+	}
+	img{
+		@include border-radius;
+		width: 100%;
+	}
+	.overlay{
+		padding-top: 60px ;
+		@include mobile {
+			padding-top: 80px;
+		}
+		@include tablet {
+			padding-top: 60px ;
+		}
+		@include large-desktops {
+			padding-top: 78px;
+		}
+	}
+	.overlay.overlay-padding{
+		@include tablet {
+			padding-top: 34px ;
+		}
+		@include large-desktops {
+			padding-top: 40px;
+		}
+	}
+	.event-date{
+		font-size: 65px;
+		line-height: 60px;
+		@include mobile {
+			font-size: 70px;
+			line-height: 60px;
+		}
+	}
+	.event-month{
+		font-size: 15px;
+	}
+}
+.event-text{
+	.headline{
+		margin-bottom: 0;
+		a{
+			color: $text-color;
+			margin-bottom: 15px;
+			font-weight: 500;
+			@include mobile {
+				font-size: 24px;
+			}
+		}
+	}
+	.ed-post-meta{
+		margin-bottom: 20px;
+		span{
+			font-size: 16px;
+			font-weight: 500;
+			display: inline-block;
+			margin-right: 25px;
+			span{
+				font-size: 22px;
+				color: $primary-color;
+				margin-right: 7px;
+				vertical-align: text-bottom;
+			}
+		}
+	}
+	p{
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 300;
+		margin-right: 20px;
+	}
+	a{
+		color: $text-color;
+		font-size: 15px;
+		font-weight: 500;
+		display: inline-block;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+		span{
+			font-size: 22px;
+			color: $primary-color;
+			padding-left: 10px;
+			vertical-align: sub;
+		}
+	} 
+}
+.ed-blog-post.event-text .headline{
+		margin-bottom: 30px;
+}
