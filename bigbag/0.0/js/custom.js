@@ -1,3 +1,31 @@
+//============================== Style Switcher =========================
+jQuery(document).ready(function() {
+    OptionSwitcher.initOptionSwitcher();      
+});
+
+
+//============================== header =========================
+
+jQuery(document).ready(function($) {
+
+    // Fixa navbar ao ultrapassa-lo
+    var navbar = $('.navbar-main'),
+    		distance = navbar.offset().top,
+        $window = $(window);
+
+	    $window.scroll(function() {
+	    	if(($window.scrollTop() >= distance) && ($(".navbar-default").hasClass("navbar-main")))
+	        {
+	            navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+	          	$("body").css("padding-top", "0");
+	        } else {
+	            navbar.removeClass('navbar-fixed-top');
+	            $("body").css("padding-top", "0px");
+	        }
+	    });
+	
+});
+
 //============================== ALL DROPDOWN ON HOVER =========================
 jQuery(document).ready(function(){
     $('.dropdown').hover(function() {
@@ -52,19 +80,21 @@ jQuery(document).ready(function() {
 		  loop:true,
 		  margin:28,
 		  autoplay:true,
-		  autoplayTimeout:2000,
+		  autoplayTimeout:6000,
 		  autoplayHoverPause:true,
 		  nav:true,
-		  moveSlides: 5,
 		  dots: false,
 		  responsive:{
 			  320:{
+			  	slideBy: 1,
 				  items:1
 			  },
 			  768:{
+			  	slideBy: 3,
 				  items:3
 			  },
 			  992:{
+			  	slideBy: 5,
 				  items:5
 			  }
 		  }
@@ -72,7 +102,7 @@ jQuery(document).ready(function() {
 });
 //============================== SELECT BOX =========================
 jQuery(document).ready(function() {
-	$(".select-drop").selectbox();
+	$('.select-drop').selectbox();
 });
 
 //============================== SIDE NAV MENU TOGGLE =========================
@@ -82,62 +112,46 @@ jQuery(document).ready(function() {
 	});
 });
 
-// ============================== SELECT BOX =========================
-// jQuery(document).ready(function() {
-// 	var slider = new Slider("#ex6");
-// 	slider.on("slide", function(slideEvt) {
-// 		$("#ex6SliderVal").text(slideEvt.value);
-// 	});
-// });
-
 //============================== PRICE SLIDER RANGER =========================
-var minimum = 20;
-var maximum = 300;
-
-$( "#price-range" ).slider({
-	range: true,
-	min: minimum,
-	max: maximum,
-	values: [ minimum, maximum ],
-	slide: function( event, ui ) {
-		$( "#price-amount-1" ).val( "$" + ui.values[ 0 ] );
-		$( "#price-amount-2" ).val( "$" + ui.values[ 1 ] );
-	}
-});
-
-$( "#price-amount-1" ).val( "$" + $( "#price-range" ).slider( "values", 0 ));
-$( "#price-amount-2" ).val( "$" + $( "#price-range" ).slider( "values", 1 ));
-
-//============================== PRODUCT SINGLE SLIDER =========================
-(function($){
-  $('#thumbcarousel').carousel(0);
-  var $thumbItems = $('#thumbcarousel .item');
-    $('#carousel').on('slide.bs.carousel', function (event) {
-     var $slide = $(event.relatedTarget);
-     var thumbIndex = $slide.data('thumb');
-     var curThumbIndex = $thumbItems.index($thumbItems.filter('.active').get(0));
-    if (curThumbIndex>thumbIndex) {
-      $('#thumbcarousel').one('slid.bs.carousel', function (event) {
-        $('#thumbcarousel').carousel(thumbIndex);
-      });
-      if (curThumbIndex === ($thumbItems.length-1)) {
-        $('#thumbcarousel').carousel('next');
-      } else {
-        $('#thumbcarousel').carousel(numThumbItems-1);
-      }
-    } else {
-      $('#thumbcarousel').carousel(thumbIndex);
-    }
-  });
-})(jQuery);
-
-//============================== Count down =========================
 jQuery(document).ready(function() {
-  $('#simple_timer').syotimer({
-        year: 2016,
-        month: 5,
-        day: 9,
-        hour: 20,
-        minute: 30,
-    });
+	var minimum = 20;
+	var maximum = 300;
+
+	$( "#price-range" ).slider({
+		range: true,
+		min: minimum,
+		max: maximum,
+		values: [ minimum, maximum ],
+		slide: function( event, ui ) {
+			$( "#price-amount-1" ).val( "$" + ui.values[ 0 ] );
+			$( "#price-amount-2" ).val( "$" + ui.values[ 1 ] );
+		}
+	});
+
+	$( "#price-amount-1" ).val( "$" + $( "#price-range" ).slider( "values", 0 ));
+	$( "#price-amount-2" ).val( "$" + $( "#price-range" ).slider( "values", 1 ));
+});
+//============================== PRODUCT SINGLE SLIDER =========================
+jQuery(document).ready(function() {
+	(function($){
+	  $('#thumbcarousel').carousel(0);
+	  var $thumbItems = $('#thumbcarousel .item');
+	    $('#carousel').on('slide.bs.carousel', function (event) {
+	     var $slide = $(event.relatedTarget);
+	     var thumbIndex = $slide.data('thumb');
+	     var curThumbIndex = $thumbItems.index($thumbItems.filter('.active').get(0));
+	    if (curThumbIndex>thumbIndex) {
+	      $('#thumbcarousel').one('slid.bs.carousel', function (event) {
+	        $('#thumbcarousel').carousel(thumbIndex);
+	      });
+	      if (curThumbIndex === ($thumbItems.length-1)) {
+	        $('#thumbcarousel').carousel('next');
+	      } else {
+	        $('#thumbcarousel').carousel(numThumbItems-1);
+	      }
+	    } else {
+	      $('#thumbcarousel').carousel(thumbIndex);
+	    }
+	  });
+	})(jQuery);
 });

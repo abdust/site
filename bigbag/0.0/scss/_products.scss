@@ -64,6 +64,10 @@
 		.pull-left{
 			position: relative;
 			padding-right: 0;
+			overflow: hidden;
+			img{
+				@include transition(all 0.5s ease-in-out);
+			}
 			.maskingImage{
 				@extend .masking-hover;
 				.viewBtn{
@@ -129,15 +133,35 @@
 					text-align: center;
 					margin-right: $margin - 3px;
 					border-color: $border-gray;
+					@include transition(all 0.3s ease-in-out);
 					i{
+						@include transition(all 0.3s ease-in-out);
 						color: $text-gray;
+					}
+					&:hover, &:focus{
+						background-color: $primary-color;
+						border-color:$primary-color; 
+						i{
+							color: $white-color;
+						}
 					}
 				}
 			}
 		}
-		&:hover .maskingImage{
-			opacity: 1;
-		}
+		&:hover{
+			.pull-left{
+				img{
+					@include transform(scale(1.2));
+				}
+			}
+			.maskingImage{
+				opacity: 1;
+				.viewBtn{
+					-webkit-animation: itemMove 0.3s linear;
+					animation: itemMove 0.3s linear;
+				}
+			}
+		} 
 		&:hover .media-heading,
 		&:hover h3{
 			color: $primary-color;
@@ -496,7 +520,9 @@
 			line-height: 36px;
 			color: $secondary-color;
 			&:hover{
-				opacity: .8;
+				background-color: $primary-color;
+				border-color: $primary-color;
+				color: $white-color;
 			}
 			@include mobile-xs{
 				width: 100%;

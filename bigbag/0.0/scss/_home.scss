@@ -12,29 +12,29 @@
 		bottom: 0 !important;
 		padding: 9px 50px;
 		width: 150px;
-		height: 40px;
-		margin: -20px auto 0px auto !important;
+		height: 30px;
+		margin: -15px auto 0px auto !important;
 		display: block;
 		@include linear-gradient(to bottom, $primary-color-light 0%, $primary-color-light 50%, $primary-color 51%, $primary-color 100%);
 		text-align: center;
 		&::before{
 			content: "";
-			width: 29px;
-			height: 28px;
+			width: 22px;
+			height: 22px;
 			position: absolute;
-			left: -15px;
-			top: 6px;
+			left: -10px;
+			top: 4px;
 			z-index: -1;
 			@include linear-gradient(135deg, $primary-color-light 0%, $primary-color-light 50%, $primary-color 51%, $primary-color 100%);
 			@include transform(rotate(45deg));
 		}
 		&::after{
 			content: "";
-			width: 29px;
-			height: 28px;
+			width: 22px;
+			height: 22px;
 			position: absolute;
-			right: -15px;
-			top: 6px;
+			right: -10px;
+			top: 4px;
 			z-index: -1;
 			@include linear-gradient(135deg, $primary-color-light 0%, $primary-color-light 50%, $primary-color 51%, $primary-color 100%);
 			@include transform(rotate(45deg));
@@ -51,7 +51,7 @@
 		height: 9px !important;
 		border:  0 !important;
 		display: inline-block;
-		margin: $margin - 3px $margin - 8px 0 $margin - 8px!important;
+		margin: 0 $margin - 8px $margin - 8px $margin - 8px!important;
 		@include transition (background-color 0.2s, border-color 0.2s);
 		float: none !important;
 	}
@@ -149,6 +149,10 @@
 		text-align: left;
 		text-indent: 32px;
 		border-radius: 0;
+		@include transition(all 0.3s ease-in-out);
+		@include mobile-xs {
+			display: none;
+		}
 		@include mobile {
 			display: none;
 		}
@@ -158,11 +162,18 @@
 		}
 		i{
 			color: $primary-color;
+			@include transition(all 0.3s ease-in-out);
+		}
+		&:hover{
+			background-color: $primary-color;
+			color: $white-color !important;
+			i{
+				color: $white-color;
+			}
 		}
 	}
 }
 .fullscreenbanner .tp-dottedoverlay.twoxtwo {
-	background: rgba(0, 0, 0, 0.15);
 	background-image: none!important;
 	z-index: 1;
 }
@@ -235,8 +246,15 @@
 		position: relative;
 		margin-bottom: $margin*2;
 		display: block;
+		overflow: hidden;
 		img{
+			@include transition(all 0.5s ease-in-out);
 			width: 100%;
+		}
+		&:hover{
+			img{
+				@include transform(scale(1.2));
+			}
 		}
 		.productMasking{
 			@extend .masking-hover;
@@ -251,17 +269,23 @@
 						height: 42px;
 						padding: 0;
 						text-align: center;
-						@include add-border(3px, $border-sky-light, all);
+						@include add-border(3px, rgba(255, 255, 255, 0.6), all);
 						border-radius: 0px;
 						background-color: transparent;
 						line-height: 36px;
+						@include transition(all 0.3s ease-in-out);
 						i{
+							@include transition(all 0.3s ease-in-out);
 							font-size: 14px;
 							color: $white-color;
 						}
-						&:hover i{
-							color: $white-color - 30;
-						}
+						&:hover{
+							background-color:$white-color; 
+							border-color: $white-color; 
+							i{
+								color: $primary-color;
+							}
+						} 
 					}
 				}
 			}
@@ -273,6 +297,10 @@
 	}
 	&:hover .productMasking{
 		opacity: 1;
+		ul{
+			-webkit-animation: itemMove 0.3s linear;
+			animation: itemMove 0.3s linear;
+		}
 	}
 	.productCaption{
 		width: 100%;
@@ -303,9 +331,11 @@
 	@include transition(all 0.3s ease-in-out);
 	box-shadow: 0;
 	border-radius: 0;
+	padding:0;
+	line-height: 55px;
 	&:hover{
-		color: $white-color - 30;
-		border-color: $white-color - 30;
+		background-color: $white-color;
+		color: $primary-color;
 	}
 }
 .whiteSection, .mainContent{
@@ -322,8 +352,11 @@
 	.featuredCollection{
 		.thumbnail{
 			cursor: pointer;
+			@include mobile-xs{
+				margin-bottom: $margin*4 !important;
+			}
 			@include mobile{
-				margin-bottom: $margin*3;
+				margin-bottom: $margin*4 !important;
 			}
 			@include tablet{
 				margin-bottom: $margin*8+8px;
@@ -331,7 +364,9 @@
 			.imageWrapper{
 				position: relative;
 				width: 100%;
+				overflow: hidden;
 				img{
+					@include transition(all 0.5s ease-in-out);
 					width: 100%;
 				}
 				.masking{
@@ -344,6 +379,13 @@
 			&:hover .imageWrapper{
 				.masking{
 					opacity:1;
+				}
+				img{
+					@include transform(scale(1.2));
+				}
+				.viewBtn{
+					-webkit-animation: itemMove 0.3s linear;
+					animation: itemMove 0.3s linear;
 				}
 			} 
 			.caption{
@@ -427,4 +469,12 @@
 			}
 		}
 	}
+}
+@-webkit-keyframes itemMove {
+	0% {top:55%;}
+	100% {top:50%;}
+}
+@keyframes itemMove {
+	0% {top:55%;}
+	100% {top:50%;}
 }

@@ -107,12 +107,13 @@
 				margin-right: 0;
 				height: 35px;
 				padding: 0;
-				line-height: 26px;
-				@include add-border(3px, $primary-color - 75, all);
+				line-height: 29px;
+				border:3px solid $primary-color;
 				font-size: $font-size+4px;
 				text-transform: uppercase;
 				font-weight: 700;
 				color: $white-color;
+				@include transition(all 0.3s ease-in-out);
 				@include mobile-xs{
 					width: 25%;
 				}
@@ -126,6 +127,7 @@
 					width: 25%;	
 				}
 				i{
+					@include transition(all 0.3s ease-in-out);
 					color: $primary-color;					
 					@include mobile{
 						margin-left: $margin - 3px;	
@@ -135,6 +137,14 @@
 					}
 					@include desktops{
 						margin-left: $margin - 3px;	
+					}
+				}
+				&:hover{
+					background-color: $primary-color;
+					border-color: $primary-color;
+					color: $white-color;
+					i{
+						color: $white-color;
 					}
 				}
 			}

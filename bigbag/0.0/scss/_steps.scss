@@ -48,7 +48,8 @@
 						font-size: $font-size+5px;
 						@include transition(all 0.3s ease-in-out);
 						&:hover{
-							opacity: .8;
+							background-color: $primary-color;
+							color: $white-color;
 						}
 						&.hideContent{
 							display: none;
@@ -67,6 +68,10 @@
 							background-color: $border-gray-lighter;
 							color: $secondary-color;
 							margin-bottom: $margin;
+							&:hover{
+								background-color: $primary-color;
+								color: $white-color;
+							}
 						}
 					}
 				}
@@ -256,6 +261,10 @@
 					line-height: 30px;
 					span{
 						font-weight: 400;
+					}
+					a{
+						color: #252525;
+						text-decoration: none;
 					}
 				}
 			}

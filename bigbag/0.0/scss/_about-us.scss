@@ -27,12 +27,20 @@
 		li{
 			font-size: $font-size+4px;
 			color: $text-slider-title;
-			line-height: 22px;
+			line-height: 30px;
 			padding-left: $padding+8px;
-			background-image: url(../img/about-us/list-point.png);
-			background-size: 8px 8px;
-			background-position: 0 center;
-			background-repeat: no-repeat;
+			
+			&:before{
+				content: "";
+			    width: 8px;
+			    height: 8px;
+			    position: relative;
+			    left: -10px;
+			    top: -1px;
+			    background: $primary-color;
+			    @include transform(rotate(45deg));
+			    display: inline-block;
+			}
 		}
 		@include mobile{
 			margin-bottom: $margin*5;
@@ -110,7 +118,9 @@
 		font-weight: 700;
 		@include transition(all 0.3s ease-in-out);
 		&:hover{
-			opacity: .8;
+			background-color: $primary-color;
+			color: $white-color;
+			border-color: $primary-color;
 		}
 	}
 }

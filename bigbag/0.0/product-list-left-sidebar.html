@@ -15,12 +15,14 @@
     <link href="plugins/selectbox/select_option1.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="plugins/rs-plugin/css/settings.css" media="screen">
     <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css" media="screen">
+    <link rel="stylesheet" href="options/optionswitch.css">
 
     <!-- GOOGLE FONT -->
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/colors/default.css" id="option_color">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,6 +34,45 @@
   </head>
 
   <body>
+
+  <!--=== option Switcher ===-->
+  <i class="option-switcher-btn fa fa-gear hidden-xs"></i>
+  <div class="option-switcher animated fadeInRight">
+    <div class="option-swticher-header">
+      <div class="option-switcher-heading">Template Options</div>            
+      <div class="theme-close"><i class="fa fa-close"></i></div>
+    </div>
+    <div class="option-swticher-body">
+      <!-- Theme Colors -->
+      <ul class="list-unstyled">
+        <li class="theme-default theme-active" data-color="default" data-logo="default-logo"></li>
+        <li class="theme-pink" data-color="pink" data-logo="pink"></li>
+        <li class="theme-purple" data-color="purple" data-logo="purple"></li>
+        <li class="theme-deepBlue" data-color="deepBlue" data-logo="deepBlue"></li>
+        <li class="theme-orange last" data-color="orange" data-logo="orange"></li>
+      </ul>
+      <!-- Layout Styles -->
+      <div class="row no-col-space layoutStyle">
+        <div class="col-xs-6">
+          <a href="javascript:void(0);" class="btn-u  btn-block active-switcher-btn wide-layout-btn">Wide</a>                
+        </div>
+        <div class="col-xs-6">
+          <a href="javascript:void(0);" class="btn-u btn-block boxed-layout-btn">Boxed</a>
+        </div>                
+      </div> 
+      <!-- Header Styles -->
+      <div class="row no-col-space headerStyle">
+        <div class="col-xs-6">
+          <a href="javascript:void(0);" class="btn-u btn-block active-switcher-btn fixed-header-btn">Fixed Top</a>               
+        </div>
+        <div class="col-xs-6">
+          <a href="javascript:void(0);" class="btn-u  btn-block static-header-btn">Static Top</a>
+        </div>               
+      </div>              
+    </div>
+  </div>
+  <!--/option-switcher-->
+
     <div class="main-wrapper">
 
       <!-- HEADER -->
@@ -58,7 +99,7 @@
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li>
                         <span class="input-group">
-                          <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                          <input type="text" class="form-control" placeholder="Search…" aria-describedby="basic-addon2">
                           <span class="input-group-addon" id="basic-addon2">Search</span>
                         </span>
                       </li>
@@ -103,7 +144,7 @@
         </div>
 
         <!-- NAVBAR -->
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-main navbar-default" role="navigation">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -115,67 +156,83 @@
               </button>
               <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
-            
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">            
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="products.html">Shop</b></a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
-                  <ul class="dropdown-menu dropdown-menu-left">
-                    <li><a href="#">Amazing Features</a></li>
-                    <li><a href="#">Powerful Interface</a></li>
-                    <li><a href="#">Unlimited Possibilites</a></li>
-                    <li><a href="#">Retina Ready Display</a></li>
-                    <li><a href="#">Pixel Perfect Graphics</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown megaDropMenu active">
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300" data-close-others="true" aria-expanded="false">Shop</b></a>
+                  <ul class="dropdown-menu">
+                    <li class="col-sm-3 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li>Products Grid View</li>
+                        <li><a href="product-grid-left-sidebar.html">Products Sidebar Left</a></li>
+                        <li><a href="product-grid-right-sidebar.html">Products Sidebar Right</a></li>
+                        <li><a href="product-grid-3-col-filter.html">Products 3 Columns V1</a></li>
+                        <li><a href="product-grid-3-col.html">Products 3 Columns V2</a></li>
+                        <li><a href="product-grid-4-col.html">Products 4 Columns</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li>Products List View</li>
+                        <li class="active"><a href="product-list-left-sidebar.html">Products Sidebar Left</a></li>
+                        <li><a href="product-list-right-sidebar.html">Products Sidebar Right</a></li>
+                        <li class="listHeading">Others</li>
+                        <li><a href="single-product.html">Single Product</a></li>
+                        <li><a href="cart-page.html">Cart Page</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li>Checkout</li>
+                        <li><a href="checkout-step-1.html">Step 1 - Address</a></li>
+                        <li><a href="checkout-step-2.html">Step 2 - Shipping</a></li>
+                        <li><a href="checkout-step-3.html">Step 3 - Payment</a></li>
+                        <li><a href="checkout-step-4.html">Step 4 - Payment</a></li>
+                        <li><a href="checkout-complete.html">Order Complete</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3 col-xs-12">
+                      <a href="#" class="menu-photo"><img src="img/menu-photo.jpg" alt="menu-img"></a>
+                    </li>
                   </ul>
                 </li>
-                <li><a href="#">blog</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">components</a>
-                  <ul class="dropdown-menu megaMenu container">
-                    <span class="row">
-                      <li class="col-sm-3 col-xs-12">
-                        <ul class="list-unstyled">
-                          <li>shop styles</li>
-                          <li><a href="#">Amazing Features</a></li>
-                          <li><a href="#">Powerful Interface</a></li>
-                          <li><a href="#">Unlimited Possibilites</a></li>
-                          <li><a href="#">Retina Ready Display</a></li>
-                          <li><a href="#">Pixel Perfect Graphics</a></li>
-                        </ul>
-                      </li>
-                      <li class="col-sm-3 col-xs-12">
-                        <ul class="list-unstyled">
-                          <li>Shop pages</li>
-                          <li><a href="#">Bootstrap Ready</a></li>
-                          <li><a href="#">Font Awesome Icons</a></li>
-                          <li><a href="#">Pre Designed Homes</a></li>
-                          <li><a href="#">A Real Time Saver</a></li>
-                          <li><a href="#">No Rocket Science</a></li>
-                        </ul>
-                      </li>
-                      <li class="col-sm-3 col-xs-12">
-                        <ul class="list-unstyled">
-                          <li>product Pages</li>
-                          <li><a href="#">Amazing Features</a></li>
-                          <li><a href="#">Powerful Interface</a></li>
-                          <li><a href="#">Unlimited Possibilites</a></li>
-                          <li><a href="#">Retina Ready Display</a></li>
-                          <li><a href="#">Pixel Perfect Graphics</a></li>
-                        </ul>
-                      </li>
-                      <li class="col-sm-3 col-xs-12">
-                        <ul class="list-unstyled">
-                          <li>Extra Pages</li>
-                          <li><a href="#">Bootstrap Ready</a></li>
-                          <li><a href="#">Font Awesome Icons</a></li>
-                          <li><a href="#">Pre Designed Homes</a></li>
-                          <li><a href="#">A Real Time Saver</a></li>
-                        </ul>
-                      </li>
-                    </span>
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
+                  <ul class="dropdown-menu dropdown-menu-left">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                    <li><a href="signup-login.html">Register or Login</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="lost-password.html">Password Recovery</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="404.html">404 Not Found</a></li>
+                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">blog</a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
+                    <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                    <li><a href="blog-fullwidth.html">Full Width</a></li>
+                    <li><a href="blog-single-fullwidth.html">Single Post</a></li>
+                    <li><a href="blog-single-right-sidebar.html">Single Right Sidebar</a></li>
+                    <li><a href="blog-single-left-sidebar.html">Single Left Sidebar</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="account-dashboard.html">Dashboard</a></li>
+                    <li><a href="account-profile.html">Profile</a></li>
+                    <li><a href="account-all-orders.html">All Orders</a></li>
+                    <li><a href="account-single-order.html">Single Order</a></li>
+                    <li><a href="account-wishlist.html">Wishlist</a></li>
+                    <li><a href="account-address.html">Address</a></li>
                   </ul>
                 </li>
               </ul>
@@ -217,7 +274,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading">Product categories</div>
                 <div class="panel-body">
-                  <div class="collapse navbar-collapse navbar-side-collapse">
+                  <div class="collapse navbar-collapse navbar-ex1-collapse navbar-side-collapse">
                     <ul class="nav navbar-nav side-nav">
                       <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#women">Women <i class="fa fa-plus"></i></a>
@@ -311,10 +368,11 @@
               <div class="row filterArea">
                 <div class="col-xs-6">
                   <select name="guiest_id1" id="guiest_id1" class="select-drop">
-                    <option value="0">Default Sorting</option>
-                    <option value="1">Default Sorting 1</option>
-                    <option value="2">Default Sorting 2</option>
-                    <option value="3">Default Sorting 3</option>            
+                    <option value="0">Default sorting</option>
+                    <option value="1">Sort by popularity</option>
+                    <option value="2">Sort by rating</option>
+                    <option value="3">Sort by newness</option>
+                    <option value="3">Sort by price</option>           
                   </select>
                 </div>
                 <div class="col-xs-6">
@@ -336,8 +394,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -353,8 +411,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -370,8 +428,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -387,8 +445,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -404,8 +462,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -421,8 +479,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -438,8 +496,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -455,8 +513,8 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                       <h3>$249</h3>
                       <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-heart" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-modal"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default" onclick="location.href='cart-page.html';"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
@@ -588,7 +646,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-7 col-xs-12">
-              <p>© 2013 BigBag. All Rights Reserved. Built with love by <a href="#">Abdus</a> for Shopify.</p>
+              <p>© 2016 Copyright Bigbag Store Bootstrap Template by <a href="https://www.iamabdus.com/">Abdus</a>.</p>
             </div>
             <div class="col-sm-5 col-xs-12">
               <ul class="list-inline">
@@ -605,7 +663,7 @@
     </div>
     
     <!-- LOGIN MODAL -->
-    <div class="modal fade" id="login">
+    <div class="modal fade login-modal" id="login">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -711,6 +769,8 @@
     <script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
+    <script src="plugins/countdown/jquery.syotimer.js"></script>
+    <script src="options/optionswitcher.js"></script>
     <script src="js/custom.js"></script>
 
   </body>
