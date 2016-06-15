@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AASA,qCACA;ECmBC,2BAAgB,EDlByC,YAAK;ECmB9D,wBAAa,EDnB4C,YAAK;ECoB9D,uBAAY,EDpB6C,YAAK;ECqB9D,sBAAW,EDrB8C,YAAK;ECsB9D,mBAAQ,EDtBiD,YAAK",
-"sources": ["jquery.tosrus.drag.scss","../_variables.scss"],
-"names": [],
-"file": "jquery.tosrus.drag.css"
-}
