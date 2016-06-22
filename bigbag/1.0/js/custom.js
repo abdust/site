@@ -17,9 +17,11 @@ jQuery(document).ready(function($) {
 	        {
 	            navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
 	          	$("body").addClass("padding-top");
+	          	$(".topBar").css("display","none");
 	        } else {
 	            navbar.removeClass('navbar-fixed-top');
 	            $("body").removeClass("padding-top");
+	            $(".topBar").css("display","block");
 	        }
 	    });
 	
@@ -104,7 +106,7 @@ jQuery(document).ready(function() {
   (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
     t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
   })(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
-  
+
 //============================== SELECT BOX =========================
 jQuery(document).ready(function() {
 	$('.select-drop').selectbox();

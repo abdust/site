@@ -40,16 +40,17 @@ i.option-switcher-btn-option:hover {
 .option-switcher-btn.fa-gear{
   font-size: 25px;
 }
-.option-switcher {
+.option-switcher.container {
    right: 0;
    top: 101px;
    color: #fff;
-   width: 295px;
+   width: 295px !important;
    display: none;
    z-index: 555555;
    position: fixed;
    background: rgba(0, 0, 0, 0.8);
    border-radius: 8px 0 0 8px !important;
+   padding: 0;
 }
 
 /*Others*/

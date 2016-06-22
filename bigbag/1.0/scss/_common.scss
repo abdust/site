@@ -50,3 +50,6 @@ a:hover, a:focus{
     color: $text-link - 50;
     outline: 0;
 }
+.media-left, .media>.pull-left {
+    float: left !important;
+}

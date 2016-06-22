@@ -61,7 +61,7 @@
 .productListSingle{
 	.media{
 		margin-bottom: $margin*5;
-		.pull-left{
+		.media-left{
 			position: relative;
 			padding-right: 0;
 			overflow: hidden;
@@ -349,7 +349,7 @@
 	font-size: $font-size+5px;
 	color: $white-color;
 	padding-left: $padding*2;
-	@include add-border(1px, $primary-color-lightess, right);
+	@include add-border(1px, rgba(255,255,255,0.2), right);
 	border-bottom: none;
 }
 %tableData{
