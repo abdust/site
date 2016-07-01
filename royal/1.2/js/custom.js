@@ -193,6 +193,11 @@ jQuery(document).ready(function(){
 		});
 	});
 
+	//============================== getsitecontrol =========================
+	(function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+	t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+	})(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
+
 	//============================== Calender =========================
 	$(document).ready(function(event, jsEvent, ui, view) {
 	    $('#calendar').fullCalendar({
@@ -277,10 +282,3 @@ var hm = document.createElement('script'); hm.type ='text/javascript'; hm.async 
 hm.src = ('++u-heatmap-it+log-js').replace(/[+]/g,'/').replace(/-/g,'.');
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);
 })();
-
-//================================ zopim live chat ==================================
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="//v2.zopim.com/?OsxjyZjGcD9KEceHsAC5toZnWGB0LVTM";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
