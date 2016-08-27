@@ -1,0 +1,714 @@
+/*=== 2. UI KIT ===*/
+/*=== 2.1 BUTTON ===*/
+.btn-primary{
+	height: $base*9;
+	padding: 0 $base*4;
+	border: none;
+	line-height: $base*9;
+	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	background-color: $primary-color;
+	@include border-radius($base-xs*3);
+	font-size: $base-xs*8;
+	text-transform: uppercase;
+	color: $white-color;
+	@include transition(all 0.3s ease-in-out);
+	font-weight: 600;
+	>i{
+		margin-right: $base*2;
+	}
+	&:hover{
+		background-color: $primary-color;
+	}
+	&:focus, &.active, &:active{
+		border: none;
+		background-color: $primary-color;
+		outline: 0;
+		@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	}
+	&.btn-Full{
+		float: left !important;
+		width: 100% !important;
+	}
+}
+.btn-primary.active.focus, 
+.btn-primary.active:focus, 
+.btn-primary.active:hover, 
+.btn-primary:active.focus, 
+.btn-primary:active:focus, 
+.btn-primary:active:hover, 
+.open>.dropdown-toggle.btn-primary.focus, 
+.open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover{
+	border: none;
+	background-color: $primary-color;
+	outline: 0;
+	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+}
+.backToTop{
+	position: fixed;
+	bottom: $base*4;
+	right: $base*4;
+	width: $base*10;
+	height: $base*10;
+	text-align: center;
+	line-height: $base*9;
+	background-color: $primary-color;
+	@include add-border(2px, $white-color, all);
+	@include border-radius($base-xs*6+1px);
+	color: $white-color;
+	display: block;
+	font-size: $base-xs*8;
+	@include opacity(0);
+	@include transition(all 0.3s ease-in-out);
+	&:hover{
+		color: $white-color;
+	}
+}
+/*=== 2.2 SECTION TITLE ===*/
+.whiteSection, .mainContent, .lightSection{
+	background-color: $white-color;
+	@include mobile-all{
+		padding: $base*10 0;
+	}
+	@include tablet{
+		padding: $base*20 0;
+	}
+}
+.lightSection{
+	background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 30.1961);
+}
+.colorSection{
+	padding: $base*20 0;
+}
+.sectionTitle{
+	h2{
+		font-family: 'Dosis', sans-serif;
+		font-size: $base-xs*18;
+		color: $primary-color;
+		text-transform: capitalize;
+		float: left;
+		width: 100%;
+		span{
+			padding: 0 $base*3;
+			@include mobile-all{
+				display: block;
+				width: 100%;
+				float: left;
+			}
+			@include tablet{
+				display: inline-block;
+				width: auto;
+				float: none;
+			}
+		}
+		@include mobile-all{
+			margin-bottom: $base*6;
+		}
+		@include tablet{
+			margin-bottom: $base*14;
+		}
+	}
+	&.alt{
+		h2{
+			color: $white-color;
+		}
+	}
+}
+.sectionTitleSmall{
+	margin-bottom: $base*8;
+	h2{
+		text-align: center; 
+		font-family: 'Dosis', sans-serif;
+		text-transform: capitalize;
+		margin: 0 0 $base-xs*6 0;
+		color: $white-color;
+	}
+	p{
+		color: $white-color;
+		text-align: center;
+		font-size: $base*3;
+	}
+}
+.pageTitleSection{
+	background-image: url("../img/page-title/page-title-bg.jpg");
+	background-attachment: fixed;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	height: $base*50;
+	.pageTitleTable{
+		display: table;
+		height: $base*50;
+		width: 100%;
+		.pageTitleTableInner{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			.pageTitleInfo{
+				text-align: center;
+				h2{
+					font-size: $base*8;
+					line-height: $base-xs*16+1px;
+					color: $white-color;
+					margin-bottom: $base*8;
+					margin: 0 0 $base-xs*11+1px 0;
+					font-family: 'Dosis', sans-serif;
+					text-transform: capitalize;
+					font-weight: 600;
+				}
+				.breadcrumb{
+					background-color: transparent;
+					li{
+						color: $white-color;
+						font-size: $base*3;
+						a{
+							color: $white-color;
+							font-size: $base*3;
+						}
+					}
+					> li + li::before{
+						content: " \276F\00a0 ";
+					}
+				}
+			}
+		}
+	}
+}
+/*=== 2.3 FORM ===*/
+.searchArea{
+	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 31.3725);
+	margin-bottom: $base*14;
+	@include border-radius($base-xs*3+1px);
+	height: $base*14;
+	>.input-group-addon{
+		background-color: transparent;
+		border: none;
+		min-width:  $base*14;
+		font-size: $base-xs*9;
+		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+		&.button{
+			height: $base*14;
+			padding: 0 $base*14;
+			border: none;
+			line-height: $base*9;
+			background-color: $primary-color;
+			font-size: $base-xs*9;
+			text-transform: uppercase;
+			color: $white-color;
+			@include transition(all 0.3s ease-in-out);
+			font-weight: 600;
+			&:hover{
+				background-color: $primary-color;
+			}
+		}
+	}
+	>.form-control{
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+		height: $base*14;
+		font-size: $base*3;
+		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+	}
+}
+.resultInfo{
+	h3{
+		font-family: 'Dosis', sans-serif;
+		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+		font-size: $base-xs*14;
+		text-transform: capitalize;
+		margin-bottom: $base*8;
+	}
+}
+
+.formPanel{
+	&.panel{
+		border: 0;
+		margin-bottom: $base*6;
+		@include border-radius($base-xs*3+1px);
+		.panel-heading{
+			@include border-radius($base-xs*3+1px $base-xs*3+1px 0 0);
+			.panel-title{
+				font-size: $base-xs*12;
+				color: $white-color;
+				text-transform: capitalize;
+				font-weight: 700;
+				font-family: 'Dosis', sans-serif;
+			}
+		}
+		.panel-body{
+			@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all );
+			border-top: 0;
+			@include border-radius(0 0 $base-xs*3+1px $base-xs*3+1px);
+			.media-list{
+				li{
+					padding: $base*2 0;
+					margin: 0;
+					.media-left.iconContent{
+						width: $base*9;
+						height: $base*9;
+						line-height: $base*9;
+						text-align: center;
+						color: $white-color;
+						@include border-radius(100%);
+						display: inline-block;
+						float: left;
+						padding: 0;
+						margin-right: $base*4;
+						font-size: $base-xs*8;
+					}
+					.media-body.iconContent{
+						.media-heading{
+							font-family: 'Dosis', sans-serif;
+							font-size: $base*4;
+							font-weight: 700;
+						}
+						p{
+							font-weight: 600;
+							margin-bottom: 0;
+						}
+					}
+				}
+				&.blogListing{
+					li{
+						.media-heading{
+							a{
+								font-weight: 600;
+								font-size: $base-xs*7;
+								text-transform: capitalize;
+								color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+								&:hover{
+									color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.formField{
+	.form-control{
+		height: 50px;
+		@include border-radius($base*2);
+		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+		border-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 23.5294);
+		box-shadow: none;
+	}
+	.btn-primary{
+		&:focus{
+			outline: 0;
+			@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+		}
+	}
+	.help-block{
+		text-align: center;
+		margin-bottom: 0;
+		a{
+			&:hover{
+				color: $primary-color;
+			}
+		}
+	}
+}
+.errorSpace{
+	.form-control{
+		border-color: rgba(darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824), .2);
+		margin-bottom: $base*8;
+	}
+}
+/*=== 2.4 PAGINATION ===*/
+
+/*=== 2.5 ACCORDION ===*/
+.accordionCommon{
+	.panel{
+		margin-bottom: $base*6;
+		border: none;
+	}
+	.panel-heading{
+		display: block;
+		padding: $base*3 $base*4;
+		@include border-radius($base-xs*4);
+		font-weight: 600;
+		color: $white-color;
+		font-size: $base-xs*7;
+		text-transform: uppercase;
+		position: relative;
+		span.iconBlock{
+			width: $base*4;
+			height: $base*4;
+			line-height: $base*4;
+			text-align: center;
+			@include border-radius($base-xs+1px);
+			background-color: $white-color;
+			color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+			display: inline-block;
+			float: right;
+			@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+			&.iconTransparent{
+				background-color: transparent;
+				box-shadow: none;
+				color: $white-color;
+			}
+		}
+	}
+	span.separator{
+		width: 1px;
+		height: 100%;
+		background-color: rgba($white-color, .25);
+		position: absolute;
+		top: 0;
+		right: $base*12;
+	}
+	.panel-body{
+		padding: $base*6;
+		background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 31.3725);
+		@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+		border-top: none !important;
+		@include border-radius( 0 0 $base-xs*4 $base-xs*4);
+		p{
+			margin-bottom: $base*7;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/*=== 2.6 TABS ===*/
+.tabCommon{
+	.nav{
+		border-bottom: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			float: none;
+			@include mobile-all{
+				padding: $base-xs;
+			}
+			@include tablet{
+				padding: 0 $base-xs;
+			}
+			a{
+				padding: 0 $base*5;
+				height:  $base*8;
+				font-size: $base-xs*7;
+				line-height: $base*8;
+				color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+				text-transform: uppercase;
+				font-weight: 600;
+				display: inline-block;
+				@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+				background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 31.3725);
+				@include border-radius($base-xs*2);
+			}
+			&.active{
+				a{
+					background-color: $primary-color;
+					color: lighten(saturate(adjust-hue(#ea7066, -4.5455), 24.1379), 33.9216);
+				}
+			}
+		}
+	}
+	.tab-content{
+		padding-top: $base*10;
+	}
+	.tab-pane{
+		@include add-border(3px, rgba($primary-color, .3), all);
+		@include border-radius($base-xs*4);
+	}
+	.media-body{
+		padding: $base*10 $base*6 0 0;
+		.media-heading{
+			font-family: 'Dosis', sans-serif;
+			font-size: $base-xs*14;
+			color: $primary-color;
+			margin: 0 0 $base*5 0;
+			text-transform: capitalize;
+		}
+		p{
+			color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+			margin-bottom: $base*6;
+		}
+	}
+	&.tabLeft{
+		.nav{
+			display: table-cell;
+			padding-right: $base*2;
+			li{
+				display: block;
+				padding: 0 0 $base*2 0;
+				&.active{
+					a{
+						position: relative;
+						&:after{
+							content:"";
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 10px 0 10px 10px;
+							border-color: transparent transparent transparent $primary-color;
+							position: absolute;
+							right: -9px;
+							top: 10px;
+							@include border-radius($base-xs*4);
+							@include transition(all 0.3s ease-in-out);
+						}
+						
+					}
+				}
+			}
+		}
+		.tab-content{
+			display: table-cell;
+			padding: 0;
+		}
+	}
+}
+/*=== 2.7 DATEPICKER ===*/
+
+/*=== 2.8 THUMBNAIL ===*/
+.thumbnail{
+	padding: 0;
+	border: none;
+	@include border-radius($base-xs*4+1px);
+	position: relative;
+	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	>a{
+		img{
+			border-radius: $base-xs*4+1px $base-xs*4+1px 0 0;
+			width: 100%;
+		}
+	}
+}
+/*=== 2.9 MODAL ===*/
+.customModal{
+	.modal-content{
+		@include border-radius($base-xs*4);
+	}
+	.modal-dialog{
+		@include mobile-all{
+			width: 100%;
+		}
+		@include tablet{
+			width: $base*70;
+		}
+	}
+	.formPanel.panel{
+		margin-bottom: 0 !important;
+	}
+}
+/*=== 2.10 PANEL ===*/
+
+/*=== 2.11 PRICE RANGE SLIDER ===*/
+
+/*=== 2.12 LIST ===*/
+.topList{
+	li{
+		color: rgba($white-color, .8);
+		@include tablet{
+			margin-right: $base;
+			font-size: $base*2;
+		}
+		@include desktops{
+			margin-right: $base*2;
+			font-size: $base-xs*7;
+		}
+		@include large-desktops{
+			margin-right: $base*4;
+		}
+		i{
+			width: $base*4+1px;
+			height: $base*4+1px;
+			display: inline-block;
+			
+			color: $white-color;
+			@include border-radius(100%); 
+			text-align: center;
+			line-height: 21px;
+			@include tablet{
+				margin-right: $base;
+			}
+			@include desktops{
+				margin-right: $base;
+			}
+			@include large-desktops{
+				margin-right: $base*2;
+			}
+		}
+		a{
+			color: rgba($white-color, .8);
+			@include tablet{
+				font-size: $base*2;
+			}
+			@include desktops{
+				font-size: $base-xs*7;
+			}
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.functionList{
+	@include tablet{
+		width: 100%;
+		float: left;
+	}
+	@include desktops{
+		width: 100%;
+		float: left;
+	}
+	@include large-desktops{
+		width: 92%;
+		float: right;
+	}
+	>li{
+		color: rgba($white-color, .8);
+		float: left;
+		@include tablet{
+			margin-right: $base;
+			padding: 0;
+			font-size: $base*2;
+		}
+		@include desktops{
+			margin-right: $base*2;
+			padding: 0;
+			font-size: $base-xs*7;
+		}
+		@include large-desktops{
+			margin-right: $base*3;
+			padding: 0 $base;
+		}
+		span{
+			margin: 0 $base;
+		}
+		i{
+			width: $base*4+1px;
+			height: $base*4+1px;
+			display: inline-block;
+			color: $white-color;
+			@include border-radius(100%); 
+			text-align: center;
+			line-height: 21px;
+			@include tablet{
+				margin-right: $base;
+			}
+			@include desktops{
+				margin-right: $base*2;
+			}
+		}
+		a{
+			color: rgba($white-color, .8);
+			font-weight: 600;
+		}
+		&:last-child{
+			margin-right: 0;
+			a{
+				margin-right: 0;
+				width: 26px;
+				height: 26px;
+				line-height: 26px;
+				border-radius: 5px;
+				margin-top: 0;
+				display: block;
+				text-align: center;
+				position: relative;
+				@include transition(all 0.3s ease-in-out);
+				i{
+					margin-right: 0;
+				}
+				.badge{
+					position: absolute;
+					top: -5px;
+					right: -20px;
+				}
+				&:hover{
+					-webkit-transform: scale(1.2, 1.2);
+					-o-transform: scale(1.2, 1.2);
+					transform: scale(1.2, 1.2);
+				}
+			}
+		}
+		&.LanguageList{
+			width: 22%;
+		}
+		&:first-child{
+			margin-right: 0;
+			i{
+				margin-right: 0;
+			}
+		}
+	}
+}
+.LanguageList .sbSelector{
+	@include tablet{
+		font-size: $base*2;
+	}
+	@include desktops{
+		font-size: $base-xs*7;
+	}
+}
+/*=== 2.13 PAGER ===*/
+.pagerArea{
+	>.pager{
+		margin: $base*16 0 $base*4 0;
+		li{
+			padding: 0 $base*3;
+			a{
+				width: $base-xs*57;
+				height: $base*9;
+				padding: 0 $base*4;
+				border: none;
+				line-height: $base*9;
+				@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+				background-color: $primary-color;
+				@include border-radius($base-xs*3);
+				font-size: $base-xs*8;
+				text-transform: uppercase;
+				color: $white-color;
+				@include transition(all 0.3s ease-in-out);
+				font-weight: 600;
+			}
+			&:first-child{
+				a{
+					i{
+						margin-right: $base*2;
+					}
+				}
+			}
+			&:last-child{
+				a{
+					i{
+						margin-left: $base*2;
+					}
+				}
+			}
+		}
+	}
+}
+/*=== 2.14 Extra ===*/
+.errorMsg{
+	text-align: center;
+}
+.errorInfo{
+	h3{
+		font-family: 'Dosis', sans-serif;
+		font-size: $base-xs*24;
+		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+		margin-bottom: $base*5;
+		text-transform: capitalize;
+	}
+	p{
+		font-size: $base-xs*14;
+		color: $secondary-color;
+		margin-bottom: $base*11;
+	}
+}

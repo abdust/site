@@ -1,0 +1,128 @@
+/*================= 12 PRICING TABLE ==================*/
+.pricingTable{
+	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .2) );
+	@include border-radius($base-xs*4);
+	background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 31.3725);
+	margin-bottom: $base*6;
+	.priceUper, .priceLower{
+		display: block;
+		width: 100%;
+	}
+	.priceLower{
+		padding: $base*10 $base*4 $base*6 $base*4;
+	}
+	&.tableVertical{
+		float: left;
+		.priceUper, .priceLower{
+			display: inline-block;
+			float: left;
+			width: 50%;
+		}
+	}
+}
+.priceTitle{
+	height: auto;
+	padding: $base*7 $base*4 $base*2 $base*4;
+	@include border-radius($base-xs*4 $base-xs*4 0 0);
+	h3{
+		margin: 0;
+		color: $white-color;
+		font-family: 'Dosis', sans-serif;
+		font-size: $base-xs*17;
+		font-weight: 600;
+		text-transform: capitalize; 
+	}
+	&.alt{
+		height: $base*18;
+		padding: 0 $base*4;
+		h3{
+			line-height: $base*18; 
+			font-size: $base-xs*18;
+		}
+	}
+	&.checkingTitle{
+		height: $base*16;
+		padding: 0 $base*4;
+		h3{
+			line-height: $base*16; 
+			font-size: $base-xs*12;
+		}
+	}
+}
+.priceInfo{
+	height: $base*24;
+	p{
+		color: lighten(saturate(adjust-hue(#ea7066, -4.5455), 24.1379), 33.9216);
+		padding: 0 $base*4;
+	}
+	&.alt{
+		height: $base*36;
+		overflow: hidden;
+	}
+}
+.priceOffer{
+	li{
+		margin-bottom: $base*5;
+		font-family: 'Dosis', sans-serif;
+		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+		font-size: $base-xs*9;
+		i{
+			margin-right: $base-xs*4;
+		}
+		&:last-child{
+			margin-bottom: $base*7;
+		}
+	}
+}
+.priceBtn{
+	h4{
+		display: inline-block;
+		float: right;
+		font-family: 'Dosis', sans-serif;
+		font-size: $base-xs*17;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 0;
+		line-height: 20px;
+		small{
+			text-transform: capitalize;
+			font-size: $base-xs*7;
+		}
+	}
+	h5{
+		font-family: 'Dosis', sans-serif;
+		font-size: $base-xs*14;
+		font-weight: 600;
+		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+		span{
+			color: $primary-color;
+		}
+	}
+}
+.tableVertical{
+	.priceTitle{
+		@include border-radius($base-xs*4 0 0 0);
+	}
+	.priceInfo{
+		height: $base*27;
+		@include border-radius( 0 0 0 $base-xs*4);
+	}
+	.priceBtn{
+		&.alt{
+			padding: $base*4 $base*4 0 $base*4;
+			.btn-primary{
+				background-color: $white-color;
+				color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+			}
+			h4{
+				color: $white-color;
+				small{
+					color: $white-color;
+				}
+			}
+		}
+	}
+	.priceLower{
+		padding: $base*4 $base*4 0 $base*4;
+	}
+}

@@ -1,0 +1,50 @@
+/*================= 9 SERVICES ==================*/
+/*=== 9.1 SERVICES STYLE ===*/
+.servicesStyle{
+	margin-bottom: $base*8;
+	>.media-body{
+		>.media-heading{
+			text-transform: capitalize;
+			font-family: 'Dosis', sans-serif;
+			font-size: $base-xs*12;
+		}
+	}
+	.media-left{
+		width: $base-xs*38;
+		height: $base-xs*38;
+		padding: $base-xs*3;
+		margin-right: $base*4;
+		display: inline-block;
+		float: left;
+		@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+		@include border-radius($base-xs*3+1px);
+		>i{
+			width: $base-xs*32;
+			height: $base-xs*32;
+			line-height: $base-xs*32;
+			@include border-radius(100%);
+			@include add-border(2px, $white-color, all);
+			text-align: center;
+			font-size: $base-xs*11;
+			color: $white-color;
+		}
+	}
+	&.alt{
+		.media-left{
+			>i{
+				border: none;
+			}
+		}
+	}
+	&.alignRight{
+		.media-left{
+			float: right;
+			margin: 0 0 0 20px;
+		}
+		>.media-body{
+			h3, p{
+				text-align: right;
+			}
+		}
+	}
+}

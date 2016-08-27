@@ -1,0 +1,48 @@
+/*================= 10 TESTIMONIAL ==================*/
+.testimonialArea{
+	padding-bottom: 0 !important;
+}
+.testimonialContent{
+	width: 100%;
+	height: $base*50;
+	display: block;
+	@include border-radius($base-xs*6+1px);
+	text-align: center;
+	@include transition(all 0.3s ease-in-out);
+	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	padding: $base*7;
+	margin-bottom: $base*16;
+	span.userSign{
+		width: $base*20;
+		height: $base*20;
+		@include border-radius(100%);
+		background-color: $white-color;
+		border-width: $base-xs*3;
+		border-style: solid;
+		top: -50px;
+		font-size: $base*6;
+		line-height: $base*18;
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+	}
+	p{
+		color: $white-color;
+		margin: $base*5 0;
+		font-size: $base-xs*8;
+	}
+	h3{
+		font-weight: 600;
+		color: $white-color;
+		margin: 0;
+		font-size: $base-xs*8;
+		line-height: $base*6;
+		small{
+			margin: 0;
+			font-size: $base-xs*7;
+			text-transform: capitalize;
+			color: rgba($white-color, .8);
+		}
+	}
+}

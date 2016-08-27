@@ -1,0 +1,619 @@
+/*================= 6. COURSE ==================*/
+
+/*=== 6.1 COURSE LEFT SIDEBAR ===*/
+.courseSidebar{
+	border: none;
+	@include border-radius($base-xs*3+1px);
+	.panel-heading{
+		@include border-radius($base-xs*3+1px $base-xs*3+1px 0 0);
+		.panel-title{
+			font-size: $base-xs*12;
+			color: $white-color;
+			text-transform: capitalize;
+			font-family: 'Dosis', sans-serif;
+		}
+	}
+	.panel-body{
+		@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all);
+		border-top: none;
+		@include border-radius(0 0 $base-xs*3+1px $base-xs*3+1px);
+		>.input-group{
+			@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), bottom);
+			margin: $base*4 0 $base*2 0;
+			padding-bottom: $base*2;
+			.form-control{
+				height: $base-xs*28+1px;
+				border: none;
+				padding: 0 0 0 $base-xs*6;
+				color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+			}
+			.input-group-addon{
+				background-color: transparent;
+				padding: 0;
+				border: none;
+				.btn-primary{
+					width: $base*15;
+					padding: 0;
+				}
+			}
+		}
+		.categoryItem{
+			li{
+				a{
+					display: block;
+					width: $base*46;
+					height: $base*10;
+					line-height: $base*10;
+					font-weight: 600;
+					color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824); 
+					font-size: $base-xs*7;
+					@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all);
+					@include border-radius($base-xs*6);
+					margin: $base 0;
+					text-indent: $base*4;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+.priceRange{
+	.progress{
+		margin: $base*4 0 $base*5 0; 
+		height: 4px;
+		background-color: #252525;
+		position: relative;
+		overflow: visible;
+		.progress-bar{
+			background-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
+		}
+		.bulet{
+			width: 16px;
+			height: 16px;
+			background-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
+			@include add-border(2px, darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important, all);
+			@include border-radius(100%);
+			left: 0px;
+			top: -5px;
+			position: absolute;
+			&.next{
+				left: 60px;
+			}
+		}
+	}
+	.priceLabel{
+		float: right;
+		line-height: 30px;
+		color: $secondary-color;
+		@include mobile{
+			font-size: $base-xs*7;
+		}
+		@include tablet{
+			font-size: $base-xs*2+1px;
+		}
+		@include desktops{
+			font-size: $base-xs*7;
+		}
+	}
+}
+// .priceRange{
+// 	.progress{
+// 		margin: $margin*2 0 $margin*2+5px 0; 
+// 		height: 4px;
+// 		background-color: $light-color;
+// 		position: relative;
+// 		overflow: visible;
+// 		.progress-bar{
+// 			background-color: $secondary-color;
+// 		}
+// 		.bulet{
+// 			width: 16px;
+// 			height: 16px;
+// 			background-color: $white-color;
+// 			@include add-border(2px, $secondary-color, all);
+// 			@include border-radius(100%);
+// 			left: 0px;
+// 			top: -5px;
+// 			position: absolute;
+// 			&.next{
+// 				left: 60px;
+// 			}
+// 		}
+// 	}
+// 	.btn-default{
+// 		height: 30px;
+// 		line-height: 30px;
+// 		padding: 0;
+// 		text-transform: uppercase;
+// 		background-color: $secondary-color;
+// 		border-radius: 0;
+// 		border: none;
+// 		color: $white-color;
+// 		font-weight: 700;
+// 		@include mobile{
+// 			width: 82px;
+// 			font-size: $font-size+4px;
+// 		}
+// 		@include tablet{
+// 			width: 50px;
+// 			font-size: $font-size;
+// 		}
+// 		@include desktops{
+// 			width: 45px;
+// 			font-size: $font-size;
+// 		}
+// 		@include large-desktops{
+// 			width: 82px;
+// 			font-size: $font-size+4px;
+// 		}
+// 	}
+// 	.priceLabel{
+// 		float: right;
+// 		line-height: 30px;
+// 		color: $secondary-color;
+// 		@include mobile{
+// 			font-size: $font-size+4px;
+// 		}
+// 		@include tablet{
+// 			font-size: $font-size+1px;
+// 		}
+// 		@include desktops{
+// 			font-size: $font-size+4px;
+// 		}
+// 	}
+// }
+.priceRange{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	float: left;
+	margin-top: $base*4;
+	.price-slider-inner{
+		display: block;
+		margin: $base*3 0 $base*5 0;
+		.amount-wrapper{
+			position: absolute;
+			bottom: $base-xs*7;
+			right:0;
+			font-size: $base-xs*7;
+			width: $base*24;
+			input{
+				background-color: transparent;
+				border: 0;
+				width: 28%;
+				font-size: $base-xs*7;
+				color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+				font-weight: 400;
+				text-align: right;
+			}
+		}
+		.ui-widget-content{
+			background: none;
+			border: 0;
+			background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 27.4510);
+			height: $base;
+			clear: both;
+			border-radius: 0;
+			@include border-radius($base-xs);
+			margin: 0 $base 0 $base-xs*4+1px;
+			.ui-slider-range{
+				background-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333);
+				border: none;
+				border-radius: 0;
+			}
+			.ui-slider-handle{
+				border-radius: 50%;
+				@include border-radius($base-xs+1px);
+				background: none;
+				@include add-border($base-xs+1px, darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333), all);
+				background-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333);
+				top: -6px;
+				width: $base-xs*8;
+				height: $base-xs*8;
+				outline: none;
+			}
+		}
+	}
+}
+/*=== 6.2 COURSE LIST ===*/
+.courseList{
+	background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 31.3725);
+	@include border-radius($base-xs*3+1px);
+	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	margin-bottom: $base*6;
+	.media-left{
+		position: relative;
+		padding: 0;
+		float: left;
+		@include mobile-all{
+			margin: 0 0 $base*5 0;
+			@include add-border(5px, $white-color, bottom);
+			border-right: none;
+			display: block;
+			width: 100%;
+		}
+		@include tablet{
+			margin: 0 $base*5 0 0;
+			@include add-border(5px, $white-color, right);
+			display: inline-block;
+			width: auto;
+		}
+		img{
+			width: 100%;
+		}
+		.sticker{
+			position: absolute;
+			left: $base*4;
+			top: $base*4;
+			width: $base*13;
+			height: $base*13;
+			@include border-radius(100%);
+			text-align: center;
+			line-height: $base*13;
+			color: $white-color;
+			font-weight: 600;
+			font-size: $base-xs*12;
+		}
+	}
+	.media-body{
+		.media-heading{
+			a{
+				font-family: 'Dosis', sans-serif;
+				text-transform: capitalize;
+				font-weight: 700;
+				margin: 0 0 $base*4 0;
+				width: 100%;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				display: block;
+				@include mobile-all{
+					margin: 0 0 $base*4 0;
+				}
+				@include tablet{
+					margin: $base*3 0;
+				}
+			}
+		}
+		.list-inline{
+			margin-bottom: $base*3;
+			li{
+				line-height: $base*4+1px;
+				color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+				margin-bottom: $base;
+				i{
+					margin-right: $base-xs*3;
+				}
+			}
+		}
+		.list-inline.btnPart{
+			margin-bottom: 0;
+			>li{
+				a{
+					&.btn-primary{
+						font-size: $base-xs*7;
+						background-color: $white-color;
+						color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+						&:hover{
+							color: $white-color;
+						}
+					}
+					&.btn-link{
+						text-transform: capitalize;
+						font-size: $base-xs*7;
+						color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+						font-weight: 600;
+						text-decoration: underline !important;
+					}
+				}
+			}
+			&.btn-yellow{
+				>li{
+					a{
+						&.btn-primary{
+							&:hover{
+								background-color: darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176) !important;
+							}
+						}
+						&.btn-link{
+							&:hover{
+								color: darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176) !important;
+							}
+						}
+					}
+				}
+			}
+			&.btn-green{
+				>li{
+					a{
+						&.btn-primary{
+							&:hover{
+								background-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
+							}
+						}
+						&.btn-link{
+							&:hover{
+								color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
+							}
+						}
+					}
+				}
+			}
+			&.btn-red{
+				>li{
+					a{
+						&.btn-primary{
+							&:hover{
+								background-color: $primary-color !important;
+							}
+						}
+						&.btn-link{
+							&:hover{
+								color: $primary-color !important;
+							}
+						}
+					}
+				}
+			}
+			&.btn-sky{
+				>li{
+					a{
+						&.btn-primary{
+							&:hover{
+								background-color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
+							}
+						}
+						&.btn-link{
+							&:hover{
+								color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
+							}
+						}
+					}
+				}
+			}
+			&.btn-purple{
+				>li{
+					a{
+						&.btn-primary{
+							&:hover{
+								background-color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
+							}
+						}
+						&.btn-link{
+							&:hover{
+								color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
+							}
+						}
+					}
+				}
+			}
+			&.btn-pink{
+				>li{
+					a{
+						&.btn-primary{
+							&:hover{
+								background-color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333) !important;
+							}
+						}
+						&.btn-link{
+							&:hover{
+								color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333) !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*=== 6.3 COURSE RIGHT SIDE BAR ===*/
+.rightSidebar{
+	.panel{
+		border: 0;
+		margin-bottom: $base*6;
+		.panel-heading{
+			@include border-radius($base-xs*3+1px $base-xs*3+1px 0 0);
+			.panel-title{
+				font-size: $base-xs*12;
+				color: $white-color;
+				text-transform: capitalize;
+				font-weight: 700;
+				font-family: 'Dosis', sans-serif;
+			}
+		}
+		.panel-body{
+			@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all );
+			border-top: 0;
+			@include border-radius(0 0 $base-xs*3+1px $base-xs*3+1px);
+			padding: 0;
+			.media-list{
+				li{
+					padding: $base*4 0 $base*4 $base*4;
+					@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), bottom );
+					margin: 0;
+					&:last-child{
+							border: 0;
+					}
+					.media-left.iconContent{
+						width: $base*9;
+						height: $base*9;
+						line-height: $base*9;
+						text-align: center;
+						color: $white-color;
+						@include border-radius(100%);
+						display: inline-block;
+						float: left;
+						padding: 0;
+						margin-right: $base*4;
+						font-size: $base-xs*8;
+					}
+					.media-body.iconContent{
+						.media-heading{
+							font-family: 'Dosis', sans-serif;
+							font-size: $base*4;
+							font-weight: 700;
+						}
+						p{
+							font-weight: 600;
+							margin-bottom: 0;
+						}
+					}
+				}
+				&.blogListing{
+					li{
+						.media-heading{
+							a{
+								font-weight: 600;
+								font-size: $base-xs*7;
+								text-transform: capitalize;
+								color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+								&:hover{
+									color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	>.btnPart{
+		margin-bottom: $base*6; 
+	}
+}
+.eventSidebar{
+	&.panel{
+		border: 0;
+		margin-bottom: $base*6;
+		.panel-heading{
+			@include border-radius($base-xs*3+1px $base-xs*3+1px 0 0);
+			.panel-title{
+				font-size: $base-xs*12;
+				color: $white-color;
+				text-transform: capitalize;
+				font-weight: 700;
+				font-family: 'Dosis', sans-serif;
+			}
+		}
+		.panel-body{
+			@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all );
+			border-top: 0;
+			@include border-radius(0 0 $base-xs*3+1px $base-xs*3+1px);
+			.media-list{
+				li{
+					padding: $base*2 0;
+					margin: 0;
+					.media-left.iconContent{
+						width: $base*9;
+						height: $base*9;
+						line-height: $base*9;
+						text-align: center;
+						color: $white-color;
+						@include border-radius(100%);
+						display: inline-block;
+						float: left;
+						padding: 0;
+						margin-right: $base*4;
+						font-size: $base-xs*8;
+					}
+					.media-body.iconContent{
+						.media-heading{
+							font-family: 'Dosis', sans-serif;
+							font-size: $base*4;
+							font-weight: 700;
+						}
+						p{
+							font-weight: 600;
+							margin-bottom: 0;
+						}
+					}
+				}
+				&.blogListing{
+					li{
+						.media-heading{
+							a{
+								font-weight: 600;
+								font-size: $base-xs*7;
+								text-transform: capitalize;
+								color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+								&:hover{
+									color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*=== 6.4 COURSE COUNTER ===*/
+.coursesCounter{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: $base*66;
+	overflow: hidden;
+	background:url(../img/course-single/course-count.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	@include border-radius($base-xs*3+1px);
+	padding: $base*2;
+	.counterInner{
+		width: 100%;
+		height: 100%;
+		display: block;
+		@include add-border(1px, $white-color, all);
+		@include border-radius($base-xs*3+1px);
+		text-align: center;
+		h3{
+			font-family: 'Dosis', sans-serif;
+			font-size: $base-xs*13;
+			font-weight: 700;
+			color: $white-color;
+			text-transform: capitalize;
+			text-align: center;
+			margin: $base*8 0;
+		}
+		>.btn-primary{
+			background-color: $white-color;
+			color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
+		}
+	}
+}
+
+.coursesCountStart{
+	padding: 0 0 $base*7 0;
+	.courseCountTimer{
+		width: 100%;
+		margin: 0 auto;
+		color: $white-color;
+		text-align: center;
+		.table-cell{
+			display: inline-block;
+			margin: 0 $base;
+			.tab-val{
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				font-size: $base*4;
+				font-weight: 700;
+				display: block;
+				margin-bottom: $base;
+				@include border-radius($base-xs*3+1px);
+				background-color: rgba($white-color, .1);
+				@include add-border(1px, $white-color, all);
+			}
+			.tab-metr{
+				font-size: $base-xs*6;
+				font-weight: 400;
+				color: $white-color;
+				text-transform: capitalize;
+				font-weight: 600;
+			}
+		}
+	}
+}
