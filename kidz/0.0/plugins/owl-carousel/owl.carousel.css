@@ -42,7 +42,6 @@
 }
 .teamSlider.owl-carousel .owl-stage-outer{
   z-index: 500;
-  margin: 0 50px;
 }
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel .owl-controls .owl-nav .owl-next,

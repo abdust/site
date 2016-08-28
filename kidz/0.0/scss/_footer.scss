@@ -78,7 +78,7 @@
 }
 .postLink{
 	>li{
-		@include add-border(1px, darken(desaturate(adjust-hue(#ea7066, 205.4545), 67.3875), 42.7451), bottom);
+		@include add-border(1px, rgba(darken(desaturate(adjust-hue(#ea7066, 205.4545), 67.3875), 42.7451), .3), bottom);
 		margin-bottom: $base*4;
 		padding-bottom: $base*4; 
 		&:last-child{

@@ -78,7 +78,12 @@
 	background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 30.1961);
 }
 .colorSection{
-	padding: $base*20 0;
+	@include mobile-all{
+		padding: $base*10 0;
+	}
+	@include tablet{
+		padding: $base*20 0;
+	}
 }
 .sectionTitle{
 	h2{
