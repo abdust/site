@@ -1,0 +1,120 @@
+/*================= 11 CART PAGE ==================*/
+.cartInfo{
+	.table-responsive{
+		.table{
+			border-collapse: separate;
+			thead{
+				tr{
+					@include add-border(1px, darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176), right-left);
+					th{
+						color: $white-color;
+						padding: $base*3 $base-xs*4;
+						border-bottom: none;
+						font-weight: 600;
+						text-transform: uppercase;
+						&:first-child{
+							@include border-radius($base-xs*3+1px 0 0 0);
+						}
+						&:last-child{
+							@include border-radius( 0 $base-xs*3+1px 0 0);
+						}
+					}
+				}
+			}
+			tbody{
+				tr{
+					td{
+						vertical-align: middle;
+						color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+						border-top: none;
+						@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), bottom);
+						@include mobile-all{
+							padding: $base*2;
+						}
+						@include tablet{
+							padding: $base*2;
+						}
+						@include desktops{
+							padding: $base*2;
+						}
+						@include large-desktops{
+							padding: $base*4 $base-xs*4 $base*4 $base*6;
+						}
+						&:first-child{
+							@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), left);
+						}
+						&:last-child{
+							@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), right);
+						}
+						.close{
+							display: inline-block;
+							float: left;
+							margin: $base-xs*8+1px $base*6 0 0;
+							opacity: 1;
+							span{
+								width: $base*6;
+								height: $base*6;
+								line-height: $base*6;
+								display: block;
+								background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 23.9216);
+								color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+								@include border-radius(100%);
+							}
+						}
+						input {
+							width: $base*16;
+							height: $base*9;
+							text-align: center;
+							line-height: $base*9;
+							color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+							@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all);
+							@include border-radius($base-xs*3+1px);
+						}
+						&:last-child{
+							padding-right: $base*6;
+						}
+					}
+					&:last-child{
+						td{
+							&:first-child{
+								@include border-radius( 0 0 0 $base-xs*3+1px);
+							}
+							&:last-child{
+								@include border-radius( 0 0 $base-xs*3+1px 0);
+								&.btnPart{
+									@include border-radius( 0 0 $base-xs*3+1px $base-xs*3+1px);
+								}
+							}
+						}
+					}
+				}
+			}
+			.input-group{
+				.form-control{
+					width: $base*57;
+					height: $base*9;
+					text-align: left;
+					margin-right: $base*2;
+				}
+				.input-group-addon{
+					width: auto;
+					@include border-radius($base-xs*3+1px);
+				}
+			}
+		}
+	}
+	&.cartTotal{
+		.table{
+			tbody{
+				tr{
+					td{
+						&:last-child{
+							padding: $base*5;
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+	}
+}
