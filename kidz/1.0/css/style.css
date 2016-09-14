@@ -273,6 +273,7 @@ a:focus {
 
 .main-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .form-control:focus {
@@ -1310,12 +1311,12 @@ aside {
 }
 .color-bar .col-sm-1 {
   height: 3px;
-  text-indent: -999;
+  text-indent: -99999px;
 }
 
 .top-fixed {
   position: fixed;
-  z-index: 200;
+  z-index: 2000;
 }
 
 .padding-top {
@@ -2499,12 +2500,12 @@ aside {
 }
 .color-bar .col-sm-1 {
   height: 3px;
-  text-indent: -999;
+  text-indent: -99999px;
 }
 
 .top-fixed {
   position: fixed;
-  z-index: 200;
+  z-index: 2000;
 }
 
 .padding-top {
