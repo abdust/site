@@ -1,4 +1,6 @@
-window.onload = function () {
+var map;
+
+function initMap() {
 
     var latlng = new google.maps.LatLng(53.385873, -1.471471);
 
@@ -33,25 +35,25 @@ window.onload = function () {
         { hue: '#000066' }
         ]
     },{
-                    featureType: "poi", //points of interest
-                    stylers: [
-                    { hue: '#0044ff' }
-                    ]
-                }
-                ];
+        featureType: "poi", //points of interest
+        stylers: [
+        { hue: '#0044ff' }
+        ]
+    }
+    ];
 
 
-                var myOptions = {
-                    zoom: 14,
-                    center: latlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    disableDefaultUI: true,
-                    styles: styles,
-                    scrollwheel:  false
-                };
+    var myOptions = {
+        zoom: 14,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
+        styles: styles,
+        scrollwheel:  false
+    };
 
-                map = new google.maps.Map(document.getElementById('map'), myOptions);
-            }
+    map = new google.maps.Map(document.getElementById('map'), myOptions);
+}
 
 
 
