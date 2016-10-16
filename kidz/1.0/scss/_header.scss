@@ -1,4 +1,7 @@
 /*=== 3. HEADER ===*/
+.navbar .container{
+	position:relative;
+}
 /*=== 3.1 TOP COLOR BAR ===*/
 .color-bar{
 	width: 100%;
@@ -19,7 +22,7 @@
 }
 /*=== 3.2 TOP INFO BAR ===*/
 .top-info-bar{
-	padding: $base*3 0 $base-xs*6 0;
+	padding: 15px 0 12px 0;
 	display: block;
 	width: 100%;
 	z-index: 1000;
@@ -40,24 +43,23 @@
 	margin-bottom: 0;
 	z-index:100 !important;
 }
-.navbar-brand {
+.navbar-header .navbar-brand {
   float: left;
   > img{
   	width: 100%;
   }
   @include mobile-all{
-  	height: auto !important;
-  	padding: $base*3;
-  	width: $base*32;
+  	height: auto;
+    padding: 15px;
+    width: 160px;
   }
   @include tablet{
-  	height: $base*22;
-  	padding: $base*6 $base*3;
-  	width: $base*39+1px;
+  	height: 110px;
+  	padding: 30px 15px;
+  	width: 196px;
   }
 }
-.navbar-nav{
-	
+.navbar-default .navbar-nav{
 	background-color: $white-color;
 	margin-bottom:0;
 	@include mobile-all{
@@ -65,7 +67,6 @@
 	}
 	@include tablet{
 		height:auto;
-		overflow:auto;
 		background-color: transparent;
 	}
 	&.navbar-right{
@@ -80,29 +81,39 @@
 		>a{
 			text-transform: capitalize;
 			font-weight: 600;
-			font-size: $base*3;
-			color: $secondary-color;
+			font-size: 15px;
+			&:hover, &:focus{
+				background-color: transparent !important;
+			}
+			@include mobile-all{
+				color: $black-color;
+				padding: 12px;
+			}
+			@include tablet{
+				margin: 0;
+				padding: 23px 0;
+			}
 			> i{
-				width: $base*7;
-				height: $base*7;
-				line-height: $base*7;
+				width: 35px;
+				height: 35px;
+				line-height: 35px;
 				text-align: center;
 				border-radius: 100%;
 				display: block;
 				color: $white-color;
-				font-size: $base-xs*8;
+				font-size: 16px;
 				@include mobile-all{
 					display: inline-block;
-					margin: 0 $base*2 0 0;
+					margin: 0 10px 0 0;
 				}
 				@include tablet{
 					display: block;
-					margin: 0 auto $base-xs*6 auto;
+					margin: 0 auto 12px auto;
 				}
 			}
 			> span{
 				padding: 0;
-				line-height: $base-xs*8;
+				line-height: 16px;
 				text-align: center;
 				text-transform: capitalize;
 				@include mobile-all{
@@ -110,7 +121,7 @@
 				}
 				@include tablet{
 					width: auto;
-					padding: 0 $base*3;
+					padding: 0 15px;
 					display: block;
 				}
 				@include desktops{
@@ -118,25 +129,11 @@
 					padding: 0;
 				}
 			}
-			&:hover{
-				background-color: transparent;
-			}
-			@include mobile-all{
-				color: $black-color !important;
-				padding: $base-xs*6;
-			}
-			@include tablet{
-				margin: 0;
-				padding: $base-xs*11+1px 0;
-			}
 		}
 		&:last-child{
 			>a{
 				>span{
 					width: auto;
-					@include mobile-all{
-						padding-left: 0;
-					}
 					@include tablet{
 						padding-left: 15px;
 					}
@@ -144,137 +141,201 @@
 			}
 		}
 		&.active{
-			a, a:hover{
-				background-color: transparent !important;
+			>a, >a:hover, >a:focus{
+				background-color: transparent;
 				@include opacity(1);
 			}
 		}
 		&.open{
-			a{
-				background-color: transparent !important;
-				&:hover{
-					background-color: transparent !important;
-				}
+			>a, >a:hover > a:focus{
+				background-color: transparent;
 			}
 		}
 		&.dropdown{
 			.dropdown-menu{
-				box-shadow: none;
 				a{
-					padding: $base-xs+1px $base*4;
+					padding: 3px 20px;
 					margin-bottom: 0;
 				}
 			}
-			&.megaDropMenu{
-				position: static;
-				.dropdown-menu{
-					margin: -1px auto 0 auto;
-					right: 15px;
-					@include border-radius(5px);
+		}
+	}
+}
+.navbar-nav > li.dropdown.open > a:after{
+	@include mobile-all{
+		display: none;
+	}
+	@include tablet{
+		border-left: 9px solid transparent;
+	    border-right: 9px solid transparent;
+	    margin-left: -10px;
+	    content: "";
+	    display: inline-block;
+	    left: 50%;
+	    position: absolute;
+	    top: 102px;
+	}
+}
+.menu-sm .navbar-nav > li.dropdown.open > a:after{
+	@include tablet{
+	    top: 83px;
+	}
+}
+.navbar-nav > li.color-1.dropdown  a:after{
+	border-bottom: 7px solid $color1;
+}
+.navbar-nav > li.color-2.dropdown.megaDropMenu > a:after{
+	border-bottom: 7px solid $color2;
+}
+.navbar-nav > li.color-3.dropdown  a:after{
+	border-bottom: 7px solid $color3;
+}
+.navbar-nav > li.color-4.dropdown  a:after{
+	border-bottom: 7px solid $color4;
+}
+.navbar-nav > li.color-5.dropdown  a:after{
+	border-bottom: 7px solid $color5;
+}
+.navbar-nav > li.color-6.dropdown  a:after{
+	border-bottom: 7px solid $color6;
+}
+.navbar-nav > li.dropdown.singleDrop .dropdown-menu .dropdown-menu:after {
+	@include mobile-all{
+		display: none;
+	}
+	@include tablet{
+		@include add-border(8px, transparent, top-bottom);
+		top: 20%;
+		margin-top: -10px;
+		content: "";
+		display: inline-block;
+		left: -11px;
+		position: absolute;
+	}
+}
+.navbar-nav > li.color-3.dropdown.singleDrop .dropdown-menu .dropdown-menu:after {
+	border-right: 7px solid $color3;
+}
+.navbar-nav > li.color-4.dropdown.singleDrop .dropdown-menu .dropdown-menu:after {
+	border-right: 7px solid $color4;
+}
+.navbar-nav > li.color-5.dropdown.singleDrop .dropdown-menu .dropdown-menu:after {
+	border-right: 7px solid $color5;
+}
+.navbar-nav > li.color-6.dropdown.singleDrop .dropdown-menu .dropdown-menu:after {
+	border-right: 7px solid $color6;
+}
+.navbar-nav > li.dropdown.megaDropMenu{
+	position: static;
+	.dropdown-menu{
+		margin: -2px auto 0 auto;
+		right: 15px;
+		@include border-radius(5px);
+		@include mobile-all{
+			left: 0;
+			padding: 0;
+			width: 100%;
+		}
+		@include tablet{
+			left: 15px;
+			padding: 10px 5px 0;
+			width: 720px;
+		}
+		@include desktops{
+			width: 940px;
+		}
+		@include large-desktops{
+			width: 1140px;
+		}
+		.list-unstyled{
+			width: 100%;
+			float: left;
+			@include mobile-all{
+				padding-bottom: 5px;
+			}
+			@include tablet{
+				padding-bottom: 15px;
+			}
+			li{
+				&.listHeading, &:first-child{
+					float: left;
+					font-weight: 700;
+					font-family: 'Dosis', sans-serif;
 					@include mobile-all{
-						left: 0;
-						padding: 0;
-						width: 100%;
+						padding: 10px 12px 10px 0;
+						font-size: 20px;
 					}
 					@include tablet{
-						left: 15px;
-						padding: $base*2 $base 0;
-						width: 720px;
+						padding: 10px 12px;
+						font-size: 24px;
 					}
-					@include desktops{
-						width: 940px;
+				}
+				a{
+					color: $text-color;
+					font-size: 14px;
+					float: left;
+					width: 100%;
+					background-color: transparent;
+					@include mobile-all{
+						padding: 6px 12px;
 					}
-					@include large-desktops{
-						width: 1140px;
+					@include tablet{
+						padding: 10px 12px;
 					}
-					.list-unstyled{
-						width: 100%;
-						float: left;
-						@include mobile-all{
-							padding-bottom: $base;
-						}
-						@include tablet{
-							padding-bottom: $base*3;
-						}
-						li{
-							&.listHeading, &:first-child{
-								float: left;
-								font-weight: 700;
-								font-family: 'Dosis', sans-serif;
-								@include mobile-all{
-									padding: $base*2 $base-xs*6 $base*2 0;
-									font-size: $base*4;
-								}
-								@include tablet{
-									padding: $base*2 $base-xs*6;
-									font-size: $base-xs*12;
-								}
-							}
-							a{
-								color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824) !important;
-								font-size: $base-xs*7;
-								float: left;
-								width: 100%;
-								background-color: transparent !important;
-								@include mobile-all{
-									padding: $base-xs*3 $base-xs*6;
-								}
-								@include tablet{
-									padding: $base*2 $base-xs*6;
-								}
-								&:hover{
-									padding-left: $base-xs*11;
-								}
-							}
-						}
+					&:hover{
+						padding-left: 22px;
 					}
 				}
 			}
-			&.singleDrop{
-				.dropdown-menu{
-					@include border-radius(5px);
-					margin-top: -1px;
-					padding: $base;
-					@include mobile-all{
-						min-width: 230px;
-					}
-					@include tablet{
-						min-width: 230px;
-					}
-					li{
-						a{
-							color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824) !important;
-							font-size: $base-xs*7;
-							float: none;
-							width: 100%;
-							background-color: transparent !important;
-							@include mobile-all{
-								padding: $base-xs*3 $base-xs*6 $base-xs*3 $base-xs*12;
-							}
-							@include tablet{
-								padding: $base*2 $base-xs*6;
-							}
-							&:hover{
-								background-color: lighten(desaturate(adjust-hue($primary-color, -28.5333), 100.0000), 40.1961) !important;
-								color: $primary-color !important;
-								padding-left: $base-xs*11;
-							}
+		}
+	}
+	&.open > a > span{
+		color: $color2 ;
+	}
+}
+.navbar-nav > li.dropdown.singleDrop{
+	.dropdown-menu{
+		@include border-radius(5px);
+		margin-top: 0;
+		padding: 5px;
+		@include mobile-all{
+			min-width: 230px;
+		}
+		@include tablet{
+			min-width: 210px;
+		}
+		@include large-desktops{
+			min-width: 230px;
+		}
+		li{
+			a{
+				color: $text-color;
+				font-size: 14px;
+				float: none;
+				width: 100%;
+				background-color: transparent;
+				@include mobile-all{
+					padding: 6px 12px 6px 24px;
+				}
+				@include tablet{
+					padding: 10px 12px;
+				}
+				&:hover{
+					padding-left: 22px;
+				}
+			}
+			.dropdown-menu{
+				margin-left: 4px;
+				li{
+					a{
+						@include mobile-all{
+							padding: 6px 12px 6px 36px;
 						}
-						.dropdown-menu{
-							margin-left: $base-xs*3+1px;
-							li{
-								a{
-									@include mobile-all{
-										padding: $base-xs*3 $base-xs*6 $base-xs*3 $base-xs*18;
-									}
-									@include tablet{
-										padding: $base*2 $base-xs*6;
-									}
-									&:hover{
-										padding-left: $base-xs*11;
-									}
-								}
-							}
+						@include tablet{
+							padding: 10px 12px;
+						}
+						&:hover{
+							padding-left: 22px;
 						}
 					}
 				}
@@ -288,8 +349,8 @@
 		position: relative;
 		i{
 			position: absolute;
-			right: $base*2;
-			top: $base-xs*6+1px;
+			right: 10px;
+			top: 13px;
 		}
 	}
 	>.dropdown-menu{
@@ -318,17 +379,17 @@
 	}
 }
 .navbar-toggle{
-	margin-top: $base*4;
+	margin-top: 20px;
 }
 .navbar-toggle{
 	background-color: $white-color;
 }
-.navbar-nav{
-    height: 340px !important;
+.navbar-default .navbar-nav{
+    height: 340px;
     overflow-x:hidden; 
     @include transition(height 0.3s ease);
     @include tablet{
-    	height: auto!important;
+    	height: auto;
     	 overflow-x:visible;
     	  overflow-y:visible;
 	}
@@ -338,7 +399,7 @@
 }
 .navbar-collapse{
 	@include mobile-all{
-		@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+		@include box-shadow(0, 4px, 0, rgba($black-color, .1) );
 	}
 	@include tablet{
 		border-color: $white-color;
@@ -347,7 +408,7 @@
 	li{
 		&.dropdown{
 			.dropdown-menu{
-				box-shadow: none;
+				box-shadow:none;
 				@include mobile-all{
 					position: relative;
 					width: 100%;
@@ -359,6 +420,8 @@
 					position: absolute;
 					float: left;
 					display: none;
+					-webkit-box-shadow: 0 4px 6px rgba(0,0,0,.175);
+    				box-shadow: 0 4px 6px rgba(0,0,0,.175);
 				}
 			}
 			&.open{
@@ -390,26 +453,11 @@
 		}
 	}
 }
-.navbar-collapse{
-	li.dropdown{
-		.dropdown-menu{
-			// display: block;
-			// @include opacity(0);
-			// visibility: hidden;
-			// @include transition(all 0.3s ease-in-out);
-		}
-		&.open{
-			.dropdown-menu{
-				// @include opacity(1);
-				// visibility: visible;
-			}
-		}
-	}
-}
+
 /*=== 3.4 LIGHT HEADER ===*/
-.lightHeader{
+.navbar-default.lightHeader{
 	@include transition(all 0.3s ease-in-out);
-	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	@include box-shadow(0, 4px, 0, rgba($black-color, .1) );
 	background-color: $white-color;
 	//position: relative;
 	
@@ -421,452 +469,248 @@
 		height: 110px;
 	}
 	.navbar-nav{
-		> li{
-			> a{
-				color: $black-color !important;
-			}
+		> li > a{
+			color: $black-color;
+		}
+		>li.active.color-1 > a{
+			color: $color1;
+		}
+		>li.active.color-2 > a{
+			color: $color2;
+		}
+		>li.active.color-3 > a{
+			color: $color3;
+		}
+		>li.active.color-4 > a{
+			color: $color4;
+		}
+		>li.active.color-5 > a{
+			color: $color5;
+		}
+		>li.active.color-6 > a{
+			color: $color6;
 		}
 	} 
 }
 //menu item color
-.navbar-nav{
-	> li{
-		&.color-1{
-			> a{
-				> span{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(2px, darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176), right);
-					}
+
+.navbar-nav > li.color-1{
+	> a > span{
+		@include tablet{
+			@include add-border(2px, $color1, right);
+		}
+	}
+	>a:hover span{
+		color: $color1;
+	}
+	&.singleDrop{
+		>.dropdown-menu{
+			@include tablet{
+				@include add-border(4px, $color1, top);
+			}
+			li{
+				a:hover{
+					background-color: $color1;
+					color: $white-color;
 				}
-				&:hover{
-					> span{
-						color: darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176);
+				&.active > a, &.active li.active a{
+					color: $color1;
+				}
+				&.active a:hover, &.active li.active a:hover{
+					color: $white-color;
+				}
+				.dropdown-menu{
+					@include tablet{
+						@include add-border(4px, $color1, left);
 					}
 				}
 			}
 		}
-		&.color-2{
-			> a{
-				> span{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(2px, darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333), right);
-					}
-				}
-				&:hover{
-					> span{
-						color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333);
-					}
-				}
-			}
-			&.dropdown{
-				&.megaDropMenu{
-					.dropdown-menu{
-						@include mobile-all{
-							border: none;
-						}
-						@include tablet{
-							@include add-border(4px, darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333), top);
-						}
-						.list-unstyled{
-							li{
-								&.listHeading, &:first-child{
-									color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333);
-								}
-								a{
-									&:hover{
-										background-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
-										color: $white-color !important;
-									}
-								}
-							}
-						}
-						&:after{
-							@include mobile-all{
-								display: none;
-							}
-							@include tablet{
-								@include add-border(15px, transparent, right-left);
-								@include add-border(7px, darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333), bottom);
-								content: "";
-								display: inline-block;
-								left: 60%;
-								position: absolute;
-								top: -11px;
-								margin-left: -50px;
-							}
-						}
-					}
-				}
-				&.open{
-					a{
-						> span{
-							color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333);
-						}
-					}
-				}
-			}
+		&.open a > span{
+			color: $color1;
 		}
-		&.color-3{
-			> a{
-				> span{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(2px, $primary-color, right);
-					}
-				}
-				&:hover{
-					> span{
-						color: $primary-color;
-					}
-				}
-			}
-			&.singleDrop{
-				>.dropdown-menu{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(4px, $primary-color, top);
-					}
-					>li{
-						a{
-							&:hover{
-								background-color: $primary-color !important;
-								color: $white-color !important;
-							}
-						}
-						>.dropdown-menu{
-							@include mobile-all{
-								border: none;
-							}
-							@include tablet{
-								@include add-border(4px, $primary-color, left);
-							}
-							li{
-								a{
-									&:hover{
-										background-color: $primary-color !important;
-										color: $white-color !important;
-									}
-								}
-							}
-							&:after{
-								@include mobile-all{
-									display: none;
-								}
-								@include tablet{
-									@include add-border(15px, transparent, top-bottom);
-									@include add-border(7px, $primary-color, right);
-									content: "";
-									display: inline-block;
-									left: -11px;
-									position: absolute;
-									top: 20%;
-									margin-top: -15px;
-								}
-							}
-						}
-					}
-					&:after{
-						@include mobile-all{
-							display: none;
-						}
-						@include tablet{
-							@include add-border(15px, transparent, right-left);
-							@include add-border(7px, $primary-color, bottom);
-							content: "";
-							display: inline-block;
-							left: 20%;
-							position: absolute;
-							top: -11px;
-							margin-left: -15px;
-						}
-					}
-				}
-				&.open{
-					a{
-						> span{
-							color: $primary-color;
-						}
-					}
-				}
-			}
+	}
+}
+.navbar-nav > li.color-2{
+	> a > span{
+		@include tablet{
+			@include add-border(2px, $color2, right);
 		}
-		&.color-4{
-			> a{
-				> span{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(2px, lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608), right);
-					}
-				}
-				&:hover{
-					> span{
-						color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608);
-					}
-				}
-			}
-			&.singleDrop{
-				>.dropdown-menu{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(4px, lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608), top);
-					}
-					>li{
-						a{
-							&:hover{
-								background-color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
-								color: $white-color !important;
-							}
-						}
-						>.dropdown-menu{
-							@include mobile-all{
-								border: none;
-							}
-							@include tablet{
-								@include add-border(4px, lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608), left);
-							}
-							li{
-								a{
-									&:hover{
-										background-color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
-										color: $white-color !important;
-									}
-								}
-							}
-							&:after{
-								@include mobile-all{
-									display: none;
-								}
-								@include tablet{
-									@include add-border(15px, transparent, top-bottom);
-									@include add-border(7px, lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608), right);
-									content: "";
-									display: inline-block;
-									left: -11px;
-									position: absolute;
-									top: 20%;
-									margin-top: -15px;
-								}
-							}
-						}
-					}
-					&:after{
-						@include mobile-all{
-							display: none;
-						}
-						@include tablet{
-							@include add-border(15px, transparent, right-left);
-							@include add-border(7px, lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608), bottom);
-							content: "";
-							display: inline-block;
-							right: 20%;
-							position: absolute;
-							top: -11px;
-							margin-right: -15px;
-						}
-					}
-				}
-				&.open{
-					a{
-						> span{
-							color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608);
-						}
-					}
-				}
-			}
+	}
+	>a:hover span{
+		color: $color2;
+	}
+}
+.navbar-nav > li.color-2.dropdown.megaDropMenu{
+	.dropdown-menu{
+		@include tablet{
+			@include add-border(4px, $color2, top);
 		}
-		&.color-5{
-			> a{
-				> span{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(2px, lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196), right);
-					}
+		.list-unstyled{
+			li{
+				&.listHeading, &:first-child{
+					color: $color2;
 				}
-				&:hover{
-					> span{
-						color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196);
-					}
+				a:hover{
+					background-color: $color2;
+					color: $white-color;
 				}
-			}
-			&.singleDrop{
-				>.dropdown-menu{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(4px, lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196), top);
-					}
-					>li{
-						a{
-							&:hover{
-								background-color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
-								color: $white-color !important;
-							}
-						}
-						>.dropdown-menu{
-							@include mobile-all{
-								border: none;
-							}
-							@include tablet{
-								@include add-border(4px, lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196), left);
-							}
-							li{
-								a{
-									&:hover{
-										background-color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
-										color: $white-color !important;
-									}
-								}
-							}
-							&:after{
-								@include mobile-all{
-									display: none;
-								}
-								@include tablet{
-									@include add-border(15px, transparent, top-bottom);
-									@include add-border(7px, lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196), right);
-									content: "";
-									display: inline-block;
-									left: -11px;
-									position: absolute;
-									top: 20%;
-									margin-top: -15px;
-								}
-							}
-						}
-					}
-					&:after{
-						@include mobile-all{
-							display: none;
-						}
-						@include tablet{
-							@include add-border(15px, transparent, right-left);
-							@include add-border(7px, lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196), bottom);
-							content: "";
-							display: inline-block;
-							right: 20%;
-							position: absolute;
-							top: -11px;
-							margin-right: -15px;
-						}
-					}
+				&.active > a, &.active li.active a{
+					color: $color2 ;
 				}
-				&.open{
-					a{
-						> span{
-							color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196);
-						}
-					}
-				}
-			}
-		}
-		&.color-6{
-			> a{
-				> span{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(2px, lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333), right);
-					}
-				}
-				&:hover{
-					> span{
-						color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333);
-					}
-				}
-			}
-			&.singleDrop{
-				>.dropdown-menu{
-					@include mobile-all{
-						border: none;
-					}
-					@include tablet{
-						@include add-border(4px, lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333), top);
-					}
-					>li{
-						a{
-							&:hover{
-								background-color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333) !important;
-								color: $white-color !important;
-							}
-						}
-						>.dropdown-menu{
-							@include mobile-all{
-								border: none;
-							}
-							@include tablet{
-								@include add-border(4px, lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333), left);
-							}
-							li{
-								a{
-									&:hover{
-										background-color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333) !important;
-										color: $white-color !important;
-									}
-								}
-							}
-							&:after{
-								@include mobile-all{
-									display: none;
-								}
-								@include tablet{
-									@include add-border(15px, transparent, top-bottom);
-									@include add-border(7px, lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333), right);
-									content: "";
-									display: inline-block;
-									left: -11px;
-									position: absolute;
-									top: 20%;
-									margin-top: -15px;
-								}
-							}
-						}
-					}
-					&:after{
-						@include mobile-all{
-							display: none;
-						}
-						@include tablet{
-							@include add-border(15px, transparent, right-left);
-							@include add-border(7px, lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333), bottom);
-							content: "";
-							display: inline-block;
-							right: 20%;
-							position: absolute;
-							top: -11px;
-							margin-right: -15px;
-						}
-					}
-				}
-				&.open{
-					a{
-						> span{
-							color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333);
-						}
-					}
+				&.active a:hover, &.active li.active a:hover{
+					color: $white-color;
 				}
 			}
 		}
 	}
+	.open a > span{
+		color: $color2;
+	}
 }
-
+.navbar-nav > li.color-3{
+	> a > span{
+		@include tablet{
+			@include add-border(2px, $color3, right);
+		}
+	}
+	>a:hover span{
+		color: $color3;
+	}
+	&.singleDrop{
+		>.dropdown-menu{
+			@include tablet{
+				@include add-border(4px, $color3, top);
+			}
+			li{
+				a:hover{
+					background-color: $color3;
+					color: $white-color;
+				}
+				&.active > a, &.active li.active a{
+					color: $color3 ;
+				}
+				&.active a:hover, &.active li.active a:hover{
+					color: $white-color;
+				}
+				.dropdown-menu{
+					@include tablet{
+						@include add-border(4px, $color3, left);
+					}
+				}
+			}
+		}
+		&.open a > span{
+			color: $color3;
+		}
+	}
+}
+.navbar-nav > li.color-4{
+	> a > span{
+		@include tablet{
+			@include add-border(2px, $color4, right);
+		}
+	}
+	>a:hover span{
+		color: $color3;
+	}
+	&.singleDrop{
+		>.dropdown-menu{
+			@include tablet{
+				@include add-border(4px, $color4, top);
+			}
+			li{
+				a:hover{
+					background-color: $color4;
+					color: $white-color;
+				}
+				&.active > a, &.active li.active a{
+					color: $color4 ;
+				}
+				&.active a:hover, &.active li.active a:hover{
+					color: $white-color;
+				}
+				.dropdown-menu{
+					@include tablet{
+						@include add-border(4px, $color4, left);
+					}
+				}
+			}
+		}
+		&.open a > span{
+			color: $color4;
+		}
+	}
+}
+.navbar-nav > li.color-5{
+	> a > span{
+		@include tablet{
+			@include add-border(2px, $color5, right);
+		}
+	}
+	>a:hover span{
+		color: $color3;
+	}
+	&.singleDrop{
+		>.dropdown-menu{
+			@include tablet{
+				@include add-border(4px, $color5, top);
+			}
+			li{
+				a:hover{
+					background-color: $color5;
+					color: $white-color;
+				}
+				&.active > a, &.active li.active a{
+					color: $color5 ;
+				}
+				&.active a:hover, &.active li.active a:hover{
+					color: $white-color;
+				}
+				.dropdown-menu{
+					@include tablet{
+						@include add-border(4px, $color5, left);
+					}
+				}
+			}
+		}
+		&.open a > span{
+			color: $color5;
+		}
+	}
+}
+.navbar-nav > li.color-6{
+	> a:hover  span{
+		color: $color6;
+	}
+	&.singleDrop{
+		>.dropdown-menu{
+			@include tablet{
+				@include add-border(4px, $color6, top);
+			}
+			li {
+				a:hover{
+					background-color: $color6;
+					color: $white-color;
+				}
+				&.active > a, &.active li.active a{
+					color: $color6 ;
+				}
+				&.active a:hover, &.active li.active a:hover{
+					color: $white-color;
+				}
+				.dropdown-menu{
+					@include tablet{
+						@include add-border(4px, $color6, left);
+					}
+				}
+			}
+		}
+		&.open a > span{
+			color: $color6;
+		}
+	}
+}
 .navbar-nav{
 	> li:last-child{
 		> a{
@@ -880,12 +724,12 @@
 	margin-right: 0;
 }
 .navbar-default{
-	.navbar-toggle{
-		background-color: $primary-color !important;
-		border-color: $primary-color !important;
-		@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
+	.navbar-toggle, .navbar-toggle:focus, .navbar-toggle:hover {
+		background-color: $color3 ;
+		border-color: $color3;
+		@include box-shadow(0, 4px, 0, rgba($black-color, .1) );
 		.icon-bar{
-			background-color: $white-color !important;
+			background-color: $white-color;
 		}
 	}
 }
@@ -903,21 +747,21 @@
 		.navbar-brand{
 			@include mobile{
 				height: auto;
-				padding: 15px;
-				width: $base*32;
+			    padding: 15px;
+			    width: 160px;
 			}
 			@include tablet{
 				height: auto;
-				padding: 20px 15px;
-				width: $base*38;
+			    padding: 20px 15px;
+			    width: 190px;
 			}
 		}
 		.navbar-nav > li > a{
 			@include mobile-all{
-				padding: $base-xs*6;
+				padding: 12px;
 			}
 			@include tablet{
-				padding: $base-xs*6+1px 0;
+				padding: 13px 0;
 			}
 		}
 	}

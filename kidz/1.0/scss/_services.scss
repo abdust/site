@@ -1,36 +1,36 @@
 /*================= 9 SERVICES ==================*/
 /*=== 9.1 SERVICES STYLE ===*/
 .servicesStyle{
-	margin-bottom: $base*8;
+	margin-bottom: 40px;
 	>.media-body{
 		width: auto;
 		display: inherit;
 		>.media-heading{
 			text-transform: capitalize;
 			font-family: 'Dosis', sans-serif;
-			font-size: $base-xs*12;
+			font-size: 24px;
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
 		}
 	}
 	.media-left{
-		width: $base-xs*38;
-		height: $base-xs*38;
-		padding: $base-xs*3;
-		margin-right: $base*4;
+		width: 76px;
+		height: 76px;
+		padding: 6px;
+		margin-right: 20px;
 		display: inline-block;
 		float: left;
-		@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
-		@include border-radius($base-xs*3+1px);
+		@include box-shadow(0, 4px, 0, rgba($black-color, .1) );
+		@include border-radius(7px);
 		>i{
-			width: $base-xs*32;
-			height: $base-xs*32;
-			line-height: $base-xs*32;
+			width:62px;
+			height:62px;
+			line-height:62px;
 			@include border-radius(100%);
 			@include add-border(2px, $white-color, all);
 			text-align: center;
-			font-size: $base-xs*11;
+			font-size: 22px;
 			color: $white-color;
 			@include transition(all 0.3s ease-in-out);
 		}
@@ -60,6 +60,24 @@
 			h3, p{
 				text-align: right;
 			}
+		}
+	}
+}
+.servicesContent{
+	.media-body{
+		@include tablet {
+			display: block;
+			margin-top: 20px;
+			max-width: 198px;
+			float: left;
+		}
+		@include desktops {
+			margin-top: 0;
+			display: table-cell;
+			float: none;
+		}
+		@include large-desktops {
+			max-width: 10000px;
 		}
 	}
 }

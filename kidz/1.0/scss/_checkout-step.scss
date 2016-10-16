@@ -2,23 +2,23 @@
 /*========== 13.1 CHECKOUT PROGRESS ==========*/
 .progress-wizard {
 	margin-top: 40px;
-	margin: $base*8 0 $base*14 0;
-	padding: 0 0 $base*6 0;
+	margin: 40px 0 70px 0;
+	padding: 0 0 30px 0;
 	> .progress-wizard-step{
 		padding: 0; 
 		position: relative; 
-		height: $base*25;
+		height: 105px;
 		@include mobile-all{
-			margin-bottom: $base*6;			
+			margin-bottom: 30px;			
 		}
 		@include tablet{
 			margin-bottom: 0;
-			height: $base*20;			
+			height: 100px;			
 		}
 		> .progress {
 			position: relative; 
 			border-radius: 0px; 
-			height: $base; 
+			height: 5px; 
 			box-shadow: none; 
 			margin: 20px 0;
 			> .progress-bar {
@@ -28,7 +28,7 @@
 					background-color: transparent;
 				}
 				@include tablet{
-					background: $primary-color;
+					background: $color3;
 				}
 			}
 		}
@@ -92,7 +92,7 @@
 		background-color: transparent;
 	}
 	@include tablet{
-    background-color: lighten(desaturate(adjust-hue($primary-color, -28.5333), 100.0000), 31.1765);
+    background-color: #f8f8f8;
 	}
 }
 .progress-wizard {
@@ -101,8 +101,8 @@
 			display: block; 
 			background-color: $white-color; 
 			@include border-radius(100%);
-			@include add-border(5px, $primary-color, all);
-			padding: $base;
+			@include add-border(5px, $color3, all);
+			padding: 5px;
 			text-align: center;
 			color: $black-color;
 			@include mobile-all{
@@ -122,18 +122,18 @@
 			}
 			i{
 				display: block;
-				color: $primary-color;
-				font-size: $base-xs*12;
-				line-height: $base*18; 
-				width: $base*18;
-				height: $base*18;
+				color: $color3;
+				font-size: 24px;
+				line-height: 90px; 
+				width: 90px;
+				height: 90px;
 				@include border-radius(100%);
-				background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 27.0588);
+				background-color: #ededed;
 				text-align: center;
 				@include tablet{
-					line-height: $base*22; 
-					width: $base*22;
-					height: $base*22; 
+					line-height: 102px; 
+					width: 102px;
+					height: 102px; 
 				}
 			}
 			&:hover{
@@ -145,10 +145,10 @@
 .progress-wizard {
 	> .progress-wizard-step.incomplete {
 		> .progress-wizard-dot {
-			border-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 31.3725);
-			color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+			border-color: #f8f8f8;
+			color: $text-color;
 			i{
-				color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+				color: $text-color;
 			}
 		}
 	}
@@ -159,7 +159,7 @@
 			// color: $white-color;
 			i{
 				color: $white-color;
-				background-color: $primary-color;
+				background-color: $color3;
 			}
 		}
 	}
@@ -169,16 +169,16 @@
 		text-align: center;
 		font-family: 'Dosis', sans-serif;
 		font-weight: 600;
-		font-size: $base-xs*8;
-		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+		font-size: 16px;
+		color: #222222;
 		@include tablet{
-			margin: $base*14 0 0 0px;
+			margin: 70px 0 0 0px;
 		}
 		@include desktops{
-			margin: $base*14 0 0 -40px;
+			margin: 70px 0 0 -40px;
 		}
 		@include large-desktops{
-			margin: $base*14 0 0 -70px;
+			margin: 70px 0 0 -70px;
 		}
 	}
 }
@@ -187,49 +187,49 @@
 .checkoutInfo{
 	&.panel{
 		border: none;
-		@include border-radius($base-xs*4);
+		@include border-radius(8px);
 	}
 	.panel-heading{
-		height: $base*16;
-		padding: 0 $base*6;
-		@include border-radius($base-xs*4 $base-xs*4 0 0);
+		height: 80px;
+		padding: 0 30px;
+		@include border-radius(8px 8px 0 0);
 		.panel-title{
 			font-family: 'Dosis', sans-serif;
 			font-weight: 700;
-			font-size: $base-xs*12;
+			font-size: 24px;
 			color: $white-color;
-			line-height: $base*16;
+			line-height: 80px;
 			text-transform: capitalize; 
 		}
 	}
 	.panel-body{
-		@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all);
+		@include add-border(1px, #dedede, all);
 		border-top: none;
-		@include border-radius( 0 0 $base-xs*4 $base-xs*4);
-		padding: $base*10 $base*6;
+		@include border-radius( 0 0 8px 8px);
+		padding: 50px 30px;
 	}
 	.form-group{
 		label{
-			color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+			color: #222222;
 			font-weight: 400;
 		}
 		.form-control{
-			height: $base*9;
-			border-width: $base-xs+1px;
-			@include border-radius($base-xs*3+1px);
+			height: 45px;
+			border-width: 3px;
+			@include border-radius(7px);
 			margin-bottom: 10px;
 		}
 		textarea.form-control{
-			height: $base*31;
+			height: 151px;
 		}
 	}
 	.checkbox{
 		label{
-			color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+			color: #222222;
 		}
 		a{
 			&:hover{
-				color: $primary-color;
+				color: $color3;
 			}
 		}
 	}
@@ -240,10 +240,10 @@
 
 .continueBtnArea{
 	.btn-primary{
-		background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 31.3725);
-		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+		background-color: #f8f8f8;
+		color: $text-color;
 		&:hover{
-			background-color: $primary-color;
+			background-color: $color3;
 			color: $white-color;
 		}
 	}
@@ -252,60 +252,67 @@
 	h4{
 		font-family: 'Dosis', sans-serif;
 		font-weight: 700;
-		font-size: $base-xs*12;
-		color: $primary-color;
+		font-size: 24px;
+		color: $color3;
 		text-transform: capitalize;
-		margin-top: $base*3;
+		margin-top: 15px;
 		margin-left: 15px;
 		span{
-			color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+			color: #222222;
 		}
 	}
 	p{
-		margin-bottom: $base*6;
-		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+		margin-bottom: 30px;
+		color: #222222;
 	}
 }
 .blankLabel{
-	height: $base-xs*8;
+	height: 16px;
 }
 .alert{
 	&.alert{
-		@include add-border(3px, rgba(darken(desaturate(adjust-hue(#ea7066, 117.1688), 47.6363), 14.5098), .5), all);
-		@include border-radius($base-xs*3+1px);
+		@include add-border(3px, rgba(96, 166, 98, .5), all);
+		@include border-radius(7px);
 		font-family: 'Dosis', sans-serif;
 		font-weight: 600;
-		font-size: $base-xs*12;
-		color: darken(desaturate(adjust-hue(#ea7066, 117.1688), 47.6363), 14.5098);
-		padding: $base*3 $base*6;
+		font-size: 24px;
+		color: #60a662;
+		padding: 15px 30px;
 		.successAlert{
-			width: $base*10;
-			height: $base*10;
-			line-height: $base*10;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
 			@include border-radius(100%);
-			background-color: darken(desaturate(adjust-hue(#ea7066, 117.1688), 47.6363), 14.5098);
+			background-color: #60a662;
 			color: $white-color;
 			display: inline-block;
 			text-align: center;
-			margin-right: $base-xs*12;
+			margin-right: 24px;
 		}
 		.close{
-			top: $base-xs*6;
+			top: 12px;
 			right: 0;
-			color: darken(desaturate(adjust-hue(#ea7066, 117.1688), 47.6363), 14.5098);
+			color: #60a662;
 			@include opacity(1);
 		}
 	}
 }
 .addressInfo{
 	dt{
-		width: $base*14;
+		width: 70px;
 		text-align: left;
 		font-weight: 600;
-		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+		color: #222222;
 	}
 	dd{
-		margin-left: $base*14;
-		color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490); 
+		margin-left: 70px;
+		color: #222222; 
+	}
+}
+.card-img{
+	text-align:center;
+	img{
+		display: inline-block;
+		margin-bottom: 7px;
 	}
 }

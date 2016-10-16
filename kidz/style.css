@@ -1,0 +1,192 @@
+body{
+  height:100%;
+  width:100%;
+  background:#EEEEEE;
+}
+.bannerWrapper{
+  background-attachment: fixed;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding:70px 0;
+}
+.bannerInfo{
+  text-align: center;
+}
+.bannerInfo .logo{
+  height: auto;
+  width: 170px;
+  display: inline-block;
+}
+.bannerInfo .logo img{
+  width: 100%;
+}
+.bannerInfo h1{
+  font-size: 45px;
+  color: #fffefe;
+  margin: 40px auto;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-primary{
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  line-height: 45px;
+  background-color: #ea7066;
+  webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius:6px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background-color: #ea7066;
+  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+.sectionTitle{
+  margin-bottom: 75px;
+}
+.sectionTitle h2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 36px;
+  color: #ea7066;
+  text-transform: capitalize;
+  width: 100%;
+  font-weight: 700;
+}
+.full-wrapper{
+  padding: 90px 0 60px;
+  width: 100%;
+  float: left;
+}
+.sectionTitle h2 span.shape{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:#b3deef;
+  display:inline-block;
+  padding:0;
+  position:relative;
+}
+.sectionTitle h2 span.shape:after,
+.sectionTitle h2 span.shape:before{
+  content: "";
+  height: 2px;
+  display:inline-block;
+  position: absolute;
+  border-radius:2px;
+  background-color: #b3deef;
+}
+.sectionTitle h2 span.shape:after{
+  content: "";
+  width: 70px;
+  top: 6px;
+}
+.sectionTitle h2 span.shape:before{
+  content: "";
+  width: 55px;
+  top: 11px;
+}
+.sectionTitle h2 span.shape-left:before,
+.sectionTitle h2 span.shape-left:after{
+  right: 3px;
+}
+.sectionTitle h2 span.shape-right:before,
+.sectionTitle h2 span.shape-right:after{
+  left: 3px;
+}
+.content{
+  width:100%;
+}
+.box{
+  height:600px;
+  display:block;
+  position:relative;
+  background:#EEEEEE;
+  overflow: hidden;
+  width:29%;
+  float: left ;
+}
+.box > div{
+  height:84%;
+  transition:all 2s ease;
+  background-position:0 0%;
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  border-radius:8px;
+  box-shadow:0 5px 10px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.1);
+  overflow:hidden;
+  margin: 0 5px 0;
+}
+.box{
+  margin:0 3%;
+}
+.box > div a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.box2{
+  margin:0;
+}
+.box1-inner{
+  background-image: url("images/01-kidz-school.jpg");
+}
+.box2-inner{
+  background-image:url("images/02-kidz-store.jpg");
+}
+.box3-inner{
+  background-image:url("images/03-kidz-daycare.jpg");
+}
+.box > div:hover{
+  background-position:0 100%;
+}
+.box h3{
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  color: #ea7066;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 30px auto 0;
+}
+.box1 h3{
+  color: #b5d56a;
+}
+.box2 h3{
+  color: #f0c14b;
+}
+.box3 h3{
+  color: #84bed6;
+}
+@media screen and (max-width: 768px) {
+  .box{
+    height:450px;
+    width:92%;
+    margin: 0 4% 30px;
+    float: none;
+  }
+  .bannerInfo h1{
+    font-size: 35px;
+    margin: 30px auto;
+  }
+  .sectionTitle h2{
+    font-size: 30px;
+  }
+}

@@ -1,78 +1,15 @@
 /*=== VARIABLES ===*/
-$primary-color:#ea7066;
+$color1:#f0c24b;
+$color2:#b5d56a;
+$color3:#ea7066;
+$color4:#84bed6;
+$color5:#a597e7;
+$color6:#ea77ad;
 $secondary-color:#202020;
 $white-color: #ffffff;
 $black-color: #000000;
+$text-color:#666666;
 
-// yellow
-.color-1{
-	color: darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176) !important;
+@function tint($color3, $percentage) {
+  @return mix(white, $color3, $percentage);
 }
-.bg-color-1{
-	background-color: darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176) !important;
-}
-.border-color-1{
-	border-color: darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176) !important;
-}
-
-// green
-.color-2{
-	color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
-}
-.bg-color-2{
-	background-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
-}
-.border-color-2{
-	border-color: darken(desaturate(adjust-hue(#ea7066, 73.3985), 19.8411), 3.3333) !important;
-}
-// red / primary-color
-.color-3{
-	color: $primary-color !important;
-}
-.bg-color-3{
-	background-color: $primary-color !important;
-}
-.border-color-3{
-	border-color: $primary-color !important;
-}
-// sky 
-.color-4{
-	color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
-}
-.bg-color-4{
-	background-color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
-}
-.border-color-4{
-	border-color: lighten(desaturate(adjust-hue(#ea7066, 193.0155), 25.8621), 1.9608) !important;
-}
-// purple
-.color-5{
-	color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
-}
-.bg-color-5{
-	background-color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
-}
-.border-color-5{
-	border-color: lighten(desaturate(adjust-hue(#ea7066, 245.9545), 13.3621), 9.0196) !important;
-}
-// pink
-.color-6{
-	color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333) !important;
-}
-.bg-color-6{
-	background-color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333) !important;
-}
-.border-color-6{
-	border-color: lighten(desaturate(adjust-hue(#ea7066, 327.2806), 2.6137), 3.3333) !important;
-}
-// blue ash
-.bg-color-7{
-	background-color: darken(desaturate(adjust-hue(#ea7066, 196.4545), 58.3182), 43.5294) !important;
-}
-
-@function tint($primary-color, $percentage) {
-  @return mix(white, $primary-color, $percentage);
-}
-
-$base: 5px;
-$base-xs: 2px;

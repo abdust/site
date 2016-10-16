@@ -2,26 +2,30 @@
 .testimonialArea{
 	padding-bottom: 0 !important;
 }
+.testimonial-grid{
+	float:left;
+	margin-top: 50px;
+}
 .testimonialContent{
 	width: 100%;
-	height: $base*50;
+	height: 250px;
 	display: block;
-	@include border-radius($base-xs*6+1px);
+	@include border-radius(13px);
 	text-align: center;
 	@include transition(all 0.3s ease-in-out);
-	@include box-shadow(0, $base-xs*2, 0, rgba($black-color, .1) );
-	padding: $base*7;
-	margin-bottom: $base*16;
+	@include box-shadow(0, 4px, 0, rgba($black-color, .1) );
+	padding: 35px;
+	margin-bottom: 80px;
 	span.userSign{
-		width: $base*20;
-		height: $base*20;
+		width: 100px;
+		height: 100px;
 		@include border-radius(100%);
 		background-color: $white-color;
-		border-width: $base-xs*3;
+		border-width: 6px;
 		border-style: solid;
 		top: -50px;
-		font-size: $base*6;
-		line-height: $base*18;
+		font-size: 30px;
+		line-height: 90px;
 		display: block;
 		position: absolute;
 		left: 50%;
@@ -29,18 +33,18 @@
 	}
 	p{
 		color: $white-color;
-		margin: $base*5 0;
-		font-size: $base-xs*8;
+		margin: 25px 0;
+		font-size: 16px;
 	}
 	h3{
 		font-weight: 600;
 		color: $white-color;
 		margin: 0;
-		font-size: $base-xs*8;
-		line-height: $base*6;
+		font-size: 16px;
+		line-height: 30px;
 		small{
 			margin: 0;
-			font-size: $base-xs*7;
+			font-size: 14px;
 			text-transform: capitalize;
 			color: rgba($white-color, .8);
 		}

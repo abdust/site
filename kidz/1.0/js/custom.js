@@ -3,8 +3,8 @@ jQuery(document).ready(function(){
 //============================== SELECT BOX =========================
   $('.select-drop').selectbox();
 
-//============================== ALL DROPDOWN ON HOVER =========================
-  $('.dropdown').hover(function() {
+//============================== MENU DROPDOWN ON HOVER =========================
+  $('.nav .dropdown').hover(function() {
     $(this).addClass('open');
   },
   function() {
@@ -12,8 +12,15 @@ jQuery(document).ready(function(){
   }
   );
 
+//============================== CART =========================
+$('.cart-dropdown a').on("click",function() {
+    $(".dropdown-menu").toggleClass('display-block');
+    $(".cart-dropdown a i").toggleClass('fa-close').toggleClass("fa-shopping-basket");
+    $(".badge").toggleClass('display-none');
+});
+
 //============================== Rs-Slider =========================
-  jQuery('.fullscreenbanner').revolution({
+  jQuery('.bannercontainerV1 .fullscreenbanner').revolution({
    delay: 5000,
    startwidth: 1170,
    startheight: 560,
@@ -21,6 +28,32 @@ jQuery(document).ready(function(){
    fullScreen: "off",
    hideCaptionAtLimit: "",
    dottedOverlay: "twoxtwo",
+   navigationStyle: "preview4",
+   fullScreenOffsetContainer: "",
+   hideTimerBar:"on"
+  });
+
+  jQuery('.bannercontainerV3 .fullscreenbanner').revolution({
+    delay: 5000,
+    startwidth: 1170,
+    startheight: 500,
+    fullWidth: "on",
+    fullScreen: "on",
+    hideCaptionAtLimit: "",
+     dottedOverlay: "twoxtwo",
+    navigationStyle: "preview4",
+    fullScreenOffsetContainer: "",
+    hideTimerBar:"on",
+  });
+
+  jQuery('.bannercontainerV2 .fullscreenbanner').revolution({
+   delay: 5000,
+   startwidth: 1170,
+   startheight: 660,
+   fullWidth: "on",
+   fullScreen: "off",
+   hideCaptionAtLimit: "",
+   dottedOverlay: "none",
    navigationStyle: "preview4",
    fullScreenOffsetContainer: "",
    hideTimerBar:"on"
@@ -71,6 +104,31 @@ jQuery(document).ready(function(){
       }
     }
   });
+
+  var owl = $('.owl-carousel.partnersLogoSlider');
+    owl.owlCarousel({
+      loop:true,
+      margin:28,
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
+      nav:true,
+      dots: false,
+      responsive:{
+        320:{
+          slideBy: 1,
+          items:1
+        },
+        768:{
+          slideBy: 1,
+          items:3
+        },
+        992:{
+          slideBy: 1,
+          items:5
+        }
+      }
+    });
 //============================== COUNTER-UP =========================
   $(document).ready(function ($) {
     $('.counter').counterUp({
@@ -170,41 +228,42 @@ $( "#price-amount-2" ).val( "$" + $( "#price-range" ).slider( "values", 1 ));
       $(this).find('i.fa').removeClass('fa-chevron-up').addClass('fa-chevron-down');
     });
 
-  //============================== SVG========================
+  //============================== Product Gallery =========================
+  var galleryThumb = $('.product-gallery-thumblist a'),
+      galleryPreview = $('.product-gallery-preview > li');
 
-    jQuery('img.svg').each(function(){
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
+  
+  galleryThumb.on('click', function(e) {
+    var target = $(this).attr('href');
 
-      jQuery.get(imgURL, function(data) {
-          // Get the SVG tag, ignore the rest
-          var $svg = jQuery(data).find('svg');
+    galleryThumb.parent().removeClass('active');
+    $(this).parent().addClass('active');
+    galleryPreview.removeClass('current');
+    $(target).addClass('current');
 
-          // Add replaced image's ID to the new SVG
-          if(typeof imgID !== 'undefined') {
-              $svg = $svg.attr('id', imgID);
-          }
-          // Add replaced image's classes to the new SVG
-          if(typeof imgClass !== 'undefined') {
-              $svg = $svg.attr('class', imgClass+' replaced-svg');
-          }
+    e.preventDefault();
+  });
 
-          // Remove any invalid XML tags as per http://validator.w3.org
-          $svg = $svg.removeAttr('xmlns:a');
-
-          // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-          if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-              $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-          }
-
-          // Replace image with new SVG
-          $img.replaceWith($svg);
-
-      }, 'xml');
-
-    });
+  // Count Input (Quantity)
+  //------------------------------------------------------------------------------
+  $(".incr-btn").on("click", function(e) {
+    var $button = $(this);
+    var oldValue = $button.parent().find('.quantity').val();
+    $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
+    if ($button.data('action') == "increase") {
+      var newVal = parseFloat(oldValue) + 1;
+    } else {
+     // Don't allow decrementing below 1
+      if (oldValue > 1) {
+        var newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 1;
+        $button.addClass('inactive');
+      }
+    }
+    $button.parent().find('.quantity').val(newVal);
+    e.preventDefault();
+  });
 
 
 });

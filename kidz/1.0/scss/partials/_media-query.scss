@@ -1,16 +1,16 @@
 /*=== MEDIA QUERY ===*/
 @mixin mobile-xs{
+  @media(max-width:480px){
+    @content;
+  }
+}
+@mixin mobile-all{
   @media(min-width:320px){
     @content;
   }
 }
 @mixin mobile{
   @media(min-width:480px){
-    @content;
-  }
-}
-@mixin mobile-all{
-  @media(min-width:320px){
     @content;
   }
 }

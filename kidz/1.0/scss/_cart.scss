@@ -5,18 +5,18 @@
 			border-collapse: separate;
 			thead{
 				tr{
-					@include add-border(1px, darken(saturate(adjust-hue(#ea7066, 38.7273), 8.7533), 4.1176), right-left);
+					@include add-border(1px, $color1, right-left);
 					th{
 						color: $white-color;
-						padding: $base*3 $base-xs*4;
+						padding: 15px 8px;
 						border-bottom: none;
 						font-weight: 600;
 						text-transform: uppercase;
 						&:first-child{
-							@include border-radius($base-xs*3+1px 0 0 0);
+							@include border-radius(7px 0 0 0);
 						}
 						&:last-child{
-							@include border-radius( 0 $base-xs*3+1px 0 0);
+							@include border-radius( 0 7px 0 0);
 						}
 					}
 				}
@@ -25,64 +25,61 @@
 				tr{
 					td{
 						vertical-align: middle;
-						color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
+						color: #222222;
 						border-top: none;
-						@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), bottom);
+						@include add-border(1px, #dedede, bottom);
 						@include mobile-all{
-							padding: $base*2;
-						}
-						@include tablet{
-							padding: $base*2;
+							padding: 10px;
 						}
 						@include desktops{
-							padding: $base*2;
+							padding: 10px;
 						}
 						@include large-desktops{
-							padding: $base*4 $base-xs*4 $base*4 $base*6;
+							padding: 20px 8px 20px 30px;
 						}
 						&:first-child{
-							@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), left);
+							@include add-border(1px, #dedede, left);
 						}
 						&:last-child{
-							@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), right);
+							@include add-border(1px, #dedede, right);
 						}
 						.close{
 							display: inline-block;
 							float: left;
-							margin: $base-xs*8+1px $base*6 0 0;
+							margin: 17px 30px 0 0;
 							opacity: 1;
 							span{
-								width: $base*6;
-								height: $base*6;
-								line-height: $base*6;
+								width: 30px;
+								height: 30px;
+								line-height: 30px;
 								display: block;
-								background-color: lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 23.9216);
-								color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 25.8824);
+								background-color: #e5e5e5;
+								color: $text-color;
 								@include border-radius(100%);
 							}
 						}
 						input {
-							width: $base*16;
-							height: $base*9;
+							width: 80px;
+							height: 45px;
 							text-align: center;
-							line-height: $base*9;
-							color: darken(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 52.5490);
-							@include add-border(1px, lighten(desaturate(adjust-hue(#ea7066, -4.5455), 75.8621), 21.1765), all);
-							@include border-radius($base-xs*3+1px);
+							line-height: 45px;
+							color: #222222;
+							@include add-border(1px, #dedede, all);
+							@include border-radius(7px);
 						}
 						&:last-child{
-							padding-right: $base*6;
+							padding-right: 30px;
 						}
 					}
 					&:last-child{
 						td{
 							&:first-child{
-								@include border-radius( 0 0 0 $base-xs*3+1px);
+								@include border-radius( 0 0 0 7px);
 							}
 							&:last-child{
-								@include border-radius( 0 0 $base-xs*3+1px 0);
+								@include border-radius( 0 0 7px 0);
 								&.btnPart{
-									@include border-radius( 0 0 $base-xs*3+1px $base-xs*3+1px);
+									@include border-radius( 0 0 7px 7px);
 								}
 							}
 						}
@@ -91,14 +88,14 @@
 			}
 			.input-group{
 				.form-control{
-					width: $base*57;
-					height: $base*9;
+					width: 257px;
+					height: 45px;
 					text-align: left;
-					margin-right: $base*2;
+					margin-right: 10px;
 				}
 				.input-group-addon{
 					width: auto;
-					@include border-radius($base-xs*3+1px);
+					@include border-radius(7px);
 				}
 			}
 		}
@@ -109,7 +106,7 @@
 				tr{
 					td{
 						&:last-child{
-							padding: $base*5;
+							padding: 25px;
 							text-align: right;
 						}
 					}
