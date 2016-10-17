@@ -531,7 +531,6 @@ aside {
 
 .pageTitleSection {
   background-image: url("../img/page-title/page-title-bg.jpg");
-  background-attachment: fixed;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2382,7 +2381,6 @@ footer .color-bar {
 
 /*=== 4.1 FOOTER INFO ===*/
 .footerInfoArea {
-  background-attachment: fixed;
   width: 100%;
   background-repeat: repeat;
   padding: 60px 0;
@@ -3450,7 +3448,6 @@ footer .color-bar {
 
 /*=== 4.1 FOOTER INFO ===*/
 .footerInfoArea {
-  background-attachment: fixed;
   width: 100%;
   background-repeat: repeat;
   padding: 60px 0;
@@ -4057,7 +4054,6 @@ footer .color-bar {
 
 /*=== 5.3 PROMOTION ===*/
 .promotionWrapper {
-  background-attachment: fixed;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -4148,7 +4144,6 @@ footer .color-bar {
 /*=== 5.5 SERVICES SECTION ===*/
 .servicesSection {
   background-image: url("../img/home/pattern-light.png");
-  background-attachment: fixed;
   width: 100%;
   background-repeat: repeat;
   height: auto;
@@ -4465,7 +4460,6 @@ footer .color-bar {
 
 .teamSection {
   background-image: url("../img/home/pattern-light.png");
-  background-attachment: fixed;
   width: 100%;
   background-repeat: repeat;
   height: auto;
@@ -4917,7 +4911,6 @@ footer .color-bar {
 /*=== 5.9 COUNT UP SECTION ===*/
 .countUpSection {
   background-image: url("../img/home/countup.jpg");
-  background-attachment: fixed;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5140,7 +5133,6 @@ footer .color-bar {
 /*=== 5.11 COMMENT SECTION ===*/
 .commentSection {
   background-image: url("../img/home/pattern-light.png");
-  background-attachment: fixed;
   width: 100%;
   background-repeat: repeat;
   height: auto;
