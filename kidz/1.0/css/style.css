@@ -1582,7 +1582,7 @@ aside {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
-  z-index: 100 !important;
+  z-index: 700;
 }
 
 .navbar-header .navbar-brand {
@@ -2650,7 +2650,7 @@ footer .color-bar {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
-  z-index: 100 !important;
+  z-index: 700;
 }
 
 .navbar-header .navbar-brand {
