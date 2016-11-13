@@ -208,7 +208,7 @@ $('.cart-dropdown a').on("click",function() {
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-57899169-1', 'auto');
+  ga('create', 'UA-71155940-5', 'auto');
   ga('send', 'pageview');
 
 //============================== PRICE SLIDER RANGER =========================
