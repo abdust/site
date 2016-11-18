@@ -1702,6 +1702,7 @@ body.bodyColor.container {
         margin: 0; } }
     .slide-info .productImage img {
       display: inline-block;
+      width: auto;
       max-width: 100%; }
 
 .bannerV3 .owl-nav {
