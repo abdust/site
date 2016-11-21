@@ -1844,6 +1844,7 @@ body.bodyColor.container {
   width: 100%;
   position: relative;
   padding: 0;
+  background-color: #f5f5f5;
 }
 .bannerV2 .h2 {
   font-size: 25px;
