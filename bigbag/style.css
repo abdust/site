@@ -41,7 +41,7 @@ body{
     margin: 110px auto 0;
   }
 }
-.promotionInfo input.btn-primary{
+.promotionInfo input.btn-primary, .btn-primary{
   height: 35px;
   padding: 0 15px;
   border: none;
@@ -68,7 +68,7 @@ body{
   }
 }
 @media (min-width: 992px) {
-  .promotionInfo input.btn-primary{
+  .promotionInfo input.btn-primary, .btn-primary{
     height: 45px;
     padding: 0 25px;
     line-height: 45px;
