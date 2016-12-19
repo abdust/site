@@ -326,6 +326,18 @@
 		border-color: $border-color;
 	}
 }
+.dateSelect{
+	margin-bottom: 20px;
+	.form-control{
+		border-right: none;
+	}
+	.input-group-addon{
+		background-color: transparent;
+		border-color: $border-color;
+		border-radius: 0;
+	}
+}
+
 textarea{
 	&.form-control{
 		height: 150px;
@@ -533,9 +545,15 @@ textarea{
     opacity: 1;
     border: 2px solid $white-color;
     position: absolute;
-    top: -20px;
-    right: -20px;
     box-shadow: 0 2px 10px rgba($black-color, .45);
+    @include mobile-xs{
+    	top: -10px;
+    	right: -7px;
+    }
+    @include tablet{
+    	top: -20px;
+    	right: -20px;
+    }
 	}
 	.modal-footer{
 		border: none;

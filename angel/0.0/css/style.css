@@ -654,6 +654,18 @@ a:hover, a:focus {
   border-color: #dedede;
 }
 
+.dateSelect {
+  margin-bottom: 20px;
+}
+.dateSelect .form-control {
+  border-right: none;
+}
+.dateSelect .input-group-addon {
+  background-color: transparent;
+  border-color: #dedede;
+  border-radius: 0;
+}
+
 textarea.form-control {
   height: 150px;
 }
@@ -878,9 +890,19 @@ textarea.form-control {
   opacity: 1;
   border: 2px solid #ffffff;
   position: absolute;
-  top: -20px;
-  right: -20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+@media (min-width: 320px) {
+  .modalCommon button.close {
+    top: -10px;
+    right: -7px;
+  }
+}
+@media (min-width: 768px) {
+  .modalCommon button.close {
+    top: -20px;
+    right: -20px;
+  }
 }
 .modalCommon .modal-footer {
   border: none;

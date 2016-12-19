@@ -120,7 +120,13 @@ $(document).ready(function () {
   });
 });
 
-
+//============================== Date-picker =========================
+$(document).ready(function () {
+  $('.datepicker').datepicker({
+    startDate: "dateToday",
+    autoclose: true
+  });
+});
 
 
 

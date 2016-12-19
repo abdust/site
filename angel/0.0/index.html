@@ -17,13 +17,14 @@
   <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet" media="screen">
   <link href="plugins/isotope/jquery.fancybox.css" rel="stylesheet">
   <link href="plugins/isotope/isotope.css" rel="stylesheet">
+  <link  href="plugins/datepicker/datepicker.css" rel="stylesheet">
   
 
   <!-- GOOGLE FONT -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -90,17 +91,91 @@
                 </li>
                 <li class=" dropdown megaDropMenu">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store</a>
+                  <ul class="row dropdown-menu">
+                    <li class="col-sm-3 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Packages Sidebar Left</a></li>
+                        <li><a href="#">Packages Sidebar Right</a></li>
+                        <li><a href="#">Packages 3 Columns</a></li>
+                        <li><a href="#">Packages Sidebar Right</a></li>
+                        <li><a href="#">Packages 3 Columns</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Packages Sidebar Left</a></li>
+                        <li><a href="#">Packages Sidebar Right</a></li>
+                        <li><a href="#">Packages List</a></li>
+                        <li><a href="#">Packages Sidebar Right</a></li>
+                        <li><a href="#">Packages List</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3 col-xs-12">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Package Sidebar Left</a></li>
+                        <li><a href="#">Package Sidebar Right</a></li>
+                        <li><a href="#">Package Fullwidth</a></li>
+                        <li><a href="#">Package Sidebar Right</a></li>
+                        <li><a href="#">Package Fullwidth</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3 col-xs-12 mega-img">
+                      <a href="#"><img src="img/home/pricing-1.jpg" alt="logo"></a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="dropdown singleDrop">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                  <ul class="dropdown-menu dropdown-menu-left">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Gallery Grid</a></li>
+                        <li><a href="#">Gallery Masonry</a></li>
+                        <li><a href="#">Photo Slider</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">404 Not Found</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
                 </li>
                 <li class="dropdown singleDrop">
                   <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Destination Cities</a></li>
+                    <li><a href="#">Single Destination</a></li>
+                  </ul>
                 </li>
                 <li class="dropdown singleDrop">
                   <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown dropdown-submenu">
+                      <a href="javascript:void(0)" class="dropdown-toggle " data-toggle="dropdown">Blog Grid View</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Blog Grid 3 Col</a></li>
+                        <li><a href="#">Blog Grid 2 Col</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu">
+                      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Blog List View</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Blog List Right Sidebar</a></li>
+                        <li><a href="#">blog-list-left-sidebar.html</a></li>
+                        <li><a href="#">Blog List Fullwidth</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu">
+                      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Single Blog Post</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Right Sidebar</a></li>
+                        <li><a href="#">Left Sidebar</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
-                <li class="dropdown singleDrop">
+                <li class="dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
                 </li>
               </ul>
@@ -1598,6 +1673,22 @@
                 <div class="form-group categoryTitle col-xs-12">
                   <h5>Service Date and Time</h5>
                 </div>
+                <div class="dateSelect col-sm-6 col-xs-12">
+                  <div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+                    <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                    <div class="input-group-addon">
+                      <span class="fa fa-calendar"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeSelect col-sm-6 col-xs-12">
+                  <select name="guiest_id1" id="guiest_id1" class="select-drop">
+                    <option value="0">10.00 AM</option>
+                    <option value="1">9.00 AM</option>
+                    <option value="2">8.00 AM</option>
+                    <option value="3">11.00 AM</option>            
+                  </select>
+                </div>
                 <div class="form-group categoryTitle col-xs-12">
                   <h5>Personal info</h5>
                 </div>
@@ -1642,6 +1733,7 @@
   <script src="plugins/isotope/jquery.fancybox.pack.js"></script>
   <script src="plugins/isotope/isotope-triger.js"></script>
   <script src="plugins/smoothscroll/SmoothScroll.js"></script>
+  <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
   <script src="js/custom.js"></script>
 
 </body>
