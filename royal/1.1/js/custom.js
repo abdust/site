@@ -181,11 +181,11 @@ ga('create', 'UA-71155940-1', 'auto');
 ga('send', 'pageview');
 
 //================================ heatmap.it ==================================
-(function() {
-var hm = document.createElement('script'); hm.type ='text/javascript'; hm.async = true;
-hm.src = ('++u-heatmap-it+log-js').replace(/[+]/g,'/').replace(/-/g,'.');
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);
-})();
+
+(function(h,e,a,t,m,p) {
+m=e.createElement(a);m.async=!0;m.src=t;
+p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+})(window,document,'script','https://u.heatmap.it/log.js');
 
 //================================ zopim live chat ==================================
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
