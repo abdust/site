@@ -211,6 +211,12 @@ $('.cart-dropdown a').on("click",function() {
   ga('create', 'UA-71155940-5', 'auto');
   ga('send', 'pageview');
 
+
+  //============================== getsitecontrol =========================
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
+
 //============================== PRICE SLIDER RANGER =========================
 var minimum = 20;
 var maximum = 300;
