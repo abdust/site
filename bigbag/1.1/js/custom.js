@@ -279,12 +279,10 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-71155940-3', 'auto');
 ga('send', 'pageview');
 
-//================================ heatmap.it ==================================
-(function() {
-var hm = document.createElement('script'); hm.type ='text/javascript'; hm.async = true;
-hm.src = ('++u-heatmap-it+log-js').replace(/[+]/g,'/').replace(/-/g,'.');
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);
-})();
+  //============================== getsitecontrol =========================
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
 
 //============================== SELECT BOX =========================
 jQuery(document).ready(function() {
