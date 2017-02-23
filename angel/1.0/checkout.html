@@ -197,134 +197,126 @@
 
 
 <!-- CHECK OUT SECTION -->
-    <section class="container-fluid clearfix checkout">
+    <section class="clearfix checkout">
       <div class="container">
-        <div class="row">
-          <form>
-            <div class="col-xs-12">
-              <div class="panel panel-default checkInfo">
-                <div class="panel-heading patternbg">1. Billing</div>
-                <div class="panel-body">
-                  <form>
-                    <label class="radio-inline chooseOption">
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                      <div class="cardTitle">Pay with new card</div>
-                      <div class="form-horizontal">
-                        <div class="form-group">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="card">Name on Card:</label>
-                          <div class="col-sm-7 col-xs-12">
-                            <input type="text" class="form-control" id="card" placeholder="Name on Card">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="number">Card Number</label>
-                          <div class="col-sm-7 col-xs-12"> 
-                            <input type="text" class="form-control" id="number" placeholder="###.###.###">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="number">Expires on:</label>
-                          <div class="dateSelect col-sm-7 col-xs-12">
-                            <div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-                              <input type="text" class="form-control" placeholder="MM/DD/YYYY">
-                              <div class="input-group-addon">
-                                <span class="fa fa-calendar"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="cvcnumber">Security Code:</label>
-                          <div class="col-sm-7 col-xs-12"> 
-                            <input type="text" class="form-control" id="cvcnumber" placeholder="CVC">
-                            <i class="fa fa-question-circle helpText" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="cvcnumber">Country:</label>
-                          <div class="countrySelect col-sm-7 col-xs-12">
-                            <select name="guiest_id2" id="guiest_id2" class="select-drop">
-                              <option value="0">- Select Country -</option>
-                              <option value="1">UK</option>
-                              <option value="2">Australia</option>
-                              <option value="3">USA</option>            
-                            </select>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="postalcode">Postal Code:</label>
-                          <div class="col-sm-7 col-xs-12"> 
-                            <input type="text" class="form-control" id="postalcode" placeholder="Postal Code">
-                          </div>
-                        </div>
-                        <div class="form-group"> 
-                          <div class="col-sm-offset-2 col-sm-7 col-xs-12">
-                            <div class="checkbox">
-                              <label><input type="checkbox"> Remember this Card</label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group"> 
-                          <div class="col-sm-offset-2 col-sm-7 col-xs-12">
-                            <button type="submit" class="btn btn-primary">Use this card</button>
-                          </div>
-                        </div>
+        <form>
+          <div class="panel panel-default checkInfo">
+            <div class="panel-heading patternbg">1. Billing</div>
+            <div class="panel-body">
+              <form>
+                <label class="radio-inline chooseOption">
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  <div class="cardTitle">Pay with new card</div>
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-md-2 col-sm-3 col-xs-12" for="card">Name on Card:</label>
+                      <div class="col-sm-7 col-xs-12">
+                        <input type="text" class="form-control" id="card" placeholder="Name on Card">
                       </div>
-                    </label>
-                    <div class="cardTitle extraSpace">
-                      or
                     </div>
-                    <label class="radio-inline chooseOption">
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      <div class="form-horizontal">
-                        <div class="form-group"> 
-                          <div class="col-sm-7 col-xs-12">
-                            <div class="cardTitle ">
-                              Pay with <img src="img/extra/paypal.png" alt="Image paypal">
-                            </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-2 col-sm-3 col-xs-12" for="number">Card Number</label>
+                      <div class="col-sm-7 col-xs-12"> 
+                        <input type="text" class="form-control" id="number" placeholder="###.###.###">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-2 col-sm-3 col-xs-12" for="number">Expires on:</label>
+                      <div class="dateSelect col-sm-7 col-xs-12">
+                        <div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+                          <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                          <div class="input-group-addon">
+                            <span class="fa fa-calendar"></span>
                           </div>
                         </div>
                       </div>
-                    </label>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-12">
-              <div class="panel panel-default cartInfo">
-                <div class="panel-heading patternbg">2. Comfirm and Pay</div>
-                <div class="panel-body tableArea">
-                  <div>          
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <td><div class="cartImage"><img src="img/products/cart-product-1.jpg" alt="Image cart"></div></td>
-                          <td>Lorem ipsum dolor sit consectetur. <br> <span>Qnt: 1</span></td>
-                          <td><span class="price">$79</span></td>
-                        </tr>
-                        <tr>
-                          <td><div class="cartImage"><img src="img/products/cart-product-2.jpg" alt="Image cart"></div></td>
-                          <td>Lorem ipsum dolor sit consectetur. <br> <span>Qnt: 1</span></td>
-                          <td><span class="price">$79</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-2 col-sm-3 col-xs-12" for="cvcnumber">Security Code:</label>
+                      <div class="col-sm-7 col-xs-12"> 
+                        <input type="text" class="form-control" id="cvcnumber" placeholder="CVC">
+                        <i class="fa fa-question-circle helpText" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-2 col-sm-3 col-xs-12" for="cvcnumber">Country:</label>
+                      <div class="countrySelect col-sm-7 col-xs-12">
+                        <select name="guiest_id2" id="guiest_id2" class="select-drop">
+                          <option value="0">- Select Country -</option>
+                          <option value="1">UK</option>
+                          <option value="2">Australia</option>
+                          <option value="3">USA</option>            
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-2 col-sm-3 col-xs-12" for="postalcode">Postal Code:</label>
+                      <div class="col-sm-7 col-xs-12"> 
+                        <input type="text" class="form-control" id="postalcode" placeholder="Postal Code">
+                      </div>
+                    </div>
+                    <div class="form-group"> 
+                      <div class="col-sm-offset-2 col-sm-7 col-xs-12">
+                        <div class="checkbox">
+                          <label><input type="checkbox"> Remember this Card</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group"> 
+                      <div class="col-sm-offset-2 col-sm-7 col-xs-12">
+                        <button type="submit" class="btn btn-primary">Use this card</button>
+                      </div>
+                    </div>
                   </div>
+                </label>
+                <div class="cardTitle extraSpace">
+                  or
                 </div>
-              </div>
+                <label class="radio-inline chooseOption">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  <div class="form-horizontal">
+                    <div class="form-group"> 
+                      <div class="col-sm-7 col-xs-12">
+                        <div class="cardTitle ">
+                          Pay with <img src="img/extra/paypal.png" alt="Image paypal">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </form>
             </div>
+          </div>
 
-            <div class="col-xs-12">
-              <div class="paymentPart">
-                <div class="form-group"> 
-                  <div class="totalAmount"><span>Total:</span><strong>$158</strong></div>
-                  <button type="submit" class="btn btn-primary">Complete payment</button>
-                </div>
+          <div class="panel panel-default cartInfo">
+            <div class="panel-heading patternbg">2. Comfirm and Pay</div>
+            <div class="panel-body tableArea">
+              <div>          
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td><div class="cartImage"><img src="img/products/cart-product-1.jpg" alt="Image cart"></div></td>
+                      <td>Lorem ipsum dolor sit consectetur. <br> <span>Qnt: 1</span></td>
+                      <td><span class="price">$79</span></td>
+                    </tr>
+                    <tr>
+                      <td><div class="cartImage"><img src="img/products/cart-product-2.jpg" alt="Image cart"></div></td>
+                      <td>Lorem ipsum dolor sit consectetur. <br> <span>Qnt: 1</span></td>
+                      <td><span class="price">$79</span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+
+          <div class="paymentPart">
+            <div class="form-group"> 
+              <div class="totalAmount"><span>Total:</span><strong>$158</strong></div>
+              <button type="submit" class="btn btn-primary">Complete payment</button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -333,7 +325,7 @@
       <!-- BACK TO TOP BUTTON -->
       <a href="#pageTop" class="backToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
       <!-- FOOTER INFO -->
-      <div class="container-fluid clearfix footerInfo">
+      <div class="clearfix footerInfo">
         <div class="container">
           <div class="row">
             <div class="col-sm-3 col-xs-12">
@@ -399,7 +391,7 @@
       </div>
 
       <!-- COPY RIGHT -->
-      <div class="container-fluid clearfix copyRight">
+      <div class="clearfix copyRight">
         <div class="container">
           <div class="row">
             <div class="col-sm-5 col-sm-push-7 col-xs-12">
@@ -423,10 +415,9 @@
   </div>
 
   <!-- APPOINMENT MODAL -->
-  <div id="appoinmentModal" class="modal fade modalCommon" role="dialog">
-    <div class="container">
-      <div class="modal-dialog row">
-
+  <div id="appoinmentModal" class="modal fade modalCommon" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="container row">
         <!-- MODAL CONTENT-->
         <div class="modal-content col-sm-6 col-sm-offset-3 col-xs-12">
           <div class="modal-header">
@@ -482,7 +473,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

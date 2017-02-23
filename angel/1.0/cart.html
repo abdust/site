@@ -197,11 +197,11 @@
 
 
 <!-- ORDER SECTION -->
-    <section class="container-fluid clearfix orderArea">
+    <section class="clearfix orderArea">
       <div class="container">
         <div class="row">
-          <form>
-            <div class="col-sm-8 col-xs-12">
+          <div class="col-sm-8 col-xs-12">
+            <form>
               <div class="panel panel-default cartInfo">
                 <div class="panel-heading patternbg">your Order</div>
                 <div class="panel-body tableArea">
@@ -233,8 +233,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
+            </form>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <form>
               <div class="panel panel-default cartInfo">
                 <div class="panel-heading patternbg">Total <span class="pull-right">$158</span></div>
                 <div class="panel-body">
@@ -246,19 +248,18 @@
                   <a href="checkout.html" class="btn btn-primary btn-block">Checkout</a>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
+          
         </div>
       </div>
     </section>
 
 <!-- RELATED PRODUCT SECTION -->
-    <section class="container-fluid clearfix relatedProduct">
+    <section class="clearfix relatedProduct">
       <div class="container">
-        <div class="row">
-          <div class="relatedTitle">
-            <h2>Related Products</h2>
-          </div>
+        <div class="relatedTitle">
+          <h2>Related Products</h2>
         </div>
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12">
@@ -306,7 +307,7 @@
       <!-- BACK TO TOP BUTTON -->
       <a href="#pageTop" class="backToTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
       <!-- FOOTER INFO -->
-      <div class="container-fluid clearfix footerInfo">
+      <div class="clearfix footerInfo">
         <div class="container">
           <div class="row">
             <div class="col-sm-3 col-xs-12">
@@ -372,7 +373,7 @@
       </div>
 
       <!-- COPY RIGHT -->
-      <div class="container-fluid clearfix copyRight">
+      <div class="clearfix copyRight">
         <div class="container">
           <div class="row">
             <div class="col-sm-5 col-sm-push-7 col-xs-12">
@@ -396,10 +397,9 @@
   </div>
 
   <!-- APPOINMENT MODAL -->
-  <div id="appoinmentModal" class="modal fade modalCommon" role="dialog">
-    <div class="container">
-      <div class="modal-dialog row">
-
+  <div id="appoinmentModal" class="modal fade modalCommon" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="container row">
         <!-- MODAL CONTENT-->
         <div class="modal-content col-sm-6 col-sm-offset-3 col-xs-12">
           <div class="modal-header">
@@ -455,7 +455,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
