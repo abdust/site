@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-  
+
   //============================== MENU SCROLL =========================
    $(window).load(function(){
     $('.body-wrapper').each(function(){
@@ -7,29 +7,29 @@ jQuery(document).ready(function(){
       var main_area = header_area.children('.nav-wrapper');
 
       var logo = main_area.find('.navbar-header');
-      var navigation = main_area.find('.navbar-collapse');        
+      var navigation = main_area.find('.navbar-collapse');
       var original = {
         nav_top: navigation.css('margin-top')
       };
-        
+
       $(window).scroll(function(){
         if( main_area.hasClass('bb-fixed-header') && ($(this).scrollTop() == 0 || $(this).width() < 750)){
           main_area.removeClass('bb-fixed-header').appendTo(header_area);
           navigation.animate({'margin-top': original.nav_top}, {duration: 300, queue: false, complete: function(){
             header_area.css('height', 'auto');
-          }});                
+          }});
         }else if( !main_area.hasClass('bb-fixed-header') && $(this).width() > 750 &&
           $(this).scrollTop() > header_area.offset().top + header_area.height() - parseInt($('html').css('margin-top')) ){
-          
+
           header_area.css('height', header_area.height());
           main_area.css({'opacity': '0'}).addClass('bb-fixed-header');
           main_area.appendTo($('body')).animate({'opacity': 1});
-            
+
           navigation.css({'margin-top': '0px'});
-        }       
+        }
       });
-    });     
-    
+    });
+
     $(window).trigger('resize');
     $(window).trigger('scroll');
   });
@@ -45,7 +45,7 @@ jQuery(document).ready(function(){
           var li = $(this).parent();
           var heightParent = parseInt(elmnt.css('height').replace('px', '')) / 2;
           var widthParent = parseInt(elmnt.css('width').replace('px', '')) - 10;
-          
+
           if(!li.hasClass('open')) {
             li.addClass('open');
           } else {
@@ -53,7 +53,7 @@ jQuery(document).ready(function(){
           }
           $(this).next().css('top', heightParent + 'px');
           $(this).next().css('left', widthParent + 'px');
-          
+
           return false;
       }
   });
@@ -72,14 +72,14 @@ jQuery(document).ready(function(){
   });
 
   //============================== BACK TO TOP =========================
-  $(document).ready(function(){ 
-    $(window).scroll(function(){ 
-      if ($(this).scrollTop() > 10) { 
-        $('.backToTop').css('opacity', 1); 
-      } else { 
-        $('.backToTop').css('opacity', 0); 
-      } 
-    }); 
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 10) {
+        $('.backToTop').css('opacity', 1);
+      } else {
+        $('.backToTop').css('opacity', 0);
+      }
+    });
   });
 
   //============================== BACK TO TOP SMOOTH SCROLL=========================
@@ -99,8 +99,8 @@ jQuery(document).ready(function(){
     });
   });
 
-  //============================== MAIN SLIDER ========================= 
- 
+  //============================== MAIN SLIDER =========================
+
   var $heroSlider = $( '.main-slider .inner' );
   if ( $heroSlider.length > 0 ) {
     $heroSlider.each( function () {
@@ -122,7 +122,7 @@ jQuery(document).ready(function(){
         smartSpeed:700
       });
     });
-  } 
+  }
 
   //============================== OWL-CAROUSEL =========================
 
@@ -244,7 +244,7 @@ jQuery(document).ready(function(){
   $( '#price-amount-2' ).val( '$' + $( '#price-range' ).slider( 'values', 1 ));
 
 
-  //============================== BOOTSTRA CAROUSEL SWIEP =========================
+  //============================== BOOTSTRAP CAROUSEL SWIEP =========================
   $('#productSlider, #thubmnailTeamSlider').on('touchstart', function(event){
       var xClick = event.originalEvent.touches[0].pageX;
       $(this).one('touchmove', function(event){
@@ -261,7 +261,7 @@ jQuery(document).ready(function(){
       });
   });
 
-  //============================== BOOTSTRA THUMBNAIL SLIDER =========================
+  //============================== BOOTSTRAP THUMBNAIL SLIDER =========================
   (function(){
     $('#thubmnailTeamSlider').carousel({ interval: 3000 });
   }());
@@ -286,18 +286,18 @@ jQuery(document).ready(function(){
 
   //============================== FANCY BOX =========================
   $(document).ready(function() {
-    
+
     $('a.group').fancybox({
       'transitionIn'  : 'elastic',
       'transitionOut' : 'elastic',
-      'speedIn'   : 600, 
-      'speedOut'    : 200, 
+      'speedIn'   : 600,
+      'speedOut'    : 200,
       'overlayShow' : false
     });
-    
+
   });
 
-  //============================== SINGLE SERVICE LEFT TAB ========================= 
+  //============================== SINGLE SERVICE LEFT TAB =========================
   $(document).ready(function($) {
     $('#singleServiceTab a').click(function (e) {
       e.preventDefault();
@@ -314,7 +314,7 @@ jQuery(document).ready(function(){
     });
   });
 
-  //============================== ACCRODION ========================= 
+  //============================== ACCRODION =========================
 
   $('.content-collapse li').click(function () {
       $(this).toggleClass("active").siblings().removeClass("active");
