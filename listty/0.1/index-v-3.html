@@ -20,6 +20,7 @@
   <link href="plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
   <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
   <link href="plugins/isotope/isotope.min.css" rel="stylesheet">
+  <link href="plugins/jquery-intro-loader/dist/css/introLoader.min.css" rel="stylesheet">
   <link href="plugins/map/css/map.css" rel="stylesheet">
   
 
@@ -45,6 +46,7 @@
 </head>
 
 <body class="body-wrapper">
+  <div id="element"></div>
   <div class="main-wrapper">
     <!-- HEADER -->
     <header id="pageTop" class="header">
@@ -83,7 +85,7 @@
                   <a href="#">home</a>
                 </li>
                 <li class=" dropdown megaDropMenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">explore <i class="icon-listy icon-download"></i></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">explore <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="row dropdown-menu">
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
@@ -118,7 +120,7 @@
                   </ul>
                 </li>
                 <li class=" dropdown singleDrop">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages <i class="icon-listy icon-download"></i></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu dropdown-menu-left">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
@@ -135,7 +137,7 @@
                   </ul>
                 </li>
                 <li class=" dropdown singleDrop">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <i class="icon-listy icon-download"></i></a>
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu dropdown-menu-right">
                     <li><a href="#">Destination Cities</a></li>
                     <li><a href="#">Single Destination</a></li>
@@ -144,7 +146,7 @@
                 <li class=""><a href="#">log in</a></li>
               </ul>
             </div>
-            <button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#loginModal"> + <span>Add Listing</span> </button>
+            <button class="btn btn-default navbar-btn" type="button" data-toggle="modal" data-target="#loginModal"> + <span>Add Listing</span> </button>
           </div>
         </nav>
       </div>
@@ -179,16 +181,17 @@
 					</div>
 				</div>
 				<div class="col-sm-4 col-xs-12">
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-addon">Category</div>
-							<select class="form-control searchSelect" id="defaultSelect">
-								<option>All Categories</option>
-								<option>All Categories 1</option>
-								<option>All Categories 2</option>
-								<option>All Categories 3</option>
-								<option>All Categories 4</option>
-							</select>
+					<div class="searchPart">
+						<div class="searchPartInner">
+							<div class="searchPartTitle">Category</div>
+							<div class="searchBoxSelect">
+								<select name="guiest_id44" id="guiest_id44" class="select-drop">
+									<option value="0">All Categories</option>
+									<option value="1">All Categories 1</option>
+									<option value="2">All Categories 2</option>
+									<option value="3">All Categories 3</option>            
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -668,16 +671,6 @@
       <div class="clearfix footerInfo">
         <div class="container">
           <div class="row">
-            <div class="col-sm-7 col-xs-12">
-              <div class="footerText">
-                <a href="index.html" class="footerLogo"><img src="img/logo-blue.png" alt="Footer Logo"></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
-                <ul class="list-styled list-contact">
-                  <li><i class="icon-listy icon-telephone-1"></i>[88] 657 524 332</li>
-                  <li><i class="icon-listy icon-envelope-1"></i><a href="#">info@listy.com</a></li>
-                </ul>
-              </div>
-            </div>
             <div class="col-sm-3 col-xs-12">
               <div class="footerInfoTitle">
                 <h4>Links</h4>
@@ -705,12 +698,22 @@
                 </ul>
               </div>
             </div>
+            <div class="col-sm-7 col-xs-12">
+              <div class="footerText">
+                <a href="index.html" class="footerLogo"><img src="img/logo-blue.png" alt="Footer Logo"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                <ul class="list-styled list-contact">
+                  <li><i class="fa fa-phone" aria-hidden="true"></i>[88] 657 524 332</li>
+                  <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">info@listy.com</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- COPY RIGHT -->
-      <div class="container-fluid clearfix copyRight">
+      <div class="clearfix copyRight">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -718,10 +721,10 @@
                 <div class="row">
                   <div class="col-sm-5 col-sm-push-7 col-xs-12">
                     <ul class="list-inline socialLink">
-                      <li><a href="#"><i class="icon-listy icon-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="icon-listy icon-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="icon-listy icon-pinterest" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="icon-listy icon-linkedin" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                   </div>
                   <div class="col-sm-7 col-sm-pull-5 col-xs-12">
@@ -740,7 +743,7 @@
   </div>
 
   <!-- LOGIN  MODAL -->
-  <div id="loginModal" class="modal fade" role="dialog">
+  <div id="loginModal" tabindex="-1" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
@@ -795,6 +798,14 @@
   <script src="https://maps.googleapis.com/maps/api/js?v=3.20&sensor=false&key=AIzaSyBEDfNcQRmKQEyulDN8nGWjLYPm8s4YB58"></script>
   <script src="plugins/map/js/rich-marker.js"></script>
   <script src="plugins/map/js/map.js"></script>
+  <script src="plugins/jquery-intro-loader/dist/helpers/jquery.easing.1.3.js"></script>
+  <script src="plugins/jquery-intro-loader/dist/helpers/spin.min.js"></script>
+  <script src="plugins/jquery-intro-loader/dist/jquery.introLoader.min.js"></script>
+
+  <!-- Flot -->
+  <script src="plugins/flot/jquery.flot.js"></script>
+  <script src="plugins/flot/jquery.flot.time.js"></script>
+  
   <script src="js/custom.js"></script>
   
 </body>
