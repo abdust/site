@@ -2,6 +2,8 @@ var map;
 
 function initMap() {
 
+    'use strict';
+
     var latlng = new google.maps.LatLng(53.385873, -1.471471);
 
     var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
@@ -13,29 +15,29 @@ function initMap() {
 
     var styles = [
     {
-        featureType: "landscape",
+        featureType: 'landscape',
         stylers: [
         { color: '#eeddee' }
         ]
     },{
-        featureType: "natural",
+        featureType: 'natural',
         stylers: [
         { hue: '#ff0000' }
         ]
     },{
-        featureType: "road",
+        featureType: 'road',
         stylers: [
         { hue: '#5500aa' },
         { saturation: -70 }
         ]
     },{
-        featureType: "building",
-        elementType: "labels",
+        featureType: 'building',
+        elementType: 'labels',
         stylers: [
         { hue: '#000066' }
         ]
     },{
-        featureType: "poi", //points of interest
+        featureType: 'poi', //points of interest
         stylers: [
         { hue: '#0044ff' }
         ]
@@ -54,7 +56,3 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById('map'), myOptions);
 }
-
-
-
-
