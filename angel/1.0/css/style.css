@@ -1494,7 +1494,7 @@ textarea.form-control {
   @media (min-width: 768px) {
     .navbar-nav li.dropdown.singleDrop .dropdown-menu li a {
       padding: 8px 12px; } }
-  .navbar-nav li.dropdown.singleDrop .dropdown-menu li a:hover {
+  .navbar-nav li.dropdown.singleDrop .dropdown-menu li a:hover, .navbar-nav li.dropdown.singleDrop .dropdown-menu li a:focus {
     background-color: #ffffff;
     color: #ec5598; }
 
