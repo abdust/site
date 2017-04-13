@@ -1,0 +1,88 @@
+/* ====== index =====
+1. home page
+	1. Header
+		1 Header V1
+		2 Header V2
+		3 Header V3
+	2. Main slider
+		1 Banner V1
+		2 Banner V2
+		3 Banner V3
+	3 Home
+		1 Home Default
+			1. AboutArea
+			2. MainContent
+			3. Count
+			4. testimonial-section
+			5. Brand-section
+		2 Home V1
+			1. BANNER BOTTOM
+			2. MAIN CONTENT
+			3. COURSE CATEGORY
+			4. LIGHT SECTION
+			5. SUCCESS SECTION
+		3 Home V2
+			1. BANNER BOTTOM
+			2. NEWS SECTION
+			3. VIDEO SECTION
+			4. GALLERY
+	4. Footer
+		1. Footer V1
+		2. Footer V2
+		3. Footer V3
+2. about
+	2.1 content_top
+	2.2 count_section
+	2.3 content_bottom
+3. Blog
+4. single_blog
+5. courses
+6. single_course
+7. admission
+8. international_student
+9. events calendar
+10. Stuff
+11. our campus
+12. Photo gallery
+13. Apply now
+14. Privacy policy
+15. Contact Us
+16. Price Table
+17. Error
+18. Cart
+19. Checkout
+20. Coming Soon
+===================== */
+
+@import 'module/mixin';
+@import 'module/variable';
+@import 'module/reset';
+@import 'body-layout';
+@import 'header-v1';
+@import 'header-v2';
+@import 'header-v3';
+@import 'main-slider';
+@import 'home-default';
+@import 'home-v1';
+@import 'home-v2';
+@import 'footer-v1';
+@import 'footer-v2';
+@import 'footer-v3';
+@import 'modal';
+@import 'about';
+@import 'blog';
+@import 'courses';
+@import 'addmission';
+@import 'international-student';
+@import 'event-calender';
+@import 'stuff';
+@import 'campus';
+@import 'gallery';
+@import 'apply-now';
+@import 'privacy-policy';
+@import 'contact';
+@import 'price-table';
+@import 'error';
+@import 'cart';
+@import 'checkout';
+@import 'comming-soon';

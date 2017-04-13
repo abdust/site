@@ -1,0 +1,348 @@
+/*=== 1 Banner V1 ===*/
+
+.banner{
+	position:relative;
+	background:#222c34;
+}
+.banner .slides{
+	position:relative;
+	z-index:99;
+	li{
+		position:relative;
+	}
+}
+.flex-direction-nav{
+	width:100%;
+	float:left;
+	height:100%;
+	position:absolute;
+	top:0;
+	margin:0;
+}
+.flex-direction-nav a{
+	position:absolute;
+	height:100%;
+	text-indent:-9999px;
+	width:36px;
+	z-index:9999;
+	height: 48px;
+	margin-top: -24px;
+	top: 50%;
+	text-indent:-9999px;
+	z-index:9999;
+}
+.banner .flex-direction-nav a.flex-prev {
+    background: rgba(0, 0, 0, 0) url("../img/home/slider/prev.png") no-repeat scroll left center;
+    left: 0;
+    position: absolute;
+}
+.banner .flex-direction-nav a.flex-next{
+	position:absolute;
+	background:url(../img/home/slider/next.png) no-repeat left center;
+	right:0;
+}
+.banner_caption{
+	width:100%;
+	float:left;
+	height:auto;
+	position:absolute;
+	opacity:0;
+	z-index:9999;
+	@include transition(all .5s ease-in-out);
+	@include phone {
+		display: none;
+	}
+	@include tablet-up {
+    	padding:35px;
+    	bottom:13px;
+	}
+	@include desktops {
+    	padding-left: 30px;
+    	bottom:12px;
+	}
+}
+.item.active .banner_caption{
+	opacity:1;
+}
+#recommended-item-carousel .recommended-item-control{
+	display:none;
+	position:absolute;
+	top:50%;
+	margin-top:-24px;
+	z-index:999;
+}
+#recommended-item-carousel:hover .recommended-item-control{
+	display:block;
+}
+#recommended-item-carousel .recommended-item-control.left{
+	left:0;
+}
+#recommended-item-carousel .recommended-item-control.right{
+	right:0;
+}
+.caption_inner{
+	width:595px;
+	padding:25px;
+	background:rgba(0,0,0,0.74);
+	position:relative;
+	z-index:9999;
+	h1{
+		font-family: 'Roboto Slab', serif;
+		font-weight:700;
+		color:#ffffff;
+		text-transform:uppercase;
+	}
+	p{
+		color:#fff;
+	}
+	a{
+		font-weight:700;
+		text-decoration:none;
+		text-transform:uppercase;
+		display:inline-block;
+		color:#fff !important;
+		background:$second-bg-color;
+		cursor:pointer;
+	}
+	@include tablet-up {
+	    padding: 20px;
+	    h1 {
+		    font-size: 20px;
+		    margin: 0 0 10px;
+		}
+		p {
+		    line-height: 21px;
+		    margin: 0 0 15px;
+		}
+		a {
+		    padding: 8px 25px;
+		}
+	}
+	@include desktops {
+	    padding: 30px;
+	    h1 {
+		    font-size:26px;
+			margin:0 0 12px;
+		}
+		p {
+		    line-height: 24px;
+		    margin:0 0 30px;
+		}
+		a {
+		    padding:12px 40px;
+		}
+	}
+}
+/*=== 2. Banner V2 ===*/
+.version2{
+	overflow-x: hidden;
+}
+.version2 .header-v2 {
+    width: 100%;
+    z-index: 999;
+}
+.version2.page .header-v2 {
+    position: relative;
+}
+.fullscreenbanner-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.fullscreenbanner {
+    width: 100%;
+    position: relative;
+}
+.bannerV2 .tp-bullets.simplebullets.preview4{
+	display:none;
+}
+.bannerV2 {
+	.tp-caption.rs-caption-1,
+	.tp-caption.rs-caption-2,
+	.tp-caption.rs-caption-3{
+		white-space: normal!important;
+		width: inherit;
+		width: 90%;
+		@include only-mobile {
+			width: 90%;
+		}
+		@include tablet-up {
+			width: 80%;
+		}
+		@include desktops {
+			width: 70%;
+		}
+		@include large-desktops {
+			width: 65%;
+		}
+	}
+}
+.bannerV2 {
+	.tp-caption.rs-caption-1{
+		font-family: 'Roboto Slab', serif;
+		text-transform: uppercase;
+		color: #ffffff !important;
+		font-weight: 700;
+		font-size: 25px !important;
+		line-height: 32px !important;
+		@include only-mobile {
+			font-size: 20px !important;
+			line-height: 35px !important;
+		}
+		@include tablet-up {
+			font-size: 40px !important;
+			line-height: 44px !important;
+		}
+		@include desktops {
+			font-size: 45px !important;
+			line-height: 50px !important;
+		}
+		@include large-desktops {
+			font-size: 50px !important;
+			line-height: 54px !important;
+		}
+	}
+	.tp-caption.rs-caption-2{
+		color: #ffffff !important;
+		font-size: 12px !important;
+		line-height: 16px !important;
+		margin-top: 0 !important;
+		@include only-mobile{
+			margin-top: 10px !important;
+		}
+		@include tablet-up {
+			font-size: 16px !important;
+			line-height: 25px !important;
+			margin-top: -20px !important;
+		}
+		@include desktops {
+	    	margin-top: -30px !important;
+	    }
+	}
+	.btn{
+		background:#ffffff;
+		font-family: 'Roboto Slab', serif;
+		border:none;
+		color: #000000 !important;
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		width: 140px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 0;
+		margin-top: 0 !important;
+		padding:0;
+		@include only-mobile{
+			margin-top: 50px !important;
+		}
+		@include tablet-up {
+			font-size: 14px;
+			width: 165px;
+			height: 50px;
+			line-height: 50px;
+			display: inline-block;
+			margin-top: -20px !important;
+		}
+		@include desktops {
+	    	margin-top: -40px !important;
+	    }
+	}
+}
+/*=== 3. Banner V3 ===*/
+.bannerV3 .fullscreenbanner-container > .container{
+	position:relative;
+	z-index:9999;
+	.fixed-caption{
+		position: absolute;
+	    right: 15px;
+	    top: 100px;
+	    @include phone{
+	    	top: 40px;
+	    }
+	}
+}
+
+.bannerV3{
+    .owl-theme .owl-controls{
+    	margin: 0;
+    }
+    .banner-slider .slide{
+    	min-height: 450px;
+	    @include tablet-up {
+	    	min-height: 550px;
+	    }
+	    @include desktops {
+	    	min-height: 600px;
+	    }
+	    @include large-desktops {
+	    	 
+	    }
+    }
+    .slide {
+	    width: 100%;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-position: left center;
+	}
+}
+.fixed-caption{
+	width:370px;
+	background:rgba(0, 0, 0, 0.6);
+	padding:30px 15px;
+	color:#fff;
+	@include phone{
+    	width:300px;
+    	padding:20px 15px;
+    }
+	h3{
+		color:#fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		@include phone{
+	    	font-size: 16px;
+	    	margin-bottom: 15px;
+	    }
+	}
+	p{
+		margin-bottom: 25px;
+		@include phone{
+	    	margin-bottom: 15px;
+	    }
+	}
+	.commonBtn{
+		width: 130px;
+		margin: 0 auto;
+		display: block;
+	}
+	.sbHolder {
+	    color: rgba(255, 255, 255, 0.5) ;
+	    background: transparent;
+	    border: 1px solid rgba(255, 255, 255, 0.5);
+	}
+	.sbSelector:link, .sbSelector:visited, .sbSelector:hover {
+	    color: rgba(255, 255, 255, 0.5);
+	}
+	.sbToggle:after {
+	    color: rgba(255, 255, 255, 0.5);
+	}
+	.sbOptions {
+	    border: 1px solid rgba(255, 255, 255, 0.5);
+	}
+}
+.bannerV3{
+	min-height: 450px;
+    @include tablet-up {
+    	min-height: 550px;
+    }
+    @include desktops {
+    	min-height: 600px;
+    }
+    @include large-desktops {
+    	 
+    }
+}

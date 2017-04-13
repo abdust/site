@@ -1,0 +1,142 @@
+.customModal{
+	.modal-content {
+	    border-radius: 0;
+	}
+	.panel-default>.panel-heading {
+	    color: #000000;
+	    background-color: transparent;
+	    padding: 25px;
+	    border-bottom: 1px solid #dce4ea;
+	    border-radius: 0;
+	    .panel-title {
+		    font-size: 18px;
+		}
+	}
+	.panel-body {
+	    padding: 25px;
+	    text-align: center;
+	    .form-group{
+	    	position: relative;
+	    	i{
+	    		position:absolute;
+	    		top: 15px;
+			    left: 15px;
+			    color: rgba(0, 0, 0, 0.3);
+			    font-size: 17px;
+	    	}
+	    }
+	}
+	.form-group {
+	    margin-bottom: 10px;
+	}
+	.checkbox, .radio {
+	    text-align: left;
+	}
+	.form-control {
+	    height: 47px;
+	    border-color: #dcdfe3;
+	    line-height: 1.42857143;
+	    color: rgba(0,0,0,0.5);
+	    border-radius: 0;
+	    box-shadow: none;
+	    padding-left:45px;
+	}
+	.modal-border{
+		border-bottom: 1px solid #dce4ea;
+	}
+	.panel-body .modal-border {
+	    margin-top: -32px;
+	}
+	.alt-text{
+		font-size: 18px;
+		color: rgba(0,0,0,0.8);
+		font-weight: 600;
+		padding:0 7px;
+		background-color:#fff;
+		display: inline-block;
+		margin: 20px auto;
+		text-transform: uppercase;
+		padding:0 10px;
+	}
+	.btn {
+	    font-size: 14px;
+	    color: #fff;
+	    height: 47px;
+	    line-height: 47px;
+	    padding:0;
+	}
+	.alt-btn{
+		margin: 25px 0 0;
+	}
+	.facebook-btn{
+		background-color:#6684c4;
+		border-color:#6684c4;
+		margin-bottom: 10px;
+		font-weight: 600;
+	}
+	.twitter-btn{
+		background-color:#2eb9e0;
+		border-color:#2eb9e0;
+		font-weight: 600;
+	}
+	.panel-footer {
+	    padding: 10px 25px;
+	    background-color: transparent;
+	    border-top: 1px solid #dce4ea;
+	    border-radius:0;
+	    text-align: center;
+	    p{
+	    	color: rgba(0,0,0,0.8);
+	    	margin: 0;
+	    	font-weight: 600;
+	    	a{
+	    		color: $second-bg-color;
+	    	}
+	    }
+	}
+	.panel {
+	    margin-bottom: 0;
+	    background-color: #fff;
+	    border: 1px solid transparent;
+	    border-radius: 0;
+	    box-shadow: none;
+	}
+	.close {
+	    float: right;
+	    font-size: 40px;
+	    font-weight: 400;
+	    line-height: 1;
+	    color: #000;
+	    text-shadow: none;
+	    filter: alpha(opacity=100);
+	    opacity: 1;
+	    margin-top: -29px;
+	}
+	.close:focus, .close:hover {
+	    filter: alpha(opacity=100);
+	    opacity: 1;
+	}
+}
+.modal-dialog {
+	max-width: 400px;
+	margin:30px auto;
+	@include only-mobile {
+		max-width: auto;
+		margin:10px;
+	}
+	@include tablet-up {
+		width: 400px;
+	}
+}
+.modal.in .modal-dialog {
+    @include tablet-up {
+		-webkit-transform: translate(0,20%);
+	    -ms-transform: translate(0,20%);
+	    -o-transform: translate(0,20%);
+	    transform: translate(0,20%);
+	}
+}
+.customModal#createAccount .checkbox{
+    display: inline-block;
+    margin-right: 20px;
+}

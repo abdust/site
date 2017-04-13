@@ -1,0 +1,561 @@
+/*================= 2.Home V1 ==================*/
+/*=== 1. BANNER BOTTOM ===*/
+.banner-bottom-inner {
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    float: left;
+    top: -60px;
+    padding:35px;
+    background:#ffffff;
+    @include box-shadow (0,2px,4px,rgba(0,0,0,0.12));
+}
+.dropdown-category{
+	height: 45px;
+    line-height: 45px;
+    padding:0 15px;
+	background-color: #f1f4f7;
+	position:relative;
+	@include phone {
+    	margin-bottom: 15px;
+    }
+	>a{
+		color: #000000;
+	    font-size: 15px;
+	    font-weight: 600;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    @include tablet-up {
+	    	font-size: 11px;
+	    }
+	    @include desktops {
+	    	font-size: 15px;
+	    }
+	    &:hover{
+	    	color: #000000;
+	    }
+	}
+	.fa-angle-down{
+		position:absolute;
+		right: 20px;
+		top: 16px;
+	}
+    button{
+		width: 15px;
+		height:14px;
+		display:inline-block;
+		float: left;
+		padding: 17px 0 14px;
+		border: none;
+		margin-right: 10px;
+    	background: transparent;
+		.icon-bar{
+			width: 15px;
+			height: 2px;
+			margin-bottom: 3px;
+			background-color: #000000;
+			display: block;
+		}
+	}
+}
+.dropdown-category{
+	.dropdown-menu{
+		top: 100%;
+	    width: 100%;
+	    padding: 0;
+	    margin: 0;
+	    font-size: 14px;
+	    border: 1px solid rgba(0,0,0,.10);
+	    border-radius: 0;
+	    box-shadow:none;
+	    li{
+	    	border-bottom: 1px solid rgba(0,0,0,.10);
+	    	a{
+	    		padding:13px 15px;
+	    		font-size: 14px;
+	    		color: #000000;
+	    		@include transition(color 0.3s ease);
+	    		&:hover{
+	    			background-color: transparent;
+	    			color:$second-bg-color;
+	    		}
+	    	}
+	    	&.active a{
+	    		background-color: transparent;
+	    		color: $second-bg-color;
+	    	}
+	    	&:last-child{
+	    		border-bottom:none;
+	    	}
+	    }
+	}
+}
+.searchCourse{
+	.form-control {
+	    height: 45px;
+	    width: 72%;
+	    float: left;
+	    margin-right: 3%;
+	    @include tablet-up {
+	    	width: 70%;
+	    	margin-right: 5%;
+	    }
+	    @include desktops {
+	    	width: 71%;
+	    	margin-right: 4%;
+	    }
+	}
+	.commonBtn{
+		height: 45px;
+		width: 25%;
+	}
+}
+/*=== 2. MAIN CONTENT ===*/
+.info-section{
+	padding:15px 0 75px;
+	border-bottom:1px solid rgba(0,0,0,.10);
+	.col-sm-3:last-child .box{
+		border-right:none;
+		border-bottom:none;
+	}
+}
+.box{
+	padding:0 20px;
+	@include phone {
+		border-bottom:1px solid rgba(0,0,0,.10);
+		margin:0 40px 20px;
+	    padding-bottom:20px;
+	}
+	@include tablet-up {
+		padding:0 10px;
+    	border-right:1px solid rgba(0,0,0,.10);
+    }
+    @include large-desktops {
+    	padding:0 50px;
+    }
+	i{
+		display: block;
+		font-size: 35px;
+		clear: both;
+		color: #c1c3c6;
+	}
+	.separator{
+		width: 70px;
+		height: 1px;
+		background:rgba(0,0,0,.10);
+		margin: 20px auto;
+	}
+	span{
+		display: block;
+		font-size: 14px;
+		clear: both;
+		color: #545454;
+		font-weight: 600;
+	}
+}
+.padding{
+	padding:85px 0;
+}
+.sectionTitle h3{
+	color:#000000;
+	text-transform:uppercase;
+	clear: both;
+	margin-bottom:60px;
+}
+.popularCourse .col-xs-6{
+	@include only-mobile {
+		width: 100%;
+	}
+}
+.imageBox{
+	margin-bottom:70px;
+}
+.productImage{
+	position:relative;
+	 img{
+		max-width:100%;
+		display:block;
+		width: 100%;
+	}
+	.sticker{
+		position:absolute;
+		bottom:30px;
+		right: 0;
+		background:#ffffff;
+		padding:5px 10px;
+		font-size: 13px;
+		color: rgba(0,0,0,0.50);
+		z-index: 1;
+		i{
+			margin-right: 10px;
+		}
+	}
+}
+.productCaption{
+	border:1px solid rgba(0,0,0,.10);
+	border-top:none;
+	h3{
+		font-size: 20px;
+		color: #000000;
+		font-weight: 400;
+		margin: 20px 0 10px;
+		padding:0 15px;
+		a{
+			color: #000000;
+		}
+	}
+	.product-meta span{
+		font-size: 13px;
+		color: rgba(0,0,0,0.50);
+		display: block;
+		padding:0 15px;
+		margin-bottom: 15px;
+		font-style: italic;
+	}
+	.rating{
+		padding:0 15px;
+		margin-bottom: 30px;
+		span{
+			display: inline-block;
+			.fa {
+			    color: #ffc100;
+			}
+		}
+		.rating-star{
+			margin-right: 5px;
+		}
+	}
+	.rating-review{
+		font-size: 13px;
+		color: rgba(0,0,0,0.50);
+	}
+	.caption-bottom{
+		>div{
+			display: inline-block;
+			width: 50%;
+			text-align: center;
+			height: 50px;
+			float: left;
+		}
+		.price{
+			border-top:1px solid rgba(0,0,0,.10);
+			border-right:1px solid rgba(0,0,0,.10);
+			span{
+				line-height: 50px;
+			}
+		}
+		.offer-price{
+			font-family: 'Roboto Slab', serif;
+			font-weight: 700;
+			font-size: 20px;
+			color: $second-bg-color;
+		}
+		.regular-price{
+			font-family: 'Roboto Slab', serif;
+			font-weight: 400;
+			font-size: 14px;
+			color: rgba(0,0,0,0.50);
+		}
+		.user{
+			border-top:1px solid rgba(0,0,0,.10);
+			padding:0 20px;
+			@include desktops {
+				padding:0 15px;
+			}
+			i{
+				font-size: 20px;
+				color: rgba(0,0,0,0.50);
+				line-height: 50px;
+				float: left;
+			}
+			span{
+				font-family: 'Roboto Slab', serif;
+				font-weight: 400;
+				font-size: 13px;
+				color: rgba(0,0,0,0.50);
+				line-height: 14px;
+			    display: table-cell;
+			    text-align: left;
+			    padding-top: 10px;
+			    padding-left: 7px;
+			}
+		}
+	}
+}
+.btnArea .commonBtn{
+	padding-left:30px;
+	padding-right:30px;
+}
+/*=== 3. COURSE CATEGORY ===*/
+.courseCategory{
+    color: #ffffff;
+    .sectionTitle h3 {
+    	color: #ffffff;
+    }
+    .btnArea{
+    	margin-top: 30px;
+    }
+}
+@include only-mobile{
+	.courseCategory .col-xs-6{
+		width: 100%;
+	}
+	.feature-section .col-xs-6{
+		width: 100%;
+	}
+}
+.text-box{
+	background:rgba(255,255,255,0.17);
+	padding:30px 20px;
+	position:relative;
+	@include transition(background 0.4s ease);
+	margin-bottom:30px;
+	@include only-mobile{
+		padding:45px 25px;
+	}
+	@include desktops{
+		padding:45px 25px;
+	}
+}
+.text-box-icon{
+	position:absolute;
+	left:20px;
+	top:30px;
+	@include only-mobile{
+		left:25px;
+		top:45px;
+	}
+	@include desktops{
+		left:25px;
+		top:45px;
+	}
+	i{
+		font-size: 20px;
+		color: rgba(255,255,255,0.7);
+		@include desktops{
+			font-size: 25px;
+		}
+	}
+}
+.text-box-top{
+	margin-left:30px;
+	@include only-mobile{
+		margin-left:45px;
+	}
+	@include desktops{
+		margin-left:45px;
+	}
+	h4{
+		margin-bottom: 20px;
+		display: inline-block;
+		a{
+			font-family: 'Roboto Slab', serif;
+			font-weight:700;
+			font-size: 20px;
+			color: #ffffff;
+		}
+	}
+	.courseNo{
+		font-size: 13px;
+		color: rgba(255,255,255,0.7);
+    	line-height: 28px;
+    	display: block;
+    	margin-bottom: 10px;
+    	@include only-mobile{
+    		float: right;
+    		display: inline-block;
+    		margin-bottom: 0;
+    	}
+    	@include desktops{
+    		float: right;
+    		display: inline-block;
+    		margin-bottom: 0;
+    	}
+	}
+	p{
+		font-size: 14px;
+		color: rgba(255,255,255,0.7);
+		margin: 0;
+	}
+}
+.text-box:hover{
+	background:rgba(255,255,255,1);
+	.text-box-icon i{
+		color: $second-bg-color;
+	}
+	.text-box-top{
+		h4{
+			a{
+				color: $second-bg-color;
+			}
+		}
+		.courseNo{
+			color: rgba(0,0,0,0.7);
+		}
+		p{
+			color: rgba(0,0,0,0.7);
+		}
+	}
+}
+/*=== 4. LIGHT SECTION ===*/
+.feature-box{
+	margin-bottom:30px;
+	@include transition(all 0.3s ease-in-out);
+	span{
+		@include transition(all 0.3s ease-in-out);
+		border:3px solid  transparent;
+		color: $second-bg-color;
+	    text-align: center;
+	    border-radius: 50%;
+	    background-color: transparent;
+	    width: 85px;
+	    height: 85px;
+	    display: block;
+	    margin: 0 auto;
+		i{
+			@include transition(all 0.3s ease-in-out);
+			width: 100%;
+    		height: 100%;
+    		text-align: center;
+    		border: 3px solid  #dce4ea;
+    		color: #c0c3c7;
+		    line-height: 85px;
+			font-size: 28px;
+			border-radius: 50%;
+		}
+	}
+	&:hover{
+		@include transition(all 0.3s ease-in-out);
+		span{
+			@include transition(all 0.3s ease-in-out);
+			border: 3px solid $second-bg-color;
+			i{
+				@include transition(all 0.3s ease-in-out);
+				border:3px solid  transparent;
+				color: $second-bg-color;
+				line-height: 85px;
+			}
+		}
+	}
+	h3{
+		color: #000000;
+		font-size: 20px;
+		margin: 25px auto;
+	}
+	p{
+		color: #545454;
+		font-size: 14px;
+		margin: 0;
+	}
+}
+
+.feature-section{
+	width:100%;
+	float:left;
+	background:#f1f4f7;
+	.btnArea{
+    	margin-top: 30px;
+    }
+    .commonBtn{
+    	width: 170px;
+    	padding-left: 0;
+    	padding-right: 0;
+    	@include only-mobile{
+    		display: block;
+	    	margin: 0 auto;
+	    	clear: both;
+	    }
+    }
+    .commonBtn:first-child{
+	    margin-right: 15px;
+    }
+    @include only-mobile{
+    	.commonBtn:first-child{
+	    	margin: 0 auto 15px;
+	    }
+    }
+    .commonBtn.secondaryBtn{
+    	background-color:$primary-color;
+    	border-color: $primary-color;
+    	&:hover, &:focus{
+    		background-color:$primary-color;
+    		border-color: $primary-color;
+    	}
+    }
+}
+/*=== 5. SUCCESS SECTION ===*/
+.success-section{
+	width:100%;
+	float:left;
+}
+.success_video {
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 30px;
+    @include tablet-up{
+    	margin-bottom: 0;
+    }
+}
+.success_video iframe {
+    max-width: 100%;
+}
+.slide-info{
+	.carousal_content {
+	    background: #f1f4f7;
+	}
+	.carousal_content::after {
+	    width: auto;
+	    height: auto;
+	    position: absolute;
+	    content: " ";
+	    background: none;
+	    bottom: -40px;
+	    left: 50%;
+	    margin-left: -20px;
+	    border-top: 20px solid #f1f4f7;
+	    border-bottom: 20px solid transparent;
+	    border-left: 20px solid transparent;
+	    border-right: 20px solid transparent;
+	    content: "";
+	    display: inline-block;
+	}
+	.carousal_bottom .thumb {
+	    float: none;
+	    height: auto;
+	    margin-right: 0;
+	    display: inline-block;
+	    clear: both;
+	}
+	.thumb_title {
+	    margin: 12px 0 0;
+	    float: none;
+	}
+}
+.success-inner{
+	.owl-dots{
+		margin-top: 10px;
+		@include tablet-up{
+	    	margin-top: 45px;
+	    }
+	}
+	.owl-dots .owl-dot span {
+	    width: 8px;
+	    height: 8px;
+	    margin: 5px 4px;
+	    background: #cccccc;
+	}
+	.owl-dots .owl-dot.active span, 
+	.owl-dots .owl-dot:hover span {
+		width: 14px;
+	    height: 14px;
+	    background: $second-bg-color;
+	    border:none;
+	    margin: 5px 6px;
+	}
+	.owl-dots .owl-dot.active:hover span{
+		 margin: 5px 6px;
+	}
+	.owl-dots .owl-dot:hover span {
+	    margin: 5px 1px;
+	}
+}

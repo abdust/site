@@ -1,0 +1,192 @@
+/*=== 3. Header V3 ===*/
+.version3, .header-v3{
+	.header .navbar-default .navbar-nav li > a{
+		padding:11px 20px;
+		@include tablet-up {
+			padding: 0 8px;
+		}
+		@include desktops {
+			padding:0 15px;
+		}
+		@include large-desktops {
+			padding:0 20px;
+		}
+	}
+	.navbar-default .navbar-toggle, 
+	.navbar-default .navbar-toggle:hover, 
+	.navbar-default .navbar-toggle:focus{
+		margin: 8px 0;
+	}
+} 
+.version3, .header-v3 {
+	.header .navbar-default .navbar-nav > li > a{
+		@include tablet-up {
+			line-height: 50px;
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+}
+.version3, .header-v3{
+	.header .navbar-default .navbar-nav > .active > a, 
+	.header .navbar-default .navbar-nav > .active > a:hover, 
+	.header .navbar-default .navbar-nav > .active > a:focus,
+	.header .navbar-default .navbar-nav > li > a:focus, 
+	.header .navbar-default .navbar-nav > li > a:hover {
+		@include tablet-up {
+		    color: rgba(255, 255, 255, 1);
+		}
+	}
+	.header .navbar-collapse{
+		@include phone{
+	    	 overflow-y: inherit;
+	    }
+	}
+}
+.version3, .header-v3{
+	.header .navbar{
+		background-color:$primary-color;
+		@include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.12));
+		border-radius: 0;
+		padding: 0;
+		height: 50px;
+	}
+	.header .navbar-collapse{
+		@include tablet-up {
+			float: left;
+		}
+	}
+}
+.version3, .header-v3{
+	.header .navbar-nav li.open .dropdown-menu, 
+	.header .navbar-nav li.dropdown .dropdown-menu{
+		@include tablet-up {
+			top:100%;
+		}
+	}
+	.header .navbar-nav > li {
+		@include tablet-up {
+		    margin-left: 0;
+		    margin-right: 10px;
+		}
+	}
+	.phoneNo{
+		display: inline-block;
+	    font-size: 14px;
+	    color: white;
+	    font-weight: 700;
+	    float: right;
+	    line-height: 50px;
+	    i{
+	    	margin-right: 10px;
+	    	font-size: 16px;
+	    	color: rgba(255, 255, 255, 0.5);
+	    }
+	    @include phone{
+	    	 position:absolute;
+	    	 left: 15px;
+	    	 top: 0;
+	    }
+	}
+} 
+.header-v3{
+	.topbar {
+		position:relative;
+		z-index: 999;
+	    border-top: 1px solid #fff;
+	    background-color: #fff;
+	    padding: 25px 0;
+	    @include phone{
+	    	 padding: 10px 0;
+	    }
+	}
+	.navbar-brand.logo{
+		padding:0;
+		@include phone {
+			display: block;
+			margin: 0 auto 10px;
+			float: none;
+		}
+	}
+	.navbar-brand.logo img {
+	    margin:  0;
+	}
+	.topbar-right{
+		width: 80%;
+		margin: 0 auto;
+		@include only-mobile {
+			width: 100%;
+			margin: 0 auto;
+		}
+		@include tablet-up {
+			width: 65%;
+			float: right;
+			margin: 0;
+		}
+		@include desktops {
+			width: 40%;
+		}
+		.selectBox {
+		    margin-bottom: 0;
+		    width: 30%;
+		    float: left;
+		    @include only-mobile {
+				width: 33%;
+			}
+		}
+		.sbSelector:link, .sbSelector:visited, .sbSelector:hover {
+		    color: rgba(0, 0, 0, 0.7) ;
+		}
+		.sbHolder {
+		    color: rgba(0, 0, 0, 0.7) ;
+		    background: #f5f5f5;
+		    border: none;
+		    a{
+		    	font-size: 14px;
+		    	@include only-mobile {
+					font-size: 13px;
+				}
+		    }
+		    li a{
+		    	color: rgba(0, 0, 0, 0.7);
+		    	font-size: 12px;
+		    }
+		}
+		.sbOptions {
+			a:link{
+				color: #46555e;
+			}
+			a:hover, a:visited {
+				color: $second-bg-color;
+			}
+		}
+		.input-group {
+		    position: relative;
+		    display: table;
+		    border-collapse: separate;
+		    width: 40%;
+		    float: left;
+		    @include only-mobile {
+				width: 34%;
+			}
+		}
+		.form-control {
+		    border:2px solid #f5f5f5;
+		    box-shadow:none;
+		}
+		.input-group-addon {
+		    padding: 0 12px;
+		    line-height: 42px;
+		    color: rgba(0, 0, 0, 0.7);
+		    background-color: transparent;
+		    border: none;
+		    border-radius: 0;
+		    position:absolute;
+		    right: 15px;
+		    top: 0;
+		    z-index: 9;
+		    i{
+		    	color: rgba(0, 0, 0, 0.3);
+		    }
+		}
+	}
+}
