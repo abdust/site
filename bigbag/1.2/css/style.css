@@ -697,14 +697,12 @@ a:hover, a:focus {
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  border: none;
-  border-radius: 0;
   margin-bottom: 0;
+  border: none;
 }
 .navbar-default .container {
   position: relative;
 }
-
 .navbar-default .navbar-header .navbar-toggle {
   background-color: #47bac1;
   border-radius: 0;
@@ -730,43 +728,26 @@ a:hover, a:focus {
 @media (min-width: 768px) {
   .navbar-default .navbar-header .navbar-brand {
     padding: 0 15px;
-    margin-top: 20px;
+    margin-top: 27px;
   }
 }
-
-.navbar-nav {
-  height: 300px;
-  overflow-x: hidden;
-  background-color: #ffffff;
-  -webkit-transition: height 0.3s ease;
-  -moz-transition: height 0.3s ease;
-  -ms-transition: height 0.3s ease;
-  -o-transition: height 0.3s ease;
-  transition: height 0.3s ease;
-  margin-top: 0;
+.navbar-default .navbar-collapse {
+  background: #ffffff;
 }
-@media (min-width: 768px) {
-  .navbar-nav {
-    height: auto;
-    overflow-x: visible;
-    overflow-y: visible;
+@media (max-width: 479px) {
+  .navbar-default .navbar-collapse {
+    max-height: 250px;
   }
 }
-
-.navbar-collapse {
-  box-shadow: none;
-  position: relative;
-  top: -2px;
-}
-@media (min-width: 768px) {
-  .navbar-collapse {
-    top: 0;
+@media (min-width: 480px) {
+  .navbar-default .navbar-collapse {
+    max-height: 250px;
   }
 }
-
 @media (min-width: 768px) {
   .navbar-default .navbar-collapse {
     height: auto;
+    float: right;
     padding: 18px 0 0;
   }
 }
@@ -788,14 +769,14 @@ a:hover, a:focus {
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-collapse li a {
-    font-size: 12px;
     padding: 20px  10px 33px;
+    font-size: 12px;
   }
 }
 @media (min-width: 992px) {
   .navbar-default .navbar-collapse li a {
-    font-size: 14px;
     padding: 20px  15px 33px;
+    font-size: 14px;
   }
 }
 .navbar-default .navbar-collapse li a:hover, .navbar-default .navbar-collapse li a.focus, .navbar-default .navbar-collapse li a:focus {
@@ -842,12 +823,6 @@ a:hover, a:focus {
     display: none;
   }
 }
-@media (min-width: 768px) {
-  .navbar-default .navbar-collapse li.dropdown .dropdown-menu .dropdown-menu {
-    left: 100%;
-    display: none;
-  }
-}
 .navbar-default .navbar-collapse li.active a {
   background-color: transparent;
   color: #47bac1;
@@ -870,12 +845,8 @@ a:hover, a:focus {
   box-shadow: none;
   border-radius: 0;
   margin-top: -2px;
+  min-width: 200px;
   display: block;
-}
-@media (min-width: 768px) {
-  .navbar-default .navbar-collapse li.dropdown.open .dropdown-menu {
-    min-width: 200px;
-  }
 }
 .navbar-default .navbar-collapse li.dropdown.open .dropdown-menu li a {
   padding: 10px 25px;
@@ -885,7 +856,16 @@ a:hover, a:focus {
 }
 .navbar-default .navbar-collapse li.dropdown.open .dropdown-menu li a {
   float: left;
-  padding: 10px 25px;
+}
+@media (max-width: 479px) {
+  .navbar-default .navbar-collapse li.dropdown.open .dropdown-menu li a {
+    padding: 10px 12px 10px 0;
+  }
+}
+@media (min-width: 480px) {
+  .navbar-default .navbar-collapse li.dropdown.open .dropdown-menu li a {
+    padding: 10px 12px 10px 0;
+  }
 }
 @media (min-width: 768px) {
   .navbar-default .navbar-collapse li.dropdown.open .dropdown-menu li a {
@@ -6223,6 +6203,7 @@ body.bodyColor.container {
   margin-bottom: 0;
   font-weight: 700;
   text-transform: capitalize;
+  color: #252525;
 }
 .stepsWrapper .innerWrapper.stepsPage .panel .panel-body address, .userProfile .innerWrapper .panel .panel-body address {
   font-size: 13px;
@@ -8066,6 +8047,17 @@ cite {
 .radio input[type=radio],
 .radio-inline input[type=radio] {
   margin-left: -9px;
+}
+
+.panel-body .checkbox input[type=checkbox],
+.panel-body .checkbox-inline input[type=checkbox],
+.panel-body .radio input[type=radio],
+.panel-body .radio-inline input[type=radio],
+.modal-body .checkbox input[type=checkbox],
+.modal-body .checkbox-inline input[type=checkbox],
+.modal-body .radio input[type=radio],
+.modal-body .radio-inline input[type=radio] {
+  margin-left: -21px;
 }
 
 .margin-right {

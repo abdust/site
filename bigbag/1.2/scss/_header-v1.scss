@@ -256,16 +256,13 @@
 	}
 }
 .navbar-default{
-  @include box-shadow (0, 2px, 4px, rgba(0, 0, 0, 0.1));
-  background-color: $white-color;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 0;
-  .container{
+	@include box-shadow (0, 2px, 4px, rgba(0, 0, 0, 0.1));
+	background-color: $white-color;
+	margin-bottom: 0;
+	border: none;
+	.container{
 		position: relative;
 	}
-}
-.navbar-default{
 	.navbar-header{
 		.navbar-toggle{
 			background-color: $primary-color;
@@ -288,36 +285,22 @@
 			}
 			@include tablet {
 				padding: 0 15px;
-				margin-top: 20px;
+				margin-top: 27px;
 			}
 		}
 	}
-}
-.navbar-nav{
-    height: 300px;
-    overflow-x:hidden;
-    background-color: #ffffff;
-    @include transition(height 0.3s ease);
-    margin-top: 0;
-    @include tablet{
-      height: auto;
-      overflow-x:visible;
-      overflow-y:visible;
-  }
-}
-.navbar-collapse {
-    box-shadow: none;
-    position:relative;
-    top: -2px;
-    @include tablet{
-       top: 0;
-    }
-}
-.navbar-default{
 	.navbar-collapse{
+		background:#ffffff;
+		@include mobile-xs{
+			max-height: 250px;
+		}
+		@include mobile{
+			max-height: 250px;
+		}
 		@include tablet{
 			height: auto;
-		    padding: 18px 0 0;
+			float: right;
+			padding:18px 0 0;
 		}
 		li{
 			a{
@@ -330,12 +313,12 @@
 					padding: 6px 15px;
 				}
 				@include tablet {
-					font-size: 12px;
 					padding:20px  10px 33px;
+					font-size: 12px;
 				}
 				@include desktops {
-					font-size: 14px;
 					padding:20px  15px 33px;
+					font-size: 14px;
 				}
 				&:hover, &.focus, &:focus{
 					color: $primary-color;
@@ -378,12 +361,6 @@
 						@include add-border(1px, $border-lighter, all);
 						display: none;
 					}
-					.dropdown-menu{
-						@include tablet{
-					    	left: 100%;
-					    	display: none;
-					    }
-				    }
 				}
 			}
 		}
@@ -421,10 +398,8 @@
 					box-shadow: none;
 					border-radius: 0;
 					margin-top: -2px;
+					min-width: 200px;
 					display: block;
-					@include tablet{
-						min-width: 200px;
-					}
 					li{
 						a{
 							padding: 10px 25px;
@@ -436,7 +411,12 @@
 					li{
 						a{
 							float: left;
-							padding: 10px 25px;
+							@include mobile-xs{
+								padding: 10px 12px 10px 0;
+							}
+							@include mobile{
+								padding: 10px 12px 10px 0;
+							}
 							@include tablet{
 								padding: 6px 12px 6px 30px;
 								font-size: 11px;

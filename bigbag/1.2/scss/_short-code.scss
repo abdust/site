@@ -1207,6 +1207,16 @@ cite {
 .radio-inline input[type=radio] {
     margin-left: -9px;
 }
+.panel-body .checkbox input[type=checkbox],
+.panel-body .checkbox-inline input[type=checkbox], 
+.panel-body .radio input[type=radio], 
+.panel-body .radio-inline input[type=radio],
+.modal-body .checkbox input[type=checkbox], 
+.modal-body .checkbox-inline input[type=checkbox], 
+.modal-body .radio input[type=radio], 
+.modal-body .radio-inline input[type=radio] {
+    margin-left: -21px;
+}
 .margin-right {
     margin-right: 15px;
 }
