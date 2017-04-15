@@ -1,6 +1,6 @@
 //============================== Style Switcher =========================
 jQuery(document).ready(function() {
-    OptionSwitcher.initOptionSwitcher();      
+    OptionSwitcher.initOptionSwitcher();
 });
 //============================== header =========================
 jQuery(document).ready(function(){
@@ -11,29 +11,29 @@ jQuery(document).ready(function(){
 			var main_area = header_area.children('.navbar');
 
 			var logo = main_area.find('.navbar-header');
-			var navigation = main_area.find('.navbar-collapse');				
+			var navigation = main_area.find('.navbar-collapse');
 			var original = {
 				nav_top: navigation.css('margin-top')
 			};
-				
+
 			$(window).scroll(function(){
 				if( main_area.hasClass('bb-fixed-header') && ($(this).scrollTop() == 0 || $(this).width() < 750)){
 					main_area.removeClass('bb-fixed-header').appendTo(header_area);
 					navigation.animate({'margin-top': original.nav_top}, {duration: 100, queue: false, complete: function(){
 						header_area.css('height', 'auto');
-					}});								
+					}});
 				}else if( !main_area.hasClass('bb-fixed-header') && $(this).width() > 750 &&
 					$(this).scrollTop() > header_area.offset().top + header_area.height() - parseInt($('html').css('margin-top')) ){
-					
+
 					header_area.css('height', header_area.height());
 					main_area.css({'opacity': '0'}).addClass('bb-fixed-header');
 					main_area.appendTo($('body')).animate({'opacity': 1});
-						
+
 					navigation.css({'margin-top': '0px'});
-				}				
+				}
 			});
-		});			
-		
+		});
+
 		$(window).trigger('resize');
 		$(window).trigger('scroll');
 	});
@@ -269,6 +269,21 @@ jQuery(document).ready(function() {
 	  });
 
 });
+
+//============================== Google Analytics =========================
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71155940-3', 'auto');
+ga('send', 'pageview');
+
+  //============================== getsitecontrol =========================
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
+
 //============================== SELECT BOX =========================
 jQuery(document).ready(function() {
 	$('.select-drop').selectbox();
@@ -351,7 +366,7 @@ jQuery(document).ready(function() {
 });
 
 //============================== ACCORDION OR COLLAPSE ICON CHANGE =========================
-  
+
     var allIcons = $("#faqAccordion .panel-heading i.fa");
     $('#faqAccordion .panel-heading').click(function(){
       allIcons.removeClass('fa-chevron-down').addClass('fa-chevron-up');
@@ -385,7 +400,3 @@ jQuery(document).ready(function() {
     $(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
 	})
-
- 
-
- 
