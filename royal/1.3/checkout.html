@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Royal College Responsive Template</title>
+  <title>Checkout - Royal College</title>
 
   <!-- PLUGINS CSS STYLE -->
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -23,9 +23,9 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 
   <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="options/optionswitch.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/colors/default.css" id="option_color">
+  <link rel="stylesheet" href="css/default.css" id="option_color">
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,57 +35,6 @@
   <![endif]-->
 </head>
 <body class="body-wrapper version2 page">
-
-  <!--=== option Switcher ===-->
-  <i class="option-switcher-btn fa fa-gear hidden-xs"></i>
-  <div class="option-switcher animated">
-    <div class="option-swticher-header">
-      <div class="option-switcher-heading">Template Options</div>            
-      <div class="theme-close"><i class="fa fa-close"></i></div>
-    </div>
-    <div class="option-swticher-body">
-      <!-- Theme Colors -->
-      <ul class="list-unstyled color-options">
-        <li class="theme-default theme-active" data-color="default" data-logo="default-logo"></li>
-        <li class="theme-color1" data-color="color-option1" data-logo="logo1"></li>
-        <li class="theme-color2" data-color="color-option2" data-logo="logo2"></li>
-        <li class="theme-color3 last" data-color="color-option3" data-logo="logo3"></li>
-      </ul>
-      <!-- Layout Styles -->
-      <div class="row no-col-space layoutStyle">
-        <div class="col-xs-6">
-          <a href="javascript:void(0);" class="btn-u  btn-block active-switcher-btn wide-layout-btn">Wide</a>                
-        </div>
-        <div class="col-xs-6">
-          <a href="javascript:void(0);" class="btn-u btn-block boxed-layout-btn">Boxed</a>
-        </div>                
-      </div>
-      <!-- Background pattern -->
-      <div class="bg-patern">
-        <h3>Background pattern</h3>
-        <ul class="list-unstyled">
-          <li class="pattern-default pattern-active"></li>
-          <li class="pattern1"></li>
-          <li class="pattern2"></li>
-          <li class="pattern3 last"></li>
-          <li class="pattern4"></li>
-          <li class="pattern5"></li>
-          <li class="pattern6"></li>
-          <li class="pattern7 last"></li>
-        </ul>
-      </div> 
-      <!-- Header Styles -->
-      <div class="row no-col-space headerStyle">
-        <div class="col-xs-6">
-          <a href="javascript:void(0);" class="btn-u btn-block active-switcher-btn fixed-header">Fixed header</a>
-        </div>
-        <div class="col-xs-6">
-          <a href="javascript:void(0);" class="btn-u btn-block static-header">Static header</a>
-        </div>
-      </div>              
-    </div>
-  </div>
-  <!--/option-switcher-->
 
   <div class="main_wrapper">
 
@@ -139,7 +88,7 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="dropdown">
+                      <li class=" dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                         <ul class="dropdown-menu">
                           <li><a href="index.html">Home Default</a></li>
@@ -151,12 +100,21 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
                         <ul class="dropdown-menu">
                           <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses Grid View</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses Grid Version1</a>
                             <ul class="dropdown-menu">
                               <li><a href="course-grid-3col.html">3 Columns</a></li>
                               <li><a href="course-grid-4col.html">4 Columns</a></li>
                               <li><a href="course-grid-sidebar-right.html">Sidebar Right</a></li>
                               <li><a href="course-grid-sidebar-left.html">Sidebar Left</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses Grid Version2</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="course-grid-version2-4col.html">4 Columns</a></li>
+                              <li><a href="course-grid-version2-3col.html">3 Columns</a></li>
+                              <li><a href="course-version2-right-sidebar.html">Sidebar Right</a></li>
+                              <li><a href="course-version2-left-sidebar.html">Sidebar Left</a></li>
                             </ul>
                           </li>
                           <li class="dropdown">
@@ -175,18 +133,18 @@
                               <li><a href="single-course-fullwidth.html">Fullwidth</a></li>
                             </ul>
                           </li>
-                          <li class="active dropdown">
+                          <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy Course</a>
                             <ul class="dropdown-menu">
                               <li><a href="cart.html">Cart</a></li>
-                              <li class="active"><a href="checkout.html">Checkout</a></li>
+                              <li><a href="checkout.html">Checkout</a></li>
                               <li><a href="confirmation.html">Confirmation </a></li>
                             </ul>
                           </li>
                         </ul>
                       </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAGES</a>
+                      <li class=" dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                         <ul class="dropdown-menu">
                           <li><a href="about.html">About College</a></li>
                           <li class="dropdown">
@@ -219,8 +177,8 @@
                           <li><a href="coming-soon-dark.html" target="_blank">Coming Soon</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOG</a>
+                      <li class=" dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                         <ul class="dropdown-menu">
                           <li><a href="blog-right-sidebar.html">Blog Sidebar Right</a></li>
                           <li><a href="blog-left-sidebar.html">Blog Sidebar Left</a></li>
@@ -228,7 +186,7 @@
                           <li><a href="single-post-left-sidebar.html">Single Post Sidebar Left</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown">
+                      <li class=" dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
                         <ul class="dropdown-menu">
                           <li><a href="events-3col.html">Events 3 Columns</a></li>
@@ -242,7 +200,7 @@
                   </div><!-- navbar-collapse -->
 
                   <div class="cart-dropdown">
-                    <a href="#" class="shop-cart">
+                    <a href="cart.html" class="shop-cart">
                       <i class="fa fa-shopping-cart"></i>
                       <span class="badge">3</span>
                     </a>
@@ -255,7 +213,7 @@
         </nav><!-- navbar -->
       </div>
     </header>
-    
+
 
     <!-- MAIN CONTENT -->
     <div class="main-content checkout-content">
@@ -284,7 +242,7 @@
                   <option value="0">DD / MM / YY</option>
                   <option value="1">12 / 11 / 2017</option>
                   <option value="2">13 / 11 / 2017</option>
-                  <option value="3">14 / 11 / 2017</option>            
+                  <option value="3">14 / 11 / 2017</option>
                 </select>
               </span>
             </div>
@@ -298,7 +256,7 @@
                   <option value="0"></option>
                   <option value="1">Country1</option>
                   <option value="2">Country2</option>
-                  <option value="3">Country3</option>            
+                  <option value="3">Country3</option>
                 </select>
               </span>
             </div>
@@ -357,7 +315,7 @@
                 </tbody>
               </table>
             </div>
-            
+
           </form>
         </div>
 
@@ -369,191 +327,225 @@
           </div>
             </div>
         </div>
-        
+
       </div>
     </div>
 
 
     <footer class="footer-v2">
-      <div class="menuFooter clearfix">
-        <div class="container">
-          <div class="row clearfix">
+  <div class="menuFooter clearfix">
+    <div class="container">
+      <div class="row clearfix">
 
-            <div class="col-sm-3 col-xs-6">
-              <div class="footer-about">
-                <a class="footer-logo" href="index.html">
-                  <img src="img/logo.png" alt="logo" class="img-responsive" />
-                </a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                <a href="">Read More ></a>
-              </div>
-            </div><!-- col-sm-3 col-xs-6 -->
-
-            <div class="col-sm-3 col-xs-6">
-              <h5>Study</h5>
-              <ul class="menuLink">
-                <li><a href="about.html">About Royal College</a></li>
-                <li><a href="campus.html">About Campus</a></li>
-                <li><a href="stuff.html">Staff Members</a></li>
-                <li><a href="about.html">Why Choose Us?</a></li>
-              </ul>
-            </div><!-- col-sm-3 col-xs-6 -->
-
-            <div class="col-sm-3 col-xs-6">
-              <h5>Explore</h5>
-              <ul class="menuLink">
-                <li><a href="course-fullwidth.html">All Courses</a></li>
-                <li><a href="buying-steps.html">Admission</a></li>
-                <li><a href="photo-gallery3col.html">Photo Gallery</a></li>
-                <li><a href="international_students.html">International Students</a></li>
-              </ul>
-            </div><!-- col-sm-3 col-xs-6 -->
-
-            <div class="col-sm-3 col-xs-6">
-              <h5>Contact Us</h5>
-              <p>Lorem ipsum dolor sit amet, consecte adipisicing elit sed do eiusmod. </p>
-              <div class="footer-contact">
-                <ul>
-                <li> <i class="fa fa-home" aria-hidden="true"></i>1201 park street, Fifth Avenue, Dhanmondy, Dhaka.</li>
-                <li><i class="fa fa-phone" aria-hidden="true"></i>[88] 657 524 332</li>
-                <li><a href="mailto:info@Royal University.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@Royal University.com</a></li>
-                </ul>
-              </div>
-            </div><!-- col-sm-3 col-xs-6 -->
-
-          </div><!-- row clearfix -->
-        </div><!-- container -->
-      </div><!-- menuFooter -->
-
-      <div class="footer clearfix">
-        <div class="container">
-          <div class="footer-bottom">
-            <div class="row clearfix">
-              <div class="col-sm-6 col-xs-12 copyRight">
-                <p>© 2016 Copyright Royal College Bootstrap Template by <a href="http://www.iamabdus.com">Abdus</a></p>
-              </div><!-- col-sm-6 col-xs-12 -->
-              <div class="col-sm-6 col-xs-12 privacy_policy">
-                <a href="contact-us.html">Site Map </a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="privacy-policy.html">Trademarks and Copyright</a>
-              </div><!-- col-sm-6 col-xs-12 -->
-            </div><!-- row clearfix -->
+        <div class="col-sm-3 col-xs-6">
+          <div class="footer-about">
+            <a class="footer-logo" href="index.html">
+              <img src="img/logo.png" alt="logo" class="img-responsive" />
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+            <a href="">Read More ></a>
           </div>
-        </div><!-- container -->
-      </div><!-- footer -->
-    </footer>
-    
-  </div>
+        </div><!-- col-sm-3 col-xs-6 -->
 
-  <!-- REGISTER MODAL -->
-  <div class="modal fade customModal" id="createAccount" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="panel panel-default formPanel">
-          <div class="panel-heading">
-            <h3 class="panel-title">Please Sign up to checkout</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="col-sm-3 col-xs-6">
+          <h5>Study</h5>
+          <ul class="menuLink">
+            <li><a href="about.html">About Royal College</a></li>
+            <li><a href="campus.html">About Campus</a></li>
+            <li><a href="stuff.html">Staff Members</a></li>
+            <li><a href="about.html">Why Choose Us?</a></li>
+          </ul>
+        </div><!-- col-sm-3 col-xs-6 -->
+
+        <div class="col-sm-3 col-xs-6">
+          <h5>Explore</h5>
+          <ul class="menuLink">
+            <li><a href="course-fullwidth.html">All Courses</a></li>
+            <li><a href="buying-steps.html">Admission</a></li>
+            <li><a href="photo-gallery3col.html">Photo Gallery</a></li>
+            <li><a href="international_students.html">International Students</a></li>
+          </ul>
+        </div><!-- col-sm-3 col-xs-6 -->
+
+        <div class="col-sm-3 col-xs-6">
+          <h5>Contact Us</h5>
+          <p>Lorem ipsum dolor sit amet, consecte adipisicing elit sed do eiusmod. </p>
+          <div class="footer-contact">
+            <ul>
+            <li> <i class="fa fa-home" aria-hidden="true"></i>1201 park street, Fifth Avenue, Dhanmondy, Dhaka.</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>[88] 657 524 332</li>
+            <li><a href="mailto:info@Royal University.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@Royal University.com</a></li>
+            </ul>
           </div>
-          <div class="panel-body">
-            <form action="#" method="POST" role="form">
-              <div class="form-group formField">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <input type="text" class="form-control" placeholder="Full Name">
-              </div>
-              <div class="form-group formField">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="text" class="form-control" placeholder="Email">
-              </div>
-              <div class="form-group formField">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-block commonBtn">Log in</button>
-              <div class="form-group">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox">Check here for exiting deals and personalized Course recommendations
-                  </label>
-                </div>
-              </div>
-            </form>
-            <div class="alt-text">or</div>
-            <div class="modal-border"></div>
-            <div class="alt-btn">
-              <a class="facebook-btn btn btn-block" href="#">Log in with Facebook</a>
-              <a class="twitter-btn btn btn-block" href="#">Log in with Facebook</a>
+        </div><!-- col-sm-3 col-xs-6 -->
+
+      </div><!-- row clearfix -->
+    </div><!-- container -->
+  </div><!-- menuFooter -->
+
+  <div class="footer clearfix">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="row clearfix">
+          <div class="col-sm-6 col-xs-12 copyRight">
+            <p>© 2016 Copyright Royal College Bootstrap Template by <a href="http://www.iamabdus.com">Abdus</a></p>
+          </div><!-- col-sm-6 col-xs-12 -->
+          <div class="col-sm-6 col-xs-12 privacy_policy">
+            <a href="contact-us.html">Site Map </a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="privacy-policy.html">Trademarks and Copyright</a>
+          </div><!-- col-sm-6 col-xs-12 -->
+        </div><!-- row clearfix -->
+      </div>
+    </div><!-- container -->
+  </div><!-- footer -->
+</footer>
+
+</div>
+
+<!-- REGISTER MODAL -->
+<div class="modal fade customModal" id="createAccount" tabindex="-1" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="panel panel-default formPanel">
+      <div class="panel-heading">
+        <h3 class="panel-title">Please Sign up to checkout</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="panel-body">
+        <form action="#" method="POST" role="form">
+          <div class="form-group formField">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" class="form-control" placeholder="Full Name">
+          </div>
+          <div class="form-group formField">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group formField">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-block commonBtn">Log in</button>
+          <div class="form-group">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Check here for exiting deals and personalized Course recommendations
+              </label>
             </div>
           </div>
-          <div class="panel-footer">
-            <p>Allready have an account? <a href="#">Log in</a></p>
-          </div>
+        </form>
+        <div class="alt-text">or</div>
+        <div class="modal-border"></div>
+        <div class="alt-btn">
+          <a class="facebook-btn btn btn-block" href="#">Log in with Facebook</a>
+          <a class="twitter-btn btn btn-block" href="#">Log in with Facebook</a>
         </div>
+      </div>
+      <div class="panel-footer">
+        <p>Allready have an account? <a href="#">Log in</a></p>
       </div>
     </div>
   </div>
+</div>
+</div>
 
-  <!-- LOGIN MODAL -->
-  <div class="modal fade customModal" id="loginModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="panel panel-default formPanel">
-          <div class="panel-heading">
-            <h3 class="panel-title">Log In to your Account</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<!-- LOGIN MODAL -->
+<div class="modal fade customModal" id="loginModal" tabindex="-1" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="panel panel-default formPanel">
+      <div class="panel-heading">
+        <h3 class="panel-title">Log In to your Account</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="panel-body">
+        <form action="#" method="POST" role="form">
+          <div class="form-group formField">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="text" class="form-control" placeholder="Email">
           </div>
-          <div class="panel-body">
-            <form action="#" method="POST" role="form">
-              <div class="form-group formField">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="text" class="form-control" placeholder="Email">
-              </div>
-              <div class="form-group formField">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-block commonBtn">Log in</button>
-              <div class="form-group">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox">Remember me
-                  </label>
-                </div>
-                <a class="forgot-link" href="#">Fogot Password?</a>
-              </div>
-            </form>
-            <div class="alt-text">or</div>
-            <div class="modal-border"></div>
-            <div class="alt-btn">
-              <a class="facebook-btn btn btn-block" href="#">Log in with Facebook</a>
-              <a class="twitter-btn btn btn-block" href="#">Log in with Facebook</a>
+          <div class="form-group formField">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-block commonBtn">Log in</button>
+          <div class="form-group">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Remember me
+              </label>
             </div>
+            <a class="forgot-link" href="#">Fogot Password?</a>
           </div>
-          <div class="panel-footer">
-            <p>Don’t have an Account? <a href="#">Sign up</a></p>
-          </div>
+        </form>
+        <div class="alt-text">or</div>
+        <div class="modal-border"></div>
+        <div class="alt-btn">
+          <a class="facebook-btn btn btn-block" href="#">Log in with Facebook</a>
+          <a class="twitter-btn btn btn-block" href="#">Log in with Facebook</a>
         </div>
+      </div>
+      <div class="panel-footer">
+        <p>Don’t have an Account? <a href="#">Sign up</a></p>
       </div>
     </div>
   </div>
+</div>
+</div>
 
-  <!-- JQUERY SCRIPTS -->
-  <script src="js/jquery.min.js"></script>
-  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script src="plugins/flexslider/jquery.flexslider.js"></script>
-  <script src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-  <script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-  <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
-  <script src="plugins/pop-up/jquery.magnific-popup.js"></script>
-  <script src="plugins/animation/waypoints.min.js"></script>
-  <script src="plugins/count-up/jquery.counterup.js"></script>
-  <script src="plugins/animation/wow.min.js"></script>
-  <script src="plugins/animation/moment.min.js"></script>
-  <script src="plugins/calender/fullcalendar.min.js"></script>
-  <script src="plugins/owl-carousel/owl.carousel.js"></script>
-  <script src="plugins/timer/jquery.syotimer.js"></script>
-  <script src="plugins/smoothscroll/SmoothScroll.js"></script>
-  <script src="options/optionswitcher.js"></script>
-  <script src="js/custom.js"></script>
+<!-- JQUERY SCRIPTS -->
+<script src="plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/flexslider/jquery.flexslider.js"></script>
+<script src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
+<script src="plugins/pop-up/jquery.magnific-popup.js"></script>
+<script src="plugins/animation/waypoints.min.js"></script>
+<script src="plugins/count-up/jquery.counterup.js"></script>
+<script src="plugins/animation/wow.min.js"></script>
+<script src="plugins/animation/moment.min.js"></script>
+<script src="plugins/calender/fullcalendar.min.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.js"></script>
+<script src="plugins/timer/jquery.syotimer.js"></script>
+<script src="plugins/smoothscroll/SmoothScroll.js"></script>
+<script src="js/custom.js"></script>
+<script>
+$(window).load(function(){
+$('.version2 ').each(function(){
+  var header_area = $('.header-v2');
+  var main_area = header_area.children('.header');
 
-  </body>
+  var logo = main_area.find('.navbar-header');
+  var navigation = main_area.find('.navbar-collapse');
+  var original = {
+    nav_top: navigation.css('margin-top')
+  };
+
+  $(window).scroll(function(){
+    if( main_area.hasClass('bb-fixed-header') && ($(this).scrollTop() === 0 )){
+      main_area.removeClass('bb-fixed-header').appendTo(header_area);
+      navigation.animate({'margin-top': original.nav_top}, {duration: 300, queue: false, complete: function(){
+        header_area.css('height', 'auto');
+      }});
+    }else if( !main_area.hasClass('bb-fixed-header') && $(this).width() > 250 &&
+      $(this).scrollTop() > header_area.offset().top + header_area.height() - parseInt($('html').css('margin-top'),10) ){
+      header_area.css('height', header_area.height());
+      main_area.css({'opacity': '0'}).addClass('bb-fixed-header');
+      main_area.appendTo($('body')).animate({'opacity': 1});
+
+      navigation.css({'margin-top': '0px'});
+    }
+  });
+});
+
+$(window).trigger('resize');
+$(window).trigger('scroll');
+});
+</script>
+<link href="options/optionswitch.css" rel="stylesheet">
+<script src="options/optionswitcher.js"></script>
+</body>
 </html>
+

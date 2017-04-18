@@ -1,10 +1,15 @@
-var OptionSwitcher = function () {
-
-	return {        
+$('.body-wrapper').each(function() {
+	var link=	 $('<div class="option"><i class="option-switcher-btn fa fa-gear hidden-xs"></i><div class="option-switcher animated"><div class="option-swticher-header"><div class="option-switcher-heading">Template Options</div><div class="theme-close"><i class="fa fa-close"></i></div></div><div class="option-swticher-body"><ul class="list-unstyled color-options"><li class="theme-default theme-active" data-color="default" data-logo="default-logo"></li><li class="theme-color1" data-color="color-option1" data-logo="logo1"></li><li class="theme-color2" data-color="color-option2" data-logo="logo2"></li><li class="theme-color3 last" data-color="color-option3" data-logo="logo3"></li></ul><div class="row no-col-space layoutStyle"><div class="col-xs-6"><a href="javascript:void(0);" class="btn-u  btn-block active-switcher-btn wide-layout-btn">Wide</a></div><div class="col-xs-6"><a href="javascript:void(0);" class="btn-u btn-block boxed-layout-btn">Boxed</a></div></div><div class="bg-patern"><h3>Background pattern</h3><ul class="list-unstyled"><li class="pattern-default pattern-active"></li><li class="pattern1"></li><li class="pattern2"></li><li class="pattern3 last"></li><li class="pattern4"></li><li class="pattern5"></li><li class="pattern6"></li><li class="pattern7 last"></li></ul></div><div class="row no-col-space headerStyle"><div class="col-xs-6"><a href="javascript:void(0);" class="btn-u btn-block active-switcher-btn fixed-header">Fixed header</a></div><div class="col-xs-6"><a href="javascript:void(0);" class="btn-u btn-block static-header">Static header</a></div></div></div></div></div></div>');
+  $('.body-wrapper').prepend(link);
+});
 
 		//option Switcher
-		initOptionSwitcher: function() {    
 			var panel = jQuery('.option-switcher');
+
+			$(document).on("click", ".option-switcher-btn" , function() {
+				jQuery(this).hide(100);
+				jQuery('.option-switcher').addClass('fadeInRight').removeClass('fadeOutRight').show();
+      });
 
 			jQuery('.option-switcher-btn').click(function () {
 				jQuery(this).hide(100);
@@ -15,7 +20,7 @@ var OptionSwitcher = function () {
 				jQuery('.option-switcher').removeClass('fadeInRight').addClass('fadeOutRight').hide(1000);
 				jQuery('.option-switcher-btn').show(1000);
 			});
-			
+
 			jQuery('.color-options li').click(function () {
 				var color = jQuery(this).attr("data-color");
 				var data_logo = jQuery(this).attr("data-logo");
@@ -25,7 +30,7 @@ var OptionSwitcher = function () {
 			});
 
 			var setColor = function (color, data_logo) {
-				jQuery('#option_color').attr("href", "css/colors/" + color + ".css");
+				jQuery('#option_color').attr("href", "css/" + color + ".css");
 				if(data_logo == 'logo1'){
 					jQuery('.navbar-brand img').attr("src", "img/logo2" + ".png");
 				}
@@ -115,6 +120,19 @@ var OptionSwitcher = function () {
 				jQuery(".fixed-header").removeClass("active-switcher-btn");
 				jQuery("body").addClass("static");
 			});
-		}
-	};
-}();
+
+			//LTR and RTL
+			jQuery('.rtl-option .left-right').click(function(){
+				jQuery(this).addClass("active-switcher-btn");
+				jQuery(".right-left").removeClass("active-switcher-btn");
+				jQuery('#bootstrap-rtl').attr("href", "");
+				jQuery('#rtl_css').attr("href", "");
+				jQuery("body").removeClass("rtl");
+			});
+			jQuery('.rtl-option .right-left').click(function(){
+				jQuery(this).addClass("active-switcher-btn");
+				jQuery(".left-right").removeClass("active-switcher-btn");
+				jQuery('#bootstrap-rtl').attr("href", "plugins/bootstrap-rtl/dist/css/bootstrap-rtl.min.css");
+				jQuery('#rtl_css').attr("href", "css/rtl.css");
+				jQuery("body").addClass("rtl");
+			});

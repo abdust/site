@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";AAIA;;;;;;;;;;;;;;;;;;;;;;;;;;gDA0BgD;EAC9C,KAAK,EA/BS,OAAO;;AAiCvB;;;;;;;;;;;;;;;;;;;;;qCAqBqC;EACnC,YAAY,EAvDE,OAAO;;AAyDvB;gDACgD;EAC9C,gBAAgB,EA3DF,OAAO;;AA6DvB;8CAC+C;EAC7C,gBAAgB,EA/DF,OAAO;;AAiEvB;;;;;;;;;;;;;;;;;;;;;;;qCAuBqC;EACnC,gBAAgB,EAzFF,OAAO;;AA2FvB,yBAA0B;EACxB;;;;0DAIwD;IACvD,KAAK,EAjGQ,OAAO;;AAsGvB;;;;;;;;;;;;;;uCAcuC;EACrC,UAAU,EApHK,OAAO;;AAsHxB;;;;;;;;;;;;;;wEAcyE;EACvE,YAAY,EArIG,OAAO;;AAuIxB;;SAES;EACP,gBAAgB,EA1ID,OAAO;;AA4IxB;;;;;;;;;;;;;;;;8DAgB+D;EAC7D,KAAK,EA7JU,OAAO;;AA+JxB;;;;6CAI8C;EAC1C,KAAK,EApKQ,OAAO;;AAsKxB,kCAAmC;EACjC,gBAAgB,EAvKD,OAAO;;AA0KxB,yBAA0B;EACxB,kDAAmD;IACjD,UAAU,EAAE,kBAA2B;;EAEzC,wDAAyD;IACvD,UAAU,EAAE,kBAA2B",
-"sources": ["../../scss/color-option1.scss"],
-"names": [],
-"file": "color-option1.css"
-}
