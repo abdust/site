@@ -1,9 +1,9 @@
 var OptionSwitcher = function () {
 
-	return {        
+	return {
 
 		//option Switcher
-		initOptionSwitcher: function() {    
+		initOptionSwitcher: function() {
 			var panel = jQuery('.option-switcher');
 
 			jQuery('.option-switcher-btn').click(function () {
@@ -15,7 +15,7 @@ var OptionSwitcher = function () {
 				jQuery('.option-switcher').removeClass('fadeInRight').addClass('fadeOutRight').hide(1000);
 				jQuery('.option-switcher-btn').show(1000);
 			});
-			
+
 			jQuery('.color-options li').click(function () {
 				var color = jQuery(this).attr("data-color");
 				var data_logo = jQuery(this).attr("data-logo");
