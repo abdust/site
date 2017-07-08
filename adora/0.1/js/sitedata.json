@@ -1,0 +1,45 @@
+
+[
+	{
+		"id": 1,
+		"link": "#1",
+		"title": "Kidz School",
+		"category": "Education",
+		"thumbnail": "img/project.jpg"
+	},
+	{
+		"id": 2,
+		"link": "#2",
+		"title": "Star Travel",
+		"category": "Travel",
+		"thumbnail": "img/poster2.jpg"
+	},
+	{
+		"id": 3,
+		"link": "#",
+		"title": "Bigbag",
+		"category": "Shop",
+		"thumbnail": "img/poster.jpg"
+	},
+	{
+		"id": 4,
+		"link": "#",
+		"title": "Eden Hotel",
+		"category": "Hotel",
+		"thumbnail": "img/project.jpg"
+	},
+	{
+		"id": 5,
+		"link": "#",
+		"title": "Royal College",
+		"category": "Education",
+		"thumbnail": "img/poster.jpg"
+	},
+	{
+		"id": 6,
+		"link": "#",
+		"title": "Food Shop",
+		"category": "Shop",
+		"thumbnail": "img/poster2.jpg"
+	}
+]
