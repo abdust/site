@@ -37,31 +37,6 @@ jQuery(document).ready(function(){
   });
 
 
-
-
-
-//============================== header =========================
-
-  //
-  // $('.navbar a.dropdown-toggle').on('click', function(e) {
-  //     var elmnt = $(this).parent().parent();
-  //     if (!elmnt.hasClass('nav')) {
-  //         var li = $(this).parent();
-  //         var heightParent = parseInt(elmnt.css('height').replace('px', ''),10) / 2;
-  //         var widthParent = parseInt(elmnt.css('width').replace('px', ''),10) - 10;
-  //
-  //         if(!li.hasClass('open')) {
-  //           li.addClass('open');
-  //         }else {
-  //           li.removeClass('open');
-  //         }
-  //         $(this).next().css('top', heightParent + 'px');
-  //         $(this).next().css('left', widthParent + 'px');
-  //
-  //         return false;
-  //     }
-  // });
-
 //============================== ALL DROPDOWN ON HOVER =========================
     $('.nav .dropdown').hover(function() {
       $(this).addClass('open');
@@ -149,6 +124,20 @@ jQuery(document).ready(function(){
     $('.owl-carousel.gallery-slider').owlCarousel({
       rtl: true
     });
+
+    //============================== Google Analytics =========================
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71155940-11', 'auto');
+    ga('send', 'pageview');
+
+  	  //============================== getsitecontrol =========================
+  	  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+  	    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  	  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
 
     //============================== ACCORDION ====================
     var allIconsOne = $(' #accordionOne .panel-heading i.fa');
