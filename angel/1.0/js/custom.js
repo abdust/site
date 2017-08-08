@@ -300,6 +300,7 @@ jQuery(document).ready(function(){
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-71155940-9', 'auto');
+  ga('require', 'GTM-MZ6QXS2');
   ga('send', 'pageview');
 
 	  //============================== getsitecontrol =========================
