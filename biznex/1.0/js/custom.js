@@ -550,6 +550,20 @@
 	});
 
 
+	//============================== Google Analytics =========================
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-71155940-12', 'auto');
+	ga('send', 'pageview');
+
+	//============================== getsitecontrol =========================
+	(function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+	  t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+	})(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
+
 	//============================== MAP =========================
 
 	function initialize() {
@@ -597,7 +611,7 @@
 		});
 	}
 
-	//=========================== FANCYBOX ========================== 
+	//=========================== FANCYBOX ==========================
 
 	$('.quick_view').fancybox({
 		baseClass : 'quick-view-container',
