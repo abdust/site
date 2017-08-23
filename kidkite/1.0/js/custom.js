@@ -1,7 +1,7 @@
-jQuery(document).ready(function(){
+jQuery(document).on('ready', function(){
   'use strict';
   //============================== MENU SCROLL =========================
-   $(window).load(function(){
+   $(window).on('load', function(){
     $('.body-wrapper').each(function(){
       var header_area = $('.header-wrapper');
       var main_area = header_area.children('.navbar');
@@ -12,7 +12,7 @@ jQuery(document).ready(function(){
         nav_top: navigation.css('margin-top')
       };
 
-      $(window).scroll(function(){
+      $(window).on('scroll', function(){
         if( main_area.hasClass('bb-fixed-header') && ($(this).scrollTop() === 0 || $(this).width() < 750)){
           main_area.removeClass('bb-fixed-header').appendTo(header_area);
           main_area.css('margin-top', barHeight);
@@ -36,42 +36,38 @@ jQuery(document).ready(function(){
     $(window).trigger('scroll');
   });
 
-
 //============================== ALL DROPDOWN ON HOVER =========================
-    $('.nav .dropdown').hover(function() {
-      $(this).addClass('open');
-    },
-    function() {
-      $(this).removeClass('open');
-    }
-    );
-
+  var navDropdown = $('.nav .dropdown');
+  navDropdown.hover(function(){
+    $(this).addClass('open');
+  }, function(){
+    $(this).removeClass('open');
+  });
 //============================== BACK TO TOP =========================
-    if ($('#backToTop').length) {
-      var scrollTrigger = 100, // px
-      backToTop = function () {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > scrollTrigger) {
-          $('#backToTop').css('opacity', 1);
-        } else {
-          $('#backToTop').css('opacity', 0);
-        }
-      };
+  var backtoTop = $('#backToTop');
+  if (backtoTop.length) {
+    var scrollTrigger = 100, // px
+    backToTop = function () {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > scrollTrigger) {
+        backtoTop.css('opacity', 1);
+      } else {
+        backtoTop.css('opacity', 0);
+      }
+    };
+    backToTop();
+    $(window).on('scroll', function () {
       backToTop();
-      $(window).on('scroll', function () {
-        backToTop();
-      });
-      $('#backToTop').on('click', function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-          scrollTop: 0
-        }, 700);
-      });
-    }
+    });
+    backtoTop.on('click', function (e) {
+      e.preventDefault();
+      $('html,body').animate({scrollTop: 0}, 700);
+    });
+  }
 
 //============================== MAIN SLIDER =========================
 
-  var $heroSlider = $( '.main-slider .inner' );
+  var $heroSlider = $( '#banner-slider-holder' );
   if ( $heroSlider.length > 0 ) {
     $heroSlider.each( function () {
 
@@ -84,7 +80,7 @@ jQuery(document).ready(function(){
         loop: loop,
         margin: 0,
         nav: true,
-        dots: true,
+        dots: false,
         navText: [  ],
         autoplay: autoplay,
         autoplayTimeout: interval,
@@ -94,8 +90,8 @@ jQuery(document).ready(function(){
     });
   }
 
-//============================== OWL-CAROUSEL =========================
-  var owl = $('.owl-carousel.gallery-slider');
+//============================== OWL-CAROUSEL FOR GALLERY SLIDER =========================
+  var owl = $('#gallery-slider-holder');
     owl.owlCarousel({
       loop:true,
       margin:28,
@@ -121,7 +117,7 @@ jQuery(document).ready(function(){
       }
     });
 
-    $('.owl-carousel.gallery-slider').owlCarousel({
+    owl.owlCarousel({
       rtl: true
     });
 
@@ -140,24 +136,24 @@ jQuery(document).ready(function(){
   	  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
 
     //============================== ACCORDION ====================
-    var allIconsOne = $(' #accordionOne .panel-heading i.fa');
-    $('#accordionOne .panel-heading').click(function(){
+
+    var accordionPanel = $('.panel-heading');
+    accordionPanel.on('click', function(){
       $(this).removeClass('defult-color');
-      allIconsOne.removeClass('fa-angle-down').addClass('fa-angle-up');
-      $(this).find('i.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
     });
 
     //============================== COUNT INPUT (QUANTITY) ====================
-    $('.incr-btn').on('click', function(e) {
+    var incrBtn = $('.incr-btn');
+    incrBtn.on('click', function(e) {
       var newVal;
-          var $button = $(this);
-          var oldValue = $button.parent().find('.quantity').val();
-          $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
-          if ($button.data('action') === 'increase') {
-            newVal = parseFloat(oldValue) + 1;
-          } else {
-         // Don't allow decrementing below 1
-         if (oldValue > 1) {
+      var $button = $(this);
+      var oldValue = $button.parent().find('.quantity').val();
+      $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
+      if ($button.data('action') === 'increase') {
+        newVal = parseFloat(oldValue) + 1;
+      } else {
+        // Don't allow decrementing below 1
+        if (oldValue > 1) {
           newVal = parseFloat(oldValue) - 1;
         } else {
           newVal = 1;
@@ -169,28 +165,33 @@ jQuery(document).ready(function(){
     });
 
     //============================== SELECT BOX =========================
-    $('.select-drop').selectbox();
+    var selectDrop = $('.select-drop');
+    selectDrop.selectbox();
 
     //============================== PRICE SLIDER RANGER =========================
-    var minimum = 20;
-    var maximum = 300;
+    var minimum = 20,
+        maximum = 300,
+        priceRange = $( '#price-range' ),
+        price1 = $('#price-amount-1'),
+        price2 = $('#price-amount-2');
 
-    $( '#price-range' ).slider({
+    priceRange.slider({
       range: true,
       min: minimum,
       max: maximum,
       values: [ minimum, maximum ],
       slide: function( event, ui ) {
-        $( '#price-amount-1' ).val( '$' + ui.values[ 0 ] );
-        $( '#price-amount-2' ).val( '$' + ui.values[ 1 ] );
+        price1.val( '$' + ui.values[ 0 ] );
+        price2.val( '$' + ui.values[ 1 ] );
       }
     });
 
-    $( '#price-amount-1' ).val( '$' + $( '#price-range' ).slider( 'values', 0 ));
-    $( '#price-amount-2' ).val( '$' + $( '#price-range' ).slider( 'values', 1 ));
+    price1.val( '$' + priceRange.slider( 'values', 0 ));
+    price2.val( '$' + priceRange.slider( 'values', 1 ));
 
   // ============================== YOUTUBE VIDEO =============================================
-    $('.video-box img').click(function(){
+    var videoBox = $('.video-box img');
+    videoBox.on('click', function(){
       var video = '<iframe class="embed-responsive-item"  allowfullscreen src="'+ $(this).attr('data-video') +'"></iframe>';
       $(this).replaceWith(video);
     });

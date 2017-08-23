@@ -1,0 +1,310 @@
+/*=== MIXINS ===*/
+/*=== VARIABLES ===*/
+/*=== MEDIA QUERY ===*/
+/*================= $color1 ==================*/
+.color-1,
+.accordion-common .panel-heading.collapsed.color-1, .accordion-common .panel-heading.defult-color.color-1 {
+  color: #fe7d6f !important;
+}
+
+h3 a:hover, a,
+.section-title h2,
+.list-address li i.fa,
+.list-social li a:hover,
+.list-card li i.fa,
+.list-card-item .card-price,
+.list-panel li a:hover .list-title-info,
+.search-field .input-group-addon,
+.navbar-nav > li.color-1 > a > span,
+.cart-dropdown a,
+.cart-dropdown a:hover, .cart-dropdown a:focus,
+.main-slider .owl-carousel .owl-controls .owl-nav .owl-prev,
+.main-slider .owl-carousel .owl-controls .owl-nav .owl-next,
+.main-slider .owl-carousel .owl-controls .owl-dot,
+.main-slider .common-inner a,
+.card-sm:hover .card-caption h4 a,
+.card-photo .img-mask a,
+.card-photo .img-mask a:hover,
+.teachers:hover .caption h4 a,
+.teachers .caption h4 small,
+.about-info h2,
+.owl-prev span:after,
+.owl-next span:after,
+.card-list-short li .amount,
+.card-event .list-inline li i.fa,
+.class-schedule h3,
+.panel-sidebar .panel-heading h3,
+.blog-single .list-blog-single li i.fa,
+.blog-single-title h3,
+.blog-comments .media-body .reply-link,
+.search-error .input-group-addon,
+.team-info h5,
+.skills-title h3,
+.count-down #simple_timer .table-cell.minute .tab-val,
+.comming-input .input-group-addon,
+.product-info h4,
+.product-category a,
+.tab-common .nav li a:hover,
+.tab-common .nav li.active a,
+.tab-common .nav li.active a:hover, .tab-common .nav li.active a:focus,
+.courses-counter .counter-inner > .btn-main,
+.label-check span a,
+.cartInfo .table-responsive .table tbody tr td .close span {
+  color: #fe7d6f;
+}
+
+::-moz-selection {
+  background-color: #fe7d6f;
+}
+
+::selection {
+  background-color: #fe7d6f;
+}
+
+.bg-color-1 {
+  background-color: #fe7d6f !important;
+}
+
+.list-teacher-social,
+.btn-main,
+.backToTop,
+.pagination-area .pagination li.active a,
+.pagination-area .pagination a:hover,
+.pagination-area .pagination a:focus,
+.pagination-area .pagination a:focus:hover,
+.accordion-common .panel-heading.color-1,
+.radio-single input[type="radio"]:checked + label span,
+.price-range .price-slider-inner .ui-widget-content .ui-slider-range,
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active > a:hover,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li.open > a,
+.navbar-default .navbar-nav > li.open > a:hover > a:focus,
+.navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active a:hover,
+.navbar-default.lightHeader .navbar-nav > li.active.color-1 > a,
+.navbar-nav > li.color-1 > a:hover,
+.navbar-nav > li.color-1.singleDrop > .dropdown-menu li a:hover,
+.navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active > a,
+.navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active li.active a,
+.navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active a:hover,
+.navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.card-mask .btn-main,
+.isotopeFilters ul.filter > li.active a {
+  background-color: #fe7d6f;
+}
+
+.border-color-1 {
+  border-color: #fe7d6f !important;
+}
+
+.cart-dropdown a,
+.cart-dropdown a:hover, .cart-dropdown a:focus,
+.pagination-area .pagination li.active a,
+.pagination-area .pagination a:hover,
+.pagination-area .pagination a:focus,
+.pagination-area .pagination a:focus:hover,
+.accordion-common .panel-heading.color-1,
+.radio-single input[type="radio"]:checked + label span,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.tab-common .nav li a:hover,
+.tab-common .nav li.active a {
+  border-color: #fe7d6f;
+}
+
+.shape-color-1 {
+  stroke: #fe7d6f;
+}
+
+/*================= $color2 ==================*/
+.accordion-common .panel-heading.collapsed.color-2, .accordion-common .panel-heading.defult-color.color-2,
+.navbar-nav > li.color-2 > a > span,
+.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.listHeading,
+.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li:first-child,
+.count-down #simple_timer .table-cell .tab-val {
+  color: #f680b8;
+}
+
+.bg-color-2,
+.price-range .progress .progress-bar,
+.price-range .progress .bulet {
+  background-color: #f680b8 !important;
+}
+
+.accordion-common .panel-heading.color-2,
+.navbar-default.lightHeader .navbar-nav > li.active.color-2 > a,
+.navbar-nav > li.color-2 > a:hover,
+.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a:hover,
+.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active > a,
+.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active li.active a,
+.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active a:hover,
+.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active li.active a:hover,
+.navbar-nav > li.color-2.dropdown.megaDropMenu.open a {
+  background-color: #f680b8;
+}
+
+.border-color-2 {
+  border-color: #f680b8 !important;
+}
+
+.accordion-common .panel-heading.color-2 {
+  background-color: #f680b8;
+}
+
+.shape-color-2 {
+  stroke: #f680b8;
+}
+
+/*================= $color3 ==================*/
+.color-3 {
+  color: #54d8c4 !important;
+}
+
+.navbar-nav > li.color-3 > a > span,
+.count-down #simple_timer .table-cell.hour .tab-val,
+.isotopeSelector:hover h4,
+.tab-common .tab-content h3 {
+  color: #54d8c4;
+}
+
+.bg-color-3 {
+  background-color: #54d8c4 !important;
+}
+
+.navbar-default.lightHeader .navbar-nav > li.active.color-3 > a,
+.navbar-nav > li.color-3 > a:hover,
+.navbar-nav > li.color-3.singleDrop > .dropdown-menu li a:hover,
+.navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active > a,
+.navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active li.active a,
+.navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active a:hover,
+.navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-nav > li.color-3.singleDrop.open a {
+  background-color: #54d8c4;
+}
+
+.border-color-3 {
+  border-color: #54d8c4 !important;
+}
+
+.shape-color-3 {
+  stroke: #54d8c4;
+}
+
+/*================= $color4 ==================*/
+.color-4,
+.accordion-common .panel-heading.collapsed.color-4, .accordion-common .panel-heading.defult-color.color-4 {
+  color: #ade122 !important;
+}
+
+.navbar-nav > li.color-4 > a > span,
+.count-down #simple_timer .table-cell.second .tab-val {
+  color: #ade122;
+}
+
+.bg-color-4 {
+  background-color: #ade122 !important;
+}
+
+.accordion-common .panel-heading.color-4,
+.navbar-default.lightHeader .navbar-nav > li.active.color-4 > a,
+.navbar-nav > li.color-4 > a:hover,
+.navbar-nav > li.color-4.singleDrop > .dropdown-menu li a:hover,
+.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active > a,
+.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active li.active a,
+.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active li.active a,
+.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active a:hover, .navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-nav > li.color-4.singleDrop.open a,
+.customer-notification {
+  background-color: #ade122;
+}
+
+.border-color-4 {
+  border-color: #ade122 !important;
+}
+
+.accordion-common .panel-heading.color-4 {
+  border-color: #ade122;
+}
+
+.shape-color-4 {
+  stroke: #ade122;
+}
+
+/*================= $color5 ==================*/
+.color-5,
+.accordion-common .panel-heading.collapsed.color-5, .accordion-common .panel-heading.defult-color.color-5 {
+  color: #d37dfa !important;
+}
+
+.navbar-nav > li.color-5 > a > span {
+  color: #d37dfa;
+}
+
+.bg-color-5 {
+  background-color: #d37dfa !important;
+}
+
+.accordion-common .panel-heading.color-5,
+.navbar-default.lightHeader .navbar-nav > li.active.color-5 > a,
+.navbar-nav > li.color-5 > a:hover,
+.navbar-nav > li.color-5.singleDrop > .dropdown-menu li a:hover,
+.navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active li.active a,
+.navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active a:hover, .navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-nav > li.color-5.singleDrop.open a {
+  background-color: #d37dfa;
+}
+
+.border-color-5 {
+  border-color: #d37dfa !important;
+}
+
+.accordion-common .panel-heading.color-5 {
+  border-color: #d37dfa;
+}
+
+.shape-color-5 {
+  stroke: #d37dfa;
+}
+
+/*================= $color6 ==================*/
+.color-6,
+.accordion-common .panel-heading.collapsed.color-6, .accordion-common .panel-heading.defult-color.color-6 {
+  color: #ffb109 !important;
+}
+
+.navbar-nav > li.color-6 > a > span {
+  color: #ffb109;
+}
+
+.bg-color-6 {
+  background-color: #ffb109 !important;
+}
+
+.accordion-common .panel-heading.color-6,
+.navbar-default.lightHeader .navbar-nav > li.active.color-6 > a,
+.navbar-nav > li.color-6 > a:hover,
+.navbar-nav > li.color-6.singleDrop > .dropdown-menu li a:hover,
+.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active li.active a,
+.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active li.active a,
+.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active a:hover, .navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-nav > li.color-6.singleDrop.open a {
+  background-color: #ffb109;
+}
+
+.border-color-6 {
+  border-color: #ffb109 !important;
+}
+
+.accordion-common .panel-heading.color-6 {
+  border-color: #ffb109;
+}
+
+.shape-color-6 {
+  stroke: #ffb109;
+}
+
+/*# sourceMappingURL=maps/color-option2.css.map */

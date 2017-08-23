@@ -4,7 +4,7 @@
 /*================= $color1 ==================*/
 .color-1,
 .accordion-common .panel-heading.collapsed.color-1, .accordion-common .panel-heading.defult-color.color-1 {
-  color: #fe7d6f !important;
+  color: #fe7d6f;
 }
 
 h3 a:hover, a,
@@ -62,7 +62,7 @@ h3 a:hover, a,
 }
 
 .bg-color-1 {
-  background-color: #fe7d6f !important;
+  background-color: #fe7d6f;
 }
 
 .list-teacher-social,
@@ -84,8 +84,6 @@ h3 a:hover, a,
 .navbar-default.lightHeader .navbar-nav > li.active.color-1 > a,
 .navbar-nav > li.color-1 > a:hover,
 .navbar-nav > li.color-1.singleDrop > .dropdown-menu li a:hover,
-.navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active > a,
-.navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active li.active a,
 .navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active a:hover,
 .navbar-nav > li.color-1.singleDrop > .dropdown-menu li.active li.active a:hover,
 .navbar-default .navbar-toggle,
@@ -97,7 +95,7 @@ h3 a:hover, a,
 }
 
 .border-color-1 {
-  border-color: #fe7d6f !important;
+  border-color: #fe7d6f;
 }
 
 .cart-dropdown a,
@@ -132,15 +130,13 @@ h3 a:hover, a,
 .bg-color-2,
 .price-range .progress .progress-bar,
 .price-range .progress .bulet {
-  background-color: #f680b8 !important;
+  background-color: #f680b8;
 }
 
 .accordion-common .panel-heading.color-2,
 .navbar-default.lightHeader .navbar-nav > li.active.color-2 > a,
 .navbar-nav > li.color-2 > a:hover,
 .navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li a:hover,
-.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active > a,
-.navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active li.active a,
 .navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active a:hover,
 .navbar-nav > li.color-2.dropdown.megaDropMenu .dropdown-menu .list-unstyled li.active li.active a:hover,
 .navbar-nav > li.color-2.dropdown.megaDropMenu.open a {
@@ -148,7 +144,7 @@ h3 a:hover, a,
 }
 
 .border-color-2 {
-  border-color: #f680b8 !important;
+  border-color: #f680b8;
 }
 
 .accordion-common .panel-heading.color-2 {
@@ -161,7 +157,7 @@ h3 a:hover, a,
 
 /*================= $color3 ==================*/
 .color-3 {
-  color: #54d8c4 !important;
+  color: #54d8c4;
 }
 
 .navbar-nav > li.color-3 > a > span,
@@ -172,14 +168,12 @@ h3 a:hover, a,
 }
 
 .bg-color-3 {
-  background-color: #54d8c4 !important;
+  background-color: #54d8c4;
 }
 
 .navbar-default.lightHeader .navbar-nav > li.active.color-3 > a,
 .navbar-nav > li.color-3 > a:hover,
 .navbar-nav > li.color-3.singleDrop > .dropdown-menu li a:hover,
-.navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active > a,
-.navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active li.active a,
 .navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active a:hover,
 .navbar-nav > li.color-3.singleDrop > .dropdown-menu li.active li.active a:hover,
 .navbar-nav > li.color-3.singleDrop.open a {
@@ -187,7 +181,7 @@ h3 a:hover, a,
 }
 
 .border-color-3 {
-  border-color: #54d8c4 !important;
+  border-color: #54d8c4;
 }
 
 .shape-color-3 {
@@ -196,8 +190,9 @@ h3 a:hover, a,
 
 /*================= $color4 ==================*/
 .color-4,
-.accordion-common .panel-heading.collapsed.color-4, .accordion-common .panel-heading.defult-color.color-4 {
-  color: #ade122 !important;
+.accordion-common .panel-heading.collapsed.color-4,
+.accordion-common .panel-heading.defult-color.color-4 {
+  color: #ade122;
 }
 
 .navbar-nav > li.color-4 > a > span,
@@ -206,24 +201,23 @@ h3 a:hover, a,
 }
 
 .bg-color-4 {
-  background-color: #ade122 !important;
+  background-color: #ade122;
 }
 
 .accordion-common .panel-heading.color-4,
 .navbar-default.lightHeader .navbar-nav > li.active.color-4 > a,
 .navbar-nav > li.color-4 > a:hover,
 .navbar-nav > li.color-4.singleDrop > .dropdown-menu li a:hover,
-.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active > a,
-.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active li.active a,
-.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active li.active a,
-.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active a:hover, .navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active a:hover,
+.navbar-nav > li.color-4.singleDrop > .dropdown-menu li.active li.active a:hover,
 .navbar-nav > li.color-4.singleDrop.open a,
-.customer-notification {
+.customer-notification,
+.formPanel.panel .panel-heading.bg-color-4 {
   background-color: #ade122;
 }
 
 .border-color-4 {
-  border-color: #ade122 !important;
+  border-color: #ade122;
 }
 
 .accordion-common .panel-heading.color-4 {
@@ -236,8 +230,9 @@ h3 a:hover, a,
 
 /*================= $color5 ==================*/
 .color-5,
-.accordion-common .panel-heading.collapsed.color-5, .accordion-common .panel-heading.defult-color.color-5 {
-  color: #d37dfa !important;
+.accordion-common .panel-heading.collapsed.color-5,
+.accordion-common .panel-heading.defult-color.color-5 {
+  color: #d37dfa;
 }
 
 .navbar-nav > li.color-5 > a > span {
@@ -245,21 +240,21 @@ h3 a:hover, a,
 }
 
 .bg-color-5 {
-  background-color: #d37dfa !important;
+  background-color: #d37dfa;
 }
 
 .accordion-common .panel-heading.color-5,
 .navbar-default.lightHeader .navbar-nav > li.active.color-5 > a,
 .navbar-nav > li.color-5 > a:hover,
 .navbar-nav > li.color-5.singleDrop > .dropdown-menu li a:hover,
-.navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active li.active a,
-.navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active a:hover, .navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active a:hover,
+.navbar-nav > li.color-5.singleDrop > .dropdown-menu li.active li.active a:hover,
 .navbar-nav > li.color-5.singleDrop.open a {
   background-color: #d37dfa;
 }
 
 .border-color-5 {
-  border-color: #d37dfa !important;
+  border-color: #d37dfa;
 }
 
 .accordion-common .panel-heading.color-5 {
@@ -273,7 +268,7 @@ h3 a:hover, a,
 /*================= $color6 ==================*/
 .color-6,
 .accordion-common .panel-heading.collapsed.color-6, .accordion-common .panel-heading.defult-color.color-6 {
-  color: #ffb109 !important;
+  color: #ffb109;
 }
 
 .navbar-nav > li.color-6 > a > span {
@@ -281,22 +276,21 @@ h3 a:hover, a,
 }
 
 .bg-color-6 {
-  background-color: #ffb109 !important;
+  background-color: #ffb109;
 }
 
 .accordion-common .panel-heading.color-6,
 .navbar-default.lightHeader .navbar-nav > li.active.color-6 > a,
 .navbar-nav > li.color-6 > a:hover,
 .navbar-nav > li.color-6.singleDrop > .dropdown-menu li a:hover,
-.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active li.active a,
-.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active > a, .navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active li.active a,
-.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active a:hover, .navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active li.active a:hover,
+.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active a:hover,
+.navbar-nav > li.color-6.singleDrop > .dropdown-menu li.active li.active a:hover,
 .navbar-nav > li.color-6.singleDrop.open a {
   background-color: #ffb109;
 }
 
 .border-color-6 {
-  border-color: #ffb109 !important;
+  border-color: #ffb109;
 }
 
 .accordion-common .panel-heading.color-6 {
