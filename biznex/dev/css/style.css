@@ -619,89 +619,6 @@ a:hover, a:focus {
   border-color: #4ac8ed;
 }
 
-/*
- Deleted effect inpired from http://demo.massivedynamic.co/general/ ============
-
-.hover-overlay {
-	position: absolute;
-	content: '';
-	background-color: rgba($navy, 0.8);
-	width: 100%;
-    height: 100%;
-    bottom: -100%;
-    left: -100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-
-	@include transition(all 0.7s ease);
-	a.overlay_icon {
-		width: 55px;
-		height: 55px;
-		background: #fff;
-		position: relative;
-		display: inline-block;
-		border-radius: 50%;
-		margin: 3px;
-		text-align: center;
-		i.fa {
-			font-size: 20px;
-			line-height: 50px;
-			color: $text-color;
-		}
-	}
-}
-.img_overlay-container {
-	position: relative;
-	padding: 0 30px;
-	.img_overlay-title {
-		color: $white-color;
-		margin-bottom: 10px;
-	}
-	.img_overlay-desc {
-		color: #aaa;
-		margin-bottom: 20px;
-	}
-	a.icon {
-		width: 38px;
-		height: 38px;
-		font-size: 15px;
-		line-height: 36px;
-		background-color: transparent;
-		text-align: center;
-		display: inline-block;
-		color: $white-color;
-		border: 1px solid #aaa;
-		margin-right: 5px;
-		&:hover {
-			background-color: $primary-color;
-			border-color: $primary-color;
-		}
-	}
-	.img_overlay-title, .img_overlay-desc, .img_overlay-icon {
-		opacity: 0;
-		transform: translateX(-50px);
-		transition: opacity .2s,transform .4s;
-	}
-
-	.card {
-		&:hover {
-			.hover-overlay effect-transformY {
-				bottom: 0 !important;
-				left: 0 !important;
-			}
-			.img_overlay-container {
-				.img_overlay-title, .img_overlay-desc, .img_overlay-icon {
-					opacity: 1;
-					transform: translateX(0);
-					transition: opacity 1s .4s,transform 1.2s .2s;
-				}
-			}
-		}
-	}
-}
-*/
 .highlighter {
   background: #282C34;
   padding: 0px 10px;
@@ -6723,7 +6640,7 @@ ol.styled_list li {
   z-index: 2;
 }
 
-.btn:after {
+.btn:before {
   position: absolute;
   transition: all 0.3s cubic-bezier(0, 0, 0.1, 1);
   content: '';
@@ -6735,7 +6652,7 @@ ol.styled_list li {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.btn:hover:after {
+.btn:hover:before {
   width: 100%;
 }
 

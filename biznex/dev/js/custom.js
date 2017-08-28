@@ -1,21 +1,5 @@
 (function($) {
-	'use strict';
-	//========================== SCROLL TO ==========================
-	/*
-	$(document).ready(function () {
-		$('.scrolling  a[href*="#"]').on('click', function (e) {
-			e.preventDefault();
-			e.stopPropagation();
-			var target = $(this).attr('href');
-			$(target).velocity('scroll', {
-				duration: 800,
-				offset: -150,
-				easing: 'easeOutExpo',
-				mobileHA: false
-			});
-		});
-	});
-	*/		
+	'use strict';	
 
 	//============================== NAVBAR =========================
 
@@ -558,7 +542,7 @@
 	});
 
 	//============================== fANCYMORPH =========================
-	$("[data-morphing]").fancyMorph({
+	$('[data-morphing]').fancyMorph({
 	  hash : 'morphing'
 	});
 
