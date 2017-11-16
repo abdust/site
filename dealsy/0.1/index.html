@@ -1,821 +1,924 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dealsy | html5</title>
-  <!-- Plugins css -->
-  <link rel="stylesheet" href="plugins\bootstrap\css\bootstrap.min.css" >
-  <link rel="stylesheet" href="plugins\font-awesome\css\font-awesome.min.css">
-  <link rel="stylesheet" href="plugins\owl-carousel\owl.carousel.min.css">
-  <!-- <link rel="stylesheet" href="plugins\slick\slick.css"> -->
-  <!-- <link rel="stylesheet" href="plugins\slick\slick-theme.css"> -->
-  <link rel="stylesheet" href="plugins\selectbox\select_option1.css">
-  <!-- Custom Css -->
-  <link rel="stylesheet" href="css\style.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Dealsy</title>
+
+  <!-- PLUGINS CSS STYLE -->
+  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Select 2 -->
+  <link href="plugins/selectbox/select_option1.css" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+  <!-- Owl Carousel Theme -->
+  <link href="plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+  <!-- Datepicker -->
+  <link href="plugins/datepicker/datepicker.min.css" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="shortcut icon">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 </head>
-<body>
-  <div class="body-wrapper" >
-  <!-- ==================================================
-              Header Section
-  ==================================================== -->
-  <header class="header-section" id="#pageTop">
-      <!-- Topbar Strat -->
-    <div class="topbar bg-topbar">
-      <div class="container">
-          <ul class="topbar-nav text-right">
-              <li><a href="#">Get Mobile App </a></li>
-              <li class="dropdown">
-                <a class=" font-icon dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                  My Account <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </a>
-                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" data-toggle="modal" data-target="#login" data-whatever="@mdo" href="#">Login</a>
-                  <a class="dropdown-item" data-toggle="modal" data-target="#signup" data-whatever="@mdo" href="#">Singup</a>
-                  <a class="dropdown-item" href="#">Change Password</a>
-                </div>
-              </li>
-              <li class=" dropdown">
-                <a class="font-icon dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                EN <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </a>
-                <div class="dropdown-menu top-dropdwon-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Bangla</a>
-                  <a class="dropdown-item" href="#">France</a>
-                  <a class="dropdown-item" href="#">Arabic</a>
-                </div>
-              </li>
-            </ul>
-      </div>
-    </div>  <!-- End Topbar -->
-    <!-- Main Menu Start -->
-    <div class="main-navigation">
-      <div class="container">
+
+<body class="body-wrapper">
+
+
+<!--=====================================
+=            Top Header Menu            =
+======================================-->
+
+<section class="top-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Top Header list -->
+				<ul class="nav justify-content-end top-menu">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Get Mobile App</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#"  data-toggle="dropdown">My Account
+							<span><i class="fa fa-angle-down"></i></span>
+						</a>
+						<!-- Dropdown list -->
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="dashboard.html">Dashboard</a>
+							<a class="dropdown-item" href="user-profile.html">User Profile</a>
+							<a class="dropdown-item" href="login.html">Logout</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#"  data-toggle="dropdown">EN
+							<span><i class="fa fa-angle-down"></i></span>
+						</a>
+						<!-- Dropdown list -->
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="#">EN</a>
+							<a class="dropdown-item" href="#">FR</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!--=============================
+=            Nav Bar            =
+==============================-->
+
+<nav class="navbar navbar-toggleable-md main-nav bg-light">
+	<!-- Container Start -->
+	<div class="container">
+		<button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon fa fa-bars"></span>
+		</button>
+		<a class="navbar-brand p-0" href="index.html">
+			<svg
+			 xmlns="http://www.w3.org/2000/svg"
+			 xmlns:xlink="http://www.w3.org/1999/xlink"
+			 width="150px" height="43px">
+			<path class="fill-logo-1" fill-rule="evenodd"  fill=""
+			 d="M-0.000,43.000 L-0.000,-0.000 L150.000,-0.000 L150.000,43.000 L-0.000,43.000 ZM148.000,2.000 L2.000,2.000 L2.000,41.000 L148.000,41.000 L148.000,2.000 Z"/>
+			<path class="fill-logo-2" fill-rule="evenodd"  fill=""
+			 d="M131.317,21.856 L131.317,32.723 L126.821,32.723 L126.821,21.856 C126.174,20.956 125.489,20.013 124.767,19.027 C124.044,18.041 123.322,17.045 122.600,16.037 C121.877,15.030 121.155,14.033 120.433,13.047 C119.710,12.061 119.026,11.118 118.379,10.218 L123.910,10.218 L129.085,17.355 L134.228,10.218 L139.791,10.218 L131.317,21.856 ZM113.188,30.970 C112.508,31.581 111.700,32.063 110.762,32.417 C109.824,32.771 108.805,32.948 107.705,32.948 C106.713,32.948 105.753,32.808 104.826,32.530 C103.899,32.251 103.026,31.854 102.206,31.340 L102.239,31.340 C101.657,30.976 101.139,30.580 100.686,30.151 C100.233,29.722 99.921,29.411 99.748,29.218 L103.112,26.132 C103.263,26.325 103.505,26.555 103.840,26.823 C104.174,27.091 104.556,27.349 104.988,27.595 C105.419,27.841 105.872,28.050 106.347,28.222 C106.821,28.393 107.273,28.479 107.705,28.479 C108.071,28.479 108.438,28.436 108.805,28.350 C109.171,28.265 109.505,28.131 109.807,27.948 C110.109,27.766 110.357,27.525 110.551,27.225 C110.745,26.925 110.843,26.550 110.843,26.100 C110.843,25.928 110.783,25.741 110.665,25.537 C110.546,25.334 110.341,25.114 110.050,24.878 C109.759,24.642 109.355,24.391 108.837,24.123 C108.320,23.855 107.673,23.571 106.896,23.271 C105.991,22.928 105.150,22.558 104.374,22.161 C103.597,21.765 102.923,21.299 102.352,20.763 C101.780,20.227 101.338,19.617 101.026,18.930 C100.713,18.245 100.557,17.451 100.557,16.551 C100.557,15.630 100.729,14.767 101.074,13.963 C101.419,13.160 101.910,12.463 102.546,11.874 C103.182,11.284 103.947,10.824 104.843,10.491 C105.737,10.159 106.724,9.993 107.802,9.993 C108.384,9.993 109.004,10.068 109.662,10.218 C110.319,10.368 110.961,10.561 111.586,10.797 C112.212,11.033 112.799,11.306 113.349,11.616 C113.899,11.927 114.357,12.243 114.724,12.565 L111.942,16.037 C111.532,15.759 111.112,15.501 110.681,15.265 C110.314,15.072 109.893,14.891 109.419,14.719 C108.945,14.547 108.460,14.462 107.964,14.462 C107.058,14.462 106.352,14.638 105.845,14.992 C105.338,15.346 105.085,15.855 105.085,16.519 C105.085,16.820 105.177,17.093 105.360,17.339 C105.543,17.586 105.791,17.811 106.104,18.014 C106.416,18.218 106.778,18.405 107.188,18.577 C107.597,18.749 108.028,18.909 108.481,19.059 C109.775,19.552 110.864,20.051 111.748,20.554 C112.632,21.058 113.344,21.594 113.883,22.161 C114.422,22.730 114.805,23.340 115.031,23.994 C115.258,24.648 115.371,25.360 115.371,26.132 C115.371,27.075 115.177,27.964 114.789,28.800 C114.400,29.636 113.867,30.360 113.188,30.970 ZM82.670,10.218 L87.166,10.218 L87.166,28.254 L96.287,28.254 L96.287,32.723 L82.670,32.723 L82.670,10.218 ZM71.188,28.607 L62.552,28.607 C62.271,29.250 61.964,29.942 61.630,30.681 C61.295,31.420 60.999,32.101 60.740,32.723 L55.824,32.723 L65.883,9.993 L67.791,9.993 L77.980,32.723 L73.031,32.723 L71.188,28.607 ZM66.853,18.930 L64.525,24.139 L69.182,24.139 L66.853,18.930 ZM37.905,10.218 L52.460,10.218 L52.460,14.687 L42.401,14.687 L42.401,19.220 L49.743,19.220 L49.743,23.721 L42.401,23.721 L42.401,28.254 L52.460,28.254 L52.460,32.723 L37.905,32.723 L37.905,10.218 ZM28.687,29.475 C27.738,30.483 26.589,31.276 25.242,31.854 C23.894,32.433 22.380,32.723 20.698,32.723 L12.838,32.723 L12.838,10.218 L20.698,10.218 C22.380,10.218 23.894,10.491 25.242,11.038 C26.589,11.584 27.738,12.356 28.687,13.352 C29.635,14.349 30.369,15.539 30.886,16.921 C31.404,18.303 31.663,19.831 31.663,21.502 C31.663,23.089 31.404,24.562 30.886,25.923 C30.369,27.284 29.635,28.468 28.687,29.475 ZM26.681,18.850 C26.358,18.025 25.905,17.307 25.323,16.696 C24.741,16.085 24.056,15.603 23.269,15.249 C22.482,14.896 21.624,14.719 20.698,14.719 L17.301,14.719 L17.301,28.254 L20.698,28.254 C21.624,28.254 22.482,28.082 23.269,27.739 C24.056,27.397 24.741,26.920 25.323,26.309 C25.905,25.698 26.358,24.980 26.681,24.155 C27.005,23.330 27.167,22.446 27.167,21.502 C27.167,20.559 27.005,19.675 26.681,18.850 Z"/>
+			</svg>
+
+		</a>
+		<ul class="navbar-nav search-mobile">
+			<li class="nav-item dropdown search">
+				<a class="nav-link pr-0 search-icon" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-search"></i>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right">
+					<div class="input-group">
+							<input type="text" class="form-control" id="search" placeholder="Search...">
+							<span class="input-group-addon"><i class="fa fa-search"></i></span>
+						</div>
+				</div>
+			</li>
+		</ul>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<!-- Navigation List -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown dropdown-slide  active ">
+					<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Home <span><i class="fa fa-angle-down"></i></span>
+					</a>
+					<!-- Dropdown list -->
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="index.html">Home deals V1</a>
+						<a class="dropdown-item" href="index-v2.html">Home deals v2</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown dropdown-slide ">
+						<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Coupons & Deals <span><i class="fa fa-angle-down"></i></span>
+						</a>
+						<!-- Dropdown list -->
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="category.html">Category</a>
+						<a class="dropdown-item" href="store.html">Store</a>
+						<a class="dropdown-item" href="store-single.html">Store Single</a>
+						<a class="dropdown-item" href="submit-coupon.html">Submit Coupon</a>
+					</div>
+					</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="blog.html">Blog</a>
+				</li>
+				<li class="nav-item dropdown dropdown-slide ">
+					<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Admin <span><i class="fa fa-angle-down"></i></span>
+					</a>
+					<!-- Dropdown list -->
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="dashboard.html">Dashboard</a>
+						<a class="dropdown-item" href="user-profile.html">User Profile</a>
+						<a class="dropdown-item" href="submit-coupon.html">Submit Coupon</a>
+						<a class="dropdown-item" href="login.html">Login</a>
+					</div>
+				</li>
+				<!-- Search Icon -->
+				<li class="nav-item dropdown dropdown-slide search  active ">
+					<a class="nav-link pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-search"></i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<div class="input-group">
+						    <input type="text" class="form-control" id="search" placeholder="Search...">
+						    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+					    </div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Container End -->
+</nav>
+
+
+<!--===============================
+=            Hero Area            =
+================================-->
+
+<section class="hero-area bg-1 text-center">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Header Contetnt -->
+				<div class="content-block">
+					<h1>Best Deals & Coupons</h1>
+					<p>We have 12569 offers from 6122 stores <br> Start saving now</p>
+				</div>
+				<!-- Advance Search -->
+				<div class="advance-search">
+					<form action="#">
+						<div class="row">
+							<!-- Category List -->
+							<div class="col-lg-6 col-md-12">
+					            <select class="select-box form-control" id="category">
+					              <option selected disabled>Browse By Catergory</option>
+					              <option>Appearel</option>
+					              <option>Books</option>
+					              <option>Personal Care</option>
+					              <option>Education</option>
+					              <option>Beverage</option>
+					            </select>
+							</div>
+							<!-- Store Search -->
+							<div class="col-lg-6 col-md-12">
+								<div class="block d-flex">
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
+									<!-- Search Button -->
+									<button class="btn btn-secondary">SEARCH</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<!--===================================
+=            Client Slider            =
+====================================-->
+
+<section class="clients-slider-wrapper section pb-0">
+    <!-- Container Start -->
+    <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="main-menu">
-              <nav class="navbar navbar-toggleable-md navbar-light bg-white">
-                <button class="navbar-toggler navbar-toggler-right bars-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                <a class="navbar-brand" href="#"><img src="img\logo.png" alt="Logo Image"></a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Coupon & Deals</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Pages <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">One</a>
-                          <a class="dropdown-item" href="#">Two</a>
-                          <a class="dropdown-item" href="#">Three</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Admin <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">One</a>
-                          <a class="dropdown-item" href="#">Two</a>
-                          <a class="dropdown-item" href="#">Three</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Start Nav Search Box -->
-                  <div class="searchBox">
-                    <a class="nav-search-link" href="#"><i class="fa fa-search"></i></a>
-                    <form class="form-inline my-2 my-lg-0 nav-search">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                      <button class="btn top-search-btn my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                  </div><!-- End Nav Search Box -->
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Main Menu -->
-  </header>
-
-  <!-- ==================================================
-                Banner Section
-  ==================================================== -->
-  <section class="banner-section">
-    <div class="container">
-      <div class="row text-center">
-        <div class=" col-md-12">
-          <h1 class="display-3">Best Deals & Coupons</h1>
-            <p>We have 12569 offers from 6122 stores <br> Start saving now</p>
-        </div>
-      </div>
+            <div class="col-md-12">
+                <!-- Client Slider -->
+<div class="clients-slider owl-carousel owl-theme">
+    <!-- Client 01 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/amazon.jpg" alt="store-logo">
+        </a>
     </div>
-  </section>
-
-  <!-- ==================================================
-              Main search section
-  ==================================================== -->
-  <section class="main-search-section bg-populer-offer">
-      <div class="container">
-        <div class="select-box-area bg-select-box">
-          <div class="row">
-              <!-- start Select box -->
-            <div class="col-md-5 col-lg-6 col-sm-12">
-              <div class="select-box">
-                <select name="guiest_id2" id="guiest_id2" class="select-drop">
-                  <option value="0">Brouse by Category</option>
-                  <option value="1">Apparel</option>
-                  <option value="2">Personal Care</option>
-                  <option value="3">Foods</option>
-                  <option value="3">Education</option>
-                </select>
-              </div><!-- start Select box -->
-            </div>
-              <!-- start Main Search -->
-            <div class="col-md-7 col-lg-6 col-sm-12">
-              <div class="main-search">
-                <form action="" class="form-inline">
-                  <label for="main-search" class="sr-only"></label>
-                  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="main-search" placeholder="Search for stores">
-                  <button class="btn btn-secondary">Search</button>
-                </form>
-              </div>
-            </div><!-- start Main Search -->
-          </div>
-        </div>
-
-      </div>
-  </section>
-  <!-- ==================================================
-              brand-slider section
-  ==================================================== -->
-  <section class="brand-slider-section bg-populer-offer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="owl-carousel brand-slider">
-              <div class="item-list">
-                <img src="img\brand-slide-1.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-3.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-4.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-5.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-3.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-1.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-5.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-3.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-1.png" class="" alt="">
-              </div>
-              <div class="item-list">
-                <img src="img\brand-slide-5.png" class="" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- ==================================================
-              Populer offers section
-  ==================================================== -->
-  <section class="populer-offer-section bg-populer-offer">
-    <div class="container">
-
-        <!-- Start section title -->
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center col-xs-12">
-          <h2 class="section-title">Today’s Popular Offers</h2>
-        </div>
-      </div><!-- End section title -->
-
-        <!-- Start Populer Offer item -->
-        <div class="populer-offer">
-          <div class="row">
-            <div class="col-md-6 col-lg-6 mb-4">
-              <div class="populer-offers-content">
-                <div class="row" >
-                  <div class="col-md-4 col-lg-4">
-                    <div class="populer-offer-logo">
-                      <div class="populer-logo-img">
-                        <img class="img-fluid " src="img/p.offer-img-1.png" alt="brand Logo image">
-                      </div>
-                      <p class="">Save 20%</p>
-                    </div>
-                  </div>
-                  <div class="col-md-8 col-lg-8">
-                    <div class="populer-offer-item">
-                      <h4> <span>20% off</span> on Personal <br> care item</h4>
-                      <a href="">Show code</a>
-                      <span class="star">Expires in 3 days <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 mb-4">
-              <div class="populer-offers-content">
-                <div class="row" >
-                  <div class="col-md-4 col-lg-4 ">
-                    <div class="populer-offer-logo">
-                      <div class="populer-logo-img">
-                        <img class="img-fluid " src="img/p.offer-img-2.png" alt="brand Logo image">
-                      </div>
-                      <p class="">Free Shipping</p>
-                    </div>
-                  </div>
-                  <div class="col-md-8 col-lg-8">
-                    <div class="populer-offer-item">
-                      <h4>Free Shipping on orders <br> over<span> $100</span></h4>
-                      <a data-toggle="modal" data-target="#popup-deal" data-whatever="@mdo" href="#" >Get deal</a>
-                      <span class="star">Expires in 3 days <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 mb-4">
-              <div class="populer-offers-content">
-                <div class="row" >
-                  <div class="col-md-4 col-lg-4">
-                    <div class="populer-offer-logo">
-                      <div class="populer-logo-img">
-                        <img class="img-fluid " src="img/p.offer-img-3.png" alt="brand Logo image">
-                      </div>
-                      <p class="">Free Shipping</p>
-                    </div>
-                  </div>
-                  <div class="col-md-8 col-lg-8">
-                    <div class="populer-offer-item">
-                      <h4> <span>Get 40% off</span> on all winter <br> collection</h4>
-                      <a data-toggle="modal" data-target="#popup-coupon" data-whatever="@mdo" href="#" >get coupon</a>
-                      <span class="star">Expires in 3 days <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 mb-4">
-              <div class="populer-offers-content">
-                <div class="row" >
-                  <div class="col-md-4 col-lg-4">
-                    <div class="populer-offer-logo">
-                      <div class="populer-logo-img">
-                        <img class="img-fluid " src="img/p.offer-img-4.png" alt="brand Logo image">
-                      </div>
-                      <p class="">Save 20%</p>
-                    </div>
-                  </div>
-                  <div class="col-md-8 col-lg-8">
-                    <div class="populer-offer-item">
-                      <h4> <span>20% off</span> on Personal <br> care item</h4>
-                      <a href="">Show code</a>
-                      <span class="star">Expires in 3 days <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 mb-4">
-              <div class="populer-offers-content">
-                <div class="row" >
-                  <div class="col-md-4 col-lg-4">
-                    <div class="populer-offer-logo">
-                      <div class="populer-logo-img">
-                        <img class="img-fluid " src="img/p.offer-img-5.png" alt="brand Logo image">
-                      </div>
-                      <p class="">Save 20%</p>
-                    </div>
-                  </div>
-                  <div class="col-md-8 col-lg-8">
-                    <div class="populer-offer-item">
-                      <h4> Free Shipping on orders <br> over<span> $100</span></h4>
-                      <a href="">Show code</a>
-                      <span class="star">Expires in 3 days <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 mb-4">
-              <div class="populer-offers-content">
-                <div class="row" >
-                  <div class="col-md-4 col-lg-4">
-                    <div class="populer-offer-logo">
-                      <div class="populer-logo-img">
-                        <img class="img-fluid " src="img/p.offer-img-6.png" alt="brand Logo image">
-                      </div>
-                      <p class="">Free Shipping</p>
-                    </div>
-                  </div>
-                  <div class="col-md-8 col-lg-8">
-                    <div class="populer-offer-item">
-                      <h4> <span>Get 40% off</span> on all winter <br> collection</h4>
-                      <a href="">get coupon</a>
-                      <span class="star">Expires in 3 days <i class="fa fa-star"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="row">
-        <a class="dealsy-btn" href="">more popular offers </a>
-      </div>
+    <!-- Client 02 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-02.jpg" alt="store-logo">
+        </a>
     </div>
-
-  </section>
-
-  <!-- ==================================================
-              Get Notify New Cupon
-  ==================================================== -->
-  <section class="get-notify-cupon-section" style="background-image: url('img/get-cupon-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; min-height: 353px">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2 m-auto text-center">
-          <div class="d-flex justify-content-center">
-            <h1 class="get-notify-heading">Get notified when new coupons are released</h1>
-          </div>
-          <form class="form-inline d-flex justify-content-center">
-            <input type="text" class="get-notify-form form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe">
-            <button type="submit" class="btn get-notify-btn">Notify me</button>
-          </form>
-        </div>
-      </div>
-      </div>
+    <!-- Client 03 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-03.jpg" alt="store-logo">
+        </a>
     </div>
-  </section>
-  <!-- ==================================================
-    All  Category section
-  ==================================================== -->
-  <section class="category-section bg-category-deal">
-    <div class="container">
-      <!-- Start section title -->
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <h2 class="section-title">All Category</h2>
-        </div>
-      </div><!-- End section title -->
-      <div class="row category-boder">
-        <div class="col-lg-3 col-6 col-md-3">
-          <ul class="category">
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Apparel </a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Personal Care</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Foods</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Educations</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-6 col-md-3">
-          <ul class="category">
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Accessories</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Books</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Groceries</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Training</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 offset-lg-1 col-6 col-md-3">
-          <ul class="category">
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Entertainment</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Beverage</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Sports</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Electronics</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 offset-lg-1 col-6 col-md-3">
-          <ul class="category">
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Automotive</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Business</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Home & Garden</a></li>
-            <li><a href=""><i class="fa fa-circle-thin" aria-hidden="true"></i>Shoes</a></li>
-          </ul>
-        </div>
-      </div>
+    <!-- Client 04 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-04.jpg" alt="store-logo">
+        </a>
     </div>
-  </section>
-  <!-- ==================================================
-    Found Amazing Deal section
-  ==================================================== -->
-  <section class="found-amazing-deal bg-category-deal">
-    <!-- Found Amazing Deal -->
-    <div class="container">
-      <!-- Start section title -->
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <h2 class="section-title ">Found Amazing Deal?</h2>
-          Share your Coupons / Deals and let others benefited
-        </div>
-      </div><!-- End section title -->
-      <!-- Found amazing deal -->
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <form class="found-amazing-deal-form">
-            <div class="row">
-              <div class="col-md-6">
-                <!--Start Store Name -->
-                <div class="form-group store-name">
-                  <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Store Name">
-                </div><!--End Store Name -->
-                <!-- Start Coupone Type -->
-                <div class="form-group coupone-type">
-                  <select name="guiest_id2" id="guiest_id2" class="select-drop">
-                    <option value="0">Coupone Type</option>
-                    <option value="1">USA</option>
-                    <option value="2">UK</option>
-                    <option value="3">Canada</option>
-                  </select>
-                </div><!-- End Coupone Type -->
-              </div>
-              <!-- Start Store Type -->
-              <div class="col-md-6">
-                <!-- Start Store type -->
-                <div class="form-group store-type">
-                  <select name="guiest_id2" id="guiest_id2" class="select-drop">
-                    <option value="1">Apparel</option>
-                    <option value="2">Personal Care</option>
-                    <option value="3">Foods</option>
-                    <option value="3">Education</option>
-                  </select>
-                </div><!-- End Store Type -->
-                <!--Start Coupone Code -->
-                <div class="form-group coupone-code">
-                  <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Coupone Code">
-                </div><!--End Coupone Code -->
-              </div>
-            </div>
-            <a class="dealsy-btn" href="">share code </a>
-          </form>
-        </div>
-      </div>
+    <!-- Client 05 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-05.jpg" alt="store-logo">
+        </a>
     </div>
-  </section>
-  <!-- ==================================================
-        Get Coupon App Section
-  ==================================================== -->
-  <section class="get-coupon-app-section" style="background-image: url('img/app-image.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; min-height: 475px; ">
-    <div class="container">
-      <div  class="row">
-        <div class="col-md-4 offset-md-1">
-          <img class="img-fluid get-coupon-img hidden-xs-down" src="img\mobile-app-img.png" alt="App Image">
-        </div>
-        <div class="col-md-5">
-          <div class="get-coupon-app">
-            <h1>Get the Coupon Bag Mobile App</h1>
-            <a href=""><img class="img-fluid" src="img\googe-play.png" alt=""></a>
-            <a href=""><img class="img-fluid" src="img\apple-store.png" alt=""></a>
-          </div>
-        </div>
-      </div>
+    <!-- Client 06 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-06.jpg" alt="store-logo">
+        </a>
     </div>
-  </section>
-
-  <!-- ==================================================
-        Populer Store Section
-  ==================================================== -->
-  <section class="populer-store-section bg-populer-offer">
-    <div class="container">
-      <!-- Start section title -->
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <h2 class="section-title">Popular Stores</h2>
-        </div>
-      </div><!-- End section title -->
-      <!-- Found amazing deal -->
-      <div class="row">
-        <div class="col-md-3 col-6">
-          <ul class="populer-stores">
-            <h5>Accessories</h5>
-              <li><a href="">Bikes & Scooters </a></li>
-              <li><a href="">Commercial Vehicles </a></li>
-              <li><a href="">Bicycles Spare Parts </a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Other Vehicles</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <ul class="populer-stores">
-            <h5>Baby</h5>
-              <li><a href="">Bikes & Scooters </a></li>
-              <li><a href="">Commercial Vehicles </a></li>
-              <li><a href="">Bicycles Spare Parts </a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Other Vehicles</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <ul class="populer-stores">
-            <h5>Books</h5>
-              <li><a href="">Bikes & Scooters </a></li>
-              <li><a href="">Commercial Vehicles </a></li>
-              <li><a href="">Bicycles Spare Parts </a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Other Vehicles</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <ul class="populer-stores">
-            <h5>Furniture</h5>
-              <li><a href="">Bikes & Scooters </a></li>
-              <li><a href="">Commercial Vehicles </a></li>
-              <li><a href="">Bicycles Spare Parts </a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Other Vehicles</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-center">
-        <a class="dealsy-btn" href="">View All Stores </a>
-      </div>
+    <!-- Client 07 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-04.jpg" alt="store-logo">
+        </a>
     </div>
-  </section>
-  <!-- ==================================================
-              Footer Section
-  ==================================================== -->
-  <footer class="footer-section bg-footer">
-    <!-- Start Footer Top Area -->
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <!-- Start Footer Logo -->
-            <div class="footer-logo">
-              <a href=""><img src="img\footer-logo.png" alt="Footer Logo"></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-            </div><!-- End Footer Logo -->
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <!-- Start Footer List Item 1 -->
-            <ul class="footer-list-item">
-              <h5>Site Pages</h5>
-                <li><a href="">Boston </a></li>
-                <li><a href="">How it works </a></li>
-                <li><a href="">Deals & Coupons </a></li>
-                <li><a href="">Articles & Tips </a></li>
-                <li><a href="">Terms of Service</a></li>
-            </ul>
-          </div><!--End Footer List Item  1-->
-          <div class="col-lg-2 col-md-6">
-            <!-- Footer List Item 2 -->
-            <ul class="footer-list-item">
-              <h5>Admin Section</h5>
-                <li><a href="">Boston</a></li>
-                <li><a href="">How it works </a></li>
-                <li><a href="">Deals & Coupons </a></li>
-                <li><a href="">Articles & Tips </a></li>
-                <li><a href="">Terms of Service</a></li>
-            </ul><!-- End Footer List Item 2 -->
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <!-- Start Footer promo -->
-            <div class="footer-promo">
-              <!-- start footer mobile app -->
-              <div class="media f-mobile-app">
-                <img class="d-flex mr-3" src="img\mobile-app-mini.png" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h6 class="mt-0 pr-5">Get the Dealsy Mobile App and Save more </h6>
-                </div><!-- start footer mobile app -->
-              </div>
-              <!-- start footer submit coupon -->
-              <div class="media f-submit-coupon">
-                <p>
-                  <a href="">Join Dealsy </a> Join Dealsy and Submit your Coupon with <a href=""> 124563 user </a> daily
-                </p>
-              </div><!-- End footer submit coupon -->
-            </div><!-- End Footer promo -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <ul class="footer-about">
-              <li><a href="">about</a></li>
-              <li><a href="">Terms Of Use</a></li>
-              <li><a href="">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-        <a class="backToTop" href="#pageTop"><i class="fa fa-angle-double-up " aria-hidden="true"></i></a>
-      </div>
-    </div><!-- End Footer Top Area -->
-    <!-- Footer Copy Right -->
-    <div class="footer-copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex  justify-content-start">
-              <div class="">&copy; 2016. All Rights Reserved</div>
-              <div class="ml-auto p-2">
-                <div class="footer-social">
-                  <i class="fa fa-facebook ml-2" aria-hidden="true"></i>
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                  <i class="fa fa-vimeo" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Client 08 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-05.jpg" alt="store-logo">
+        </a>
     </div>
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ==================================================
-               Modal
-  ==================================================== -->
-  <!-- Login Modal -->
-  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content modal-width">
-        <div class="modal-header">
-          <h5 class="modal-title modal-heahing" id="exampleModalLabel">Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      <div class="modal-body login-">
-          <form>
-            <div class="form-group login-form">
-              <input type="email" class="form-control" id="email"  placeholder="Email">
-            </div>
-
-            <div class="form-group login-form">
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn-login">Log in</button>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Check me out
-              </label>
-              <a class="forget-pass" href="">Forget Password</a>
-            </div>
-            <h3 class="log-modal-or">OR</h3>
-            <div class="form-group">
-              <button type="submit" class="btn-fb-login">Facebook With Log In</button>
-            </div>
-
-          </form>
-        </div>
-        <div class="modal-footer login-not-account">
-           Don’t have an Account ? <a href=""> Sign in</a>
-        </div>
-      </div>
+    <!-- Client 09 -->
+    <div class="item">
+        <a href="store-single.html">
+            <!-- Slider Image -->
+            <img src="img/category-slider/category-06.jpg" alt="store-logo">
+        </a>
     </div>
-  </div>
-  <!-- Singup Modal -->
-  <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content modal-width">
-        <div class="modal-header">
-          <h5 class="modal-title modal-heahing" id="exampleModalLabel">Signup</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      <div class="modal-body login-">
-          <form>
-            <div class="form-group signup-form">
-              <input type="text" class="form-control" id="f-name"  placeholder="Full Name">
-            </div>
-            <div class="form-group signup-form">
-              <input type="email" class="form-control" id="email"  placeholder="Email">
-            </div>
-
-            <div class="form-group signup-form">
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn-login">Sign Up</button>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" ><span class="signup-check-text">Send me emails about the best deals on Dealsy</span>
-              </label>
-            </div>
-            <h3 class="log-modal-or">OR</h3>
-            <div class="form-group">
-              <button type="submit" class="btn-fb-login">Facebook With Log In</button>
-            </div>
-
-          </form>
-        </div>
-        <div class="modal-footer login-not-account">
-           Already have an Account?  <a href=""> Log in</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Pop Up deal Modal -->
-  <div class="modal fade" id="popup-deal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog popup-deal-modal" role="document">
-      <div class="modal-content ">
-        <div class="modal-header">
-          <div class="popup-deal-logo">
-            <img class="img-fluid " src="img/p.offer-img-2.png" alt="brand Logo image">
-          </div>
-          <h5 class="" id="">Free Shipping on orders over $100</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Deal Activated, No coupon code required</p>
-          <a class="popup-deal-btn" href="">more popular offers </a>
-          <p class="did-work-popup">Did it work?</p>
-          <ul class="popup-modal-icon-list">
-            <li><a href=""><i class="fa fa-smile-o" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-meh-o" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-          </ul>
-          <a class="popup-deal-btn2" href="">more popular offers </a>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- Popup Coupon Modal -->
-  <div class="modal fade" id="popup-coupon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog popup-coupon-modal" role="document">
-      <div class="modal-content ">
-        <div class="modal-header">
-          <div class="popup-deal-logo">
-            <img class="img-fluid " src="img/p.offer-img-2.png" alt="brand Logo image">
-          </div>
-          <h5 class="" id="">Free Shipping on orders over $100</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Deal Activated, No coupon code required</p>
-          <a class="popup-coupon-btn" href="">eats-s79y5eqyueMHZ </a>
-          <p class="did-work-popup">Did it work?</p>
-          <ul class="popup-modal-icon-list">
-            <li><a href=""><i class="fa fa-smile-o" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-meh-o" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-          </ul>
-          <a class="popup-deal-btn2" href="">back to store </a>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
 </div>
-<!-- body wrapper ends -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+</section>
+<!--===========================================
+=            Popular deals section            =
+============================================-->
+
+<section class="popular-deals section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title">
+					<h2>Todays Popular Deals</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- offer 01 -->
+			<div class="col-sm-12 col-lg-6">
+				<!-- deal card -->
+<div class="deal-item bg-light">
+	<div class="media">
+		<!-- Image Content -->
+		<div class="img-content align-self-center">
+			<a href="store-single.html">
+				<!-- Card Image -->
+				<img src="img/popular-offer/populer-offer-02.png" alt="store-02">
+			</a>
+			<!-- Saving -->
+			<span>Saving 20%</span>	
+		</div>
+		<!-- Media Body -->
+		<div class="media-body">
+			<!-- Card Title -->
+			<h5 class="mt-0"><small>20% off</small> on <br>Personal care item</h5>
+			<!-- Deal list -->
+			<ul class="list-inline">
+				<li class="list-inline-item" ><a href="#cupon" class="btn btn-dual" data-toggle="modal" ><span class="upper">Show code</span><span class="lower">AXCH5676</span></a></li>
+				<li class="list-inline-item"><a href="">Expire in 3 days</a>
+					<span class="favorite"><i class="fa fa-star-o"></i></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 
-  <!-- jQuery Load -->
-  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="js/migrate.jquery3.0.0.js"></script>
+			</div>
+			<!-- offer 02 -->
+			<div class="col-sm-12 col-lg-6">
+				<!-- deal card -->
+<div class="deal-item bg-light">
+	<div class="media">
+		<!-- Image Content -->
+		<div class="img-content align-self-center">
+			<a href="store-single.html">
+				<!-- Card Image -->
+				<img src="img/popular-offer/popular-01.jpg" alt="store-02">
+			</a>
+			<!-- Saving -->
+			<span>Free Shipping</span>	
+		</div>
+		<!-- Media Body -->
+		<div class="media-body">
+			<!-- Card Title -->
+			<h5 class="mt-0">Free Shipping on orders <br>over <small>$100</small></h5>
+			<!-- Deal list -->
+			<ul class="list-inline">
+				<li class="list-inline-item" ><a href="#cupon" class="btn btn-dual" data-toggle="modal" ><span class="upper">get deal</span><span class="lower">AXCH5676</span></a></li>
+				<li class="list-inline-item"><a href="">Expire in 3 days</a>
+					<span class="favorite"><i class="fa fa-star-o"></i></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
-  <!-- Plugins js -->
-  <script src="plugins\bootstrap\js\bootstrap.min.js"></script>
-  <script src="plugins\owl-carousel\owl.carousel.min.js"></script>
-  <!-- <script src="plugins\slick\slick.min.js"></script> -->
-  <script src="plugins\selectbox\jquery.selectbox-0.1.3.min.js"></script>
-  <script src="plugins\smoothscroll\SmoothScroll.min.js "></script>
-  <script src="js\main.js"></script>
 
+			</div>
+			<!-- offer 03 -->
+			<div class="col-sm-12 col-lg-6">
+				<!-- deal card -->
+<div class="deal-item bg-light">
+	<div class="media">
+		<!-- Image Content -->
+		<div class="img-content align-self-center">
+			<a href="store-single.html">
+				<!-- Card Image -->
+				<img src="img/popular-offer/populer-offer-03.png" alt="store-02">
+			</a>
+			<!-- Saving -->
+			<span>Free Shipping</span>	
+		</div>
+		<!-- Media Body -->
+		<div class="media-body">
+			<!-- Card Title -->
+			<h5 class="mt-0"><small>Get 40% off</small> on all <br>winter collection</h5>
+			<!-- Deal list -->
+			<ul class="list-inline">
+				<li class="list-inline-item" ><a href="#cupon" class="btn btn-dual" data-toggle="modal" ><span class="upper">get coupon</span><span class="lower">AXCH5676</span></a></li>
+				<li class="list-inline-item"><a href="">Expire in 3 days</a>
+					<span class="favorite"><i class="fa fa-star-o"></i></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+			</div>
+			<!-- offer 04 -->
+			<div class="col-sm-12 col-lg-6">
+				<!-- deal card -->
+<div class="deal-item bg-light">
+	<div class="media">
+		<!-- Image Content -->
+		<div class="img-content align-self-center">
+			<a href="store-single.html">
+				<!-- Card Image -->
+				<img src="img/popular-offer/populer-offer-04.png" alt="store-02">
+			</a>
+			<!-- Saving -->
+			<span>Saving 20%</span>	
+		</div>
+		<!-- Media Body -->
+		<div class="media-body">
+			<!-- Card Title -->
+			<h5 class="mt-0"><small>20% off</small> on <br>Personal care item</h5>
+			<!-- Deal list -->
+			<ul class="list-inline">
+				<li class="list-inline-item" ><a href="#cupon" class="btn btn-dual" data-toggle="modal" ><span class="upper">Show code</span><span class="lower">AXCH5676</span></a></li>
+				<li class="list-inline-item"><a href="">Expire in 3 days</a>
+					<span class="favorite"><i class="fa fa-star-o"></i></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+			</div>
+			<!-- offer 05 -->
+			<div class="col-sm-12 col-lg-6">
+				<!-- deal card -->
+<div class="deal-item bg-light">
+	<div class="media">
+		<!-- Image Content -->
+		<div class="img-content align-self-center">
+			<a href="store-single.html">
+				<!-- Card Image -->
+				<img src="img/popular-offer/populer-offer-05.png" alt="store-02">
+			</a>
+			<!-- Saving -->
+			<span>Free Shipping</span>	
+		</div>
+		<!-- Media Body -->
+		<div class="media-body">
+			<!-- Card Title -->
+			<h5 class="mt-0">Free Shipping on orders <br>over <small>$100</small></h5>
+			<!-- Deal list -->
+			<ul class="list-inline">
+				<li class="list-inline-item" ><a href="#cupon" class="btn btn-dual" data-toggle="modal" ><span class="upper">get deal</span><span class="lower">AXCH5676</span></a></li>
+				<li class="list-inline-item"><a href="">Expire in 3 days</a>
+					<span class="favorite"><i class="fa fa-star-o"></i></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+			</div>
+			<!-- offer 06 -->
+			<div class="col-sm-12 col-lg-6">
+				<!-- deal card -->
+<div class="deal-item bg-light">
+	<div class="media">
+		<!-- Image Content -->
+		<div class="img-content align-self-center">
+			<a href="store-single.html">
+				<!-- Card Image -->
+				<img src="img/popular-offer/populer-offer-06.png" alt="store-02">
+			</a>
+			<!-- Saving -->
+			<span>Free Shipping</span>	
+		</div>
+		<!-- Media Body -->
+		<div class="media-body">
+			<!-- Card Title -->
+			<h5 class="mt-0"><small>Get 40% off</small> on all <br>winter collection</h5>
+			<!-- Deal list -->
+			<ul class="list-inline">
+				<li class="list-inline-item" ><a href="#cupon" class="btn btn-dual" data-toggle="modal" ><span class="upper">get coupon</span><span class="lower">AXCH5676</span></a></li>
+				<li class="list-inline-item"><a href="">Expire in 3 days</a>
+					<span class="favorite"><i class="fa fa-star-o"></i></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-12">
+				<a href="store-single.html" class="btn btn-main mt-30">Get More Deals</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!--==================================
+=            Subscription            =
+===================================-->
+
+<section class="subscription section bg-2 overly">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-8">
+				<!-- Contents -->
+				<div class="content-block">
+					<!-- Heading -->
+					<h2>
+						Get notified when new coupons are released
+					</h2>
+					<!-- Subscription Form -->
+					<form action="#">
+						<div class="form-group d-flex">
+							<!-- Email Input -->
+							<input type="email" class="form-control" placeholder="Email Addess here">
+							<!-- Submit Button -->
+							<button class="btn btn-main">
+								notify me
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<!--==========================================
+=            All Category Section            =
+===========================================-->
+
+<section class="deals-categories section">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section title -->
+				<div class="section-title">
+					<h2>All Categories</h2>
+				</div>
+				<div class="row border-bottom">
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<ul class="category-list" >
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Appearel</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Personal Care</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Foods</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Education</a></li>
+						</ul>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 col-md-5 col-sm-6 col-6">
+						<ul class="category-list" >
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Accesories</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Books</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Groceries</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Trainig</a></li>
+						</ul>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<ul class="category-list" >
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Entertainment</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Beverage</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Sports</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Electronics</a></li>
+						</ul>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 col-md-5 col-sm-6 col-6">
+						<ul class="category-list" >
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Automative</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Business</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Home & Garden</a></li>
+							<li><a href="category.html"><i class="fa fa-circle-o"></i>Shoes</a></li>
+						</ul>
+					</div> <!-- /Category List -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+
+
+<section class="submit-coupon section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="section-title">
+					<h2>Found Amazing Deal</h2>
+					<p>Share your Coupons / Deals and let others benefited</p>
+				</div>
+			</div>
+		</div>
+		<form action="#" class="row">
+			<div class="col-sm-12 col-md-4 offset-md-2">
+				<input type="text" class="form-control" placeholder="Store name">
+				<select class="select-box form-control" id="coupon-type">
+					<option selected disabled>Coupon Type</option>
+					<option>Offer</option>
+					<option>Deal</option>
+					<option>Free</option>
+				</select>
+			</div>
+			<div class="col-sm-12 col-md-4 offset-lg-0">
+				<select class="select-box form-control" id="store-type">
+					<option selected disabled>Store type</option>
+					<option>Bikes & Scooters</option>
+					<option>Commercial Vehicles</option>
+					<option>Bicycles Spare Parts</option>
+					<option>Accessories</option>
+					<option>Other Vehicles</option>
+				</select>
+				<input type="text" class="form-control" placeholder="Store name">
+			</div>
+			<div class="col-12 text-center"><button class="btn btn-transparent" >Share Code</button></div>
+		</form>
+	</div>
+</section>
+
+
+
+<!--====================================
+=            Call to Action            =
+=====================================-->
+
+<section class="call-to-action overly bg-3">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-4">
+				<!-- Mockup -->
+				<div class="image-holder">
+					<img src="img/call-to-action/mockup.png" alt="mobile-mockup">
+				</div>
+			</div>
+			<div class="col-md-6">
+			<!-- Contents -->
+			<div class="content-holder">
+				<!-- Heading -->
+				<h2>Get the Coupon Bag <br> Mobile App</h2>
+				<!-- Buttons -->
+				<div class="store-btn-holder">
+					<!-- Google Playstore Button -->
+					<a href="">
+						<img src="img/apps/google-play-store.png" alt="google-play-store">
+					</a>
+					<!-- Apple Store Button -->
+					<a href="">
+						<img src="img/apps/apple-app-store.png" alt="apple-app-store">
+					</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+
+<!--===================================
+=            Popular Store            =
+====================================-->
+
+<section class="store-list section">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>Popular Stores</h2>
+				</div>
+				<div class="popular">
+				<div class="row">
+					<!-- Category list -->
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="store-list">
+							<h4>Accesories</h4>
+							<ul>
+								<li><a href="store-single.html">Bikes & Scooters</a></li>
+								<li><a href="store-single.html">Commercial Vehicles</a></li>
+								<li><a href="store-single.html">Bicycles Spare Parts</a></li>
+								<li><a href="store-single.html">Accessories</a></li>
+								<li><a href="store-single.html">Other Vehicles</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Category list -->
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="store-list">
+							<h4>Baby</h4>
+							<ul>
+								<li><a href="store-single.html">Bikes & Scooters</a></li>
+								<li><a href="store-single.html">Commercial Vehicles</a></li>
+								<li><a href="store-single.html">Bicycles Spare Parts</a></li>
+								<li><a href="store-single.html">Accessories</a></li>
+								<li><a href="store-single.html">Other Vehicles</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Category list -->
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="store-list">
+							<h4>Books</h4>
+							<ul>
+								<li><a href="store-single.html">Bikes & Scooters</a></li>
+								<li><a href="store-single.html">Commercial Vehicles</a></li>
+								<li><a href="store-single.html">Bicycles Spare Parts</a></li>
+								<li><a href="store-single.html">Accessories</a></li>
+								<li><a href="store-single.html">Other Vehicles</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Category list -->
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="store-list">
+							<h4>Furniture</h4>
+							<ul>
+								<li><a href="store-single.html">Bikes & Scooters</a></li>
+								<li><a href="store-single.html">Commercial Vehicles</a></li>
+								<li><a href="store-single.html">Bicycles Spare Parts</a></li>
+								<li><a href="store-single.html">Accessories</a></li>
+								<li><a href="store-single.html">Other Vehicles
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- View more button -->
+				<div class="col-12 text-center">
+					<a href="store.html" class="btn btn-transparent">view all stores</a>	
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer section section-sm">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+        <!-- About -->
+        <div class="block about">
+          <!-- footer logo -->
+          <a href="index.html">  <img src="img/logo-footer.png" alt="Logo"></a>
+          <!-- description -->
+          <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <!-- terms list -->
+          <ul class="terms-list list-inline">
+            <li class="list-inline-item"><a href="">About</a></li>
+            <li class="list-inline-item"><a href="">Terms of Use</a></li>
+            <li class="list-inline-item"><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 offset-lg-1 col-md-3">
+        <div class="block">
+          <h4>Site Pages</h4>
+          <ul>
+            <li><a href="#">Boston</a></li>
+            <li><a href="#">How It works</a></li>
+            <li><a href="#">Deals & Coupons</a></li>
+            <li><a href="#">Articls & Tips</a></li>
+            <li><a href="#">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Link list -->
+      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+        <div class="block">
+          <h4>Admin Pages</h4>
+          <ul>
+            <li><a href="#">Boston</a></li>
+            <li><a href="#">How It works</a></li>
+            <li><a href="#">Deals & Coupons</a></li>
+            <li><a href="#">Articls & Tips</a></li>
+            <li><a href="#">Terms of Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Promotion -->
+      <div class="col-lg-4 col-md-7">
+        <!-- App promotion -->
+        <div class="block-2 app-promotion">
+          <a href="">
+            <!-- Icon -->
+            <img src="img/footer/phone-icon.png" alt="mobile-icon">
+          </a>
+          <p>Get the Dealsy Mobile App and Save more</p>
+        </div>
+        <!-- Dsicount Coupon -->
+        <div class="block-2 discount-coupon">
+          <p><a href="">Join Dealsy</a> and Submit your Coupon with <a href="">124563 user</a> daily</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+</footer>
+<!-- Footer Bottom -->
+<footer class="footer-bottom">
+  <!-- Container Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-12">
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>© 2017 Copyright Dealsy Bootstrap Template by <a target="_blank" href="http://www.iamabdus.com/">Abdus</a>.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-12">
+        <!-- Social Icons -->
+        <ul class="social-media-icons text-right">
+          <li><a class="fa fa-facebook" href=""></a></li>
+          <li><a class="fa fa-twitter" href=""></a></li>
+          <li><a class="fa fa-pinterest-p" href=""></a></li>
+          <li><a class="fa fa-vimeo" href=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Container End -->
+  <!-- To Top -->
+  <div class="top-to">
+    <a id="top" class="" href=""><i class="fa fa-angle-double-up"></i></a>
+  </div>
+</footer>
+
+<!-- CUPON MODAL -->
+<div class="modal fade cupon-modal" id="cupon" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/popular-offer/popular-01.jpg" alt="Store Icon">
+        <h4>Free Shipping on orders over $100</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Copy this promo code and paste when you checkout</h6>
+        <p class="coupon-code">eats-s79y5eqyueMHZ</p>
+        <form action="#">
+          <div class="form-group">
+            <label for="">Did it work?</label>
+            <div class="btn-group">
+              <div class="btn btn-transparent">
+                <i class="fa fa-smile-o"></i>
+              </div>
+              <div class="btn btn-transparent">
+                <i class="fa fa-frown-o"></i>
+              </div>
+              <div class="btn btn-transparent">
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <a href="#" class="btn btn-transparent">Back to store</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- JAVASCRIPTS -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="plugins/tether/js/tether.min.js"></script>
+<script src="plugins/raty/jquery.raty-fa.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+<script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+<script src="plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script src="plugins/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="js/custom.js"></script>
+
+<link href="options/optionswitch.css" rel="stylesheet">
+<script src="options/optionswitcher.js"></script>
 </body>
+
 </html>
+
