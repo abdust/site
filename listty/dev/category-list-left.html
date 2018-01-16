@@ -5,6 +5,7 @@
   <!-- SITE TITTLE -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Category list - Listty</title>
 
@@ -49,7 +50,18 @@
 </head>
 
 <body id="body" class="body-wrapper boxed-menu" >
-  <div class="page-loader" style="background: url(img/preloader.gif) center no-repeat #fff;"></div>
+  <!-- <div class="page-loader" style="background: url(img/preloader.gif) center no-repeat #fff;"></div> -->
+  <!-- Preloader -->
+	<div id="preloader" class="smooth-loader-wrapper">
+		<div class="smooth-loader">
+			<div class="loader1">
+			<div class="loader-target">
+				<div class="loader-target-main"></div>
+				<div class="loader-target-inner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
   <div class="main-wrapper">
     <!-- HEADER -->
     <header id="pageTop" class="header">
@@ -76,12 +88,12 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class=" dropdown singleDrop">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu dropdown-menu-left">
-                      <li><a href="index.html">Map Version</a></li>
-                      <li><a href="index-2.html">Travel Version</a></li>
-                      <li><a href="index-3.html">Automobile Version</a></li>
-                      <li><a href="index-4.html">City Version</a></li>
+                      <li><a class="" href="index.html">Home Map</a></li>
+                      <li><a class="" href="index-2.html">Home Travel</a></li>
+                      <li><a class="" href="index-3.html">Home Automobile</a></li>
+                      <li><a class="" href="index-4.html">Home City</a></li>
                     </ul>
                   </li>
                   <li class="active dropdown megaDropMenu">
@@ -105,7 +117,6 @@
                             <li><a href="listing-sidebar-map-left.html">Listing Sidebar Map left</a></li>
                             <li><a href="listing-sidebar-map-right.html">Listing Sidebar Map right</a></li>
                             <li><a href="listing-sidebar-map-full.html">Listing Sidebar Map Full</a></li>
-                            <li><a href="listing-sidebar-map-half.html">Listing Sidebar Map half</a></li>
                             <li><h5>listing Details</h5></li>
                             <li><a href="listing-details-left.html">Listing Details Left</a></li>
                             <li><a href="listing-details-right.html">Listing Details Right</a></li>
@@ -561,7 +572,6 @@
           <p>Don’t have an Account? <a href="#" class="link">Sign up</a></p>
         </div>
       </div>
-
     </div>
   </div>
 

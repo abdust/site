@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home - Listty</title>
+  <title>Home Travel - Listty</title>
 
   <!-- PLUGINS CSS STYLE -->
   <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -47,7 +47,18 @@
 </head>
 
 <body id="body" class="body-wrapper boxed-menu" >
-  <div class="page-loader" style="background: url(img/preloader.gif) center no-repeat #fff;"></div>
+  <!-- <div class="page-loader" style="background: url(img/preloader.gif) center no-repeat #fff;"></div> -->
+  <!-- Preloader -->
+  <div id="preloader" class="smooth-loader-wrapper">
+    <div class="smooth-loader">
+      <div class="loader1">
+      <div class="loader-target">
+        <div class="loader-target-main"></div>
+        <div class="loader-target-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="main-wrapper">
     <!-- HEADER -->
     <header id="pageTop" class="header">
@@ -75,11 +86,11 @@
               <ul class="nav navbar-nav navbar-right">
                   <li class="active dropdown singleDrop">
                       <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="index.html">Map Version</a></li>
-                    <li><a href="index-2.html">Travel Version</a></li>
-                    <li><a href="index-3.html">Automobile Version</a></li>
-                    <li><a href="index-4.html">City Version</a></li>
+                  <ul class="dropdown-menu dropdown-menu-left">
+                    <li><a class="" href="index.html">Home Map</a></li>
+                    <li><a class="active" href="index-2.html">Home Travel</a></li>
+                    <li><a class="" href="index-3.html">Home Automobile</a></li>
+                    <li><a class="" href="index-4.html">Home City</a></li>
                   </ul>
                 </li>
                 <li class=" dropdown megaDropMenu">
@@ -137,7 +148,7 @@
                 <li class=""><a href="blog.html">blog </a></li>
                 <li class=" dropdown singleDrop">
                   <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-right">
+                  <ul class="dropdown-menu dropdown-menu-left">
                     <li><a href="dashboard.html">Dashboard</a></li>
                     <li><a href="add-listings.html">Add Listing</a></li>
                     <li><a href="edit-listings.html">Edit Listing</a></li>
@@ -299,17 +310,98 @@
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+											</ul>
+											<a href="listing-details-left.html"><h2>The Mayfair Hotel <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
+											<p>1256 W 7th St, Los Angeles, CA 90017, USA</p>
+										</div>
+									</div>
+									<div class="thingsCaption ">
+										<ul class="list-inline captionItem">
+											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 15 k</li>
+											<li><a href="category-list-left.html">Hotel</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item row">
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thingsBox">
+									<div class="thingsImage">
+										<img src="img/things/things-2.jpg" alt="Image things">
+										<div class="thingsMask">
+											<ul class="list-inline rating">
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+											</ul>
+											<a href="listing-details-left.html"><h2>Hilton Checkers Los Angeles</h2></a>
+											<p>535 S Grand Ave, Los Angeles, CA 90071, USA</p>
+										</div>
+									</div>
+									<div class="thingsCaption ">
+										<ul class="list-inline captionItem">
+											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 11k</li>
+											<li><a href="category-grid-full.html">Hotel</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item row">
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thingsBox">
+									<div class="thingsImage">
+										<img src="img/things/things-3.jpg" alt="Image things">
+										<div class="thingsMask">
+											<ul class="list-inline rating">
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 											</ul>
-											<a href="listing-details-left.html"><h2>The City Theater <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-											<p>10 Bay Street Toronto Ontario Canada</p>
+											<a href="listing-details-left.html"><h2>InterContinental Los Angeles Downtown <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
+											<p>900 Wilshire Blvd, Los Angeles, CA 90017, USA</p>
 										</div>
 									</div>
 									<div class="thingsCaption ">
 										<ul class="list-inline captionItem">
 											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-											<li><a href="category-list-left.html">Hotel, Restaurant</a></li>
+											<li><a href="category-grid.html">Hotel</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item row">
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thingsBox">
+									<div class="thingsImage">
+										<img src="img/things/things-1.jpg" alt="Image things">
+										<div class="thingsMask">
+											<ul class="list-inline rating">
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											</ul>
+											<a href="listing-details-left.html"><h2>Water Grill</h2></a>
+											<p>544 S Grand Ave, Los Angeles, CA 90071, USA</p>
+										</div>
+									</div>
+									<div class="thingsCaption ">
+										<ul class="list-inline captionItem">
+											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 9 k</li>
+											<li><a href="category-grid-full.html">Restaurant</a></li>
 										</ul>
 									</div>
 								</div>
@@ -329,14 +421,14 @@
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 											</ul>
-											<a href="listing-details-left.html"><h2>The City Theater</h2></a>
-											<p>10 Bay Street Toronto Ontario Canada</p>
+											<a href="listing-details-left.html"><h2>Bestia <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
+											<p>2121 E 7th Pl, Los Angeles, CA 90021, USA</p>
 										</div>
 									</div>
 									<div class="thingsCaption ">
 										<ul class="list-inline captionItem">
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-											<li><a href="category-grid-full.html">Hotel, Restaurant</a></li>
+											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 9 k</li>
+											<li><a href="category-list-right.html">Restaurant</a></li>
 										</ul>
 									</div>
 								</div>
@@ -348,6 +440,33 @@
 								<div class="thingsBox">
 									<div class="thingsImage">
 										<img src="img/things/things-3.jpg" alt="Image things">
+										<div class="thingsMask">
+											<ul class="list-inline rating">
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											</ul>
+											<a href="listing-details-left.html"><h2>Los Angeles International Airport</h2></a>
+											<p>1 World Way, Los Angeles, CA 90045, USA</p>
+										</div>
+									</div>
+									<div class="thingsCaption ">
+										<ul class="list-inline captionItem">
+											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
+											<li><a href="category-grid-full.html">Airport</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item row">
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="thingsBox">
+									<div class="thingsImage">
+										<img src="img/things/things-1.jpg" alt="Image things">
 										<div class="thingsMask">
 											<ul class="list-inline rating">
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -374,60 +493,6 @@
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="thingsBox">
 									<div class="thingsImage">
-										<img src="img/things/things-1.jpg" alt="Image things">
-										<div class="thingsMask">
-											<ul class="list-inline rating">
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<a href="listing-details-left.html"><h2>The City Theater</h2></a>
-											<p>10 Bay Street Toronto Ontario Canada</p>
-										</div>
-									</div>
-									<div class="thingsCaption ">
-										<ul class="list-inline captionItem">
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-											<li><a href="category-grid-full.html">Hotel, Restaurant</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="thingsBox">
-									<div class="thingsImage">
-										<img src="img/things/things-2.jpg" alt="Image things">
-										<div class="thingsMask">
-											<ul class="list-inline rating">
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<a href="listing-details-left.html"><h2>The City Theater <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-											<p>10 Bay Street Toronto Ontario Canada</p>
-										</div>
-									</div>
-									<div class="thingsCaption ">
-										<ul class="list-inline captionItem">
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-											<li><a href="category-list-right.html">Hotel, Restaurant</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="thingsBox">
-									<div class="thingsImage">
 										<img src="img/things/things-3.jpg" alt="Image things">
 										<div class="thingsMask">
 											<ul class="list-inline rating">
@@ -437,68 +502,14 @@
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 											</ul>
-											<a href="listing-details-left.html"><h2>The City Theater</h2></a>
-											<p>10 Bay Street Toronto Ontario Canada</p>
+											<a href="listing-details-left.html"><h2>InterContinental Los Angeles Downtown <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
+											<p>900 Wilshire Blvd, Los Angeles, CA 90017, USA</p>
 										</div>
 									</div>
 									<div class="thingsCaption ">
 										<ul class="list-inline captionItem">
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-											<li><a href="category-grid-full.html">Hotel, Restaurant</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="thingsBox">
-									<div class="thingsImage">
-										<img src="img/things/things-1.jpg" alt="Image things">
-										<div class="thingsMask">
-											<ul class="list-inline rating">
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<a href="listing-details-left.html"><h2>The City Theater <i class="fa fa-check-circle" aria-hidden="true"></i></h2></a>
-											<p>10 Bay Street Toronto Ontario Canada</p>
-										</div>
-									</div>
-									<div class="thingsCaption ">
-										<ul class="list-inline captionItem">
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-											<li><a href="category-grid.html">Hotel, Restaurant</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="thingsBox">
-									<div class="thingsImage">
-										<img src="img/things/things-2.jpg" alt="Image things">
-										<div class="thingsMask">
-											<ul class="list-inline rating">
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<a href="listing-details-left.html"><h2>The City Theater</h2></a>
-											<p>10 Bay Street Toronto Ontario Canada</p>
-										</div>
-									</div>
-									<div class="thingsCaption ">
-										<ul class="list-inline captionItem">
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</li>
-											<li><a href="category-list-full.html">Hotel, Restaurant</a></li>
+											<li><i class="fa fa-heart-o" aria-hidden="true"></i> 5 k</li>
+											<li><a href="category-grid.html">Hotel</a></li>
 										</ul>
 									</div>
 								</div>
@@ -773,7 +784,6 @@
           <p>Don’t have an Account? <a href="#" class="link">Sign up</a></p>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -804,3 +814,4 @@
 </body>
 
 </html>
+

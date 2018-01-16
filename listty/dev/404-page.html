@@ -5,8 +5,9 @@
   <!-- SITE TITTLE -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home v-City - Listty</title>
+  <title>404 - Listty</title>
 
   <!-- PLUGINS CSS STYLE -->
   <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
@@ -49,7 +50,18 @@
 </head>
 
 <body id="body" class="body-wrapper boxed-menu" >
-  <div class="page-loader" style="background: url(img/preloader.gif) center no-repeat #fff;"></div>
+  <!-- <div class="page-loader" style="background: url(img/preloader.gif) center no-repeat #fff;"></div> -->
+  <!-- Preloader -->
+	<div id="preloader" class="smooth-loader-wrapper">
+		<div class="smooth-loader">
+			<div class="loader1">
+			<div class="loader-target">
+				<div class="loader-target-main"></div>
+				<div class="loader-target-inner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
   <div class="main-wrapper">
     <!-- HEADER -->
     <header id="pageTop" class="header">
@@ -75,13 +87,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active dropdown singleDrop">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <li class=" dropdown singleDrop">
+                      <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu dropdown-menu-left">
-                      <li><a href="index.html">Map Version</a></li>
-                      <li><a href="index-2.html">Travel Version</a></li>
-                      <li><a href="index-3.html">Automobile Version</a></li>
-                      <li><a href="index-4.html">City Version</a></li>
+                      <li><a class="" href="index.html">Home Map</a></li>
+                      <li><a class="" href="index-2.html">Home Travel</a></li>
+                      <li><a class="" href="index-3.html">Home Automobile</a></li>
+                      <li><a class="" href="index-4.html">Home City</a></li>
                     </ul>
                   </li>
                   <li class=" dropdown megaDropMenu">
@@ -105,7 +117,6 @@
                             <li><a href="listing-sidebar-map-left.html">Listing Sidebar Map left</a></li>
                             <li><a href="listing-sidebar-map-right.html">Listing Sidebar Map right</a></li>
                             <li><a href="listing-sidebar-map-full.html">Listing Sidebar Map Full</a></li>
-                            <li><a href="listing-sidebar-map-half.html">Listing Sidebar Map half</a></li>
                             <li><h5>listing Details</h5></li>
                             <li><a href="listing-details-left.html">Listing Details Left</a></li>
                             <li><a href="listing-details-right.html">Listing Details Right</a></li>
@@ -121,7 +132,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class=" dropdown singleDrop">
+                  <li class="active dropdown singleDrop">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu dropdown-menu-left">
                       <li><a href="contact-us.html">Contact Us</a></li>
@@ -170,8 +181,8 @@
         <form action="" class="addon-form-style text-center">
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-              <button type="submit" class="btn btn-default">Notify Me</button>
+              <input type="email" class="form-control" id="inputEmail3" placeholder="search....">
+              <button type="submit" class="btn btn-default">What are you looking for</button>
             </div>
           </div>
         </form>
@@ -297,6 +308,7 @@
 
   <!-- JAVASCRIPTS -->
   <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
   <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
   <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
