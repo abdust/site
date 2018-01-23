@@ -1,0 +1,66 @@
+/*================= 10. BLOG ==================*/
+.ed-blog-post{
+	font-size: 14px;
+	margin-bottom: 40px;
+	@include desktops {
+		margin-bottom: 60px;
+	}
+	img{
+		@include border-radius;
+		position: relative;
+	}
+	.ed-post-date{
+		color: #ffffff;
+		background: $primary-color;
+		width: 55px;
+		height: 55px;
+		text-align: center;
+		padding: 10px;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 400;
+		position: absolute;
+		top: 20px;
+		left: 35px;
+		@include border-radius;
+	}
+	.headline{
+		color: $secondary-color;
+		margin: 30px 0;
+		font-size: 20px;
+		@include desktops {
+			font-size: 26px;
+		}
+	}
+	.ed-post-meta{
+		margin-bottom: 25px;
+		span{
+			display: inline-block;
+			margin-right: 20px;
+			i{
+				margin-right: 10px;
+			}
+			a{
+				color: $text-color;
+			}
+		}
+	}
+	.ed-post-content{
+		p{
+			font-size: 14px;
+			margin-bottom: 25px;
+		}
+		.btn{
+			padding-left: 30px ;
+			padding-right: 30px;
+			color: #ffffff;
+		}
+		h3{
+			color: $text-color;
+			margin-bottom: 20px;
+		}
+	}
+}
+.blog-page .dark-section {
+    background-image: url("../images/room/full-img1.jpg");
+}

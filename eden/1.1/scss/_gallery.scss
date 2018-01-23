@@ -1,0 +1,103 @@
+/*================= 14. GALLERY PAGE ==================*/
+.ed-gallery .ed-room.featured-room {
+	figcaption{
+		padding: 50px 0 0 !important;
+		text-align: center;
+		@include mobile {
+			padding: 90px 0 0 !important;
+		}
+		@include tablet {
+			padding: 50px 0 0 !important;
+		}
+		@include desktops {
+			padding: 60px 0 0 !important;
+		}
+		@include large-desktops {
+			padding: 90px 0 0 !important;
+		}
+		&:hover{
+			padding: 90px 0 0;
+		}
+		.ed-zoom{
+			width: 50px;
+			height:50px;
+			@include border-radius(50%);
+			display: inline-block; 
+			opacity: 0;
+			color: #ffffff;
+			text-decoration: none;
+			background: rgba(255, 255, 255, 0.25);
+			-webkit-transform: translate(0, 30px);
+		    -ms-transform: translate(0, 30px);
+		    transform: translate(0, 30px);
+		    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+		    transition: opacity 0.3s, transform 0.3s;
+		    -webkit-transition-delay: 0.35s;
+		    transition-delay: 0.35s;
+		    margin-top: 20px;
+		    i{
+		    	padding-top: 17px;
+		    }
+		}
+	}
+}
+.ed-gallery .ed-room.featured-room figcaption {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.ed-gallery .ed-room.featured-room:hover figcaption {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.ed-gallery .ed-room.featured-room figcaption:hover .ed-zoom{
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);	
+}
+.ed-gallery .ed-room.featured-room figcaption .headline a {
+    color: #ffffff;
+}
+.ed-gallery h3{
+	color: $text-color;
+	font-weight: 300;
+	font-size: 20px;
+	display: inline-block;
+	background: #ffffff;
+	position: relative;
+	z-index: 1;
+	padding-right: 15px;
+}
+.eb-border{
+	border-top: 1px solid $border-color;
+	margin-top: -15px;
+	margin-bottom: 30px;
+}
+.ed-gallery.grid-four .ed-room.featured-room {
+	figcaption{
+		padding: 50px 0 0 !important;
+		text-align: center;
+		@include mobile {
+			padding: 90px 0 0 !important;
+		}
+		@include tablet {
+			padding: 40px 10px 0 !important;
+		}
+		@include desktops {
+			padding: 50px 0 0 !important;
+		}
+		@include large-desktops {
+			padding: 60px 0 0 !important;
+		}
+		.ed-zoom{
+			margin-top: 20px;
+			@include tablet {
+				margin-top: 10px;
+			}
+		}
+	}
+}
