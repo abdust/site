@@ -73,7 +73,7 @@
 			 loop: true,
 			 responsiveClass: true,
 			 margin: 50,
-			 autoplay: true,
+			 autoplay: false,
 			 autoplayTimeout: 4000,
 			 smartSpeed: 1000,
 			 center: true,
@@ -139,12 +139,12 @@
 	 });
 
 	/*======== 4. TAB ========*/
-	$('.nav-tabs > li').mouseover( function(){
-    $(this).find('a').tab('show');
-  });
-  $('.nav-tabs > li').mouseout( function(){
-    $(this).find('a').tab('hide');
-  });
+	$(function () {
+		$(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
+		$(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {
+			$(this).tab('show');
+		});
+	});
 
 	/*======== 5. WOW JS ========*/
 	new WOW().init();
