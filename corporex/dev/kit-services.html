@@ -16,15 +16,16 @@
   <link href="plugins/slick/slick.css" rel="stylesheet" media="screen">
   <link href="plugins/slick/slick-theme.css" rel="stylesheet" media="screen">
   <link href="plugins/OwlCarousel2/owl.carousel.min.css" rel="stylesheet" media="screen">
-
   <link href="plugins/magnific/magnific.css" rel="stylesheet" media="screen">
   <link href="plugins/prismjs/prism.css" rel="stylesheet">
-  <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
   <link href="plugins/selectbox/select_option1.css" rel="stylesheet">
   <link href="plugins/animate.css" rel="stylesheet">
+  <link href="options/optionswitch.css" rel="stylesheet">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/default.css" id="option_color">
   <!-- FAVICON -->
   <!-- <link href="img/favicon.png" rel="shortcut icon"> -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +37,9 @@
 </head>
 
 <body id="body" class="@@page">
-  <!-- HEADER -->
+  <!-- ————————————————————————————————————————————
+  ——— Header
+  —————————————————————————————————————————————— -->
   <header id="pageTop" class="header">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md main-nav normal-nav bg-primary ">
@@ -97,9 +100,6 @@
                   <a href="about-us.html">About Us</a>
                 </li>
                 <li>
-                  <a href="portfolio.html">Portfolios</a>
-                </li>
-                <li>
                   <a href="team.html">Team Member</a>
                 </li>
                 <li>
@@ -109,7 +109,7 @@
                   <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                  <a href="page-comingsoon.html">Comingsoon page</a>
+                  <a href="page-comingsoon.html">Coming soon</a>
                 </li>
                 <li>
                   <a href="404.html">404 page</a>
@@ -121,16 +121,16 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Blog</a>
               <ul class="dropdown-menu dd_first">
                 <li>
-                  <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                </li>
-                <li>
                   <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
                 </li>
                 <li>
-                  <a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a>
+                  <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
                 </li>
                 <li>
                   <a href="blog-post-right-sidebar.html">Blog Post Right Sidebar</a>
+                </li>
+                <li>
+                  <a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a>
                 </li>
               </ul>
             </li>
@@ -138,9 +138,11 @@
             <li class=" dropdown megaDropMenu nav-item active">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Elements</a>
               <ul class="row dropdown-menu justify-content-md-between">
-                <li class="">
-                  <h6>General Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
+                    <li>
+                      <a href="basic-alert.html">Alert</a>
+                    </li>
                     <li>
                       <a href="basic-animation.html">Animation</a>
                     </li>
@@ -150,108 +152,103 @@
                     <li>
                       <a href="basic-buttons.html">Buttons</a>
                     </li>
-                    <li>
-                      <a href="basic-forms.html">Forms</a>
-                    </li>
                   </ul>
                 </li>
-                <li class="">
-                  <h6>General Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="basic-countdown.html">Countdown</a>
                     </li>
                     <li>
-                      <a href="kit-counter.html">Counter Up</a>
-                    </li>
-                    <li>
-                      <a href="basic-iconset.html">Iconset - FontAwesome </a>
-                    </li>
-                    <li>
-                      <a href="basic-icon-style.html">Icon Sizes & styles </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <h6>General Elements</h6>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="basic-map.html">Map</a>
-                    </li>
-
-                    <li>
-                      <a href="basic-progressbar.html">Progress</a>
+                      <a href="basic-carousel.html">Carousel</a>
                     </li>
                     <li>
                       <a href="basic-card.html">Card</a>
                     </li>
                     <li>
-                      <a href="basic-carousel.html">Carousel</a>
+                      <a href="basic-forms.html">Forms</a>
                     </li>
                   </ul>
                 </li>
-                <li class="">
-                  <h6>Theme Kit Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="kit-heading.html">Heading</a>
                     </li>
                     <li>
-                      <a href="kit-services.html">Service Elements</a>
+                      <a href="basic-image.html">Images</a>
                     </li>
+                    <li>
+                      <a href="basic-icon-style.html">Icon Sizes & styles </a>
+                    </li>
+                    <li>
+                      <a href="basic-iconset.html">FontAwesome </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-md-3">
+                  <ul class="list-unstyled">
+                      <li>
+                        <a href="basic-map.html">Map</a>
+                      </li>
+                    <!-- <li>
+                      <a href="kit-blogs.html">Blogs</a>
+                    </li>  -->
                   </ul>
                 </li>
               </ul>
             </li>
 
             <!-- HEADER SEARCH -->
-            <li class="nav-item search_hook">
-              <a href="javascript:void(0)" data-toggle="modal" data-target="#searchModal" class="btn-search nav-link">
-                <i class="fa fa-search"></i>
-              </a>
-              <form class="search_form">
-                <input type="text" name="search" placeholder="Search...">
-                <button class="no-bg btn-search" type="submit">
+            <li class=" nav-item nav-search">
+                <a href="javascript:void(0)" class="search-trigger nav-link">
                   <i class="fa fa-search"></i>
-                </button>
-              </form>
+                  <i class="fa fa-close"></i>
+                </a>
+                <ul class="row dropdown-menu search_hook">
+                  <li class="col-12 m-0">
+                      <form class="search_form">
+                        <input type="text" name="search" placeholder="Search...">
+                        <button class="no-bg btn-search" type="submit">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </form>
+                  </li>
+                </ul>
             </li>
-
           </ul>
         </div>
+
         <!-- HEADER SEARCH-->
       </div>
     </nav>
   </header>
-  <div class="main-wrapper ">
+  <div class="main-wrapper elements">
+   <!-- ————————————————————————————————————————————
+    ——— Elements Banner
+    —————————————————————————————————————————————— -->
 
-<!-- =============================================
-## Elements Banner
-=============================================== -->
+    <section class="">
+      <div class="bg-image-holder element-top bredcrumb bg-br mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Elements </h2>
+              <hr class="hr_narrow">
+              <p>These modular elements can be readily used and customized across pages and in different blocks.</p>
+            </div>
+          </div>
+        </div>
+        <!-- container ends -->
+      </div>
+    </section>
 
-		<section class="">
-			<div class="bg-image-holder element-top bredcrumb bg-br mb-5">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8">
-							<h2>Elements </h2>
-							<hr class="hr_narrow">
-							<p>These modular elements can be readily used and customized across pages and in different blocks.</p>
-						</div>
-					</div>
-				</div> <!-- container ends -->
-			</div>
-		</section>
+    <!-- Grid wrapper for ell elements -->
 
-		<!-- Grid wrapper for ell elements -->
-
-		<div class="grid-wrapper section">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-12 col-lg-12 element-content">
-				
-
+    <div class="grid-wrapper section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-12 element-content">
 
 
     <!-- =============================================
@@ -315,10 +312,10 @@
         <p class="pb-3">Example 1: </p>
     
         <div class="service-ex1">
-          <div class="row">
+          <div class="row mb-4">
             <div class="col-lg-4">
               <!-- single info block -->
-              <div class="info text-center bg-ghost-white service-margin-bottom">
+              <div class="info text-center bg-ghost-white ">
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="52px">
                     <path fill-rule="evenodd" class="fill-color" fill="" d="M26.000,51.999 C11.664,51.999 -0.000,40.336 -0.000,26.000 C-0.000,11.663 11.664,-0.001 26.000,-0.001 C40.336,-0.001 52.000,11.663 52.000,26.000 C52.000,40.336 40.336,51.999 26.000,51.999 ZM50.120,26.928 L43.596,26.928 C43.378,31.092 41.718,34.870 39.096,37.781 L43.705,42.391 C47.500,38.295 49.892,32.885 50.120,26.928 ZM26.928,50.119 C32.885,49.892 38.295,47.500 42.391,43.704 L37.782,39.094 C34.871,41.715 31.092,43.377 26.928,43.595 L26.928,50.119 ZM25.071,50.118 L25.071,43.595 C20.908,43.377 17.129,41.717 14.218,39.094 L9.609,43.704 C13.705,47.499 19.115,49.892 25.071,50.118 ZM8.295,42.391 L12.904,37.781 C10.283,34.870 8.622,31.092 8.403,26.928 L1.880,26.928 C2.108,32.885 4.500,38.295 8.295,42.391 ZM1.880,25.071 L8.403,25.071 C8.622,20.907 10.282,17.129 12.904,14.218 L8.295,9.608 C4.500,13.704 2.108,19.114 1.880,25.071 ZM25.071,1.880 C19.115,2.107 13.705,4.499 9.609,8.295 L14.218,12.905 C17.129,10.283 20.908,8.622 25.071,8.404 L25.071,1.880 ZM10.214,26.000 C10.214,34.704 17.296,41.785 26.000,41.785 C34.704,41.785 41.786,34.704 41.786,26.000 C41.786,17.295 34.704,10.214 26.000,10.214 C17.296,10.214 10.214,17.295 10.214,26.000 ZM26.928,1.880 L26.928,8.404 C31.092,8.622 34.871,10.283 37.782,12.905 L42.391,8.294 C38.295,4.499 32.885,2.106 26.928,1.880 ZM43.705,9.608 L39.096,14.218 C41.717,17.129 43.378,20.907 43.596,25.071 L50.120,25.071 C49.892,19.114 47.500,13.704 43.705,9.608 ZM26.928,28.785 L25.071,28.785 L25.071,26.928 L26.928,26.928 L26.928,28.785 ZM25.071,19.500 L26.928,19.500 L26.928,21.357 L25.071,21.357 L25.071,19.500 ZM26.928,25.071 L25.071,25.071 L25.071,23.214 L26.928,23.214 L26.928,25.071 ZM39.000,26.000 L39.000,29.714 C39.000,31.250 37.750,32.500 36.214,32.500 L34.561,32.500 C34.051,33.065 33.320,33.428 32.500,33.428 C30.964,33.428 29.714,32.178 29.714,30.642 L29.714,25.071 C29.714,23.862 30.493,22.840 31.571,22.456 L31.571,22.285 C31.571,19.213 29.073,16.714 26.000,16.714 C22.927,16.714 20.428,19.213 20.428,22.285 L20.428,22.456 C21.507,22.840 22.286,23.862 22.286,25.071 L22.286,30.642 C22.286,31.811 21.560,32.811 20.536,33.224 C20.857,34.408 21.930,35.285 23.214,35.285 L27.857,35.285 L27.857,37.142 L23.214,37.142 C20.923,37.142 19.025,35.469 18.650,33.281 C18.179,33.129 17.763,32.860 17.438,32.500 L15.786,32.500 C14.250,32.500 13.000,31.250 13.000,29.714 L13.000,26.000 C13.000,24.464 14.250,23.214 15.786,23.214 L17.438,23.214 C17.746,22.874 18.131,22.613 18.571,22.456 L18.571,22.285 C18.571,18.189 21.904,14.857 26.000,14.857 C30.096,14.857 33.429,18.189 33.429,22.285 L33.429,22.456 C33.869,22.613 34.255,22.874 34.561,23.214 L36.214,23.214 C37.750,23.214 39.000,24.464 39.000,26.000 ZM16.714,25.071 L15.786,25.071 C15.273,25.071 14.857,25.487 14.857,26.000 L14.857,29.714 C14.857,30.226 15.273,30.642 15.786,30.642 L16.714,30.642 L16.714,25.071 ZM19.500,24.142 C18.987,24.142 18.571,24.558 18.571,25.071 L18.571,30.642 C18.571,31.155 18.987,31.571 19.500,31.571 C20.012,31.571 20.428,31.155 20.428,30.642 L20.428,25.071 C20.428,24.558 20.012,24.142 19.500,24.142 ZM33.429,25.071 C33.429,24.558 33.013,24.142 32.500,24.142 C31.987,24.142 31.571,24.558 31.571,25.071 L31.571,30.642 C31.571,31.155 31.987,31.571 32.500,31.571 C33.013,31.571 33.429,31.155 33.429,30.642 L33.429,25.071 ZM37.143,26.000 C37.143,25.487 36.727,25.071 36.214,25.071 L35.286,25.071 L35.286,30.642 L36.214,30.642 C36.727,30.642 37.143,30.226 37.143,29.714 L37.143,26.000 Z"
@@ -332,9 +329,9 @@
               </div>
               <!-- single info block ends -->
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-4 mt-lg-0">
               <!-- single info block -->
-              <div class="info text-center bg-ghost-white service-margin-bottom">
+              <div class="info text-center bg-ghost-white">
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="52px">
                     <path fill-rule="evenodd" class="fill-color" fill="" d="M26.000,51.999 C11.664,51.999 -0.000,40.336 -0.000,26.000 C-0.000,11.663 11.664,-0.001 26.000,-0.001 C40.336,-0.001 52.000,11.663 52.000,26.000 C52.000,40.336 40.336,51.999 26.000,51.999 ZM50.120,26.928 L43.596,26.928 C43.378,31.092 41.718,34.870 39.096,37.781 L43.705,42.391 C47.500,38.295 49.892,32.885 50.120,26.928 ZM26.928,50.119 C32.885,49.892 38.295,47.500 42.391,43.704 L37.782,39.094 C34.871,41.715 31.092,43.377 26.928,43.595 L26.928,50.119 ZM25.071,50.118 L25.071,43.595 C20.908,43.377 17.129,41.717 14.218,39.094 L9.609,43.704 C13.705,47.499 19.115,49.892 25.071,50.118 ZM8.295,42.391 L12.904,37.781 C10.283,34.870 8.622,31.092 8.403,26.928 L1.880,26.928 C2.108,32.885 4.500,38.295 8.295,42.391 ZM1.880,25.071 L8.403,25.071 C8.622,20.907 10.282,17.129 12.904,14.218 L8.295,9.608 C4.500,13.704 2.108,19.114 1.880,25.071 ZM25.071,1.880 C19.115,2.107 13.705,4.499 9.609,8.295 L14.218,12.905 C17.129,10.283 20.908,8.622 25.071,8.404 L25.071,1.880 ZM10.214,26.000 C10.214,34.704 17.296,41.785 26.000,41.785 C34.704,41.785 41.786,34.704 41.786,26.000 C41.786,17.295 34.704,10.214 26.000,10.214 C17.296,10.214 10.214,17.295 10.214,26.000 ZM26.928,1.880 L26.928,8.404 C31.092,8.622 34.871,10.283 37.782,12.905 L42.391,8.294 C38.295,4.499 32.885,2.106 26.928,1.880 ZM43.705,9.608 L39.096,14.218 C41.717,17.129 43.378,20.907 43.596,25.071 L50.120,25.071 C49.892,19.114 47.500,13.704 43.705,9.608 ZM26.928,28.785 L25.071,28.785 L25.071,26.928 L26.928,26.928 L26.928,28.785 ZM25.071,19.500 L26.928,19.500 L26.928,21.357 L25.071,21.357 L25.071,19.500 ZM26.928,25.071 L25.071,25.071 L25.071,23.214 L26.928,23.214 L26.928,25.071 ZM39.000,26.000 L39.000,29.714 C39.000,31.250 37.750,32.500 36.214,32.500 L34.561,32.500 C34.051,33.065 33.320,33.428 32.500,33.428 C30.964,33.428 29.714,32.178 29.714,30.642 L29.714,25.071 C29.714,23.862 30.493,22.840 31.571,22.456 L31.571,22.285 C31.571,19.213 29.073,16.714 26.000,16.714 C22.927,16.714 20.428,19.213 20.428,22.285 L20.428,22.456 C21.507,22.840 22.286,23.862 22.286,25.071 L22.286,30.642 C22.286,31.811 21.560,32.811 20.536,33.224 C20.857,34.408 21.930,35.285 23.214,35.285 L27.857,35.285 L27.857,37.142 L23.214,37.142 C20.923,37.142 19.025,35.469 18.650,33.281 C18.179,33.129 17.763,32.860 17.438,32.500 L15.786,32.500 C14.250,32.500 13.000,31.250 13.000,29.714 L13.000,26.000 C13.000,24.464 14.250,23.214 15.786,23.214 L17.438,23.214 C17.746,22.874 18.131,22.613 18.571,22.456 L18.571,22.285 C18.571,18.189 21.904,14.857 26.000,14.857 C30.096,14.857 33.429,18.189 33.429,22.285 L33.429,22.456 C33.869,22.613 34.255,22.874 34.561,23.214 L36.214,23.214 C37.750,23.214 39.000,24.464 39.000,26.000 ZM16.714,25.071 L15.786,25.071 C15.273,25.071 14.857,25.487 14.857,26.000 L14.857,29.714 C14.857,30.226 15.273,30.642 15.786,30.642 L16.714,30.642 L16.714,25.071 ZM19.500,24.142 C18.987,24.142 18.571,24.558 18.571,25.071 L18.571,30.642 C18.571,31.155 18.987,31.571 19.500,31.571 C20.012,31.571 20.428,31.155 20.428,30.642 L20.428,25.071 C20.428,24.558 20.012,24.142 19.500,24.142 ZM33.429,25.071 C33.429,24.558 33.013,24.142 32.500,24.142 C31.987,24.142 31.571,24.558 31.571,25.071 L31.571,30.642 C31.571,31.155 31.987,31.571 32.500,31.571 C33.013,31.571 33.429,31.155 33.429,30.642 L33.429,25.071 ZM37.143,26.000 C37.143,25.487 36.727,25.071 36.214,25.071 L35.286,25.071 L35.286,30.642 L36.214,30.642 C36.727,30.642 37.143,30.226 37.143,29.714 L37.143,26.000 Z"
@@ -348,9 +345,9 @@
               </div>
               <!-- single info block ends -->
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-4 mt-lg-0">
               <!-- single info block -->
-              <div class="info text-center bg-ghost-white service-margin-bottom">
+              <div class="info text-center bg-ghost-white">
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="52px">
                     <path fill-rule="evenodd" class="fill-color" fill="" d="M26.000,51.999 C11.664,51.999 -0.000,40.336 -0.000,26.000 C-0.000,11.663 11.664,-0.001 26.000,-0.001 C40.336,-0.001 52.000,11.663 52.000,26.000 C52.000,40.336 40.336,51.999 26.000,51.999 ZM50.120,26.928 L43.596,26.928 C43.378,31.092 41.718,34.870 39.096,37.781 L43.705,42.391 C47.500,38.295 49.892,32.885 50.120,26.928 ZM26.928,50.119 C32.885,49.892 38.295,47.500 42.391,43.704 L37.782,39.094 C34.871,41.715 31.092,43.377 26.928,43.595 L26.928,50.119 ZM25.071,50.118 L25.071,43.595 C20.908,43.377 17.129,41.717 14.218,39.094 L9.609,43.704 C13.705,47.499 19.115,49.892 25.071,50.118 ZM8.295,42.391 L12.904,37.781 C10.283,34.870 8.622,31.092 8.403,26.928 L1.880,26.928 C2.108,32.885 4.500,38.295 8.295,42.391 ZM1.880,25.071 L8.403,25.071 C8.622,20.907 10.282,17.129 12.904,14.218 L8.295,9.608 C4.500,13.704 2.108,19.114 1.880,25.071 ZM25.071,1.880 C19.115,2.107 13.705,4.499 9.609,8.295 L14.218,12.905 C17.129,10.283 20.908,8.622 25.071,8.404 L25.071,1.880 ZM10.214,26.000 C10.214,34.704 17.296,41.785 26.000,41.785 C34.704,41.785 41.786,34.704 41.786,26.000 C41.786,17.295 34.704,10.214 26.000,10.214 C17.296,10.214 10.214,17.295 10.214,26.000 ZM26.928,1.880 L26.928,8.404 C31.092,8.622 34.871,10.283 37.782,12.905 L42.391,8.294 C38.295,4.499 32.885,2.106 26.928,1.880 ZM43.705,9.608 L39.096,14.218 C41.717,17.129 43.378,20.907 43.596,25.071 L50.120,25.071 C49.892,19.114 47.500,13.704 43.705,9.608 ZM26.928,28.785 L25.071,28.785 L25.071,26.928 L26.928,26.928 L26.928,28.785 ZM25.071,19.500 L26.928,19.500 L26.928,21.357 L25.071,21.357 L25.071,19.500 ZM26.928,25.071 L25.071,25.071 L25.071,23.214 L26.928,23.214 L26.928,25.071 ZM39.000,26.000 L39.000,29.714 C39.000,31.250 37.750,32.500 36.214,32.500 L34.561,32.500 C34.051,33.065 33.320,33.428 32.500,33.428 C30.964,33.428 29.714,32.178 29.714,30.642 L29.714,25.071 C29.714,23.862 30.493,22.840 31.571,22.456 L31.571,22.285 C31.571,19.213 29.073,16.714 26.000,16.714 C22.927,16.714 20.428,19.213 20.428,22.285 L20.428,22.456 C21.507,22.840 22.286,23.862 22.286,25.071 L22.286,30.642 C22.286,31.811 21.560,32.811 20.536,33.224 C20.857,34.408 21.930,35.285 23.214,35.285 L27.857,35.285 L27.857,37.142 L23.214,37.142 C20.923,37.142 19.025,35.469 18.650,33.281 C18.179,33.129 17.763,32.860 17.438,32.500 L15.786,32.500 C14.250,32.500 13.000,31.250 13.000,29.714 L13.000,26.000 C13.000,24.464 14.250,23.214 15.786,23.214 L17.438,23.214 C17.746,22.874 18.131,22.613 18.571,22.456 L18.571,22.285 C18.571,18.189 21.904,14.857 26.000,14.857 C30.096,14.857 33.429,18.189 33.429,22.285 L33.429,22.456 C33.869,22.613 34.255,22.874 34.561,23.214 L36.214,23.214 C37.750,23.214 39.000,24.464 39.000,26.000 ZM16.714,25.071 L15.786,25.071 C15.273,25.071 14.857,25.487 14.857,26.000 L14.857,29.714 C14.857,30.226 15.273,30.642 15.786,30.642 L16.714,30.642 L16.714,25.071 ZM19.500,24.142 C18.987,24.142 18.571,24.558 18.571,25.071 L18.571,30.642 C18.571,31.155 18.987,31.571 19.500,31.571 C20.012,31.571 20.428,31.155 20.428,30.642 L20.428,25.071 C20.428,24.558 20.012,24.142 19.500,24.142 ZM33.429,25.071 C33.429,24.558 33.013,24.142 32.500,24.142 C31.987,24.142 31.571,24.558 31.571,25.071 L31.571,30.642 C31.571,31.155 31.987,31.571 32.500,31.571 C33.013,31.571 33.429,31.155 33.429,30.642 L33.429,25.071 ZM37.143,26.000 C37.143,25.487 36.727,25.071 36.214,25.071 L35.286,25.071 L35.286,30.642 L36.214,30.642 C36.727,30.642 37.143,30.226 37.143,29.714 L37.143,26.000 Z"
@@ -365,6 +362,7 @@
               <!-- single info block ends -->
             </div>
           </div>
+
           <p class="pb-3">Example 2: </p>
           <div class="row">
             <div class="col-lg-4">
@@ -432,19 +430,19 @@
         <!-- element-content ends -->
       </div>
     </div>
-  <!-- element main container ends -->
+    <!-- element main container ends -->
   </div>
   <!-- Grid wrapper ends -->
 
-    <!-- =============================================
-        ## Elements Banner
-        =============================================== -->
+    <!-- ————————————————————————————————————————————
+    ——— Elements Footer
+    —————————————————————————————————————————————— -->
     <footer class="footer element-footer">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
             <div class="text-center copyright elements-copyright ">
-              <p> © 2017 Copyright Flexstore Bootstrap Template by
+              <p> © 2018 Copyright Corporex Bootstrap Template by
                 <a class="text-primary" href="http://www.iamabdus.com/" target="_blank">Abdus</a>.</p>
             </div>
           </div>
@@ -452,6 +450,7 @@
       </div>
     </footer>
   </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsQdSlW4vj5RvXp2_pLnv1s1ErfxjM5_o"></script>
 <script src="plugins/jquery/jquery.min.js"></script>
 <script src="plugins/jquery/jquery.migrate.js"></script>
@@ -475,6 +474,17 @@
 <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
 <script src="plugins/instafeed/instafeed.min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+  $('.simple_timer').syotimer({
+    year: 2018,
+    month: 9,
+    day: 9,
+    hour: 20,
+    minute: 30
+  });
+</script>
+<link href="options/optionswitch.css" rel="stylesheet">
+<script src="options/optionswitcher.js"></script>
 </body>
 
 </html>

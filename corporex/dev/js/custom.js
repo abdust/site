@@ -65,11 +65,17 @@
       });
   }
 
+    $('.nav-item .search-trigger').click(function () {
+      $(".nav-search").toggleClass('show');
+    })
+
 
   //============================== MAIN SLIDER =========================
   $('#homeCarousel').owlCarousel({
     loop: true,
     dots: true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     responsive: {
       0: {
         items: 1,
@@ -84,16 +90,19 @@
       }
     }
   });
+$("#homeCarousel").on('translate.owl.carousel', function(){
+  $('.carousel-description').removeClass('animated').hide();
+});	
 
+$("#homeCarousel").on('translated.owl.carousel', function(){
+  $('.owl-item.active .carousel-description').addClass('animated').show();
+});
   //============================== Service Carousel =========================
   $('#service-carousel').owlCarousel({
     loop: true,
-    nav: true,
-    dots: false,
+    dots: true,
     items: 3,
     margin: 30,
-    // navText: ['<i class="fa fa-long-arrow-left"></i>','<i class="fa fa-long-arrow-right"></i>'],
-    navText: ['<i class="fa fa-angle-left bold"></i>', '<i class="fa fa-angle-right bold"></i>'],
     responsive: {
       0: {
         items: 1,
@@ -302,7 +311,7 @@
     };
 
     var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
-    var image = 'img/marker.png';
+    var image = 'img/small-img/logo-icons/marker.png';
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,

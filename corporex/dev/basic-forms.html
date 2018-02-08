@@ -16,15 +16,16 @@
   <link href="plugins/slick/slick.css" rel="stylesheet" media="screen">
   <link href="plugins/slick/slick-theme.css" rel="stylesheet" media="screen">
   <link href="plugins/OwlCarousel2/owl.carousel.min.css" rel="stylesheet" media="screen">
-
   <link href="plugins/magnific/magnific.css" rel="stylesheet" media="screen">
   <link href="plugins/prismjs/prism.css" rel="stylesheet">
-  <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
   <link href="plugins/selectbox/select_option1.css" rel="stylesheet">
   <link href="plugins/animate.css" rel="stylesheet">
+  <link href="options/optionswitch.css" rel="stylesheet">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/default.css" id="option_color">
   <!-- FAVICON -->
   <!-- <link href="img/favicon.png" rel="shortcut icon"> -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +37,9 @@
 </head>
 
 <body id="body" class="@@page">
-  <!-- HEADER -->
+  <!-- ————————————————————————————————————————————
+  ——— Header
+  —————————————————————————————————————————————— -->
   <header id="pageTop" class="header">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md main-nav normal-nav bg-primary ">
@@ -97,9 +100,6 @@
                   <a href="about-us.html">About Us</a>
                 </li>
                 <li>
-                  <a href="portfolio.html">Portfolios</a>
-                </li>
-                <li>
                   <a href="team.html">Team Member</a>
                 </li>
                 <li>
@@ -109,7 +109,7 @@
                   <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                  <a href="page-comingsoon.html">Comingsoon page</a>
+                  <a href="page-comingsoon.html">Coming soon</a>
                 </li>
                 <li>
                   <a href="404.html">404 page</a>
@@ -121,16 +121,16 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Blog</a>
               <ul class="dropdown-menu dd_first">
                 <li>
-                  <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                </li>
-                <li>
                   <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
                 </li>
                 <li>
-                  <a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a>
+                  <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
                 </li>
                 <li>
                   <a href="blog-post-right-sidebar.html">Blog Post Right Sidebar</a>
+                </li>
+                <li>
+                  <a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a>
                 </li>
               </ul>
             </li>
@@ -138,9 +138,11 @@
             <li class=" dropdown megaDropMenu nav-item active">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Elements</a>
               <ul class="row dropdown-menu justify-content-md-between">
-                <li class="">
-                  <h6>General Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
+                    <li>
+                      <a href="basic-alert.html">Alert</a>
+                    </li>
                     <li>
                       <a href="basic-animation.html">Animation</a>
                     </li>
@@ -150,108 +152,103 @@
                     <li>
                       <a href="basic-buttons.html">Buttons</a>
                     </li>
-                    <li>
-                      <a href="basic-forms.html">Forms</a>
-                    </li>
                   </ul>
                 </li>
-                <li class="">
-                  <h6>General Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="basic-countdown.html">Countdown</a>
                     </li>
                     <li>
-                      <a href="kit-counter.html">Counter Up</a>
-                    </li>
-                    <li>
-                      <a href="basic-iconset.html">Iconset - FontAwesome </a>
-                    </li>
-                    <li>
-                      <a href="basic-icon-style.html">Icon Sizes & styles </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <h6>General Elements</h6>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="basic-map.html">Map</a>
-                    </li>
-
-                    <li>
-                      <a href="basic-progressbar.html">Progress</a>
+                      <a href="basic-carousel.html">Carousel</a>
                     </li>
                     <li>
                       <a href="basic-card.html">Card</a>
                     </li>
                     <li>
-                      <a href="basic-carousel.html">Carousel</a>
+                      <a href="basic-forms.html">Forms</a>
                     </li>
                   </ul>
                 </li>
-                <li class="">
-                  <h6>Theme Kit Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="kit-heading.html">Heading</a>
                     </li>
                     <li>
-                      <a href="kit-services.html">Service Elements</a>
+                      <a href="basic-image.html">Images</a>
                     </li>
+                    <li>
+                      <a href="basic-icon-style.html">Icon Sizes & styles </a>
+                    </li>
+                    <li>
+                      <a href="basic-iconset.html">FontAwesome </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-md-3">
+                  <ul class="list-unstyled">
+                      <li>
+                        <a href="basic-map.html">Map</a>
+                      </li>
+                    <!-- <li>
+                      <a href="kit-blogs.html">Blogs</a>
+                    </li>  -->
                   </ul>
                 </li>
               </ul>
             </li>
 
             <!-- HEADER SEARCH -->
-            <li class="nav-item search_hook">
-              <a href="javascript:void(0)" data-toggle="modal" data-target="#searchModal" class="btn-search nav-link">
-                <i class="fa fa-search"></i>
-              </a>
-              <form class="search_form">
-                <input type="text" name="search" placeholder="Search...">
-                <button class="no-bg btn-search" type="submit">
+            <li class=" nav-item nav-search">
+                <a href="javascript:void(0)" class="search-trigger nav-link">
                   <i class="fa fa-search"></i>
-                </button>
-              </form>
+                  <i class="fa fa-close"></i>
+                </a>
+                <ul class="row dropdown-menu search_hook">
+                  <li class="col-12 m-0">
+                      <form class="search_form">
+                        <input type="text" name="search" placeholder="Search...">
+                        <button class="no-bg btn-search" type="submit">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </form>
+                  </li>
+                </ul>
             </li>
-
           </ul>
         </div>
+
         <!-- HEADER SEARCH-->
       </div>
     </nav>
   </header>
-  <div class="main-wrapper ">
+  <div class="main-wrapper elements">
+   <!-- ————————————————————————————————————————————
+    ——— Elements Banner
+    —————————————————————————————————————————————— -->
 
-<!-- =============================================
-## Elements Banner
-=============================================== -->
+    <section class="">
+      <div class="bg-image-holder element-top bredcrumb bg-br mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Elements </h2>
+              <hr class="hr_narrow">
+              <p>These modular elements can be readily used and customized across pages and in different blocks.</p>
+            </div>
+          </div>
+        </div>
+        <!-- container ends -->
+      </div>
+    </section>
 
-		<section class="">
-			<div class="bg-image-holder element-top bredcrumb bg-br mb-5">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8">
-							<h2>Elements </h2>
-							<hr class="hr_narrow">
-							<p>These modular elements can be readily used and customized across pages and in different blocks.</p>
-						</div>
-					</div>
-				</div> <!-- container ends -->
-			</div>
-		</section>
+    <!-- Grid wrapper for ell elements -->
 
-		<!-- Grid wrapper for ell elements -->
-
-		<div class="grid-wrapper section">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-12 col-lg-12 element-content">
-				
-
+    <div class="grid-wrapper section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-12 element-content">
     <!-- =============================================
     ## Forms
     =============================================== -->
@@ -292,10 +289,10 @@
       &lt;/form>
     </code>
                 </pre>
-                <h5>How to use</h5>
+                <!-- <h5>How to use</h5>
                 <ul>
                   <li>Use <span class="s highlighter">.form-control</span> (for inputs, selects, etc) and <span class="s highlighter">.form-group</span> for wrappers for style and layout forms.</li>
-                </ul>
+                </ul> -->
             </div>
             </div>
           </div>
@@ -322,175 +319,14 @@
         </form>
       </div>
       <!-- Default Form ends here -->
-
-      <!-- Form Textual inputs start -->
-      <div id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="card single-block">
-          <div class="card-header" role="tab" id="headingTwo">
-            <h3 class="mb-0">
-              Textual inputs
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-              &lt;&gt;  show code
-              </a>
-            </h3>
-          </div>
-
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="card-block">
-              <div class="code_container">
-                <pre class="language-html">
-    <code>
-      &lt;form >
-        &lt;div class="form-group row">
-          &lt;label for="example-text-input" class="col-md-2 col-form-label">Name of Card&lt;/label>
-          &lt;div class="col-md-10">
-            &lt;input class="form-control" type="text" placeholder="Name of Card">
-          &lt;/div>
-        &lt;/div>
-        &lt;div class="form-group row">
-          &lt;label for="example-search-input" class="col-md-2 col-form-label">Card Number&lt;/label>
-          &lt;div class="col-md-10">
-            &lt;input class="form-control" type="text" placeholder="#### . #### . ####">
-          &lt;/div>
-        &lt;/div>
-        &lt;div class="form-group row">
-          &lt;label for="example-datetime-local-input" class="col-md-2 col-form-label">Expires On&lt;/label>
-          &lt;div class="col-md-10">
-            &lt;input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-          &lt;/div>
-        &lt;/div>
-        &lt;div class="form-group row">
-          &lt;label for="example-password-input" class="col-md-2 col-form-label">Security code&lt;/label>
-          &lt;div class="col-md-10">
-            &lt;input class="form-control" type="text" value="CVC" placeholder="CVC">
-            &lt;i class="fa fa-question-circle helpText" aria-hidden="true">&lt;/i>
-          &lt;/div>
-        &lt;/div>
-        &lt;div class="form-group row">
-          &lt;label for="example-location" class="col-md-2 col-form-label">Country&lt;/label>
-          &lt;div class="col-md-10 selectOptions ">
-            &lt;select name="country" class="form-control select-drop">
-              &lt;option>Select Country&lt;/option>
-              &lt;option>countryname&lt;/option>
-              &lt;option>countryname&lt;/option>
-              &lt;option>countryname&lt;/option>
-            &lt;/select>
-          &lt;/div>
-        &lt;/div>
-        &lt;div class="form-group row">
-          &lt;label for="example-postal-code" class="col-md-2 col-form-label">Postal code&lt;/label>
-          &lt;div class="col-md-10">
-            &lt;input class="form-control" type="text" placeholder="Postal code">
-          &lt;/div>
-        &lt;/div>
-        &lt;div class="row">
-          &lt;div class="col-md-10 offset-md-1">
-            &lt;div class="form-check ">
-              &lt;input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
-              &lt;label for="checkbox-1" class="checkbox-custom-label form-check-label">Remember this card&lt;/label>
-
-            &lt;/div>
-            &lt;button class="btn btn-primary btn-default card-btn" type="submit">use this card&lt;/button>
-          &lt;/div>
-        &lt;/div>
-      &lt;/form>
-    </code>
-                </pre>
-                <h5>How to use</h5>
-                <ul>
-                  <li>These are some bootstrap basic form elements using boostrap default classes</li>
-                  <li>Select box designed using <a href="https://github.com/danilvalov/jquery.selectbox"><mark>Jquery-selectmox</mark></a> Plugin</li>
-                  <li>To call the selectbox from your main js file copy the following code to your javascript file.
-                    <pre class="language-javascript">
-    <code>
-      $('.classname').selectbox();
-    </code>
-                    </pre>
-                  </li>
-                </ul>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="display-single_element text_input">
-        <p>Example</p>
-        <div class="form-check">
-          <input id="radio-1" class="radio-custom form-check-input" name="radio-group" type="radio" checked>
-          <label class="form-check-label radio-custom-label">
-            Pay with your Card
-          </label>
-        </div>
-        <form >
-          <div class="form-group row">
-            <label for="example-text-input" class="col-md-12 col-form-label">Name of Card</label>
-            <div class="col-md-10">
-              <input class="form-control" type="text" placeholder="Name of Card">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-search-input" class="col-md-12 col-form-label">Card Number</label>
-            <div class="col-md-10">
-              <input class="form-control" type="text" placeholder="#### . #### . ####">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-datetime-local-input" class="col-md-12 col-form-label">Expires On</label>
-            <div class="col-md-10">
-              <input class="form-control" type="datetime-local" value="2017-06-19T13:45:00" id="example-datetime-local-input">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-password-input" class="col-md-12 col-form-label">Security code</label>
-            <div class="col-md-10">
-              <input class="form-control" type="text" value="CVC" placeholder="CVC">
-              <i class="fa fa-question-circle helpText" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-location" class="col-md-12 col-form-label">Country</label>
-            <div class="col-md-10 selectOptions ">
-              <select name="country" class="form-control select-drop">
-                <option>Select Country</option>
-                <option>bangladesh</option>
-                <option>Usa</option>
-                <option>Singapore</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-postal-code" class="col-md-12 col-form-label">Postal code</label>
-            <div class="col-md-10">
-              <input class="form-control" type="text" placeholder="Postal code">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-10 offset-md-1">
-              <div class="form-check ">
-                <input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
-                <label for="checkbox-1" class="checkbox-custom-label form-check-label">Remember this card</label>
-
-              </div>
-              <button class="btn btn-primary btn-default card-btn" type="submit">use this card</button>
-            </div>
-          </div>
-        </form>
-        <span class="or">or</span>
-        <div class="form-check">
-          <input id="radio-2" class="radio-custom form-check-input" name="radio-group" type="radio">
-          <label class="form-check-label radio-custom-label">
-            Pay with <img src="img/paypal.png" alt="">
-          </label>
-        </div>
-      </div>
-        <!-- Forms Textual inputs ends -->
+      
 
       <!-- Checkbox start -->
         <div id="accordion" role="tablist" aria-multiselectable="true">
           <div class="card single-block">
             <div class="card-header" role="tab" id="headingThree">
               <h3 class="mb-0">
-                Checkbox
+                Checkbox & Radio Buttons
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                 &lt;&gt;  show code
                 </a>
@@ -532,74 +368,7 @@
         &lt;input id="checkbox-5" class="checkbox-custom form-check-input" name="checkbox-5" type="checkbox" checked disabled>
         &lt;label for="checkbox-5" class="checkbox-custom-label form-check-label disable-checked">Disabled Checked&lt;/label>
       &lt;/div>
-    </code>
-                  </pre>
-                  <h5>how to use</h5>
-                  <ul>
-                    <li>Use <span class="s highlighter">.checkbox-custom</span> with checkbox type <span class="nt highlighter">&lt;input&gt;</span> element</li>
-                    <li>use <span class="nt highlighter">&lt;label&gt;</span> element after <span class="nt highlighter">&lt;input&gt;</span> and give the class <span class="s highlighter">.checkbox-custom-label</span></li>
-                  </ul>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="display-single_element">
-          <p>Example</p>
-          <form >
-            <div class="row">
-              <div class="col-md-8">
-                <div class="form-check ">
-                  <input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
-                  <label for="checkbox-1" class="checkbox-custom-label form-check-label default-checked">Default Checked</label>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="form-check ">
-                  <input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
-                  <label for="checkbox-2" class="checkbox-custom-label form-check-label ">Unchecked</label>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="form-check ">
-                  <input id="checkbox-3" class="checkbox-custom form-check-input" name="checkbox-3" type="checkbox" checked>
-                  <label for="checkbox-3" class="checkbox-custom-label form-check-label">Checked</label>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="form-check ">
-                  <input id="checkbox-4" class="checkbox-custom form-check-input" name="checkbox-4" type="checkbox" disabled>
-                  <label for="checkbox-4" class="checkbox-custom-label form-check-label">Disabled unchecked</label>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="form-check ">
-                  <input id="checkbox-5" class="checkbox-custom form-check-input" name="checkbox-5" type="checkbox" checked disabled>
-                  <label for="checkbox-5" class="checkbox-custom-label form-check-label disable-checked">Disabled Checked</label>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      <!-- Checkbox end -->
 
-    <!-- Radio start -->
-      <div id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="card single-block">
-          <div class="card-header" role="tab" id="headingFour">
-            <h3 class="mb-0">
-              Radio Buttons
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-              &lt;&gt;  show code
-              </a>
-            </h3>
-          </div>
-
-          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="card-block">
-              <div class="code_container">
-                <pre class="language-html">
-    <code>
       &lt;!-- Default Checked radio -->
       &lt;div class="form-check ">
         &lt;input id="radio-1" class="radio-custom form-check-input" name="radio-group" type="radio" checked>
@@ -630,54 +399,100 @@
         &lt;label for="radio-5" class="radio-custom-label form-check-label disable-checked">Disabled Checked&lt;/label>
       &lt;/div>
     </code>
-                </pre>
-                <h5>how to use</h5>
-                <ul>
-                  <li>Use <span class="s highlighter">.radio-custom</span> with radio type <span class="nt highlighter">&lt;input&gt;</span> element</li>
-                  <li>use <span class="nt highlighter">&lt;label&gt;</span> element after <span class="nt highlighter">&lt;input&gt;</span> and give the class <span class="s highlighter">.radio-custom-label</span></li>
-                </ul>
-            </div>
+                  </pre>
+                  <!-- <h5>how to use</h5>
+                  <ul>
+                    <li>Use <span class="s highlighter">.checkbox-custom</span> with checkbox type <span class="nt highlighter">&lt;input&gt;</span> element</li>
+                    <li>use <span class="nt highlighter">&lt;label&gt;</span> element after <span class="nt highlighter">&lt;input&gt;</span> and give the class <span class="s highlighter">.checkbox-custom-label</span></li>
+                  </ul> -->
+              </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="display-single_element">
-        <p>Example</p>
-        <form >
+        <div class="display-single_element">
           <div class="row">
-            <div class="col-md-8">
-              <div class="form-check ">
-                <input id="radio-1" class="radio-custom form-check-input" name="radio-group" type="radio" checked>
-                <label for="radio-1" class="radio-custom-label form-check-label default-checked">Default Checked</label>
-              </div>
+            <!-- Checkbox start -->
+            <div class="col-md-6">
+              <h3 style="margin: 30px 0">Checkbox</h3>
+              <form >
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="form-check ">
+                      <input id="checkbox-1" class="checkbox-custom form-check-input" name="checkbox-1" type="checkbox" checked>
+                      <label for="checkbox-1" class="checkbox-custom-label form-check-label default-checked">Default Checked</label>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-check ">
+                      <input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+                      <label for="checkbox-2" class="checkbox-custom-label form-check-label ">Unchecked</label>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-check ">
+                      <input id="checkbox-3" class="checkbox-custom form-check-input" name="checkbox-3" type="checkbox" checked>
+                      <label for="checkbox-3" class="checkbox-custom-label form-check-label">Checked</label>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-check ">
+                      <input id="checkbox-4" class="checkbox-custom form-check-input" name="checkbox-4" type="checkbox" disabled>
+                      <label for="checkbox-4" class="checkbox-custom-label form-check-label">Disabled unchecked</label>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-check ">
+                      <input id="checkbox-5" class="checkbox-custom form-check-input" name="checkbox-5" type="checkbox" checked disabled>
+                      <label for="checkbox-5" class="checkbox-custom-label form-check-label disable-checked">Disabled Checked</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="col-md-8">
-              <div class="form-check ">
-                <input id="radio-2" class="radio-custom form-check-input" name="radio-2" type="radio">
-                <label for="radio-2" class="radio-custom-label form-check-label ">Unchecked</label>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="form-check ">
-                <input id="radio-3" class="radio-custom form-check-input" name="radio-3" type="radio" checked>
-                <label for="radio-3" class="radio-custom-label form-check-label">Checked</label>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="form-check ">
-                <input id="radio-4" class="radio-custom form-check-input" name="radio-4" type="radio" disabled>
-                <label for="radio-4" class="radio-custom-label form-check-label">Disabled unchecked</label>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="form-check ">
-                <input id="radio-5" class="radio-custom form-check-input" name="radio-5" type="radio" checked disabled>
-                <label for="radio-5" class="radio-custom-label form-check-label disable-checked">Disabled Checked</label>
-              </div>
+            <!-- Checkbox end -->
+
+            <!-- Radio start -->
+            <div class="col-md-6">
+              <h3 style="margin: 30px 0">Radio button</h3>
+              <form >
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="form-check ">
+                        <input id="radio-1" class="radio-custom form-check-input" name="radio-group" type="radio" checked>
+                        <label for="radio-1" class="radio-custom-label form-check-label default-checked">Default Checked</label>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-check ">
+                        <input id="radio-2" class="radio-custom form-check-input" name="radio-2" type="radio">
+                        <label for="radio-2" class="radio-custom-label form-check-label ">Unchecked</label>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-check ">
+                        <input id="radio-3" class="radio-custom form-check-input" name="radio-3" type="radio" checked>
+                        <label for="radio-3" class="radio-custom-label form-check-label">Checked</label>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-check ">
+                        <input id="radio-4" class="radio-custom form-check-input" name="radio-4" type="radio" disabled>
+                        <label for="radio-4" class="radio-custom-label form-check-label">Disabled unchecked</label>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-check ">
+                        <input id="radio-5" class="radio-custom form-check-input" name="radio-5" type="radio" checked disabled>
+                        <label for="radio-5" class="radio-custom-label form-check-label disable-checked">Disabled Checked</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      
       <!-- Radio end -->
 
       <!-- Using the Grid start -->
@@ -728,11 +543,11 @@
       &lt;/div>
     </code>
                 </pre>
-                <h5>how to use</h5>
+                <!-- <h5>how to use</h5>
                 <ul>
                   <li>The both Login and signup form created using basic form style. You need to do is to specify <span class="s highlighter">.register</span> class with <span class="nt highlighter">.form</span> element </li>
                   <li>If you want to use icon in the input field you have to use a <span class="s highlighter">.input-icon</span> with <span class="s highlighter">.form-group</span> </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -741,66 +556,71 @@
 
       <div class="display-single_element">
         <p>Example</p>
-        <h3 class="form_title">Log in your Account</h3>
-        <form  class="register">
-          <div class="row">
-            <div class="form-group col-md-12">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group col-md-12">
-              <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
-            </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="form_title">Log in your Account</h3>
+            <form  class="register">
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-default btn-primary btn-block">Log In</button>
+              <div class="row">
+                <div class="form-check col-md-6">
+                  <input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+                  <label for="checkbox-2" class="checkbox-custom-label form-check-label ">Remember me</label>
+                </div>
+                <div class="col-md-3 offset-md-3 col-lg-6 offset-lg-0 text-right">
+                  <a href="" class="btn-link">Forgot password ?</a>
+                </div>
+              </div>
+              <span class="or text-center">OR</span>
+              <button type="submit" class="btn btn-default btn-facebook btn-block">Log in with Facebook</button>
+              <button type="submit" class="btn btn-default btn-twitter btn-block">Log in with Twitter</button>
+            </form>
+            <p class="form-footer">Don’t have an Account? <a href="" class="btn-link text-primary">Sign up</a></p>
           </div>
-          <button type="submit" class="btn btn-default btn-primary btn-block">Log In</button>
-          <div class="row">
-            <div class="form-check col-md-6">
-              <input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
-              <label for="checkbox-2" class="checkbox-custom-label form-check-label ">Remember me</label>
-            </div>
-            <div class="col-md-3 offset-md-3 text-right">
-              <a href="" class="btn-link">Forgot password ?</a>
-            </div>
-          </div>
-          <span class="or text-center">OR</span>
-          <button type="submit" class="btn btn-default btn-facebook btn-block">Log in with Facebook</button>
-          <button type="submit" class="btn btn-default btn-twitter btn-block">Log in with Twitter</button>
-        </form>
-        <p class="form-footer">Don’t have an Account? <a href="" class="btn-link text-primary">Sign up</a></p>
-      </div>
 
-      <div class="display-single_element">
-        <h3 class="form_title">Sign Up Form</h3>
-        <form  class="register">
-          <div class="row">
-            <div class="form-group col-md-12 input-icon">
-              <div class="input-group-addon"><i class="fa fa-user"></i></div>
-              <input type="text" class="form-control" id="uname" aria-describedby="fullName" placeholder="Full Name">
-            </div>
-            <div class="form-group col-md-12 input-icon">
-              <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group col-md-12 input-icon">
-              <div class="input-group-addon"><i class="fa fa-lock"></i></div>
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <h3 class="form_title">Sign Up Form</h3>
+            <form  class="register">
+              <div class="row">
+                <div class="form-group col-md-12 input-icon">
+                  <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                  <input type="text" class="form-control" id="uname" aria-describedby="fullName" placeholder="Full Name">
+                </div>
+                <div class="form-group col-md-12 input-icon">
+                  <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group col-md-12 input-icon">
+                  <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-default btn-primary btn-block">Sign Up</button>
+              <div class="row">
+                <div class="form-check col-md-6">
+                  <input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
+                  <label for="checkbox-2" class="checkbox-custom-label form-check-label ">Remember me</label>
+                </div>
+                <div class="col-md-3 offset-md-3 col-lg-6 offset-lg-0 text-right">
+                  <a href="" class="btn-link">Forgot password ?</a>
+                </div>
+              </div>
+              <span class="or text-center">OR</span>
+              <button type="submit" class="btn btn-default btn-facebook btn-block">Log in with Facebook</button>
+              <button type="submit" class="btn btn-default btn-twitter btn-block">Log in with Twitter</button>
+            </form>
+            <p class="form-footer">Already have an Account? <a href="" class="btn-link text-primary">Log in</a></p>
           </div>
-          <button type="submit" class="btn btn-default btn-primary btn-block">Sign Up</button>
-          <div class="row">
-            <div class="form-check col-md-6">
-              <input id="checkbox-2" class="checkbox-custom form-check-input" name="checkbox-2" type="checkbox">
-              <label for="checkbox-2" class="checkbox-custom-label form-check-label ">Remember me</label>
-            </div>
-            <div class="col-md-3 offset-md-3 text-right">
-              <a href="" class="btn-link">Forgot password ?</a>
-            </div>
+            
           </div>
-          <span class="or text-center">OR</span>
-          <button type="submit" class="btn btn-default btn-facebook btn-block">Log in with Facebook</button>
-          <button type="submit" class="btn btn-default btn-twitter btn-block">Log in with Twitter</button>
-        </form>
-        <p class="form-footer">Already have an Account? <a href="" class="btn-link text-primary">Log in</a></p>
-      </div>
+        </div>
       <!-- Login / signup form end -->
 
       <!-- Inline form start -->
@@ -836,11 +656,11 @@
       &lt;/form>
     </code>
                 </pre>
-                <h5>How to use</h5>
+                <!-- <h5>How to use</h5>
                 <ul>
                   <li>Use <span class="s highlighter">.form-inline</span> with <span class="nt highlighter">form</span> element</li>
                   <li>wrap <span class="nt highlighter">input</span> element into <span class="s highlighter">.input-group</span> </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -884,25 +704,25 @@
     <code>
 
       &lt;!-- Valid Field -->
-      <div class="col-md-6 mb-3">
-      <label for="validationServer01">First name</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
-      </div>
+      &lt;div class="col-md-6 mb-3">
+      &lt;label for="validationServer01">First name&lt;/label>
+      &lt;input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+      &lt;/div>
 
       &lt;!-- Invalid Field -->
-      <div class="col-md-3 mb-3">
-      <label for="validationServer04">State</label>
-      <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
-      <div class="invalid-feedback">
+      &lt;div class="col-md-3 mb-3">
+      &lt;label for="validationServer04">State&lt;/label>
+      &lt;input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+      &lt;div class="invalid-feedback">
         Please provide a valid state.
       </div>
       </div>
     </code>
                 </pre>
-                <h5>How to use</h5>
+                <!-- <h5>How to use</h5>
                 <ul>
                   <li>Validation states help give users an instance visual feedback. class <span class="s highlighter">.is-valid</span> uses for valid input field and use <span class="s highlighter">.is-invalid</span> for invalid field  </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -925,22 +745,22 @@
         <div class="row">
           <div class="col-md-6 mb-3">
           <label for="validationServer03">City</label>
-          <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
-          <div class="invalid-feedback">
+          <input type="text" class="form-control is-invalid mb-md-0" id="validationServer03" placeholder="City" required>
+          <div class="invalid-feedback mt-md-3">
             Please provide a valid city.
           </div>
           </div>
           <div class="col-md-3 mb-3">
           <label for="validationServer04">State</label>
-          <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
-          <div class="invalid-feedback">
+          <input type="text" class="form-control is-invalid mb-md-0" id="validationServer04" placeholder="State" required>
+          <div class="invalid-feedback mt-md-3">
             Please provide a valid state.
           </div>
           </div>
           <div class="col-md-3 mb-3">
           <label for="validationServer05">Zip</label>
-          <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
-          <div class="invalid-feedback">
+          <input type="text" class="form-control is-invalid mb-md-0" id="validationServer05" placeholder="Zip" required>
+          <div class="invalid-feedback mt-md-3">
             Please provide a valid zip.
           </div>
           </div>
@@ -956,19 +776,19 @@
         <!-- element-content ends -->
       </div>
     </div>
-  <!-- element main container ends -->
+    <!-- element main container ends -->
   </div>
   <!-- Grid wrapper ends -->
 
-    <!-- =============================================
-        ## Elements Banner
-        =============================================== -->
+    <!-- ————————————————————————————————————————————
+    ——— Elements Footer
+    —————————————————————————————————————————————— -->
     <footer class="footer element-footer">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
             <div class="text-center copyright elements-copyright ">
-              <p> © 2017 Copyright Flexstore Bootstrap Template by
+              <p> © 2018 Copyright Corporex Bootstrap Template by
                 <a class="text-primary" href="http://www.iamabdus.com/" target="_blank">Abdus</a>.</p>
             </div>
           </div>
@@ -976,6 +796,7 @@
       </div>
     </footer>
   </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsQdSlW4vj5RvXp2_pLnv1s1ErfxjM5_o"></script>
 <script src="plugins/jquery/jquery.min.js"></script>
 <script src="plugins/jquery/jquery.migrate.js"></script>
@@ -999,6 +820,17 @@
 <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
 <script src="plugins/instafeed/instafeed.min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+  $('.simple_timer').syotimer({
+    year: 2018,
+    month: 9,
+    day: 9,
+    hour: 20,
+    minute: 30
+  });
+</script>
+<link href="options/optionswitch.css" rel="stylesheet">
+<script src="options/optionswitcher.js"></script>
 </body>
 
 </html>

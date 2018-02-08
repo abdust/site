@@ -16,15 +16,16 @@
   <link href="plugins/slick/slick.css" rel="stylesheet" media="screen">
   <link href="plugins/slick/slick-theme.css" rel="stylesheet" media="screen">
   <link href="plugins/OwlCarousel2/owl.carousel.min.css" rel="stylesheet" media="screen">
-
   <link href="plugins/magnific/magnific.css" rel="stylesheet" media="screen">
   <link href="plugins/prismjs/prism.css" rel="stylesheet">
-  <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
   <link href="plugins/selectbox/select_option1.css" rel="stylesheet">
   <link href="plugins/animate.css" rel="stylesheet">
+  <link href="options/optionswitch.css" rel="stylesheet">
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/default.css" id="option_color">
   <!-- FAVICON -->
   <!-- <link href="img/favicon.png" rel="shortcut icon"> -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +37,9 @@
 </head>
 
 <body id="body" class="@@page">
-  <!-- HEADER -->
+  <!-- ————————————————————————————————————————————
+  ——— Header
+  —————————————————————————————————————————————— -->
   <header id="pageTop" class="header">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md main-nav normal-nav bg-primary ">
@@ -97,9 +100,6 @@
                   <a href="about-us.html">About Us</a>
                 </li>
                 <li>
-                  <a href="portfolio.html">Portfolios</a>
-                </li>
-                <li>
                   <a href="team.html">Team Member</a>
                 </li>
                 <li>
@@ -109,7 +109,7 @@
                   <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                  <a href="page-comingsoon.html">Comingsoon page</a>
+                  <a href="page-comingsoon.html">Coming soon</a>
                 </li>
                 <li>
                   <a href="404.html">404 page</a>
@@ -121,16 +121,16 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Blog</a>
               <ul class="dropdown-menu dd_first">
                 <li>
-                  <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                </li>
-                <li>
                   <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
                 </li>
                 <li>
-                  <a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a>
+                  <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
                 </li>
                 <li>
                   <a href="blog-post-right-sidebar.html">Blog Post Right Sidebar</a>
+                </li>
+                <li>
+                  <a href="blog-post-left-sidebar.html">Blog Post Left Sidebar</a>
                 </li>
               </ul>
             </li>
@@ -138,9 +138,11 @@
             <li class=" dropdown megaDropMenu nav-item active">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">Elements</a>
               <ul class="row dropdown-menu justify-content-md-between">
-                <li class="">
-                  <h6>General Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
+                    <li>
+                      <a href="basic-alert.html">Alert</a>
+                    </li>
                     <li>
                       <a href="basic-animation.html">Animation</a>
                     </li>
@@ -150,108 +152,103 @@
                     <li>
                       <a href="basic-buttons.html">Buttons</a>
                     </li>
-                    <li>
-                      <a href="basic-forms.html">Forms</a>
-                    </li>
                   </ul>
                 </li>
-                <li class="">
-                  <h6>General Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="basic-countdown.html">Countdown</a>
                     </li>
                     <li>
-                      <a href="kit-counter.html">Counter Up</a>
-                    </li>
-                    <li>
-                      <a href="basic-iconset.html">Iconset - FontAwesome </a>
-                    </li>
-                    <li>
-                      <a href="basic-icon-style.html">Icon Sizes & styles </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <h6>General Elements</h6>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="basic-map.html">Map</a>
-                    </li>
-
-                    <li>
-                      <a href="basic-progressbar.html">Progress</a>
+                      <a href="basic-carousel.html">Carousel</a>
                     </li>
                     <li>
                       <a href="basic-card.html">Card</a>
                     </li>
                     <li>
-                      <a href="basic-carousel.html">Carousel</a>
+                      <a href="basic-forms.html">Forms</a>
                     </li>
                   </ul>
                 </li>
-                <li class="">
-                  <h6>Theme Kit Elements</h6>
+                <li class="col-md-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="kit-heading.html">Heading</a>
                     </li>
                     <li>
-                      <a href="kit-services.html">Service Elements</a>
+                      <a href="basic-image.html">Images</a>
                     </li>
+                    <li>
+                      <a href="basic-icon-style.html">Icon Sizes & styles </a>
+                    </li>
+                    <li>
+                      <a href="basic-iconset.html">FontAwesome </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-md-3">
+                  <ul class="list-unstyled">
+                      <li>
+                        <a href="basic-map.html">Map</a>
+                      </li>
+                    <!-- <li>
+                      <a href="kit-blogs.html">Blogs</a>
+                    </li>  -->
                   </ul>
                 </li>
               </ul>
             </li>
 
             <!-- HEADER SEARCH -->
-            <li class="nav-item search_hook">
-              <a href="javascript:void(0)" data-toggle="modal" data-target="#searchModal" class="btn-search nav-link">
-                <i class="fa fa-search"></i>
-              </a>
-              <form class="search_form">
-                <input type="text" name="search" placeholder="Search...">
-                <button class="no-bg btn-search" type="submit">
+            <li class=" nav-item nav-search">
+                <a href="javascript:void(0)" class="search-trigger nav-link">
                   <i class="fa fa-search"></i>
-                </button>
-              </form>
+                  <i class="fa fa-close"></i>
+                </a>
+                <ul class="row dropdown-menu search_hook">
+                  <li class="col-12 m-0">
+                      <form class="search_form">
+                        <input type="text" name="search" placeholder="Search...">
+                        <button class="no-bg btn-search" type="submit">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </form>
+                  </li>
+                </ul>
             </li>
-
           </ul>
         </div>
+
         <!-- HEADER SEARCH-->
       </div>
     </nav>
   </header>
-  <div class="main-wrapper ">
+  <div class="main-wrapper elements">
+   <!-- ————————————————————————————————————————————
+    ——— Elements Banner
+    —————————————————————————————————————————————— -->
 
-<!-- =============================================
-## Elements Banner
-=============================================== -->
+    <section class="">
+      <div class="bg-image-holder element-top bredcrumb bg-br mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Elements </h2>
+              <hr class="hr_narrow">
+              <p>These modular elements can be readily used and customized across pages and in different blocks.</p>
+            </div>
+          </div>
+        </div>
+        <!-- container ends -->
+      </div>
+    </section>
 
-		<section class="">
-			<div class="bg-image-holder element-top bredcrumb bg-br mb-5">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8">
-							<h2>Elements </h2>
-							<hr class="hr_narrow">
-							<p>These modular elements can be readily used and customized across pages and in different blocks.</p>
-						</div>
-					</div>
-				</div> <!-- container ends -->
-			</div>
-		</section>
+    <!-- Grid wrapper for ell elements -->
 
-		<!-- Grid wrapper for ell elements -->
-
-		<div class="grid-wrapper section">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-12 col-lg-12 element-content">
-				
-
+    <div class="grid-wrapper section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-12 element-content">
 
 
     <!-- =============================================
@@ -339,19 +336,19 @@
         <!-- element-content ends -->
       </div>
     </div>
-  <!-- element main container ends -->
+    <!-- element main container ends -->
   </div>
   <!-- Grid wrapper ends -->
 
-    <!-- =============================================
-        ## Elements Banner
-        =============================================== -->
+    <!-- ————————————————————————————————————————————
+    ——— Elements Footer
+    —————————————————————————————————————————————— -->
     <footer class="footer element-footer">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
             <div class="text-center copyright elements-copyright ">
-              <p> © 2017 Copyright Flexstore Bootstrap Template by
+              <p> © 2018 Copyright Corporex Bootstrap Template by
                 <a class="text-primary" href="http://www.iamabdus.com/" target="_blank">Abdus</a>.</p>
             </div>
           </div>
@@ -359,6 +356,7 @@
       </div>
     </footer>
   </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsQdSlW4vj5RvXp2_pLnv1s1ErfxjM5_o"></script>
 <script src="plugins/jquery/jquery.min.js"></script>
 <script src="plugins/jquery/jquery.migrate.js"></script>
@@ -382,6 +380,17 @@
 <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
 <script src="plugins/instafeed/instafeed.min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+  $('.simple_timer').syotimer({
+    year: 2018,
+    month: 9,
+    day: 9,
+    hour: 20,
+    minute: 30
+  });
+</script>
+<link href="options/optionswitch.css" rel="stylesheet">
+<script src="options/optionswitcher.js"></script>
 </body>
 
 </html>
