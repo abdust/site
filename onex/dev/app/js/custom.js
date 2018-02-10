@@ -34,109 +34,125 @@
 	});
 
 	/*======== 2. NAVBAR ========*/
-	jQuery(document).ready(function(a) {
-		var b = 1170;
-		if (a(window).width() > b) {
-			var c = a('.navbar-scrollUp').height();
-			a(window).on('scroll', {
-				previousTop: 0
-			}, function() {
-				var b = a(window).scrollTop();
-				b < this.previousTop ? b > 0 && a('.navbar-scrollUp').hasClass('is-fixed') ? a('.navbar-scrollUp').addClass('is-visible') : a('.navbar-scrollUp').removeClass('is-visible is-fixed') : (a('.navbar-scrollUp').removeClass('is-visible'), b > c && !a('.navbar-scrollUp').hasClass('is-fixed') && a('.navbar-scrollUp').addClass('is-fixed')), this.previousTop = b;
+	$(window).on('load', function(){
+		var header_area = $('.header');
+		var main_area = header_area.find('.navbar');
+		var zero = 0;
+		var navbarSticky = $('.navbar-sticky');
+
+		$(window).scroll(function(){
+			var st = $(this).scrollTop();
+			if (st > zero){
+				navbarSticky.addClass('navbar-scrollUp');
+			} else {
+				 navbarSticky.removeClass('navbar-scrollUp');
+			}
+			zero = st;
+
+			if(main_area.hasClass('navbar-sticky') && ( $(this).scrollTop() <= 600 || $(this).width() <= 300)){
+        main_area.removeClass('navbar-sticky').appendTo(header_area);
+        header_area.css('height', 'auto');
+      }else if( !main_area.hasClass('navbar-sticky') && $(this).width() > 300 && $(this).scrollTop() > 600 ){
+        header_area.css('height', header_area.height());
+        main_area.addClass('navbar-scrollUp navbar-sticky');
+      }
+		});
+
+		if ($(window).width() < 750) {
+			$('.navbar-nav.site_nav .nav-item .nav-link').on('click', function(){
+				$('.navbar-collapse.collapse').removeClass('show');
 			});
 		}
-	});
-	$(window).on('load', function(){
-		$('#body').each(function(){
-			var header_area = $('.header');
-			var main_area = header_area.find('.navbar');
-
-			$(window).scroll(function(){
-				if( main_area.hasClass('navbar-sticky') && ($(this).scrollTop() <= 100 ) ){
-					main_area.removeClass('navbar-sticky').appendTo(header_area);
-						// header_area.css('height', 'auto');
-				}else if( !main_area.hasClass('navbar-sticky') && $(this).scrollTop() > 400 ){
-
-					header_area.css('height', header_area.height());
-					main_area.css({'opacity': '0'}).addClass('navbar-sticky');
-					main_area.appendTo($('body')).animate({'opacity': 1});
-				}
-			});
-		});
 
 		$(window).trigger('resize');
 		$(window).trigger('scroll');
 	});
 
-	/*======== 7. OWL CAROUSEL ========*/
-	$('.product-slider').owlCarousel({
-			 loop: true,
-			 responsiveClass: true,
-			 margin: 50,
-			 autoplay: false,
-			 autoplayTimeout: 4000,
-			 smartSpeed: 1000,
-			 center: true,
-			 dots: true,
-			 responsive: {
-				 0: {
-						 items: 1,
-				 },
-				 768: {
-						 items: 3,
-						 dots: true,
-				 },
-				 1200: {
-						 items: 3,
-						 dots: true,
-				 }
-			 }
+	/*======== 3. SLICK CAROUSEL ========*/
+	//Product SLider
+	$('.product-slider').slick({
+		centerMode: true,
+		centerPadding: '10px',
+		dots: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false
+				}
+			}
+		]
+	});
+
+	 // TEAM MEMBER CAROUSEL
+	 $('.team-carouel').slick({
+		slidesToShow: 4,
+  	slidesToScroll: 1,
+	 	autoplay: true,
+	 	autoplaySpeed: 5000,
+		arrows: false,
+		speed: 1000,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false
+				}
+			}
+		]
 	 });
 
-	 // TEAM
-	$('.team-carouel').owlCarousel({
-			 loop: true,
-			 responsiveClass: true,
-			 margin: 50,
-			 autoplay: true,
-			 autoplayTimeout: 4000,
-			 smartSpeed: 1000,
-
-			 responsive: {
-					 0: {
-							 items: 1,
-					 },
-					 600: {
-							 items: 3
-					 },
-					 1200: {
-							 items: 4
-					 }
-			 }
-	 });
-
-	 $('.testimonial-carousel').owlCarousel({
-		 loop: true,
-		 responsiveClass: true,
-		 margin: 50,
-		 autoplay: false,
-		 autoplayTimeout: 4000,
-		 smartSpeed: 1000,
-		 nav:true,
-		 navText : ['<i class="arrow_carrot-left"></i>','<i class="arrow_carrot-right"></i>'],
-		 controlsClass: 'owl-controls',
-		 responsive: {
-			 0: {
-				 items: 1,
-			 },
-			 600: {
-				 items: 1
-			 },
-			 1200: {
-				 items: 1
-			 }
-		 }
-	 });
+	//TESTIMONIAL CAROUSEL
+	$('.testimonial-carousel').slick({
+		autoplay: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplaySpeed: 5000,
+		speed: 1000
+	});
 
 	/*======== 4. TAB ========*/
 	$(function () {
@@ -155,5 +171,6 @@
 		spy: 'scroll',
 		offset: 130
 	});
+
 
 })(jQuery);

@@ -43,11 +43,15 @@ ul.nav .nav-item.active .nav-link,
 .icon-left.card.card-accordion .card-header.header-inverse a,
 .nav-tabs.bar-tabs .nav-link.active h5,
 .navbar-nav.site_nav .nav-item a.nav-link:hover,
-.icon-style-1 i {
+.icon-style-1 i,
+nav.navbar .navbar-toggler {
   color: #ff8b3c;
 }
 
-.text-primary, a.text-primary:focus, a.text-primary:hover {
+.text-primary,
+a.text-primary:focus,
+a.text-primary:hover,
+.btn-primary.btn-strock {
   color: #ff8b3c !important;
 }
 
@@ -81,8 +85,6 @@ ul.nav-tabs.nav-pills .nav-item .nav-link.active,
 .arrow-shade button.slick-arrow:hover,
 .arrow-shade button.slick-arrow:focus,
 .quick-view-bullets li.active a span,
-.btn-scroll-down:hover,
-.home-promo-video a.video-link,
 .icon-style-1:hover i,
 h3.section-title::after,
 h3.section-title-center:after,
@@ -93,7 +95,9 @@ h3.section-title-center:after,
 .navbar-nav.site_nav .nav-item .dropdown-menu,
 .fancybox-morphing .fancybox-bg,
 .morphing-btn-clone,
-.nav-tabs.feature-tabs .nav-item:hover .media-style-01 i {
+.nav-tabs.feature-tabs .nav-item:hover .media-style-01 i,
+.home-promo-video a.video-link span,
+.btn-scroll-down:hover {
   background-color: #ff8b3c;
 }
 .btn-primary,
@@ -125,8 +129,6 @@ ul.nav-tabs.nav-pills .nav-item .nav-link.active,
 .arrow-shade button.slick-arrow:hover,
 .arrow-shade button.slick-arrow:focus,
 .quick-view-bullets li.active a span,
-.btn-scroll-down:hover,
-.home-promo-video a.video-link,
 .icon-style-1:hover i,
 h3.section-title::after,
 h3.section-title-center:after,
@@ -137,7 +139,9 @@ h3.section-title-center:after,
 .navbar-nav.site_nav .nav-item .dropdown-menu,
 .fancybox-morphing .fancybox-bg,
 .morphing-btn-clone,
-.nav-tabs.feature-tabs .nav-item:hover .media-style-01 i {
+.nav-tabs.feature-tabs .nav-item:hover .media-style-01 i,
+.home-promo-video a.video-link span,
+.btn-scroll-down:hover {
   background-color: #ff8b3c;
 }
 
@@ -145,7 +149,7 @@ button.slick-next:active,
 button.slick-next:focus,
 button.slick-next:visited,
 button.slick-next:hover {
-  background-color: #ff6d09;
+  background-color: #ff7c23;
 }
 
 .bg-primary,
@@ -166,7 +170,7 @@ button.slick-prev:hover,
 .btn-black:focus,
 .btn-black.active,
 .btn-black:active {
-  background-color: #ff6d09 !important;
+  background-color: #ff7c23 !important;
 }
 
 .hover-overlay.effect-transformY {
@@ -178,7 +182,7 @@ button.slick-prev:hover,
 }
 
 .btn-primary.btn-cta:hover {
-  background-color: #ff6d09 !important;
+  background-color: #ff7c23 !important;
 }
 
 /*=== Border color ===*/
@@ -220,7 +224,9 @@ ul.nav-tabs.nav-pills .nav-item .nav-link.active,
 .icon-left.card.card-accordion .card-header.header-inverse a,
 .nav-tabs.bar-tabs .nav-link.active:before,
 .icon-style-1,
-.card.card-accordion .card-header a {
+.card.card-accordion .card-header a,
+nav.navbar .navbar-toggler,
+.btn-primary.btn-strock {
   border-color: #ff8b3c;
 }
 
@@ -237,7 +243,7 @@ ul.nav-tabs.nav-pills .nav-item .nav-link.active,
 .btn-primary:focus,
 .btn-primary.active,
 .btn-primary:active {
-  border-color: #ff6d09 !important;
+  border-color: #ff7c23 !important;
 }
 
 .date-holder::after {
@@ -257,9 +263,9 @@ ul.nav-tabs .nav-item .nav-link.active {
   border-top-color: #ff8b3c;
 }
 
-/*=== Logo color ===*/
+/*=== Border color Opacity ===*/
 .home-promo-video a.video-link {
-  box-shadow: 0px 0px 5px 5px rgba(255, 139, 60, 0.5);
+  border: 5px solid rgba(255, 139, 60, 0.5);
 }
 
 /*=== Logo color ===*/

@@ -13,8 +13,6 @@
 	<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="plugins/slick/slick.css" rel="stylesheet" media="screen">
 	<link href="plugins/slick/slick-theme.css" rel="stylesheet" media="screen">
-	<link href="plugins/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" media="screen">
-	<link href="plugins/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet" media="screen">
 	<link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
 	<link href="plugins/fancybox/fancyMorph.css" rel="stylesheet" />
 	<link href="plugins/animate/animate.css" rel="stylesheet">
@@ -22,7 +20,7 @@
 
 	<!-- CUSTOM CSS -->
 	<link href="css/style.css" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="css/default.css" id="option_color"> -->
+	<link rel="stylesheet" href="css/default.css" id="option_color">
 
 	<!-- FAVICON -->
 	<link href="img/favicon.png" rel="shortcut icon">
@@ -34,14 +32,13 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<!-- data-spy="scroll" data-target="#navbarContent" data-offset="130" -->
-<body id="body" class=""  >
+<body id="body" class="up-scroll">
 	<!-- ====================================
 	———	HEADER
 	===================================== -->
-	<div class="main-wrapper home">
+
 	<header id="pageTop" class="header" >
-		<nav class="navbar navbar-expand-md navbar-scrollUp animated" >
+		<nav class="navbar navbar-expand-md navbar-scrollUp navbar-transparent navbar-sticky" >
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="139.219" height="48" viewBox="0 0 139.219 48" class="svgLogo">
@@ -63,16 +60,16 @@
 							<a class="nav-link " href="#about"> About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#promo"> Promo</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link " href="#feature"> Features</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#faqs"> Faqs</a>
+							<a class="nav-link " href="#choose-us"> Choose Us</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#products">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="#price">Price</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#customers">customers</a>
@@ -86,6 +83,7 @@
 		</nav>
 
 	</header>
+	<div class="main-wrapper home">
 
 
 	
@@ -150,11 +148,11 @@
 		</div>
 		<div class="container">
 			<div class="row vh100 align-items-center justify-content-between" >
-				<div class="col-md-6 wow fadeInLeft">
+				<div class="col-md-6 col-lg-7 wow fadeInLeft">
 					<div class="banner-text-content " >
 						<h5>Welcome To Onex</h5>
 						<h1>New product <br> shop 2018</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod tempor incididunt.</p>
+						<p>Excepturi iste quam potenti consequuntur, facilisi quisquam leo <br> corporis sodales adipisicing quod.</p>
 						<a href="#" class="btn-icon mr-2">
 							<div class="icon">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="31" height="38" viewBox="0 0 31 38">
@@ -179,15 +177,15 @@
 						</a>
 						</div>
 				</div>
-				<div class="col-md-6 col-lg-3 wow fadeInRight">
-					<div class="banner-image d-none d-md-block ">
-						<img src="img/banner/banner-img-01.png" alt="Banner Image" data-animation="fadeInLeftBig" data-delay="0.5s">
+				<div class="col-md-5 col-lg-3 wow bounceInRight">
+					<div class="d-none d-md-block banner-img">
+						<img src="img/banner/banner-img-01.png" alt="Banner Image">
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="scroll-btn scrolling">
+		<!-- Scroll btn -->
+		<div class="scroll-btn-aria scrolling">
 			<a href="#about" class="btn-scroll-down" ><i class="arrow_down animated " aria-hidden="true"></i></a>
 		</div>
 	</section>
@@ -196,7 +194,7 @@
 	<!-- ====================================
 	———	AMAZING FEATURES
 	===================================== -->
-	<section class="section-padding" id="about">
+	<section class="section-padding" >
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 col-12 col-md-6">
@@ -206,34 +204,34 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-4">
-					<div class="media feature-style-one wow fadeInUp">
-						<div class="icon-style-1">
+					<div class="media media-style-01 flex-column wow fadeInUp">
+						<div class="icon-style-1 mb-4 m-auto">
 							<i class="icon_lightbulb_alt" aria-hidden="true"></i>
 						</div>
 						<div class="media-body text-center">
-							<h5 class="mt-0">Unlimited Dashboards</h5>
-							<p>Aut augue imperdiet pharetra lectus egest as perferendis aliquid nunc.sed do eiusmod tempor incididunt.</p>
+							<h5 class="mt-4">Creative Desing</h5>
+							<p>Sed libero odio phasellus malesuada, mi a ante sed donec, lacinia facilisis vitae velit suspendisse. Tellus elit lectus lobortis. </p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="media feature-style-one wow fadeInUp ">
-						<div class="icon-style-1">
+					<div class="media media-style-01 flex-column wow fadeInUp ">
+						<div class="icon-style-1 mb-4 m-auto">
 							<i class="icon_toolbox_alt" aria-hidden="true"></i>
 						</div>
 						<div class="media-body text-center">
-							<h5 class="mt-0">Track Anything</h5>
-							<p>Aut augue imperdiet pharetra lectus egest as perferendis aliquid nunc.sed do eiusmod tempor incididunt.</p>
+							<h5 class="mt-4">Unlimited Dashboards</h5>
+							<p>Purus magna turpis enim, vitae vitae in a, suspendisse sit vulputate massa, a non euismod elit nunc. Rerum dui convallis sed cras</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="media feature-style-one wow fadeInUp">
-						<div class="icon-style-1">
+					<div class="media media-style-01 flex-column wow fadeInUp">
+						<div class="icon-style-1 mb-4 m-auto">
 							<i class="icon_pencil-edit" aria-hidden="true"></i>
 						</div>
 						<div class="media-body text-center">
-							<h5 class="mt-0">Track Anything</h5>
+							<h5 class="mt-4">easy to used</h5>
 							<p>Aut augue imperdiet pharetra lectus egest as perferendis aliquid nunc.sed do eiusmod tempor incididunt.</p>
 						</div>
 					</div>
@@ -245,7 +243,7 @@
 	<!-- ====================================
 	———	ABOUT OUR APP
 	===================================== -->
-	<section class="section-padding bg-whiteSmoke" id="our-app" >
+	<section class="section-padding bg-whiteSmoke" id="about" >
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-md-6 col-12">
@@ -261,7 +259,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="image-style-1 d-none d-md-block wow fadeInUp">
-						<img src="img/products/product-img-10.png" alt="">
+						<img src="img/products/product-img-10.png" alt="Image">
 					</div>
 				</div>
 			</div>
@@ -275,7 +273,7 @@
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-lg-6">
-					<h3 class="section-title-center text-center">Product Features</h3>
+					<h3 class="section-title-center text-center pt-0 pt-md-5">Product Features</h3>
 					<p class="mt-2 text-center">Sint nulla facilisi auctor diam ducimus, at irure! aliquip anim tempus laudantium odit hymenaeos.</p>
 				</div>
 			</div>
@@ -302,7 +300,7 @@
 										<i class="icon_lightbulb_alt" aria-hidden="true"></i>
 									</div>
 									<div class="media-body text-md-right">
-										<h5 class="mt-0">Very high resolution (4K)</h5>
+										<h5 class="mt-0">Creative Desing</h5>
 										<p>Aut augue imperdiet pharetra lectus egestas perferendis aliquid nunc.</p>
 									</div>
 								</div>
@@ -312,7 +310,7 @@
 							<a href="#vtab3" class="nav-link" data-toggle="tab">
 								<div class="media media-style-01">
 									<div class="icon-style-1 order-md-1 custom-ml">
-										<i class="icon_piechart" aria-hidden="true"></i>
+										<i class="icon_lock_alt" aria-hidden="true"></i>
 									</div>
 									<div class="media-body text-md-right">
 										<h5 class="mt-0">Secure Your Data</h5>
@@ -328,7 +326,7 @@
 										<i class="icon_toolbox_alt" aria-hidden="true"></i>
 									</div>
 									<div class="media-body text-md-right">
-										<h5 class="mt-0">Unlimited Dashboards</h5>
+										<h5 class="mt-0"> unlimited feature</h5>
 										<p>Aut augue imperdiet pharetra lectus egestas perferendis aliquid nunc.</p>
 									</div>
 								</div>
@@ -338,31 +336,31 @@
 				</div>
 
 				<div class="col-lg-4 d-none d-lg-block overflow">
-					<div class="image-frame" style="background-image: url(../img/products/frame2.png)">
+					<div class="image-frame" style="background-image: url(img/products/frame2.png)">
 						<div class="tab-content scren-image">
-							<div class="tab-pane fade show active no-padding" id="vtab1" aria-expanded="true">
-								<img src="img/products/screen-1.png" alt="Image">
+							<div class="tab-pane fade show no-padding" id="vtab1" aria-expanded="true">
+								<img src="img/products/screen-1.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab2" aria-expanded="true">
-								<img src="img/products/screen-2.png" alt="Image">
+								<img src="img/products/screen-2.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab3" aria-expanded="true">
-								<img src="img/products/screen-3.png" alt="Image">
+								<img src="img/products/screen-3.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab4" aria-expanded="true">
-								<img src="img/products/screen-1.png" alt="Image">
+								<img src="img/products/screen-4.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab5" aria-expanded="true">
-								<img src="img/products/screen-1.png" alt="Image">
+								<img src="img/products/screen-1.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab6" aria-expanded="true">
-								<img src="img/products/screen-2.png" alt="Image">
+								<img src="img/products/screen-2.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab7" aria-expanded="true">
-								<img src="img/products/screen-3.png" alt="Image">
+								<img src="img/products/screen-3.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab8" aria-expanded="true">
-								<img src="img/products/screen-1.png" alt="Image">
+								<img src="img/products/screen-1.jpg" alt="Image">
 							</div>
 						</div>
 					</div>
@@ -389,7 +387,7 @@
 										<i class="icon_flowchart" aria-hidden="true"></i>
 									</div>
 									<div class="media-body">
-										<h5 class="mt-0">Secure Your Data</h5>
+										<h5 class="mt-0">Flowcharts </h5>
 										<p>Aut augue imperdiet pharetra lectus egestas perferendis aliquid nunc.</p>
 									</div>
 								</div>
@@ -430,16 +428,16 @@
 	<!-- ====================================
 	———	WHY OUR CHOOSE
 	===================================== -->
-	<section class="bg-gradient pt100 pb55" id="">
+	<section class="bg-gradient section-padding" id="choose-us">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<div class="image-style-2 d-none d-md-block">
+					<div class="image-style-2 d-none d-md-block wow fadeInLeft">
 						<img src="img/products/product-img-03.png" alt="">
 					</div>
 				</div>
 				<div class="col-md-6 col-12">
-					<h3 class="section-title text-white mt-3">Why Choose Us</h3>
+					<h3 class="section-title text-white">Why Choose Us</h3>
 					<p class="mt-2 text-white">Nisl alias, corrupti magnam sunt nesciunt, accusamus eu sollicitud egestas dis ac a inventore pede id totam quam  sollicitudin consequuntur fames accumsan quis mus mollis quisquam mauris amet suspendisse torquent nobis excepturi.</p>
 					<ul class="list-style2 mt-3 text-white">
 						<li><i class="arrow_carrot-right"></i>Quick & Powerful</li>
@@ -447,7 +445,7 @@
 						<li><i class="arrow_carrot-right"></i>Awesome Design</li>
 						<li><i class="arrow_carrot-right"></i>Premium Support</li>
 					</ul>
-					<a class="btn btn-white mt-40" href="#">Download Now</a>
+					<a class="btn btn-transparent mt-40" href="#">Download Now</a>
 				</div>
 
 			</div>
@@ -458,7 +456,7 @@
 	<!-- ====================================
 	———	OUR PRODUCTS
 	===================================== -->
-	<section class="section-padding mb-3" id="products">
+	<section class="section-padding" id="products">
 		<div class="container ">
 			<div class="row justify-content-md-center">
 				<div class="col-12 col-md-6">
@@ -468,23 +466,20 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-lg-9 col-9">
-					<div class="products">
-						<div class="product-slider owl-carousel owl-theme mt-60">
-							<div class="single-item">
-								<img src="img/products/screen-3.png" alt="Image">
-							</div>
-							<div class="single-item">
-								<img src="img/products/screen-1.png" alt="Image">
-							</div>
-							<div class="single-item">
-								<img src="img/products/screen-3.jpg" alt="Image">
-							</div>
-							<div class="single-item">
-								<img src="img/products/screen-2.png" alt="Image">
-							</div>
+					<div class="product-slider mt-4">
+						<div class="single-item">
+							<img src="img/products/screen-1.jpg" alt="Image">
+						</div>
+						<div class="single-item">
+							<img src="img/products/screen-2.jpg" alt="Image">
+						</div>
+						<div class="single-item">
+							<img src="img/products/screen-3.jpg" alt="Image">
+						</div>
+						<div class="single-item">
+							<img src="img/products/screen-2.jpg" alt="Image">
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -502,18 +497,18 @@
 				</div>
 			</div>
 			<div class="row mt-70 justify-content-between">
-				<div class="col-12 col-md-6 col-lg-4">
-					<div class=" d-none d-md-block wow fadeInLeft">
-						<img class="text-center" src="img/products/product-img-04.png" alt="Images">
+				<div class="col-12 col-md-6">
+					<div class=" d-none d-md-block wow fadeInLeft mt-3">
+						<img class="text-center img-fluid" src="img/products/product-img-05.png" alt="Images">
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div id="accordion" role="tablist" aria-multiselectable="true" class="mt-0">
 						<div class="card card-accordion">
 							<div class="card-header" role="tab" id="heading1">
 								<h6 class="mb-0">
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-										Many publishing web page
+										Many publishing web page?
 									</a>
 								</h6>
 							</div>
@@ -527,7 +522,7 @@
 							<div class="card-header" role="tab" id="heading2">
 								<h6 class="mb-0">
 									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-										Our Stunning Work
+										Our Stunning Work?
 									</a>
 								</h6>
 							</div>
@@ -541,7 +536,7 @@
 							<div class="card-header" role="tab" id="heading3">
 								<h6 class="mb-0">
 									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-										Fully Responsive Landing Page
+										Fully Responsive Landing Page?
 									</a>
 								</h6>
 							</div>
@@ -555,7 +550,7 @@
 							<div class="card-header" role="tab" id="heading4">
 								<h6 class="mb-0">
 									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-										24/7 Friendly Support
+										24/7 Friendly Support?
 									</a>
 								</h6>
 							</div>
@@ -574,7 +569,7 @@
 	<!-- ====================================
 	———	PRICING TABLE
 	===================================== -->
-	<section class="section-padding mb-3" id="products">
+	<section class="section-padding mb-3" id="price">
 		<div class="container ">
 			<div class="row justify-content-md-center">
 				<div class="col-12 col-md-6">
@@ -584,48 +579,56 @@
 			</div>
 			<div class="row mt-5">
 				<div class="col-lg-4 col-md-6">
-					<div class="card pricing mb-4">
+					<div class="card pricing mb-4 mt-40">
 						<div class="card-header">
 							<h3>Basic</h3>
 						</div>
-						<ul class="list-group">
-							<li class="list-group-item "><span>$5</span></li>
-							<li class="list-group-item">6 Products</li>
-							<li class="list-group-item">8 Photos</li>
-							<li class="list-group-item">5 Keywords</li>
-							<li class="list-group-item">6 Categories</li>
-						</ul>
-						<a href="#" class="btn btn-primary">Get Started</a>
+						<div class="card-body">
+							<ul>
+								<li><span>$5</span></li>
+								<li>6 Products</li>
+								<li>8 Photos</li>
+								<li>5 Keywords</li>
+								<li>6 Categories</li>
+							</ul>
+							<a href="#" class="btn btn-primary">Get Started</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="card pricing mb-4">
+					<div class="card pricing bg-gradient center mb-4 ">
 						<div class="card-header">
+							<span>Most Popular</span>
 							<h3>Standard</h3>
 						</div>
-						<ul class="list-group">
-							<li class="list-group-item "><span>$10</span></li>
-							<li class="list-group-item">6 Products</li>
-							<li class="list-group-item">8 Photos</li>
-							<li class="list-group-item">5 Keywords</li>
-							<li class="list-group-item">6 Categories</li>
-						</ul>
-						<a href="#" class="btn btn-primary">Get Started</a>
+						<div class="card-body">
+							<ul>
+								<li><span>$12</span></li>
+								<li>All Basic Features +</li>
+								<li>8 Products</li>
+								<li>9 Photos</li>
+								<li>6 Keywords</li>
+								<li>7 Categories</li>
+							</ul>
+							<a href="#" class="btn btn-primary">Get Started</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="card pricing">
+					<div class="card pricing mt-40">
 						<div class="card-header">
 							<h3>Advance</h3>
 						</div>
-						<ul class="list-group">
-							<li class="list-group-item "><span>$15</span></li>
-							<li class="list-group-item">6 Products</li>
-							<li class="list-group-item">8 Photos</li>
-							<li class="list-group-item">5 Keywords</li>
-							<li class="list-group-item">6 Categories</li>
-						</ul>
-						<a href="#" class="btn btn-primary">Get Started</a>
+						<div class="card-body">
+							<ul>
+								<li><span>$17</span></li>
+								<li>9 Products</li>
+								<li>10 Photos</li>
+								<li>7 Keywords</li>
+								<li>9 Categories</li>
+							</ul>
+							<a href="#" class="btn btn-primary">Get Started</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -639,10 +642,19 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="home-promo-video col-md-6 col-12 ">
-					<div class="promo-video ">
-				  	<a class="video-link" data-fancybox href="https://www.youtube.com/watch?v=sEl5hp8MEGs"><i class="arrow_triangle-right" ></i></a>
+					<div class="promo-video">
+				  	<a class="video-link" data-fancybox href="https://www.youtube.com/watch?v=sEl5hp8MEGs">
+							<span>
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="26" height="34" viewBox="0 0 26 34">
+									  <path d="M25.420,18.349 L2.486,33.849 C2.210,34.037 1.888,34.133 1.567,34.133 C1.305,34.133 1.042,34.071 0.804,33.944 C0.268,33.661 -0.067,33.106 -0.067,32.500 L-0.067,1.499 C-0.067,0.894 0.268,0.338 0.804,0.056 C1.340,-0.229 1.986,-0.189 2.488,0.151 L25.421,15.651 C25.865,15.955 26.133,16.459 26.133,16.999 C26.133,17.540 25.865,18.045 25.420,18.349 Z" class="video-icon"/>
+									</svg>
+								</i>
+
+							</span>
+						</a>
 					</div>
-					<span class="text">Watch Video Demo</span>
+					<span class="text ">Watch Video Demo</span>
 				</div>
 			</div>
 		</div>
@@ -659,10 +671,20 @@
 					<p class="mt-2 text-center">Sint nulla facilisi auctor diam ducimus, at irure! aliquip anim tempus laudantium odit hymenaeos.</p>
 				</div>
 			</div>
-			<div class="team-carouel owl-carousel mt-5">
-				<div class="single-item team">
-					<div class="card">
-					  <img class="card-img" src="img/team/team-1.jpg" alt="Card image cap">
+			<div class="team-carouel mt-5">
+				<div class="single-item ">
+					<div class="card team">
+						<div class="card-img">
+							<img src="img/team/team-1.jpg" alt="Card image cap">
+							<div class="card-img-overlay">
+								<div class="social-link">
+									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_twitter" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_rss" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_vimeo" aria-hidden="true"></i></a>
+								</div>
+						  </div>
+						</div>
 					  <div class="card-body">
 					    <a href="#"><h5>Steven Foster</h5></a>
 							<span>Co-Founder</span>
@@ -670,26 +692,75 @@
 					</div>
 				</div>
 				<div class="single-item team">
-					<div class="card">
-					  <img class="card-img" src="img/team/team-2.jpg" alt="Card image cap">
+					<div class="card team">
+						<div class="card-img">
+							<img src="img/team/team-2.jpg" alt="Card image cap">
+							<div class="card-img-overlay">
+								<div class="social-link">
+									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_twitter" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_rss" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_vimeo" aria-hidden="true"></i></a>
+								</div>
+						  </div>
+						</div>
 					  <div class="card-body">
 					    <a href="#"><h5>Randy Ortan</h5></a>
-							<span>Marking Officer</span>
-					  </div>
-					</div>
-				</div>
-				<div class="single-item team">
-					<div class="card">
-					  <img class="card-img" src="img/team/team-3.jpg" alt="Card image cap">
-					  <div class="card-body">
-					    <a href="#"><h5>Mark Henry</h5></a>
 							<span>managing director</span>
 					  </div>
 					</div>
 				</div>
 				<div class="single-item team">
-					<div class="card">
-					  <img class="card-img" src="img/team/team-4.jpg" alt="Card image cap">
+					<div class="card team">
+						<div class="card-img">
+							<img src="img/team/team-3.jpg" alt="Card image cap">
+							<div class="card-img-overlay">
+								<div class="social-link">
+									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_twitter" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_rss" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_vimeo" aria-hidden="true"></i></a>
+								</div>
+						  </div>
+						</div>
+					  <div class="card-body">
+					    <a href="#"><h5>Mark Henry</h5></a>
+							<span>Markting Officer</span>
+					  </div>
+					</div>
+				</div>
+				<div class="single-item team">
+					<div class="card team">
+						<div class="card-img">
+							<img class="card-img" src="img/team/team-4.jpg" alt="Card image cap">
+							<div class="card-img-overlay">
+								<div class="social-link">
+									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_twitter" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_rss" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_vimeo" aria-hidden="true"></i></a>
+								</div>
+						  </div>
+						</div>
+					  <div class="card-body">
+					    <a href="#"><h5>Katy Perry</h5></a>
+							<span>Web Developer</span>
+					  </div>
+					</div>
+				</div>
+				<div class="single-item team">
+					<div class="card team">
+						<div class="card-img">
+							<img class="card-img" src="img/team/team-2.jpg" alt="Card image cap">
+							<div class="card-img-overlay">
+								<div class="social-link">
+									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_twitter" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_rss" aria-hidden="true"></i></a>
+									<a class="btn-social mr-1" href="#"><i class="social_vimeo" aria-hidden="true"></i></a>
+								</div>
+						  </div>
+						</div>
 					  <div class="card-body">
 					    <a href="#"><h5>Katy Perry</h5></a>
 							<span>Web Developer</span>
@@ -703,7 +774,7 @@
 	<!-- ====================================
 	——— TESTIMONIAL
 	===================================== -->
-	<section class="section-padding bg-whiteSmoke">
+	<section class="section-padding bg-whiteSmoke" id="customers">
 		<div class="container ">
 			<div class="row justify-content-md-center">
 				<div class="col-12 col-md-6">
@@ -712,7 +783,7 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-10">
-					<div class="testimonial-carousel owl-carousel">
+					<div class="testimonial-carousel">
 						<div class="item testimonial-content text-center">
 							<p>Dolorum pretium habitasse arcu pretium ut. Consectetuer temporibus eaque cumque, metus varius corporis class minima corporis! Aliqua consectetur, purus dolorum consequuntur class occaecat lacinia mollitia fugit, risus quisque. Iste distinctio, voluptate praesentium.</p>
 							<h4>Fletch Skinner / <span> Web Designer</span></h4>
@@ -739,7 +810,7 @@
 					<div class="contact mt-4">
 						<div class="media mb-3">
 							<i class="icon_pin"></i>
-							<div class="media-body"> 16/14 Babor Road, Mohammad pur Dhaka, Bangladesh </div>
+							<div class="media-body"> 228 Park Ave S New York, NY 10003-1502 US </div>
 						</div>
 						<div class="media mb-3">
 							<i class="icon_phone"></i>
@@ -748,17 +819,17 @@
 						<div class="media mb-3">
 							<i class="icon_mail"></i>
 							<div class="media-body">
-								<a class="text-capitalize" href="mailTo:info@star-travel.com">info @example.com  </a>
-								<a class="text-capitalize" href="mailTo:info@star-travel.com">info@maximabangladesh.com </a>
+								<a class="text-capitalize" href="mailTo:info@star-travel.com">info@example.com  </a><br>
+								<a class="text-capitalize" href="mailTo:info@star-travel.com">info@example22.com </a>
 							</div>
 						</div>
 
 					</div>
 					<div class="social-link">
-						<a class="btn-social custom mr-1" href="#"><i class="social_facebook"></i></a>
-						<a class="btn-social custom mr-1" href="#"><i class="social_twitter" aria-hidden="true"></i></a>
-						<a class="btn-social custom mr-1" href="#"><i class="social_rss" aria-hidden="true"></i></a>
-						<a class="btn-social custom mr-1" href="#"><i class="social_vimeo" aria-hidden="true"></i></a>
+						<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
+						<a class="btn-social mr-1" href="#"><i class="social_twitter" aria-hidden="true"></i></a>
+						<a class="btn-social mr-1" href="#"><i class="social_rss" aria-hidden="true"></i></a>
+						<a class="btn-social mr-1" href="#"><i class="social_vimeo" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-8">
@@ -774,7 +845,7 @@
 							   <textarea class="form-control" id="exampleTextarea" rows="6" placeholder="Message"></textarea>
 							</div>
 						</div>
-						<div class="d-flex">
+						<div class="d-flex justify-content-end">
 					  	<button type="submit" class="btn btn-lg btn-primary ml-auto">Send Message</button>
 						</div>
 					</form>
@@ -790,8 +861,8 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12">
-              <a class="footer-logo" href="">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="139.219" height="48" viewBox="0 0 139.219 48" class="svgLogo2">
+              <a class="footer-logo" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="139.219" height="48" viewBox="0 0 139.219 48" class="svgLogo">
                   <g>
                     <path d="M6.678,22.229 C6.678,22.229 20.433,30.114 20.677,30.248 C20.922,30.383 23.718,31.677 25.043,34.036 C25.043,34.036 25.341,34.767 25.419,35.372 C25.419,35.372 25.503,36.799 24.742,38.046 C24.742,38.046 23.702,39.595 22.183,40.422 L19.247,42.204 L15.484,44.358 L9.839,47.551 C9.839,47.551 8.120,48.813 6.903,47.105 C6.903,47.105 6.747,46.763 6.678,46.288 L6.678,22.229 Z" class="cls-1"/>
                     <path d="M27.000,3.440 L27.000,32.328 L26.849,32.328 C26.849,32.328 26.373,30.307 24.667,29.209 C24.667,29.209 22.332,27.554 20.452,26.684 L12.247,22.006 L2.463,16.436 L1.334,15.767 C1.334,15.767 -0.736,14.711 0.280,13.020 C0.280,13.020 0.638,12.308 2.538,11.461 L12.774,5.520 L21.280,0.766 C21.280,0.766 23.435,-0.606 25.118,0.321 C25.118,0.321 26.707,1.156 27.000,3.440 Z" class="cls-1"/>
@@ -841,7 +912,7 @@
               </div>
             </div>
             <div class="col 12">
-              <p class="text-center text-white mt-70">Copyright &copy; 2018. All Rights Reserved by <a class="text-white" target="_blank" href="http://www.iamabdus.com/">Abdus</a>.</p>
+              <p class="text-center text-white mt-70">Copyright &copy; 2018 Onex Bootstrap Template by <a class="text-white" target="_blank" href="http://www.iamabdus.com/">Abdus</a>.</p>
             </div>
 
           </div>
@@ -858,13 +929,14 @@
     <script src="plugins/bootstrap/js/popper.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
     <script src="plugins/smoothscroll/SmoothScroll.js"></script>
     <script src="plugins/velocity/velocity.min.js"></script>
     <script src="plugins/wow/wow.min.js"></script>
     <!-- Custom Js -->
     <script src="js/custom.js"></script>
-  </body>
+  <link href="options/optionswitch.css" rel="stylesheet">
+<script src="options/optionswitcher.js"></script>
+</body>
 </html>
 
