@@ -1,0 +1,15 @@
+!function(s){"use strict";s(document).ready(function(){s('.scrolling  a[href*="#"], .scrolling .btn-scroll-down').on("click",function(o){o.preventDefault(),o.stopPropagation();var e=s(this).attr("href");s(window).width()<767?s(e).velocity("scroll",{duration:800,offset:-70,easing:"easeOutExpo",mobileHA:!1}):s(window).width()>=768&&s(e).velocity("scroll",{duration:800,offset:-88,easing:"easeOutExpo",mobileHA:!1})})}),s(window).on("load",function(){var o=s(".header"),e=o.find(".navbar"),t=0,a=s(".navbar-sticky");s(window).scroll(function(){var i=s(this).scrollTop();i>t?a.addClass("navbar-scrollUp"):a.removeClass("navbar-scrollUp"),t=i,e.hasClass("navbar-sticky")&&(s(this).scrollTop()<=600||s(this).width()<=300)?(e.removeClass("navbar-sticky").appendTo(o),o.css("height","auto")):!e.hasClass("navbar-sticky")&&s(this).width()>300&&s(this).scrollTop()>600&&(o.css("height",o.height()),e.addClass("navbar-scrollUp"),e.css({opacity:"0"}).addClass("navbar-sticky"),e.appendTo(s("body")).animate({opacity:1}))}),s(window).width()<750&&s(".navbar-nav.site_nav .nav-item .nav-link").on("click",function(){s(".navbar-collapse.collapse").removeClass("show")}),s(window).trigger("resize"),s(window).trigger("scroll")}),s(".product-slider").slick({centerMode:!0,centerPadding:"10px",dots:!0,slidesToShow:3,slidesToScroll:1,autoplay:!0,autoplaySpeed:5e3,arrows:!1,responsive:[{breakpoint:1024,settings:{slidesToShow:3,slidesToScroll:1,dots:!0}},{breakpoint:768,settings:{slidesToShow:3,slidesToScroll:1,infinite:!0,dots:!1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1,infinite:!0,dots:!1}}]}),s(".team-carouel").slick({slidesToShow:4,slidesToScroll:1,autoplay:!0,autoplaySpeed:5e3,arrows:!1,speed:1e3,responsive:[{breakpoint:1024,settings:{slidesToShow:4,slidesToScroll:4,dots:!0}},{breakpoint:769,settings:{slidesToShow:3,slidesToScroll:3,dots:!1}},{breakpoint:750,settings:{slidesToShow:1,slidesToScroll:1,dots:!1}}]}),s(".testimonial-carousel").slick({autoplay:!0,slidesToShow:1,slidesToScroll:1,autoplaySpeed:5e3,speed:1e3}),s(function(){s(document).off("click.bs.tab.data-api",'[data-hover="tab"]'),s(document).on("mouseenter.bs.tab.data-api",'[data-toggle="tab"], [data-hover="tab"]',function(){s(this).tab("show")})}),(new WOW).init(),s("body").scrollspy({target:"#navbarContent",spy:"scroll",offset:130})}(jQuery);
+
+//============================== Google Analytics =========================
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71155940-16', 'auto');
+ga('send', 'pageview');
+
+//============================== getsitecontrol =========================
+(function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+  t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+})(window, document, '_gscq','script','//widgets.getsitecontrol.com/46851/script.js');
