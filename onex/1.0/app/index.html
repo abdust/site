@@ -10,19 +10,19 @@
 	<title>Onex Product App</title>
 
 	<!-- PLUGINS CSS STYLE -->
-	<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="plugins/slick/slick.css" rel="stylesheet" media="screen">
-	<link href="plugins/slick/slick-theme.css" rel="stylesheet" media="screen">
-	<link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" media="screen">	
-	<link href="plugins/animate/animate.css" rel="stylesheet">
-	<link href="plugins/elegant_font/style.css" rel="stylesheet">
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/plugins/slick/slick.css" rel="stylesheet" media="screen">
+	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet" media="screen">
+	<link href="assets/plugins/animate/animate.css" rel="stylesheet">
+	<link href="assets/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="assets/plugins/elegant_font/style.css" rel="stylesheet">
 
 	<!-- CUSTOM CSS -->
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/default.css" id="option_color">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/default.css" id="option_color">
 
 	<!-- FAVICON -->
-	<link href="img/favicon.png" rel="shortcut icon">
+	<link href="assets/img/favicon.png" rel="shortcut icon">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,9 +33,22 @@
 </head>
 <body id="body" class="up-scroll">
 	<!-- ====================================
+	——— PRELOADER
+	===================================== -->
+	<div id="preloader" class="smooth-loader-wrapper">
+		<div class="smooth-loader">
+			<div class="spinner-eff spinner-eff-1">
+        <div class="bar bar-top"></div>
+        <div class="bar bar-right"></div>
+        <div class="bar bar-bottom"></div>
+        <div class="bar bar-left"></div>
+      </div>
+		</div>
+	</div>
+
+	<!-- ====================================
 	———	HEADER
 	===================================== -->
-
 	<header id="pageTop" class="header" >
 		<nav class="navbar navbar-expand-md navbar-scrollUp navbar-transparent navbar-sticky" >
 			<div class="container">
@@ -55,6 +68,16 @@
 
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul class="navbar-nav ml-auto site_nav scrolling" >
+						<li class="nav-item dropdown d-none d-md-block">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Demo
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+								<li><a class="dropdown-item active" href="http://themes.iamabdus.com/onex/1.0/app/">App Landing</a></li>
+								<li><a class="dropdown-item" href="http://themes.iamabdus.com/onex/1.0/product/">Product Landing</a></li>
+            	</ul>
+            </li>
+
 						<li class="nav-item">
 							<a class="nav-link " href="#about"> About</a>
 						</li>
@@ -71,10 +94,7 @@
 							<a class="nav-link " href="#price">Price</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#customers">customers</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="#"> Get now</a>
+							<a class="nav-link " target="_blank" href="http://bit.ly/WB-Onex"> Get now</a>
 						</li>
 					</ul>
 				</div>
@@ -88,7 +108,7 @@
 	<div class="main-wrapper home">
 
 
-	
+
 	<!-- ====================================
 	———	BANNER
 	===================================== -->
@@ -151,7 +171,7 @@
 		<div class="container">
 			<div class="row vh100 align-items-center justify-content-between" >
 				<div class="col-md-6 col-lg-7 wow fadeInLeft">
-					<div class="banner-text-content " >
+					<div class="banner-text-content" >
 						<h5>Welcome To Onex</h5>
 						<h1>New product <br> shop 2018</h1>
 						<p>Excepturi iste quam potenti consequuntur, facilisi quisquam leo <br> corporis sodales adipisicing quod.</p>
@@ -179,9 +199,9 @@
 						</a>
 						</div>
 				</div>
-				<div class="col-md-5 col-lg-3 wow bounceInRight">
-					<div class="d-none d-md-block banner-img">
-						<img src="img/banner/banner-img-01.png" alt="Banner Image">
+				<div class="col-md-5 col-lg-3 ">
+					<div class="d-none d-md-block banner-img wow fadeInRight">
+						<img src="assets/img/banner/banner-img-01.png" alt="Banner Image">
 					</div>
 				</div>
 			</div>
@@ -257,11 +277,11 @@
 						<li><i class="arrow_carrot-right" ></i>Awesome Design</li>
 						<li><i class="arrow_carrot-right" ></i>Premium Support</li>
 					</ul>
-					<a class="btn btn-primary mt-40" href="#">Download Now</a>
+					<a class="btn btn-primary mt-40" target="_blank" href="http://bit.ly/WB-Onex">Download Now</a>
 				</div>
 				<div class="col-md-6">
-					<div class="image-style-1 d-none d-md-block wow fadeInUp">
-						<img src="img/products/product-img-10.png" alt="Image">
+					<div class="image-style-1 d-none d-md-block ">
+						<img src="assets/img/products/product-img-10.png" alt="Image">
 					</div>
 				</div>
 			</div>
@@ -338,31 +358,31 @@
 				</div>
 
 				<div class="col-lg-4 d-none d-lg-block overflow">
-					<div class="image-frame" style="background-image: url(img/products/frame2.png)">
+					<div class="image-frame" style="background-image: url(assets/img/products/frame2.png)">
 						<div class="tab-content scren-image">
 							<div class="tab-pane fade show no-padding" id="vtab1" aria-expanded="true">
-								<img src="img/products/screen-1.jpg" alt="Image">
+								<img src="assets/img/products/screen-1.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab2" aria-expanded="true">
-								<img src="img/products/screen-2.jpg" alt="Image">
+								<img src="assets/img/products/screen-2.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab3" aria-expanded="true">
-								<img src="img/products/screen-3.jpg" alt="Image">
+								<img src="assets/img/products/screen-3.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab4" aria-expanded="true">
-								<img src="img/products/screen-4.jpg" alt="Image">
+								<img src="assets/img/products/screen-4.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab5" aria-expanded="true">
-								<img src="img/products/screen-1.jpg" alt="Image">
+								<img src="assets/img/products/screen-1.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab6" aria-expanded="true">
-								<img src="img/products/screen-2.jpg" alt="Image">
+								<img src="assets/img/products/screen-2.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab7" aria-expanded="true">
-								<img src="img/products/screen-3.jpg" alt="Image">
+								<img src="assets/img/products/screen-3.jpg" alt="Image">
 							</div>
 							<div class="tab-pane fade no-padding" id="vtab8" aria-expanded="true">
-								<img src="img/products/screen-1.jpg" alt="Image">
+								<img src="assets/img/products/screen-1.jpg" alt="Image">
 							</div>
 						</div>
 					</div>
@@ -434,8 +454,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<div class="image-style-2 d-none d-md-block wow fadeInLeft">
-						<img src="img/products/product-img-03.png" alt="">
+					<div class="image-style-2 d-none d-md-block ">
+						<img src="assets/img/products/product-img-03.png" alt="">
 					</div>
 				</div>
 				<div class="col-md-6 col-12">
@@ -447,7 +467,7 @@
 						<li><i class="arrow_carrot-right"></i>Awesome Design</li>
 						<li><i class="arrow_carrot-right"></i>Premium Support</li>
 					</ul>
-					<a class="btn btn-transparent mt-40" href="#">Download Now</a>
+					<a class="btn btn-transparent mt-40" target="_blank" href="http://bit.ly/WB-Onex">Download Now</a>
 				</div>
 
 			</div>
@@ -470,16 +490,16 @@
 				<div class="col-lg-9 col-9">
 					<div class="product-slider mt-4">
 						<div class="single-item">
-							<img src="img/products/screen-1.jpg" alt="Image">
+							<img src="assets/img/products/screen-1.jpg" alt="Image">
 						</div>
 						<div class="single-item">
-							<img src="img/products/screen-2.jpg" alt="Image">
+							<img src="assets/img/products/screen-2.jpg" alt="Image">
 						</div>
 						<div class="single-item">
-							<img src="img/products/screen-3.jpg" alt="Image">
+							<img src="assets/img/products/screen-3.jpg" alt="Image">
 						</div>
 						<div class="single-item">
-							<img src="img/products/screen-2.jpg" alt="Image">
+							<img src="assets/img/products/screen-2.jpg" alt="Image">
 						</div>
 					</div>
 				</div>
@@ -500,8 +520,8 @@
 			</div>
 			<div class="row mt-70 justify-content-between">
 				<div class="col-12 col-md-6">
-					<div class=" d-none d-md-block wow fadeInLeft mt-3">
-						<img class="text-center img-fluid" src="img/products/product-img-05.png" alt="Images">
+					<div class=" d-none d-md-block mt-3">
+						<img class="text-center img-fluid" src="assets/img/products/product-img-05.png" alt="Images">
 					</div>
 				</div>
 				<div class="col-12 col-md-6">
@@ -677,7 +697,7 @@
 				<div class="single-item ">
 					<div class="card team">
 						<div class="card-img">
-							<img src="img/team/team-1.jpg" alt="Card image cap">
+							<img src="assets/img/team/team-1.jpg" alt="Card image cap">
 							<div class="card-img-overlay">
 								<div class="social-link">
 									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
@@ -696,7 +716,7 @@
 				<div class="single-item team">
 					<div class="card team">
 						<div class="card-img">
-							<img src="img/team/team-2.jpg" alt="Card image cap">
+							<img src="assets/img/team/team-2.jpg" alt="Card image cap">
 							<div class="card-img-overlay">
 								<div class="social-link">
 									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
@@ -715,7 +735,7 @@
 				<div class="single-item team">
 					<div class="card team">
 						<div class="card-img">
-							<img src="img/team/team-3.jpg" alt="Card image cap">
+							<img src="assets/img/team/team-3.jpg" alt="Card image cap">
 							<div class="card-img-overlay">
 								<div class="social-link">
 									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
@@ -734,7 +754,7 @@
 				<div class="single-item team">
 					<div class="card team">
 						<div class="card-img">
-							<img class="card-img" src="img/team/team-4.jpg" alt="Card image cap">
+							<img class="card-img" src="assets/img/team/team-4.jpg" alt="Card image cap">
 							<div class="card-img-overlay">
 								<div class="social-link">
 									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
@@ -753,7 +773,7 @@
 				<div class="single-item team">
 					<div class="card team">
 						<div class="card-img">
-							<img class="card-img" src="img/team/team-2.jpg" alt="Card image cap">
+							<img class="card-img" src="assets/img/team/team-2.jpg" alt="Card image cap">
 							<div class="card-img-overlay">
 								<div class="social-link">
 									<a class="btn-social mr-1" href="#"><i class="social_facebook"></i></a>
@@ -838,13 +858,13 @@
 					<form class="contact-form">
 						<div class="row ">
 							<div class="form-group col-md-6">
-							  <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+							  <input type="text" class="form-control" placeholder="Name">
 							</div>
 							<div class="form-group col-md-6">
-							  <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+							  <input type="email" class="form-control" placeholder="Email">
 							</div>
 							<div class="form-group col-md-12">
-							   <textarea class="form-control" id="exampleTextarea" rows="6" placeholder="Message"></textarea>
+							   <textarea class="form-control" rows="6" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="d-flex justify-content-end">
@@ -925,18 +945,18 @@
     <!-- ====================================
     ———	JAVASCRIPT
     ===================================== -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <script src="plugins/bootstrap/js/popper.min.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-    <script src="plugins/smoothscroll/SmoothScroll.js"></script>
-    <script src="plugins/velocity/velocity.min.js"></script>
-    <script src="plugins/wow/wow.min.js"></script>
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
+    <script src="assets/plugins/smoothscroll/SmoothScroll.js"></script>
+    <script src="assets/plugins/velocity/velocity.min.js"></script>
+    <script src="assets/plugins/wow/wow.min.js"></script>
+    <script src="assets/plugins/fancybox/jquery.fancybox.js"></script>
+    <script src="assets/plugins/waypoint/jquery.waypoints.min.js"></script>
     <!-- Custom Js -->
-    <script src="js/custom.js"></script>
-  <link href="options/optionswitch.css" rel="stylesheet">
-<script src="options/optionswitcher.js"></script>
+    <script src="assets/js/app.js"></script>
+  <link href="assets/options/optionswitch.css" rel="stylesheet">
+<script src="assets/options/optionswitcher.js"></script>
 </body>
 </html>
-
