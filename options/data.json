@@ -3,60 +3,52 @@
 		"themes":
 		[
 			{
-				"id": 1,
-				"link": "https://goo.gl/aPFEuz",
+				"link": "http://themes.iamabdus.com/biznex/1.2/",
+				"title": "Biznex",
+				"category": "Business",
+				"thumbnail": "http://themes.iamabdus.com/options/img/biznex.png"
+			},
+			{
+				"link": "http://themes.iamabdus.com/nexa/1.1/",
 				"title": "Nexa Creative",
 				"category": "Agency",
 				"thumbnail": "http://themes.iamabdus.com/options/img/nexa.png"
 			},
 			{
-				"id": 2,
-				"link": "https://goo.gl/VCbeOp",
+				"link": "http://themes.iamabdus.com/bigbag/2.1/",
 				"title": "BigBag Store",
 				"category": "Ecommerce",
 				"thumbnail": "http://themes.iamabdus.com/options/img/bigbag.png"
 			},
 			{
-				"id": 3,
-				"link": "https://goo.gl/98HEu6",
-				"title": "Kidz Multipurpose",
-				"category": "Children",
+				"link": "http://themes.iamabdus.com/kidz/1.4/",
+				"title": "Kidz",
+				"category": "Multipurpose",
 				"thumbnail": "http://themes.iamabdus.com/options/img/kidz.png"
 			},
 			{
-				"id": 4,
-				"link": "https://goo.gl/lXpsqr",
+				"link": "http://themes.iamabdus.com/star/1.3/",
 				"title": "Star Tour Booking",
 				"category": "Travel",
 				"thumbnail": "http://themes.iamabdus.com/options/img/star.png"
 			},
 			{
-				"id": 5,
-				"link": "https://goo.gl/K1msNB",
+				"link": "http://themes.iamabdus.com/angel/1.1/",
 				"title": "Angel Spa Massage Salon",
 				"category": "Beauty",
 				"thumbnail": "http://themes.iamabdus.com/options/img/angel.png"
 			},
 			{
-				"id": 6,
-				"link": "https://goo.gl/XnTGRf",
+				"link": "http://themes.iamabdus.com/listty/1.3/",
 				"title": "Listty Directory",
 				"category": "Listing",
 				"thumbnail": "http://themes.iamabdus.com/options/img/listty.png"
 			},
 			{
-				"id": 7,
-				"link": "https://goo.gl/0doAl6",
+				"link": "http://themes.iamabdus.com/royal/1.3/",
 				"title": "Royal College",
 				"category": "Education",
 				"thumbnail": "http://themes.iamabdus.com/options/img/royal.png"
-			},
-			{
-				"id": 8,
-				"link": "https://goo.gl/N8uaDM",
-				"title": "Trust Lawyer Attorney",
-				"category": "Lawyer",
-				"thumbnail": "http://themes.iamabdus.com/options/img/trust.png"
 			}
 		],
 		"advertisement":
