@@ -3,6 +3,12 @@
 		"themes":
 		[
 			{
+				"link": "http://themes.iamabdus.com/onex/1.1/",
+				"title": "Onex",
+				"category": "Landing Page",
+				"thumbnail": "http://themes.iamabdus.com/options/img/onex.png"
+			},
+			{
 				"link": "http://themes.iamabdus.com/biznex/1.2/",
 				"title": "Biznex",
 				"category": "Business",
