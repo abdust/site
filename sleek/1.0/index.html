@@ -173,11 +173,11 @@ dark-theme -->
     ===================================== -->
     <div class="mobile-sticky-body-overlay"></div>
 
-    <section id="sidebar" class="sidebar sidebar-with-footer h-100">
+    <section id="sidebar" class="sidebar sidebar-with-footer ">
       <!-- begin sidebar scrollbar -->
       <div data-scrollbar="true" data-height="100%">
         <a class="logo" href="index.html">
-          <img class="logo-mini" src="assets/img/logo-mini.png" alt="mini logo">
+          <img class="logo-mini" src="assets/img/sleek-icon.png" alt="Sleek">
           <span class="logo-title">Sleek Admin</span>
         </a>
 
@@ -512,22 +512,21 @@ dark-theme -->
             </ul>
           </li>
         </ul>
-
-        <div class="sidebar-progress">
-          <h6 class="text-uppercase">
-            Cpu Uses
-            <span class="float-right">40%</span>
-          </h6>
-          <div class="progress progress-xs">
-            <div class="progress-bar active" style="width: 40%;" role="progressbar"></div>
-          </div>
-          <h6 class="text-uppercase">
-            Memory Uses
-            <span class="float-right">65%</span>
-          </h6>
-          <div class="progress progress-xs">
-            <div class="progress-bar progress-bar-warning" style="width: 65%;" role="progressbar"></div>
-          </div>
+      </div>
+      <div class="sidebar-progress">
+        <h6 class="text-uppercase">
+          Cpu Uses
+          <span class="float-right">40%</span>
+        </h6>
+        <div class="progress progress-xs">
+          <div class="progress-bar active" style="width: 40%;" role="progressbar"></div>
+        </div>
+        <h6 class="text-uppercase">
+          Memory Uses
+          <span class="float-right">65%</span>
+        </h6>
+        <div class="progress progress-xs">
+          <div class="progress-bar progress-bar-warning" style="width: 65%;" role="progressbar"></div>
         </div>
       </div>
     </section>
@@ -632,16 +631,16 @@ dark-theme -->
                     </div>
                     <a href="#" class="pb-5 d-block text-center text-muted"><i class="fa fa-download mr-2"></i> Download overall report</a>
                     <div class="card-footer d-flex flex-wrap bg-white p-0">
-                      <div class="col-6 pr-0">
-                        <div class="py-4 pl-lg-4">
+                      <div class="col-6">
+                        <div class="py-4 px-4">
                           <ul class="d-flex flex-column justify-content-between">
                             <li class="mb-2"><i class="fa fa-circle-o mr-2" style="color: #4c84ff"></i>Order Completed</li>
                             <li><i class="fa fa-circle-o mr-2" style="color: #80e1c1 "></i>Order Unpaid</li>
                           </ul>
                         </div>
                       </div>
-                      <div class="col-6 pl-0">
-                        <div class="py-4 pl-lg-4">
+                      <div class="col-6 bdr-left">
+                        <div class="py-4 px-4 ">
                           <ul class="d-flex flex-column justify-content-between">
                             <li class="mb-2"><i class="fa fa-circle-o mr-2" style="color: #8061ef"></i>Order Pending</li>
                             <li><i class="fa fa-circle-o mr-2" style="color: #ffa128"></i>Order Canceled</li>
@@ -900,7 +899,7 @@ dark-theme -->
                             <td class="d-none d-md-table-cell">Nov 15, 2018</td>
                             <td class="d-none d-md-table-cell">$550</td>
                             <td class="">
-                              <span class="badge badge-danger">Delayed</span>
+                              <span class="badge badge-warning">Delayed</span>
                             </td>
                             <td class="text-right">
                               <div class="dropdown show d-inline-block widget-dropdown">
@@ -978,7 +977,7 @@ dark-theme -->
                             <td class="d-none d-md-table-cell">Dec 23, 2018</td>
                             <td class="d-none d-md-table-cell">$150</td>
                             <td class="">
-                              <span class="badge badge-secondary">Cancelled</span>
+                              <span class="badge badge-danger">Cancelled</span>
                             </td>
                             <td class="text-right">
                               <div class="dropdown show d-inline-block widget-dropdown">
@@ -1008,11 +1007,11 @@ dark-theme -->
 					
                   <!-- To Do list -->
                   <div class="card card-md card-default mb-4 bg-white pt-5 todo-table" id="todo">
-                    <div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 align-items-center">
+                    <div class="card-header d-flex flex-wrap justify-content-between bg-white border-bottom-0 align-items-center pb-5">
                       <h4 class="d-inline-block">To Do List</h4>
                       <a class="btn btn-primary btn-pill" id="add-task" href="#" role="button"> Add task </a>
                     </div>
-                    <div class="card-body slim-scroll">
+                    <div class="card-body slim-scroll pt-0">
                       <div class="todo-single-item d-none" id="todo-input">
                         <form class="">
                           <div class="form-group">
