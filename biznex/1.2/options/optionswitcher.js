@@ -48,7 +48,7 @@ if($(window).width() > 750) {
 										<a href="javascript:void(0);" class="btn-u fixed-header">Fixed</a>
 									</div>
 									
-									<a href="https://goo.gl/DPjZnJ" class="btn-purchase"><i class="fa fa-shopping-cart"></i> Buy This Theme</a> 
+									<a href="http://bit.ly/WB-Biznex" class="btn-purchase"><i class="fa fa-shopping-cart"></i> Buy This Theme</a> 
 									    
 								</div>	
 							</div>	
