@@ -48,7 +48,7 @@ if($(window).width() > 750) {
 										<a href="javascript:void(0);" class="btn-u static-header">Static</a>
 									</div>
 
-									<a href="http://bit.ly/WB-Listty" class="btn-purchase"><i class="fa fa-shopping-cart"></i> Buy This Theme</a>
+									<a target="_blank" href="http://bit.ly/WB-Listty" class="btn-purchase"><i class="fa fa-shopping-cart"></i> Buy This Theme</a>
 
 								</div>
 							</div>

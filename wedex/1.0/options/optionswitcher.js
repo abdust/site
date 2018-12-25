@@ -47,7 +47,7 @@ if($(window).width() > 750) {
 										<a href="javascript:void(0);" class="btn-u static-header">Static</a>
 									</div>
 
-									<a href="https://goo.gl/DPjZnJ" class="btn-purchase"><i class="fa fa-shopping-cart"></i> Buy This Theme</a>
+									<a target="_blank" href="http://bit.ly/WB-Wedex" class="btn-purchase"><i class="fa fa-shopping-cart"></i> Buy This Theme</a>
 
 								</div>
 							</div>
