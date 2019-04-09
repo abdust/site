@@ -50,7 +50,7 @@ $themes = {
     name      : 'Nexa',
     tag       : 'BS4',
     img       : 'nexa.png',
-    url       : 'https://themes.iamabdus.com/nexa/1.2/',
+    url       : 'https://themes.iamabdus.com/nexa/1.3/',
     purchase  : 'http://bit.ly/WB-Nexa',
     tooltip   : 'Creative Agency Portfolio Theme'
   },
