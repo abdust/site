@@ -58,7 +58,7 @@ $themes = {
     name      : 'Biznex',
     tag       : 'BS4',
     img       : 'biznex.png',
-    url       : 'https://themes.iamabdus.com/biznex/1.2/',
+    url       : 'https://themes.iamabdus.com/biznex/1.3/',
     purchase  : 'http://bit.ly/WB-Biznex',
     tooltip   : 'Multipurpose Business Theme'
   },
@@ -66,7 +66,7 @@ $themes = {
 		name      : 'Adora',
 		tag       : 'BS4',
 		img       : 'adora.png',
-		url       : 'https://themes.iamabdus.com/adora/1.0/',
+		url       : 'https://themes.iamabdus.com/adora/1.1/',
 		purchase  : 'http://bit.ly/WB-Adora',
 		tooltip   : 'Beauty Spa & Massage Salon Theme'
 	},
