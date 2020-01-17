@@ -1,4 +1,7 @@
-
+Thumbs.db
 .DS_Store
-
-backup
+.dist
+.tmp
+.sass-cache
+npm-debug.log
+node_modules

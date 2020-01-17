@@ -1,4 +1,4 @@
-var $themes, $defaultTheme = 'kidzPro_html';
+var $themes, $defaultTheme = 'kidz_html';
 
 var imgURL = 'assets/img/themes/';
 
@@ -6,14 +6,6 @@ var imgURL = 'assets/img/themes/';
 // Products List
 // ---------------------------------------------------------
 $themes = {
-    kidzPro_html: {
-        name      : 'Kidz Pro',
-        tag       : 'BS4',
-        img       : 'kidz.png',
-        url       : 'https://themes.iamabdus.com/kidz/2.0/',
-        purchase  : 'https://gum.co/kidzpro',
-        tooltip   : 'Multipurpose Children Kids Theme'
-    },
     sleek_html: {
         name      : 'Sleek Dashboard',
         tag       : 'BS4',
@@ -90,7 +82,7 @@ $themes = {
         name      : 'Kidz',
         tag       : 'BS',
         img       : 'kidz.png',
-        url       : 'https://themes.iamabdus.com/kidz/2.1/',
+        url       : 'https://themes.iamabdus.com/kidz/2.2/',
         purchase  : 'http://bit.ly/WB-Kidz',
         tooltip   : 'Multipurpose Children Kids Theme'
     },
