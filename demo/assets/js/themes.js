@@ -6,13 +6,21 @@ var imgURL = 'assets/img/themes/';
 // Products List
 // ---------------------------------------------------------
 $themes = {
-    sleek_html: {
-        name      : 'Sleek Dashboard',
+    mono_html: {
+        name      : 'MONO',
         tag       : 'BS4',
-        img       : 'sleek-html.png',
-        url       : 'https://sleek.tafcoder.com/',
-        purchase  : 'https://github.com/tafcoder/sleek-dashboard',
-        tooltip   : 'Free Dashboard Admin Template'
+        img       : 'mono.png',
+        url       : 'https://mono.tafcoder.com/',
+        purchase  : 'http://bit.ly/WB-Mono',
+        tooltip   : 'Bootstrap Admin Template + UI Kit'
+    },
+    restaurex_html: {
+        name      : 'Restaurex',
+        tag       : 'BS4',
+        img       : 'restaurex.png',
+        url       : 'http://themes.iamabdus.com/restaurex/1.0/',
+        purchase  : 'http://bit.ly/WB-Restaurex',
+        tooltip   : 'Cafe & Restaurant HTML Template'
     },
     onex_html: {
         name      : 'Onex',
@@ -64,7 +72,7 @@ $themes = {
     },
     listty_html: {
         name      : 'Listty',
-        tag       : 'BS',
+        tag       : 'BS4',
         img       : 'listty.png',
         url       : 'https://themes.iamabdus.com/listty/2.0/index-2.html',
         purchase  : 'http://bit.ly/WB-Listty',
@@ -80,7 +88,7 @@ $themes = {
     },
     kidz_html: {
         name      : 'Kidz',
-        tag       : 'BS',
+        tag       : 'BS4',
         img       : 'kidz.png',
         url       : 'https://themes.iamabdus.com/kidz/2.2/',
         purchase  : 'http://bit.ly/WB-Kidz',
@@ -88,7 +96,7 @@ $themes = {
     },
     star_html: {
         name      : 'Star',
-        tag       : 'BS',
+        tag       : 'BS4',
         img       : 'star.png',
         url       : 'https://themes.iamabdus.com/star/2.0/',
         purchase  : 'http://bit.ly/WB-Star',
