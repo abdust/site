@@ -106,7 +106,7 @@ $themes = {
         name      : 'BigBag',
         tag       : 'BS4',
         img       : 'bigbag.png',
-        url       : 'https://themes.iamabdus.com/bigbag/2.1/',
+        url       : 'https://themes.iamabdus.com/bigbag/2.2/',
         purchase  : 'http://bit.ly/WB-Bigbag',
         tooltip   : 'Elegant Ecommerce Theme'
     },
