@@ -7,7 +7,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build"
-},
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
@@ -15,7 +15,7 @@
     "gulp-csso": "^4.0.0",
     "gulp-gzip": "^1.4.2",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.0.0",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.0"
   },

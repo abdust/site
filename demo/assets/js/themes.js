@@ -106,7 +106,7 @@ $themes = {
         name      : 'BigBag',
         tag       : 'BS4',
         img       : 'bigbag.png',
-        url       : 'https://5e7380226ba2ec0008283f8a--bigbag-html.netlify.app/',
+        url       : 'https://5ef74c8f1131783d15bb0867--bigbag-html.netlify.app/',
         purchase  : 'http://bit.ly/WB-Bigbag',
         tooltip   : 'Elegant Ecommerce Theme'
     },
