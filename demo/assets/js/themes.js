@@ -10,7 +10,7 @@ $themes = {
         name      : 'MONO',
         tag       : 'BS4',
         img       : 'mono.png',
-        url       : 'https://mono.tafcoder.com/',
+        url       : 'https://mono-html.netlify.app/',
         purchase  : 'http://bit.ly/WB-Mono',
         tooltip   : 'Bootstrap Admin Template + UI Kit'
     },
