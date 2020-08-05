@@ -6,6 +6,38 @@ var imgURL = 'assets/img/themes/';
 // Products List
 // ---------------------------------------------------------
 $themes = {
+    kidz_html: {
+        name      : 'Kidz',
+        tag       : 'BS4',
+        img       : 'kidz.png',
+        url       : 'https://themes.iamabdus.com/kidz/2.2/',
+        purchase  : 'http://bit.ly/WB-Kidz',
+        tooltip   : 'Multipurpose Children Kids Theme'
+    },
+    listty_html: {
+        name      : 'Listty',
+        tag       : 'BS4',
+        img       : 'listty.png',
+        url       : 'https://themes.iamabdus.com/listty/2.1/index-2.html',
+        purchase  : 'http://bit.ly/WB-Listty',
+        tooltip   : 'Directory Listing + Admin Theme'
+    },
+    star_html: {
+        name      : 'Star',
+        tag       : 'BS4',
+        img       : 'star.png',
+        url       : 'https://themes.iamabdus.com/star/2.1/',
+        purchase  : 'http://bit.ly/WB-Star',
+        tooltip   : 'Tour Booking Theme + Admin'
+    },
+    bigbag_html: {
+        name      : 'BigBag',
+        tag       : 'BS4',
+        img       : 'bigbag.png',
+        url       : 'https://5ef74c8f1131783d15bb0867--bigbag-html.netlify.app/',
+        purchase  : 'http://bit.ly/WB-Bigbag',
+        tooltip   : 'Elegant Ecommerce Theme'
+    },
     mono_html: {
         name      : 'MONO',
         tag       : 'BS4',
@@ -70,14 +102,6 @@ $themes = {
         purchase  : 'http://bit.ly/WB-Adora',
         tooltip   : 'Beauty Spa & Massage Salon Theme'
     },
-    listty_html: {
-        name      : 'Listty',
-        tag       : 'BS4',
-        img       : 'listty.png',
-        url       : 'https://themes.iamabdus.com/listty/2.1/index-2.html',
-        purchase  : 'http://bit.ly/WB-Listty',
-        tooltip   : 'Directory Listing + Admin Theme'
-    },
     trust_html: {
         name      : 'Trust',
         tag       : 'BS',
@@ -85,30 +109,6 @@ $themes = {
         url       : 'https://themes.iamabdus.com/trust/1.1/',
         purchase  : 'http://bit.ly/WB-Trust',
         tooltip   : 'Modern Lawyer Attorney Theme'
-    },
-    kidz_html: {
-        name      : 'Kidz',
-        tag       : 'BS4',
-        img       : 'kidz.png',
-        url       : 'https://themes.iamabdus.com/kidz/2.2/',
-        purchase  : 'http://bit.ly/WB-Kidz',
-        tooltip   : 'Multipurpose Children Kids Theme'
-    },
-    star_html: {
-        name      : 'Star',
-        tag       : 'BS4',
-        img       : 'star.png',
-        url       : 'https://themes.iamabdus.com/star/2.1/',
-        purchase  : 'http://bit.ly/WB-Star',
-        tooltip   : 'Tour Booking Theme + Admin'
-    },
-    bigbag_html: {
-        name      : 'BigBag',
-        tag       : 'BS4',
-        img       : 'bigbag.png',
-        url       : 'https://5ef74c8f1131783d15bb0867--bigbag-html.netlify.app/',
-        purchase  : 'http://bit.ly/WB-Bigbag',
-        tooltip   : 'Elegant Ecommerce Theme'
     },
     royal_html: {
         name      : 'Royal',
