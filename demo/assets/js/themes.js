@@ -10,7 +10,7 @@ $themes = {
         name      : 'Kidz',
         tag       : 'BS4',
         img       : 'kidz.png',
-        url       : 'https://themes.iamabdus.com/kidz/2.2/',
+        url       : 'https://themes.iamabdus.com/kidz/2.3/',
         purchase  : 'http://bit.ly/WB-Kidz',
         tooltip   : 'Multipurpose Children Kids Theme'
     },
