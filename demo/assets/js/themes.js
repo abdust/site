@@ -38,6 +38,14 @@ $themes = {
         purchase  : 'http://bit.ly/WB-Bigbag',
         tooltip   : 'Elegant Ecommerce Theme'
     },
+    angel_html: {
+        name      : 'Angel',
+        tag       : 'BS4',
+        img       : 'angel.png',
+        url       : 'https://themes.iamabdus.com/angel/1.2/',
+        purchase  : 'http://bit.ly/Angel-HTML',
+        tooltip   : 'Beauty Spa & Massage Salon Theme'
+    },
     mono_html: {
         name      : 'MONO',
         tag       : 'BS4',
