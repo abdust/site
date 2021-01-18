@@ -26,7 +26,7 @@ $themes = {
         name      : 'Star',
         tag       : 'BS4',
         img       : 'star.png',
-        url       : 'https://themes.iamabdus.com/star/2.1/',
+        url       : 'https://themes.iamabdus.com/star/2.2/',
         purchase  : 'http://bit.ly/WB-Star',
         tooltip   : 'Tour Booking Theme + Admin'
     },
