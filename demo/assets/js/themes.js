@@ -8,9 +8,9 @@ var imgURL = 'assets/img/themes/';
 $themes = {
     kidz_html: {
         name      : 'Kidz',
-        tag       : 'BS4',
+        tag       : 'BS5',
         img       : 'kidz.png',
-        url       : 'https://themes.iamabdus.com/kidz/2.3/',
+        url       : 'https://themes.iamabdus.com/kidz/3.0/',
         purchase  : 'http://bit.ly/WB-Kidz',
         tooltip   : 'Multipurpose Children Kids Theme'
     },
