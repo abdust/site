@@ -16,9 +16,9 @@ $themes = {
     },
     listty_html: {
         name      : 'Listty',
-        tag       : 'BS4',
+        tag       : 'BS5',
         img       : 'listty.png',
-        url       : 'https://themes.iamabdus.com/listty/2.1/index-2.html',
+        url       : 'https://themes.iamabdus.com/listty/2.3/index-2.html',
         purchase  : 'http://bit.ly/WB-Listty',
         tooltip   : 'Directory Listing + Admin Theme'
     },
