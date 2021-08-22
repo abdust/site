@@ -18,7 +18,7 @@ $themes = {
         name      : 'Listty',
         tag       : 'BS5',
         img       : 'listty.png',
-        url       : 'https://themes.iamabdus.com/listty/2.3/index-2.html',
+        url       : 'https://themes.iamabdus.com/listty/3.0/index-2.html',
         purchase  : 'http://bit.ly/WB-Listty',
         tooltip   : 'Directory Listing + Admin Theme'
     },
@@ -26,7 +26,7 @@ $themes = {
         name      : 'Star',
         tag       : 'BS5',
         img       : 'star.png',
-        url       : 'https://themes.iamabdus.com/star/2.3/',
+        url       : 'https://themes.iamabdus.com/star/3.0/',
         purchase  : 'http://bit.ly/WB-Star',
         tooltip   : 'Tour Booking Theme + Admin'
     },
