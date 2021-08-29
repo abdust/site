@@ -46,6 +46,14 @@ $themes = {
         purchase  : 'http://bit.ly/Angel-HTML',
         tooltip   : 'Beauty Spa & Massage Salon Theme'
     },
+    lukee_html: {
+        name      : 'Lukee',
+        tag       : 'BS5',
+        img       : 'lukee.png',
+        url       : 'https://themes.iamabdus.com/lukee/1.0/',
+        purchase  : '',
+        tooltip   : 'Bootstrap Admin Template + UI Kit'
+    },
     mono_html: {
         name      : 'MONO',
         tag       : 'BS4',
