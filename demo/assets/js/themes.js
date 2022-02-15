@@ -16,17 +16,17 @@ $themes = {
     },
     listty_html: {
         name      : 'Listty',
-        tag       : 'BS4',
+        tag       : 'BS5',
         img       : 'listty.png',
-        url       : 'https://themes.iamabdus.com/listty/2.1/index-2.html',
+        url       : 'https://themes.iamabdus.com/listty/3.0/index-2.html',
         purchase  : 'http://bit.ly/WB-Listty',
         tooltip   : 'Directory Listing + Admin Theme'
     },
     star_html: {
         name      : 'Star',
-        tag       : 'BS4',
+        tag       : 'BS5',
         img       : 'star.png',
-        url       : 'https://themes.iamabdus.com/star/2.2/',
+        url       : 'https://themes.iamabdus.com/star/3.0/',
         purchase  : 'http://bit.ly/WB-Star',
         tooltip   : 'Tour Booking Theme + Admin'
     },
@@ -45,6 +45,14 @@ $themes = {
         url       : 'https://themes.iamabdus.com/angel/1.2/',
         purchase  : 'http://bit.ly/Angel-HTML',
         tooltip   : 'Beauty Spa & Massage Salon Theme'
+    },
+    lukee_html: {
+        name      : 'Lukee',
+        tag       : 'BS5',
+        img       : 'lukee.png',
+        url       : 'https://themes.iamabdus.com/lukee/1.0/',
+        purchase  : '',
+        tooltip   : 'Bootstrap Admin Template + UI Kit'
     },
     mono_html: {
         name      : 'MONO',
