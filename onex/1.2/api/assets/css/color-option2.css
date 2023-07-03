@@ -1,0 +1,138 @@
+/*=== Text color ===*/
+a:hover, a:focus, a:active,
+.btn-primary:hover,
+.pricing .btn-primary,
+.btn-icon:hover .text h6,
+.btn-icon:hover .text span,
+.card.team .card-img .card-img-overlay .social-link,
+.btn-transparent:hover,
+.navbar-nav.site_nav .nav-item:last-child a.nav-link:hover,
+.icon-style-1 i,
+.contact .media i,
+.pricing .card-body .btn-primary,
+.navbar-nav.site_nav .nav-item .dropdown-menu li a:hover,
+.btn-outline-white:hover,
+.btn-outline-primary, .media-icon-box span, .btn-social:hover, .btn-social:hover i {
+  color: #32CD32;
+}
+
+.btn-outline-warning, .btn-warning:hover, .banner-section .banner-content .title h2, .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle, .footer .social-link a:hover, .footer .list-unstyled a:hover, .nav-item.dropdown .nav-link.active, .nav-item.dropdown .dropdown-toggle.active:after, .nav-item.dropdown .nav-link:hover {
+  color: #81e88c;
+}
+
+.btn-warning:active, .btn-warning:focus, .btn-primary:active, .nav-item.dropdown .dropdown-menu li a.active, .nav-item.dropdown .dropdown-menu li a:hover, .footer .copyright a:hover {
+  color: #81e88c !important;
+}
+
+/*=== Text color important ===*/
+.pricing.center .card-body .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  color: #32CD32 !important;
+}
+
+/*=== Background color ===*/
+::-moz-selection {
+  background-color: #32CD32;
+}
+::selection {
+  background-color: #32CD32;
+}
+
+::-moz-selection {
+  background-color: #32CD32;
+}
+
+.btn-primary {
+  background-color: #32CD32;
+}
+
+.bg-secondary, .api-tab-content, .navbar-dark, .card.card-accordion .card-block, .card.card-accordion .card-header a.collapsed {
+  background-color: #013220 !important;
+}
+
+.nav-tabs.pricing-tabs .nav-item .nav-link:before {
+  background-color: #238245;
+}
+
+h3.section-title-center:after, h3.section-title:after, .btn-outline-warning:hover, .btn-warning, .btn-outline-warning:active, .btn-outline-warning:focus {
+  background-color: #81e88c;
+}
+
+.btn-outline-warning:active, .btn-outline-warning:focus {
+  background-color: #81e88c !important;
+}
+
+.banner-section {
+  background-color: #238245;
+}
+
+.footer {
+  background-color: #238245;
+}
+
+/*=== Gradient Background ===*/
+.navbar .navbar-collapse {
+  background: linear-gradient(180deg, #238245 0%, #013220 100%);
+}
+
+.bg-gradient {
+  background: linear-gradient(180deg, #013220 0%, #238245 100%);
+}
+
+.pricing, .card-style-02 {
+  background: linear-gradient(120deg, #238245 0%, #013220 100%);
+}
+
+.banner-section:before {
+  background: linear-gradient(180deg, #238245 0%, #075D40 42%);
+}
+
+.card.card-accordion .card-header a, #circle:before {
+  background: linear-gradient(120deg, #238245 0%, #013220 100%);
+}
+
+.media-icon-box:before {
+  background: linear-gradient(150deg, #238245 0%, #013220 100%);
+}
+
+.footer:before {
+  background: linear-gradient(180deg, #238245 0%, #075D40 100%);
+}
+
+/*=== Border color ===*/
+.btn-primary, .btn-social, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  border-color: #32CD32;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  border-color: #32CD32 !important;
+}
+
+.card.card-accordion .card-header a {
+  border-color: #238245;
+}
+
+.btn-outline-warning, .btn-outline-warning:hover, .btn-warning, .btn-warning:hover, .nav-tabs.api-tabs .nav-item .nav-link:before, .card-style-02 .card-body .btn.btn-outline-warning, .btn-outline-warning:not(:disabled):not(.disabled).active, .btn-outline-warning:not(:disabled):not(.disabled):active, .show > .btn-outline-warning.dropdown-toggle, .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle, .api-tab-content pre, .btn-warning:active, .btn-warning:focus {
+  border-color: #81e88c;
+}
+
+/*=== Svg ===*/
+.svg-overlay-shape1 svg .svg-shape-fill {
+  fill: #013220;
+}
+
+.svg-overlay-shape2 svg .svg-shape-fill {
+  fill: #238245;
+}
+
+/*=== Media Queries ===*/
+@media (min-width: 480px) {
+  .navbar .container .collapse, .navbar .container .collapsing {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav.site_nav .nav-item .dropdown-menu li a.active {
+    color: #32CD32;
+  }
+}
