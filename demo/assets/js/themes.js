@@ -74,7 +74,7 @@ $themes = {
         name      : 'Onex',
         tag       : 'BS4',
         img       : 'onex.png',
-        url       : 'https://themes.iamabdus.com/onex/1.1/app/',
+        url       : 'https://themes.iamabdus.com/onex/1.2/app/',
         purchase  : 'http://bit.ly/WB-Onex',
         tooltip   : 'Multipurpose Landing Page Templates'
     },
