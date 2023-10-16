@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bath &amp; Body &#8211; Delicacy Organic</title>
+	<atom:link href="/product-category/bath-body/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>Woocommerce Theme</description>
+	<lastBuildDate>Thu, 07 Oct 2021 14:09:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/08/Group-7.svg</url>
+	<title>Bath &amp; Body &#8211; Delicacy Organic</title>
+	<link></link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Bath &#038; Body</title>
+		<link></link>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2021 13:06:23 +0000</pubDate>
+				<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<div class="woocommerce columns-4 "></div>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

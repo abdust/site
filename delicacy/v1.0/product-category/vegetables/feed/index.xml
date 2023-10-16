@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Vegetables &#8211; Delicacy Organic</title>
+	<atom:link href="/product-category/vegetables/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>Woocommerce Theme</description>
+	<lastBuildDate>Thu, 07 Oct 2021 14:09:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/08/Group-7.svg</url>
+	<title>Vegetables &#8211; Delicacy Organic</title>
+	<link></link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Vegetables</title>
+		<link></link>
+		
+		<dc:creator><![CDATA[Admin]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2021 13:06:23 +0000</pubDate>
+				<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Showing all 4 results Default sorting Sort by popularity Sort by average rating Sort by latest Sort by price: low &#8230;]]></description>
+										<content:encoded><![CDATA[<div class="woocommerce columns-4 "><div class="woocommerce-notices-wrapper"></div><p class="woocommerce-result-count">
+	Showing all 4 results</p>
+<form class="woocommerce-ordering" method="get">
+	<select name="orderby" class="orderby" aria-label="Shop order">
+					<option value="menu_order"  selected='selected'>Default sorting</option>
+					<option value="popularity" >Sort by popularity</option>
+					<option value="rating" >Sort by average rating</option>
+					<option value="date" >Sort by latest</option>
+					<option value="price" >Sort by price: low to high</option>
+					<option value="price-desc" >Sort by price: high to low</option>
+			</select>
+	<input type="hidden" name="paged" value="1" />
+	<input type="hidden" name="simply_static_page" value="712" /></form>
+<ul class="products columns-4">
+<li class="product type-product post-692 status-publish first instock product_cat-fresh-meat product_cat-vegetables has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="/product/green-bow/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="/wp-content/uploads/2021/09/Group_1619-removebg-preview-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="/wp-content/uploads/2021/09/Group_1619-removebg-preview-300x300.png 300w, /wp-content/uploads/2021/09/Group_1619-removebg-preview-100x100.png 100w, /wp-content/uploads/2021/09/Group_1619-removebg-preview-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">French Beef</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>15.00</bdi></span></span>
+</a><a href="/product/green-bow/?add-to-cart=692" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="692" data-product_sku="" aria-label="Add &ldquo;French Beef&rdquo; to your cart" aria-describedby="" rel="nofollow">Add to cart</a></li>
+<li class="product type-product post-695 status-publish instock product_cat-food product_cat-fruits product_cat-vegetables has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+	<a href="/product/pasta-shells/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+	<span class="onsale">Sale!</span>
+	<img width="300" height="300" src="/wp-content/uploads/2021/09/Group_1615-removebg-preview-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="/wp-content/uploads/2021/09/Group_1615-removebg-preview-300x300.png 300w, /wp-content/uploads/2021/09/Group_1615-removebg-preview-100x100.png 100w, /wp-content/uploads/2021/09/Group_1615-removebg-preview-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Fresh Carrots</h2>
+	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>30.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>25.00</bdi></span></ins></span>
+</a><a href="/product/pasta-shells/?add-to-cart=695" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="695" data-product_sku="" aria-label="Add &ldquo;Fresh Carrots&rdquo; to your cart" aria-describedby="" rel="nofollow">Add to cart</a></li>
+<li class="product type-product post-686 status-publish instock product_cat-drinks product_cat-fresh-nuts product_cat-fruits product_cat-vegetables has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+	<a href="/product/fresh-juice/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+	<span class="onsale">Sale!</span>
+	<img width="280" height="233" src="/wp-content/uploads/2021/09/product5-removebg-preview-1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" /><h2 class="woocommerce-loop-product__title">Fresh Juice</h2>
+	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>15.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>12.00</bdi></span></ins></span>
+</a><a href="/product/fresh-juice/?add-to-cart=686" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="686" data-product_sku="" aria-label="Add &ldquo;Fresh Juice&rdquo; to your cart" aria-describedby="" rel="nofollow">Add to cart</a></li>
+<li class="product type-product post-685 status-publish last instock product_cat-vegetables has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+	<a href="/product/brown-bread/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+	<span class="onsale">Sale!</span>
+	<img width="300" height="300" src="/wp-content/uploads/2021/09/Group_1608-removebg-preview-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="/wp-content/uploads/2021/09/Group_1608-removebg-preview-300x300.png 300w, /wp-content/uploads/2021/09/Group_1608-removebg-preview-100x100.png 100w, /wp-content/uploads/2021/09/Group_1608-removebg-preview-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Spices</h2>
+	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>25.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>20.00</bdi></span></ins></span>
+</a><a href="/product/brown-bread/?add-to-cart=685" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="685" data-product_sku="" aria-label="Add &ldquo;Spices&rdquo; to your cart" aria-describedby="" rel="nofollow">Add to cart</a></li>
+</ul>
+</div>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
