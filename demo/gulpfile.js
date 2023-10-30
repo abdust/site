@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp         = require('gulp');
-const sass         = require('gulp-sass');
+const sass         = require('gulp-sass')(require('sass'));
 const csso         = require('gulp-csso');
 const uglify       = require('gulp-uglify');
 const gzip         = require('gulp-gzip');
