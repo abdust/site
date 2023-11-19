@@ -10,7 +10,7 @@ $themes = {
         name      : 'Kidz',
         tag       : 'BS5',
         img       : 'kidz.png',
-        url       : 'https://themes.iamabdus.com/kidz/3.1/',
+        url       : 'https://kidz-html.netlify.app/',
         purchase  : 'http://bit.ly/WB-Kidz',
         tooltip   : 'Multipurpose Children Kids Theme'
     },
@@ -18,7 +18,7 @@ $themes = {
         name      : 'Listty',
         tag       : 'BS5',
         img       : 'listty.png',
-        url       : 'https://themes.iamabdus.com/listty/3.0/index-2.html',
+        url       : 'https://listty-html.netlify.app/index-2.html',
         purchase  : 'http://bit.ly/WB-Listty',
         tooltip   : 'Directory Listing + Admin Theme'
     },
@@ -26,7 +26,7 @@ $themes = {
         name      : 'Star',
         tag       : 'BS5',
         img       : 'star.png',
-        url       : 'https://themes.iamabdus.com/star/3.0/',
+        url       : 'https://star-html.netlify.app/',
         purchase  : 'http://bit.ly/WB-Star',
         tooltip   : 'Tour Booking Theme + Admin'
     },
@@ -130,7 +130,7 @@ $themes = {
         name      : 'Royal',
         tag       : 'BS',
         img       : 'royal.png',
-        url       : 'https://themes.iamabdus.com/royal/1.3/',
+        url       : 'https://royal-html.netlify.app/',
         purchase  : 'http://bit.ly/WB-Royal',
         tooltip   : 'Multipurpose Education Template'
     }
